@@ -49,8 +49,8 @@
     | (c_x, c_y) | 주점 (principal point) | 이미지 중심     |
     | skew       | 센서 기울기               | 대부분 0      |
 - K 행렬을 통한 출력이 아래와 같이 나오게 된다. 
-  
-$$u= \begin{pmatrix}{u}\\{v}\\{1}\end{pmatrix}$$
+- $u= \begin{pmatrix}{u}\\{v}\\{1}\end{pmatrix}$
+
 - 이는 실제 이미지 좌표이며 OpenCV기준 (0,0) 은 이미지의 좌상단에 해당한다. 
 
 
