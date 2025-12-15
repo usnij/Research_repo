@@ -5,7 +5,7 @@
 
 ## 📁 Study
 
-**camera** : 
+**[Camera에 대한 학습 내용 정리](https://github.com/usnij/Research_repo/blob/main/Study/Camera_study.md)**
 
 ## 📊 Timeline
 
