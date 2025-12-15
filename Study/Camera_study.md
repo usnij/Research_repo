@@ -33,23 +33,23 @@
 
 (2) Camera -> Normalized image
 
-- $X_{norm} = \begin{pmatrix}{x}\\{y}\\{z}\end{pmatrix}= \begin{pmatrix}{X_c/Z_c}\\{Y_c/Z_c}\\{1}\end{pmatrix}$
+ $$X_{norm} = \begin{pmatrix}{x}\\{y}\\{z}\end{pmatrix}= \begin{pmatrix}{X_c/Z_c}\\{Y_c/Z_c}\\{1}\end{pmatrix}$$
 - 이는 카메라로부터 얼마나 앞에 있는지를 뜻하는 Z_c를 X와 Y에 나눔으로서 원근감을 표현하게 해준다. 즉 3차원상의 오브젝트를 사영해주는 것이다.
 - Z_c가 커질수록 카메라로부터 더 멀리떨어진 것이므로 작게 보이게 되는것이다. 
 
 (3) Noramlized image -> pixel
 - Normalized image 좌표를 실제 이미지의 픽셀 좌표로 변환하는 단계이며, 이 변환을 담당하는 것이 바로 내부변수 행렬 K다.
-- $K = \begin{pmatrix}
+  $$K = \begin{pmatrix}
     {​fx} & {0} & {​cx}\\
     {0} & {fy} & {​cy} \\
-    x{0} & {0} & {1}\end{pmatrix}$
+    x{0} & {0} & {1}\end{pmatrix}$$
     | 항목         | 의미                   | 비고         |
     | ---------- | -------------------- | ---------- |
     | (f_x, f_y) | 초점 거리 (픽셀 단위)        | 시야각, 확대/축소 |
     | (c_x, c_y) | 주점 (principal point) | 이미지 중심     |
     | skew       | 센서 기울기               | 대부분 0      |
 - K 행렬을 통한 출력이 아래와 같이 나오게 된다. 
-- $u= \begin{pmatrix}{u}\\{v}\\{1}\end{pmatrix}$
+  $$u= \begin{pmatrix}{u}\\{v}\\{1}\end{pmatrix}$$
 
 - 이는 실제 이미지 좌표이며 OpenCV기준 (0,0) 은 이미지의 좌상단에 해당한다. 
 
