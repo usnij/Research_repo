@@ -33,7 +33,7 @@
 
 (2) Camera -> Normalized image
 
-- $$X_{norm} = \begin{pmatrix}{x}\\{y}\\{z}\end{pmatrix}= \begin{pmatrix}{X_c/Z_c}\\{Y_c/Z_c}\\{1}\end{pmatrix}$$
+- $X_{norm} = \begin{pmatrix}{x}\\{y}\\{z}\end{pmatrix}= \begin{pmatrix}{X_c/Z_c}\\{Y_c/Z_c}\\{1}\end{pmatrix}$
 - 이는 카메라로부터 얼마나 앞에 있는지를 뜻하는 Z_c를 X와 Y에 나눔으로서 원근감을 표현하게 해준다. 즉 3차원상의 오브젝트를 사영해주는 것이다.
 - Z_c가 커질수록 카메라로부터 더 멀리떨어진 것이므로 작게 보이게 되는것이다. 
 
@@ -50,7 +50,7 @@
     | skew       | 센서 기울기               | 대부분 0      |
 - K 행렬을 통한 출력이 아래와 같이 나오게 된다. 
   
-    $u= \begin{pmatrix}{u}\\{v}\\{1}\end{pmatrix}$
+$$u= \begin{pmatrix}{u}\\{v}\\{1}\end{pmatrix}$$
 - 이는 실제 이미지 좌표이며 OpenCV기준 (0,0) 은 이미지의 좌상단에 해당한다. 
 
 
