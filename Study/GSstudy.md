@@ -517,8 +517,8 @@ gaussians.optimizer.step()
 
 ## 1. Data
 - 샘플데이터로 있는 train, truck, playroom등에 대해 먼저 학습을 진행했고 적절하게 결과가 나와서 직접 얻은 데이터(사진, 동영상)에 대해 돌려보고자 했다. 
--  <video controls src="./image/IMG_2293.mov" title="Title"></video>
-- 해당영상은 iphone 12의 후방카메라로 찍은 영상이다(480 × 854).
+-  ![Image](https://github.com/user-attachments/assets/42b13b0b-96bc-4bd7-b95a-a4709ef2afe3)
+- 해당영상은 iphone 12의 후방카메라로 찍은 약 23초의 영상이다(480 × 854).
 - 이 영상을 ffmpeg application을 이용해 아래와 같은 명령어를 통해 5fps로 설정해 이미지로 변환해주었다. 
 ```
 $ffmpeg -i IMG_2293.mov -vf fps=5 -q:v 1  images/frame_%04d.jpg
@@ -570,7 +570,7 @@ Training complete. [29/12 06:38:45]
 ## 4. Rendering 결과
 
 - SIBR_viewers를 통해 학습된 결과물에 대해 볼 수 있다. 
-<video controls src="./image/Screencast.mp4" title="Title"></video>
+![Image](https://github.com/user-attachments/assets/2c3a750b-42cf-4f85-ac46-c491ec5d1f41)
 - 휴대폰카메라로 찍어 렌더링한 결과 또한 같은 비율임을 알 수 있다.
 
 
