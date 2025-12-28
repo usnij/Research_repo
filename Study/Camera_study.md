@@ -151,9 +151,6 @@
 - 모든 depth map을 통합한 **Dense Point Cloud (조밀 3D 점군)**
 - (후처리 시) **Mesh / Textured Model**
 
-> 👉 SfM이 **“뼈대”**를 만든다면,  
-> 👉 MVS는 그 위에 **“살을 붙이는”** 단계라고 볼 수 있다.
-
 ---
 
 2️⃣ COLMAP MVS 전체 파이프라인
