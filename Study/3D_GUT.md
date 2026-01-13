@@ -100,4 +100,3 @@ w_i^{\Sigma} =
   - 여기서 G는 Gaussian을 의미하고, camera ray $\ x(r)= o+r d$다
     - o : 카메라 중심, d : ray 방향, r : ray파라미터(깊이) 
   - 정리하면 Gaussian 중심 μ에서 ray 방향으로 “수직으로 가장 가까운 지점”을 구하게 되는 것이다. 
-  - 
