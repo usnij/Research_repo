@@ -11,6 +11,9 @@
 **[Gaussian Splatting에 대한 학습 내용 정리](https://github.com/usnij/Research_repo/blob/main/Study/GSstudy.md)**
 
 
+**[3DGUT에 대한 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/GSstudy.md)**
+
+
 
 ## 📊 Timeline
 

@@ -45,8 +45,9 @@ w_i^{\mu} =
 \begin{cases}
 \dfrac{\lambda}{3 + \lambda}, & i = 0 \\
 \dfrac{1}{2(3 + \lambda)}, & i = 1, \ldots, 6
-\end{cases} \\
-
+\end{cases} 
+```
+```math
 w_i^{\Sigma} =
 \begin{cases}
 \dfrac{\lambda}{3 + \lambda} + (1 - \alpha^2 + \beta), & i = 0 \\
@@ -61,7 +62,7 @@ w_i^{\Sigma} =
 - 아래 식은 projection된 sigmapoints를 가중 평균내어 projection된 2D Gaussian의 중심(평균)을 계산하는 식이다. 
 ```math
 
-\nu_\mu = \sum_{i=0}^{6} w_i^{\mu} \, v_{x_i} \\
+\nu_\mu = \sum_{i=0}^{6} w_i^{\mu} \, v_{x_i} 
 
 ```
 - 의미 :
