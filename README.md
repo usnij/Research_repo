@@ -1,6 +1,6 @@
-# Research_repo Document Index
+# Research_history
 
-> 연구 문서
+> 모든 연구 문서
 ---
 
 ## 📁 Study
