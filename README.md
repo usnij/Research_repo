@@ -14,6 +14,11 @@
 **[3DGUT에 대한 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT.md)**
 
 
+**[Rig_Constraint_COLMAP에 대한 이론 학습 및 구현해보기](https://github.com/usnij/Research_repo/blob/main/Study/COLMAP_Rig_Constraint.md)**
+
+
+
+
 
 ## 📊 Timeline
 
@@ -25,4 +30,5 @@
 
 ### 2026-01
 - **3DGUT 논문 리뷰**
+- **Rig_Constraint_COLMAP 학습**
 
