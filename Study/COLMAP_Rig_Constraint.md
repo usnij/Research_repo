@@ -94,12 +94,18 @@ rig2/
 **같은 rig안에서 같은 프레임, 다른 센서의 이미지끼리는 파일명을 동일하게 하는 것이 핵심이다.**  
 
 
+#### Image Undistortion
+
+- Image Undistortion은 결론적으로 말하면 해당 파이프라인에서는 하지 않아도 된다. 왜나하면 Blender 360 Extractor단계에서 이미 이뤄지기 때문이다. 
+
+- Blender 360 Extractor에서는 eqr 이미지에 대해 virtual pinhole 카메라를 정의할 수 있게 해준다. 결국 이를 통해 추출되는 이미지는 그냥 평범한 여러 장의 pinhole 이미지가 된다. 결론은 해당 파이프라인에서는 Image Undistortion단계는 필요하지 않다. 
+
 
 ## 실제 Insta360 X5 rig constraint 3DGS Pipeline
 
 1. Instat360으로 촬영된 영상(.insv)을 Insta studio를 통해 mv4 파일로 변환
 
-2. Blender 360 Extractor Tool을 통해 mp4영상에서 이미지 추출
+2. Blender 360 Extractor Tool을 통해 mp4영상에서 이미지 및 카메라에 대한 정보(json피일 형태) 추출
 
 3. COLMAP 수행
 
@@ -170,6 +176,66 @@ rig2/
 ### 3. COLMAP수행
 
 - 전 단계에서 얻은 카메라에 대한 `json`파일을 바탕으로 `rig_config.json`파일을 작성하고, 이미지에 대한 디렉토리 구조를 위에서 설명한 것처럼 변경해야한다. 
+
+- `rig_config.json` 파일은 아래와 같이 작성되어 있다. 
+```
+[
+  {
+    "rig_id": 1,
+    "cameras": [
+      {
+        "image_prefix": "High_Cam01/",
+        "ref_sensor": true
+      },
+      {
+        "image_prefix": "High_Cam02/",
+        "cam_from_rig_rotation": [
+          0.9238795198081952,
+          2.8480464533549614e-08,
+          0.36964381827344894,
+          -0.09904585044919136
+        ],
+        "cam_from_rig_translation": [
+          0.7071067617414908,
+          -0.07580647783295112,
+          -0.28291311920733253
+        ]
+      },
+      {
+        "image_prefix": "High_Cam06/",
+        "cam_from_rig_rotation": [
+          0.3826834540320676,
+          2.6927669092355574e-08,
+          -0.8923990886165519,
+          0.23911762930916056
+        ],
+        "cam_from_rig_translation": [
+          -0.7071068612572545,
+          -0.44183179121886557,
+          -1.6489384642771128
+        ]
+      },
+         ...
+    ...
+```
+
+- 하나의 rig안에 모든 카메라가 속해 있는 형태이며 Blender 360 Extractor을 통해 추출한 json파일의 정보를 COLMAP이 이해하는 “rig 좌표계 기준 각 카메라의 상대 자세”로 변환한 것이다.
+
+
+- `rig_config.json`에서 요구하는 것은 다음과 같다. 
+
+    - `cam_from_rig_rotation` : Rig → Camera 회전 (쿼터니언)
+
+    - `cam_from_rig_translation` : Rig → Camera 이동 (3D 벡터)
+
+    - $\ P_{cam} = R_{cam<-rig}P_{rig}+t_{cam<-rig}$
+
+    - 이를 위해서는 먼저 **rig 좌표계**를 정의해야 한다. 여기서는 임의의 한 카메를 rig좌표계의 기준으로 뒀고 "High_Cam01"를 "ref_sensor": true 으로 적용할 수 있다.
+
+    - 결국 이제 각 카메라마다 "High_Cam01" 기준 상대 pose를 구하면 된다. 
+
+    - 여기서 또 주의해야 하는 점은 가지고 있는 Blender 360 Extractor을 통해 얻은 정보는 Blender 좌표계이고 COLMAP이 해석하는 좌표계는 OpenCV 좌표계 변환인 점을 주의해야 한단. 
+
 
 - `feature_extractor` 단계에서 `--ImageReader.single_camera_per_folder 1`
 - `rig_configurator`수행
