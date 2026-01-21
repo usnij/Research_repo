@@ -9,7 +9,6 @@ https://github.com/nv-tlabs/3dgrut 논문의 코드 실행, 동작 원리 이해
 
 
 ## 1. Dataset
-
 - 데이터는 위 링크에서 예제로 사용되는 데이터와 **직접 찍은 데이터**로 학습을 진행했다.
 
 - 논문의 프로젝트에서는 데이터의 종류를 세 가지로 설정해 성능을 평가하고 있다.
@@ -18,12 +17,15 @@ https://github.com/nv-tlabs/3dgrut 논문의 코드 실행, 동작 원리 이해
     3. `ScanNet++`
     - 각 데이터셋의 간단한 특징은 `nerf_synthetic` **CG**데이터이며, 순수한 렌더링 성능을 위한 데이터라고 보여지며, `Mip-NeRF 360(colmap)`은 **실제 촬영** 데이터이고 카메라포즈를 COLMAP으로 추정하게 된다. `ScanNet++`은 `Mip-NeRF 360`보다 고난도에 해당하는 데이터로 텍스쳐가 불규칙하고, 조명/노이즈/왜곡이 심한 데이터에 해당한다. 
 
-- **직접 찍은 데이터는** 2번에 해당하고 그에 맞춰 진행했다. 
+- **직접 찍은 데이터**는 2번에 해당하고 그에 맞춰 진행했다. 
 
 - 데이터는 3DGS를 진행했던 것으로 진행했다.
-
+  
+https://github.com/usnij/Research_repo/blob/main/Study/%20Practice_3DGS.md#1-dataset
 
 ## 2. train
+
+학습은 아래의 명령어로 진행한다. 
 
 `python train.py --config-name apps/colmap_3dgut.yaml path=data/mipnerf360/bonsai out_dir=runs experiment_name=bonsai_3dgut dataset.downsample_factor=1` 
 진행했고 
@@ -91,5 +93,5 @@ Loading extension module lib3dgut_cc...
 |3DGS|0.9815034|37.2909775|0.0558935|약 12분 32초 |
 
 
-- 결론적으로 말하면 3DGUT의 성능이 3DGS보다 저열하다. 
+- 결론적으로 말하면 3DGUT의 성능이 3DGS보다 저열하다. 전반적인 구조는 유지하지만 고주파 디테일 손실, 엣지 선명도 저하, 재질 및 반사 표현의 단순화로 인해 원본 대비 시각적 사실감과 정밀도가 감소됨을 확인할 수 있다. 
 

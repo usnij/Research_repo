@@ -10,8 +10,14 @@
 
 **[Gaussian Splatting에 대한 학습 내용 정리](https://github.com/usnij/Research_repo/blob/main/Study/GSstudy.md)**
 
+**[Gaussian Splatting의 코드 동작해보기](https://github.com/usnij/Research_repo/blob/main/Study/%20Practice_3DGS.md)**
+
+
 
 **[3DGUT에 대한 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT.md)**
+
+**[3DGUT의 코드 동작해보기](https://github.com/usnij/Research_repo/blob/main/Study/Practice_3DGUT.md)**
+
 
 
 **[Rig_Constraint_COLMAP에 대한 이론 학습 및 구현해보기](https://github.com/usnij/Research_repo/blob/main/Study/COLMAP_Rig_Constraint.md)**
