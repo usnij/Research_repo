@@ -1,12 +1,22 @@
-- Practice_3DGUT_v2의 결과에서 **circular fisheye image** 경우 적절한 결과가 나오지 않는다 판단하였고 이러한 이미지를 통한 사례를 찾지 못함 
+- [3DGUT_Practice_v2](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_Practice_v3.md)의 결과에서 **circular fisheye image** 는 적절한 결과가 나오지 않는다 판단하였고 여러 레퍼런스를 찾아본 결과 circular fisheye image를 통한 사례를 찾지 못함 
 
-- 구글링을 통해 Fisheye 이미지를 통해 3DGS를 수행하는 workflow를 찾은 결과 아래처럼 추측했다. 
+circular fisheye image 예시 :
+![alt text](image/code_report_01.png)
+
+
+- 구글링을 통해 Fisheye 이미지를 통해 3DGS를 수행하는 workflow를 찾은 결과 크게 두 가지 형태로 볼 수 있었다.
+
+- 첫 번째는 fisheye이미지를 여러 perspective view의 이미지로 추출해 그것을 통해 진행하는 방식이다. 하지만 이 방식은 결국 COLMAP과 GS과정에 입력되는 이미지가 PINHOLE이미지이므로 FISHEYE이미지를 3DGUT으로 학습시키고자 하는 최종 목적에 부합하지 않는다. 
+
+
+- 두 번째 방식은 확실하지는 않지만 추측하건데 풀프레임형태의 fisheye이미지를 사용하는 것이다. 하지만 엄연히 따지면 이 이미지는 fisheye이미지가 아니라고 한다.
 
 - **https://x.com/jonstephens85/status/1912706266629013922?s=46** 이 링크상의 이미지처럼 풀프레임으로 되어 있는 이미지의 형태에서 수행하는 것으로 예상된다. 
  ![alt text](image/Practice_3DGUT_v3_01.png)  
-- 엄연히 따지면 이 이미지는 fisheye이미지는 아니라고 할 수 있다.
+
 
 - 어쨋든 이런 왜곡이 있는 풀프레임 이미지를 데이터로 하여 수행하고자 했다. 
+
 
 ## 데이터 
 아래는 insta360 X5로 찍은 사진 두장이다(양 사이드에 얼굴이 나와 짜름)
@@ -50,11 +60,13 @@ colmap mapper \
 
 ### 결과
 
-┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┓
-┃ mean_psnr ┃ mean_ssim ┃ mean_lpips ┃ std_psnr ┃
-┡━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━┩
-│ 17.806    │ 0.705     │ 0.460      │ 1.072    │
-└───────────┴───────────┴────────────┴──────────┘
+| Metric     | Value |
+|------------|-------|
+| mean_psnr  | 17.806 |
+| mean_ssim  | 0.705 |
+| mean_lpips | 0.460 |
+| std_psnr   | 1.072 |
+
 
 ![alt text](image/Practice_3DGUT_v3_04.png)
 
@@ -71,13 +83,17 @@ colmap mapper \
 
 콜맵에서 카메라 모델로 OPENCV_FISHEYE가 아닌 PHINHOLE을 사용하면 아래와 같이 나온다. 
 
-┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┓
-┃ mean_psnr ┃ mean_ssim ┃ mean_lpips ┃ std_psnr ┃
-┡━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━┩
-│ 17.224    │ 0.592     │ 0.499      │ 0.346    │
-└───────────┴───────────┴────────────┴──────────┘
+| Metric     | Value |
+|------------|-------|
+| mean_psnr  | 17.224 |
+| mean_ssim  | 0.592 |
+| mean_lpips | 0.499 |
+| std_psnr   | 0.346 |
 
-![alt text](imaeg/Practice_3DGUT_v3_06.png) ![alt text](Practice_3DGUT_v3_07.png)
+
+![alt text](image/Practice_3DGUT_v3_06.png) 
+
+![alt text](image/Practice_3DGUT_v3_07.png)
 
 ![Image](https://github.com/user-attachments/assets/f906d5ac-28c3-4668-a9bc-1626c50ebdc8)
 

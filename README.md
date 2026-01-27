@@ -7,7 +7,6 @@
 
 **[Camera에 대한 학습 내용 정리](https://github.com/usnij/Research_repo/blob/main/Study/Camera_study.md)**
 
-
 **[Gaussian Splatting에 대한 학습 내용 정리](https://github.com/usnij/Research_repo/blob/main/Study/GSstudy.md)**
 
 **[Gaussian Splatting의 코드 동작해보기](https://github.com/usnij/Research_repo/blob/main/Study/%20Practice_3DGS.md)**
@@ -17,11 +16,15 @@
 
 **[3DGUT에 대한 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT.md)**
 
-**[3DGUT의 코드 동작해보기](https://github.com/usnij/Research_repo/blob/main/Study/Practice_3DGUT.md)**
+**[3DGUT의 이론을 코드 레벨에서 리포트](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_code_report.md)**
 
 
+**[3DGUT의 코드 동작해보기(아이폰 카메라)](https://github.com/usnij/Research_repo/blob/main/Study/Practice_3DGUT.md)**
+
+**[3DGUT의 코드 동작해보기(circular fisheye image)](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_Practice_v2.md)**
 
 
+**[3DGUT의 코드 동작해보기(full frame image)](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_Practice_v3.md)**
 
 
 
