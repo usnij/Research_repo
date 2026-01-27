@@ -1,4 +1,5 @@
 # 3DGUT: Enabling Distorted Cameras and Secondary Rays in Gaussian Splatting
+해당 논문에 대한 프로젝트 수행을 목적으로 논문을 읽음 
 
 ## 1. Introduction
 
