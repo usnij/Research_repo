@@ -141,24 +141,8 @@ python train.py --config-name apps/colmap_3dgut.yaml \
 
 ---
 
-## 7. 이전 실험과의 종합 비교
 
-| 버전 | 데이터 소스 | 카메라 모델 | 이미지 수 | PSNR (GUT) | 비고 |
-|------|-----------|-----------|----------|------------|------|
-| **v1** | 아이폰 촬영 | PINHOLE | 135장 | 31.59 | GS(37.29) 대비 열세 |
-| **v2** | Insta360 단일렌즈 (circular fisheye) | OPENCV_FISHEYE | 92장 | 14.49 | 심각한 품질 저하 |
-| **v3** | Insta360 → 풀프레임 fisheye 변환 | OPENCV_FISHEYE | - | 17.81 | 개선되었으나 여전히 저품질 |
-| **v4** | **Insta360 → perspective view 추출** | **PINHOLE** | **15장** | **33.72** | **GS 대비 열세** |
-
-### 핵심 발견
-
-1. **PINHOLE 데이터에서는 항상 3DGS > 3DGUT**: v1, v4 모두 동일한 결과
-2. **FISHEYE 데이터에서 3DGUT의 이점은 제한적**: v2, v3에서 OPENCV_FISHEYE를 사용했지만 여전히 낮은 품질
-3. **perspective view 추출이 가장 높은 PSNR**: v4(33.72)가 모든 360도 카메라 실험 중 최고
-
----
-
-## 8. 결론
+## 7. 결론
 
 360도 카메라(Insta360 X5) 이미지에서 perspective view를 추출하여 3DGUT 학습을 수행한 결과, **PSNR 33.72dB, SSIM 0.9578**로 양호한 품질을 달성했으나, 동일 조건의 3DGS 대비 품질이 낮았다.
 
