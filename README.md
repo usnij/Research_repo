@@ -26,6 +26,7 @@
 
 **[3DGUT의 코드 동작해보기(full frame image)](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_Practice_v3.md)**
 
+**[3DGUT의 코드 동작해보기(virtual pinhole)](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_Practice_v4.md)**
 
 
 
