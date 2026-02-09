@@ -79,7 +79,7 @@ colmap mapper \
 python train.py --config-name apps/colmap_3dgut.yaml \
     path=data/lab_norigv1 \
     out_dir=runs \
-    experiment_name=lab_norig_3dgut
+    experiment_name=lab_3dgut
 ```
 
 | 설정 항목 | 값 |
