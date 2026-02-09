@@ -52,7 +52,7 @@ colmap feature_extractor \
     --ImageReader.camera_model PINHOLE \
     --ImageReader.single_camera 1
 
-colmap exhaustive_matcher \
+colmap sequential_matcher \
     --database_path database.db
 
 colmap mapper \
