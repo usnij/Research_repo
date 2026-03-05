@@ -84,16 +84,7 @@ alpha       = min(MaxAlpha, exp(-0.5·d²) × density)
 color       = Σ  T_i · α_i · c_i,   T_i = Π_{j<i}(1 - α_j)
 ```
 
-### 베이스라인 결과
 
-| 데이터셋 | 렌더러 | PSNR | SSIM | LPIPS |
-|---------|--------|------|------|-------|
-| NeRF Lego | 3DGRT | 36.57 | 0.971 | 0.018 |
-| NeRF Lego | 3DGUT | 36.35 | 0.983 | 0.020 |
-| **Bonsai** | 3DGUT | **32.352** | 0.943 | 0.253 |
-| Lab (no rig) | 3DGUT | 33.72 | 0.958 | 0.177 |
-
----
 
 ## 2. 기술 1: Z-Thickness OFM
 
