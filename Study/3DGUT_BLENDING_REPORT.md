@@ -11,7 +11,7 @@ GUT(Gaussian Unscented Transform)의 핀홀 카메라 렌더링은 **ray 기반 
 ## 2. 전체 파이프라인
 
 ```
-픽셀별 ray 초기화 → 타일별 Gaussian 순회 → hit 판정 + alpha 계산 → 색상 블렌딩 → 최종 출력
+픽셀별 ray 초기화 → 타일별 Gaussian 순회 → hit 판정 및 hit buffer 저장 → ray-particle density 평가 및 alpha 계산 → front-to-back 색상 블렌딩 → 최종 출력
 ```
 
 ### 2.1 Ray 초기화
@@ -32,27 +32,46 @@ ray.direction = mat3(sensorToWorldTransform) * sensorRayDirectionPtr[ray.idx];
 
 ### 2.2 Gaussian Hit 및 Alpha 계산
 
-ray가 각 Gaussian과 교차할 때, 3D 공간에서 **ray-particle density**를 계산하여 alpha를 구한다.
+ray는 Gaussian과의 hit 여부를 판정한다.
+hit가 발생하면 해당 Gaussian의 인덱스와 깊이 정보가 ray의 hit buffer에 저장되며, 이후 이 buffer에 저장된 Gaussian들에 대해 density response를 평가하여 alpha 값을 계산한다.
 
 **파일**: `threedgut_tracer/include/3dgut/kernels/slang/models/gaussianParticles.slang:186-222`
-
 ```c
 // ray와 Gaussian의 교차 판정
-alpha = min(MaxParticleAlpha, maxResponse * parameters.density);
+alpha = min(MaxParticleAlpha, maxResponse * parameters. );
 const bool acceptHit = ((maxResponse > MinParticleKernelDensity) && (alpha > MinParticleAlpha));
 
 if (acceptHit) {
     depth = canonicalRayDistance(canonicalRayOrigin, canonicalRayDirection, parameters.scale);
 }
 ```
+여기서 `maxResponse`는 ray가 Gaussian의 canonical space를 통과할 때 얻는 최대 커널 응답값으로,
+ray와 Gaussian 중심 사이의 상대적 위치 관계에 의해 결정된다.
 
-- `maxResponse`: ray가 Gaussian의 canonical space를 통과할 때의 최대 커널 응답값
-- `parameters.density`: 해당 Gaussian의 density 파라미터 (sigmoid로 활성화됨)
-- `alpha = maxResponse * density`: **3D 공간에서 직접 계산** (3DGS의 2D conic 연산과 다름)
+#### maxResponse 계산 과정
+hit 판정 전에 먼저 ray를 Gaussian의 **canonical space**로 변환한다.
+
+**canonical space**란 Gaussian의 공분산 행렬(scale, rotation)을 단위 구(unit sphere)로 정규화한 공간이다.
+이 변환을 통해 임의의 타원체 형태를 가진 Gaussian을 반지름 1의 구로 취급할 수 있어, 이후 거리 계산이 단순해진다.
+
+canonical space로 변환된 ray에 대해 `canonicalRayMaxKernelResponse`를 호출하여 `maxResponse`를 계산한다.
+```c
+const float maxResponse = gaussianParticle.canonicalRayMaxKernelResponse
+    (
+    canonicalRayOrigin,
+    canonicalRayDirection);
+```
+
+
+이렇게 계산된 maxResponse를 Gaussian의 density 파라미터와 곱하여 최종 alpha가 결정된다.
+
+여기서 density 파라미터는 3DGS에서 gaussian의 파라미터 중 하나인 opacity와 기능적으로 동일하다. 
+
+명칭이 다른 이유는 렌더링 방식의 차이에서 비롯된다. 3DGS는 Gaussian을 2D 이미지 평면에 투영한 뒤 픽셀 단위로 불투명도를 계산하는 **splatting** 방식이므로 `opacity`라는 표현이 직관적이다. 반면 3DGUT는 ray가 3D 공간의 Gaussian 볼륨을 직접 통과하며 해당 지점의 **밀도(density)** 를 샘플링하는 볼륨 렌더링 방식이므로, 물리적으로 더 정확한 표현인 `density`를 사용한다.
 
 ### 2.3 블렌딩 (핵심)
-
-hit된 Gaussian들을 깊이 순서대로 front-to-back으로 합성한다.
+ 
+buffer에 저장된 Gaussian hit들은 깊이 순서로 정렬된 뒤 front-to-back alpha compositing으로 합성된다.
 
 **파일**: `threedgut_tracer/include/3dgut/kernels/cuda/renderers/gutKBufferRenderer.cuh:153-165`
 
@@ -149,15 +168,3 @@ $$C = \sum_{i=1}^{N} w_i \cdot c_i$$
 | $c_i$ | i번째 Gaussian의 색상 (SH로 디코딩) |
 | $C$ | 최종 픽셀 색상 |
 
-## 4. 3DGS vs GUT 비교
-
-| 비교 항목 | 3DGS | GUT |
-|-----------|------|-----|
-| 렌더링 방식 | 2D splatting (Gaussian을 이미지에 투영) | Ray-based 볼륨 렌더링 (ray → 3D Gaussian 교차) |
-| 블렌딩 공식 | $w = \alpha \cdot T$, $T \leftarrow T(1-\alpha)$ | **동일** |
-| alpha 계산 | 2D 투영된 Gaussian의 conic 연산 | 3D ray-particle density 적분 |
-| 색상 연산 | SH 디코딩 | SH 디코딩 (**동일**) |
-| 정렬 | 타일별 깊이 정렬 | 타일별 깊이 정렬 (**동일**) |
-| 조기 종료 | T < threshold | T < threshold (**동일**) |
-
-**핵심 차이**: 블렌딩 공식과 합성 순서는 3DGS와 완전히 동일하며, **alpha를 구하는 방식만 다르다.** 3DGS는 2D 이미지 평면에 투영된 Gaussian의 exponential falloff로 alpha를 계산하는 반면, GUT는 3D 공간에서 ray와 Gaussian의 density 교차를 직접 계산한다.
