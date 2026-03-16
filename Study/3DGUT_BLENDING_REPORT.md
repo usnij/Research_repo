@@ -10,6 +10,8 @@ GUT(Gaussian Unscented Transform)의 핀홀 카메라 렌더링은 **ray 기반 
 
 ## 2. 렌더링 전 radix sort
 
+
+
 먼저 hit판정은 이미 3d 공간 상에 gaussian이 어느 정도 깊이순으로 정렬되어 있다는 점이 중요하다. 
 정렬되어 있는 이유는 렌더링 전에 tile별로 gaussian을 projection해 각 gaussian에 대해 depth가 정해지고 이것으로 radix sort를 진행한다.  
 ```
@@ -267,7 +269,7 @@ radianceDensityPtr[ray.idx] = {ray.features[0], ray.features[1], ray.features[2]
 
 
 #### 예시 이미지 
-![alt text](/image/3DGUT_BLENDING_REPORT/image.png)
+![alt text](image/3DGUT_BLENDING_REPORT/image.png)
 
 ####
 위 그림처럼 간단하게 블렌딩이 진행되기 전 buffer는 `{(g1, hitT1, alpha1),(g2, hitT2, alpha2),(g3, hitT3, alpha3)}`의 형태로 저장된다. 
@@ -338,5 +340,5 @@ final = rendered_color + background × T (= background × 0.105)
 
 ### 4.2 `maxresponse`계산 
 
-![alt text](/image/3DGUT_BLENDING_REPORT/image-1.png)
+![alt text](image/3DGUT_BLENDING_REPORT/image-1.png)
 
