@@ -1,20 +1,15 @@
-# Research_history
+# Research_repo_index
 
 > 모든 연구 문서
 ---
 
-## 📁 Study
+## 📁 Project
 
-**[Camera에 대한 학습 내용 정리](https://github.com/usnij/Research_repo/blob/main/Study/Camera_study.md)**
-
-**[Gaussian Splatting에 대한 학습 내용 정리](https://github.com/usnij/Research_repo/blob/main/Study/3DGS_study.md)**
 
 **[Gaussian Splatting의 코드 동작해보기](https://github.com/usnij/Research_repo/blob/main/Study/3DGS_%20Practice.md)**
 
 **[Rig_Constraint_COLMAP에 대한 이론 학습 및 구현해보기](https://github.com/usnij/Research_repo/blob/main/Study/COLMAP_Rig_Constraint.md)**
 
-
-**[3DGUT에 대한 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT.md)**
 
 **[3DGUT의 이론을 코드 레벨에서 리포트](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_code_report.md)**
 
@@ -28,7 +23,15 @@
 
 **[3DGUT의 코드 동작해보기(virtual pinhole)](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_Practice_v4.md)**
 
+## Note&Study
 
+**[Camera study](https://github.com/usnij/Research_repo/blob/main/Study/Camera_study.md)**
+
+**[Gaussian Splatting 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGS_study.md)**
+
+**[3DGUT 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT.md)**
+
+**[zthickness 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT.md)**
 
 ## 📊 Timeline
 
@@ -41,4 +44,8 @@
 ### 2026-01
 - **3DGUT 논문 리뷰**
 - **Rig_Constraint_COLMAP 학습**
+
+### 2026-02~03
+- **zthickness 논문 리뷰**
+- **3DGUT의 렌더링 방식 변경 연구(zthickness)**
 
