@@ -23,7 +23,12 @@
 
 **[3DGUT의 코드 동작해보기(virtual pinhole)](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_Practice_v4.md)**
 
-## Note&Study
+
+**[3DGUT_overlapgaussian 고려해보기_ver1](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_Practice_v4.md)**
+
+
+
+## 📁 Note&Study
 
 **[Camera study](https://github.com/usnij/Research_repo/blob/main/Study/Camera_study.md)**
 
@@ -31,7 +36,9 @@
 
 **[3DGUT 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT.md)**
 
-**[zthickness 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT.md)**
+**[zthickness 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/zThickness.md)**
+
+**[3DGUT_rendering 기술 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_BLENDING_REPORT.md)**
 
 ## 📊 Timeline
 
