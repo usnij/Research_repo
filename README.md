@@ -11,9 +11,6 @@
 **[Rig_Constraint_COLMAP에 대한 이론 학습 및 구현해보기](https://github.com/usnij/Research_repo/blob/main/Study/COLMAP_Rig_Constraint.md)**
 
 
-**[3DGUT의 이론을 코드 레벨에서 리포트](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_code_report.md)**
-
-
 **[3DGUT의 코드 동작해보기(아이폰 카메라)](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_Practice_v1.md)**
 
 **[3DGUT의 코드 동작해보기(circular fisheye image)](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_Practice_v2.md)**
@@ -32,9 +29,13 @@
 
 **[Camera study](https://github.com/usnij/Research_repo/blob/main/Study/Camera_study.md)**
 
-**[Gaussian Splatting 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGS_study.md)**
+**[3DGS 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGS_study.md)**
+
+**[3DGUT_rendering 기술 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT.md)**
 
 **[3DGUT 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT.md)**
+
+**[3DGUT Code report](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT_code_report.md)**
 
 **[zthickness 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/zThickness.md)**
 
