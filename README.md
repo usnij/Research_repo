@@ -31,7 +31,7 @@
 
 **[3DGS 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGS_study.md)**
 
-**[3DGUT_rendering 기술 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGS_RENDERING_REPORT.md)**
+**[3DGS_rendering 기술 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGS_RENDERING_REPORT.md)**
 
 **[3DGUT 논문 리뷰](https://github.com/usnij/Research_repo/blob/main/Study/3DGUT.md)**
 
