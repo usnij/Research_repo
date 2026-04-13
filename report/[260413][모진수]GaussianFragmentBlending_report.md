@@ -101,9 +101,9 @@ GFB의 목표: Ray가 Gaussian 타원체를 통과하는 구간 전체에 걸쳐
 
 $$
 \begin{aligned}
-r = o_{ray} + t*d_{ray} \qquad
-o_{ray} : {ray시작점} \qquad
-d_{ray}: ray방향벡터 
+r = o_{ray} + t \cdot d_{ray} \qquad
+o_{ray} : \text{ray 시작점} \qquad
+d_{ray}: \text{ray 방향벡터}
 \end{aligned}
 $$
 
@@ -162,7 +162,7 @@ $$
 - 이렇게 cannonical space에서의 ray 식을 구할 수 있게 된다.
 $$
 \begin{aligned}
-r_{canonical} = o_{c} + t*grdu
+r_{canonical} = o_{c} + t \cdot \mathbf{grdu}
 \end{aligned}
 $$
 
