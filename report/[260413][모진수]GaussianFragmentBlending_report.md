@@ -160,6 +160,7 @@ $$
 
 
 - 이렇게 cannonical space에서의 ray 식을 구할 수 있게 된다.
+
 $$
 \begin{aligned}
 r_{canonical} = o_{c} + t \cdot \mathbf{grdu}
@@ -174,7 +175,8 @@ $$
 
 여기서 우리는 t1과 t2를 구하는 것이 목적이고 이를 위해서는 canonical space의 구가 반지름이 1이라는 점을 이용해 구하게 된다. 즉 $||y(t)||$ 가 1이 되는 지점 두 포인트가 t1, t2가 되는 것이다.
 
-- 이를 구하는 수식은 아래와 같다. 
+- 이를 구하는 수식은 아래와 같다.
+
 $$
 \|\mathbf{o}_c + t \cdot \mathbf{d}_c\|^2 = 1
 $$
