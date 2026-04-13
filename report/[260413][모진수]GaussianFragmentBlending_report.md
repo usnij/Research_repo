@@ -283,8 +283,11 @@ $$
 - 이 정규화 상수가 `erf_tot`이다. Gaussian bell-curve의 적분은 erf 함수로 표현된다.
 
 $$
+\begin{aligned}
 \mathrm{erf\_tot} = \mathrm{erf}\!\left(\sqrt{\frac{\mathrm{disc}}{2}}\right), \qquad \mathrm{disc} = 1 - \mathrm{perp}^2
+\end{aligned}
 $$
+
 
 ---
 
