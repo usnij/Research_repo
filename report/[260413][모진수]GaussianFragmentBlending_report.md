@@ -82,19 +82,19 @@ GFB의 목표: Ray가 Gaussian 타원체를 통과하는 구간 전체에 걸쳐
 
 ### 3.1  Ray-Gaussian 교차 계산 (Canonical Space를 통해 t1 t2계산)
 
-- t1 t2는 ray와 gaussian이 hit 되었을 경우에만 찾게 된다. 즉 compositing단계에서 구하는 것이다.
+- t1 t2는 ray와 gaussian이 hit 되었을 경우에만 구한다. 
 
 - t1 t2는 ray와 gaussian이 만나는 출발점과 끝점에 해당하는데 gaussian의 경우 경계가 뚜렷한 하나의 도형이 아니라 무한히 퍼져있는 연속 분포 형태이기 때문에 임계값을 설정해서 출발점과 끝점으로 보는 구조로 설계했다. 
 
-- t1 t2는 기존에 구해지는 hitT를 구하는 식을 통해 구할 수 있다. 
+- t1 t2는 기존에 구해지는 hitT를 구하는 식을 응용해 구하게 된다. 
 
 
-- hitT는 ray-gaussian중점 사이의 가장 가까운 지점의 t값이며 이는 cannonical space로 변환해서 구하게 된다.
+- 여기서 hitT는 ray-gaussian 중점 사이의 가장 가까운 지점의 t값이며 이는 cannonical space로 변환해서 구하게 된다.
 
 
 #### Canonical Space 변환
-- : 타원체 형태인 3D Gaussian은 gaussian의 중심을 원점으로 하며 반지름이 1인 구로 transform을 함 
-- 이 transform을 동일하게 ray에도 수행한다. 여기서 ray에 대한 함수도 변하며 변한 함수값은 gaussian의 중심과 ray사이에 대한 거리를 의미하게 된다. 수식으로 보면 아래와 같다. 
+- Canonical Space 변환 : 타원체 형태인 3D Gaussian은 gaussian의 중심을 원점으로 하며 반지름이 1인 구로 transform을 함 
+- 이 transform을 동일하게 ray에도 수행한다. 여기서 ray에 대한 함수도 변하며 변한 함수값은 gaussian의 중심과 ray사이에 대한 거리를 의미하게 된다. 
 ---
 먼저 ray의 식은 아래와 같다.
 
@@ -120,7 +120,9 @@ $
 
 추가적인 구현전에 이미 구현되어 있는 부분에 대해 아래 수식을 통해 먼저 설명한다.
 
-- 아래 수식은 Gaussian center - ray 사이의 최단 거리에 해당하는 t값을 구하는 위 그림상에서 t*에 해당하는 위치를 구하는 과정이다. 
+- 아래 수식은 Gaussian center - ray 사이의 최단 거리에 해당하는 부분의 t값(hitT)를 구하는 과정이며 위 그림상에서 t*에 해당하는 위치를 구하는 과정이다.
+
+- 여기서 변수 hitT와 t*는 동일하다.  
 
 ---
 $$
@@ -135,7 +137,7 @@ R^T &= \text{quaternionToMatrix}(q) & &\text{(world} \to \text{canonical 회전)
 \end{aligned}
 $$
 
-- 여기서 $giscl$, $R^T$ 는 cannonical space 변환 행렬에 해당한다. 
+- 여기서 $giscl$, $R^T$ 는 cannonical space 변환 행렬에 해당한다. 즉 타원체를 구로 변환해주는 행렬이다.
 
 ---
 $$
@@ -150,7 +152,8 @@ $$
 
 
 $$
-- 먼저 translation 해준다. 즉 cannonical space는 원점이 gaussian center이므로 그에 맞춘 것이다.
+- 먼저 ray_origin에 대한 수식은 위와 같고 처음에는 translation이다. 즉 cannonical space는 원점이 gaussian center이므로 그에 맞춘 것이다.
+- 그리고 위에서 정의한 $giscl$, $R^T$ 를 곱해준다. 
 
 ---
 $$
@@ -162,7 +165,7 @@ $$
 \mathbf{d}_c &= \mathbf{grdu} / \text{grduLen} & &\text{(canonical에서의 ray방향 단위 벡터)}
 \end{aligned}
 $$
-- $d_{ray}$ - ray를 구성하는 방향벡터에 대해 cannonical space로 변환해주는 과정이다. 
+- $d_{ray}$ 는 ray를 구성하는 방향벡터이고 이에 대해서도 cannonical space로 변환해주는 과정이다. 
 ---
 
 
@@ -174,13 +177,13 @@ r_{canonical} = o_{c} + t*grdu
 \end{aligned}
 $$
 
-- $r_{canonical}$를 $y(t)$라고 하고 이 함수의 출력은 t에 대한 cannoinical space상의 ray의 한 점을 의미하며 이는 하나의 벡터로 볼 수 있다. 
-- 또한 canonical space는 원점이 gaussian center이므로 **$||y(t)||$는 t에 대해 gaussian center와의 거리가 된다.**
-- 즉 $||y(t)||$ 가 최소가 되는 t가 위 그림에서의 peak* 이다.
+- $r_{canonical}$를 $y(t)$라고 보면 이 함수의 출력은 t에 대한 cannoinical space상의 ray의 한 점을 의미하며 이는 하나의 벡터로 볼 수 있고 
+- canonical space는 원점이 gaussian center이므로 **$||y(t)||$는 t에 대해 gaussian center와의 거리의 크기가 된다.**
+- 즉 $||y(t)||$ 가 최소가 되는 t가 위 그림에서의 t* 이다.
 
 
 
-여기서 우리는 t1과 t2를 구하는 것이 목적이고 이를 위해서는 canonical space의 구가 반지름이 1이라는 점으로 구하게 된다. 즉 $||y(t)||$ 가 1이 되는 지점 두 포인트가 t1, t2가 되는 것이다.
+여기서 우리는 t1과 t2를 구하는 것이 목적이고 이를 위해서는 canonical space의 구가 반지름이 1이라는 점을 이용해 구하게 된다. 즉 $||y(t)||$ 가 1이 되는 지점 두 포인트가 t1, t2가 되는 것이다.
 
 - 이를 구하는 수식은 아래와 같다. 
 $$
@@ -206,6 +209,8 @@ $$
 - canonical space의 모습을 간단하게 2D에서 생각해보면 아래와 같다. 
 
 ![alt text](report_image_모진수/260413/image-3.png)
+
+- 해당 그림에서 2번 과정이 perp를 이용해 바닐라gut에서는 hitT점을 구하고 끝이며 이후 과정은 추가적으로 구현하게 되는 것이다. 
 
 - 위의 식에서 t1,t2를 구할 때 `grduLen`로 나누는 이유는 canonical space에서 intersection을 풀 때 단위벡터 `d_c` 기준으로 풀었기 때문이다
 
@@ -348,6 +353,7 @@ $$
 |------|:-----------:|:---:|------|
 | `grduLen` | ✓ | ✓ | canonical ray 방향의 크기. 바닐라에서 hitT 계산에 사용. GFB에서는 bell-curve 폭 결정에도 사용 |
 | `galpha` (alpha) | ✓ | ✓ | t* 지점의 점 질량 alpha. GFB에서 sigma0의 입력값 |
+| `perp` | ✓ | ✓ | ray에 수직인 canonical 거리벡터. `perp = o_c - h·d_c` |
 | `hitT` (t*) | ✓ | ✓ | ray-Gaussian 최근접점의 t. |
 | `disc` | ✗ | ✓ | t1,t2 계산을 위해 추가, ray-단위구 교차 판별식. `1 - perp²` (음수이면 미교차) |
 | `t1`, `t2` | ✗ | ✓ | ray가 Gaussian 단위구에 들어오고 나가는 t값. GFB에서 추가 |
@@ -355,6 +361,7 @@ $$
 | `erf_tot` | ✗ | ✓ | `[t1,t2]` 전체 bell-curve 면적. `erf(sqrt(disc/2))`로 계산 |
 | `erf_seg` | ✗ | ✓ | 각 세그먼트 내 bell-curve 면적. `erf_tot`로 나눠서 contrib 비율 결정 |
 | `contrib` | ✗ | ✓ | 한 세그먼트에서 Gaussian i의 광학 깊이 기여량. `sigma0 * erf_seg / erf_tot` |
+
 
 - 바닐라에서 GFB로 가면서 핵심적으로 추가된 부분은 **t1, t2 기반의 세그먼트 분할**과 **erf 적분을 통한 연속 alpha 분포**다. galpha, grduLen 같은 기존 변수는 그대로 재활용한다.
 
