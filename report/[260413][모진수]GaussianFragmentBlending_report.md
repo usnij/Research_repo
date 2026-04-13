@@ -201,7 +201,7 @@ $$
 $$
 t_1 = \frac{-h - sq}{\text{grduLen}}, \qquad
 t_2 = \frac{-h + sq}{\text{grduLen}}, \qquad
-t^* = \frac{t_1 + t_2}{2} = \frac{-h}{\text{grduLen}}
+t^{\ast} = \frac{t_1 + t_2}{2} = \frac{-h}{\text{grduLen}}
 $$
 
 
@@ -245,7 +245,7 @@ $$
 - 바닐라 3DGUT는 Gaussian 하나를 t* 한 지점의 point mass로 처리한다. GFB는 이를 확장해서 $[t_1, t_2]$ 전 구간에 걸쳐 $\rho(t)$를 bell-curve로 분포시킨다.
 
 $$
-\rho(t) \propto \exp\!\left(-\frac{1}{2} \cdot \mathrm{grduLen}^2 \cdot (t - t^*)^2\right)
+\rho(t) \propto \exp\!\left(-\frac{1}{2} \cdot \mathrm{grduLen}^2 \cdot (t - t^{\ast})^2\right)
 $$
 
 - 이때 $[t_1, t_2]$ 전체를 적분한 총 광학 깊이 $\sigma_0$는 galpha로부터 결정된다. 이는 3.2.1에서 설명한다.
@@ -395,7 +395,7 @@ $$
 - `erf_seg`는 t_star와 grduLen에 의존하고, `erf_tot`는 disc에 의존한다.
 
 $$
-\frac{\partial \mathcal{L}}{\partial \mathrm{erf\_seg}} \to \frac{\partial \mathcal{L}}{\partial t^*,\; \mathrm{grduLen}}
+\frac{\partial \mathcal{L}}{\partial \mathrm{erf\_seg}} \to \frac{\partial \mathcal{L}}{\partial t^{\ast},\; \mathrm{grduLen}}
 \qquad
 \frac{\partial \mathcal{L}}{\partial \mathrm{erf\_tot}} \to \frac{\partial \mathcal{L}}{\partial \mathrm{disc}} \to \frac{\partial \mathcal{L}}{\partial h,\; \mathbf{o}_c}
 $$
