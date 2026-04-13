@@ -101,16 +101,11 @@ GFB의 목표: Ray가 Gaussian 타원체를 통과하는 구간 전체에 걸쳐
 
 $$
 \begin{aligned}
-r = o_{ray} + t*d_{ray}
+r = o_{ray} + t*d_{ray} \qquad
+o_{ray} : {ray시작점} \qquad
+d_{ray}: ray방향벡터 
 \end{aligned}
 $$
-$
-o_{ray} : {ray시작점} 
-$
-
-$
-d_{ray}: ray방향벡터 
-$
 
 ![alt text](report_image_모진수/260413/fig_ray_ellipse.png)
 
