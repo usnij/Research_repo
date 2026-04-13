@@ -320,7 +320,7 @@ $$
 
 - k-buffer 내에 여러 Gaussian이 있을 때 같은 t 위치에서 여러 Gaussian의 $\rho(t)$가 동시에 기여한다.
 
-- 각 Gaussian의 t1, t2를 모아서 정렬하면 entry/exit point들이 자연스럽게 세그먼트의 경계를 만들어낸다. 2개의 Gaussian이 겹치는 경우 아래처럼 3개의 구간이 생긴다.
+- 각 Gaussian의 t1, t2를 모아서 정렬하면 t1/t2들이 자연스럽게 세그먼트의 경계를 만들어낸다. 2개의 Gaussian이 겹치는 경우 아래 그림처럼 3개의 구간이 생긴다.
 
 
 - 각 세그먼트에서 활성화된 Gaussian들의 contrib를 합산한다.
