@@ -1,4 +1,4 @@
-[260409][모진수]GaussianFragmentBlending_report.md 레포트의 내용과 서술형식에 대한 교수님 피드백을 바탕으로 현재 설계되어있는 부분에 대해 레포트 재작성
+[[260409]report.md](https://github.com/usnij/Research_repo/blob/main/report/%5B260409%5D%5B%EB%AA%A8%EC%A7%84%EC%88%98%5DGaussianFragmentBlending_report.md) 내용과 서술형식에 대한 교수님 피드백을 바탕으로 현재 설계되어있는 부분에 대해 레포트 재작성
 
 
 ## 목차
