@@ -144,13 +144,8 @@ $$
 \begin{aligned}
 \boldsymbol{\delta} &= \mathbf{o}_\text{ray} - \boldsymbol{\mu} & &\text{(ray origin} \to \text{Gaussian center)} \\[6pt]
 \mathbf{ro} &= R^T \cdot \boldsymbol{\delta} & &\text{(canonical ray origin)} \\[6pt]
-
 \mathbf{o}_c &= \mathbf{giscl} \odot \mathbf{ro} & &\text{(scale 적용)} \\[6pt]
-
-
 \end{aligned}
-
-
 $$
 - 먼저 ray_origin에 대한 수식은 위와 같고 처음에는 translation이다. 즉 cannonical space는 원점이 gaussian center이므로 그에 맞춘 것이다.
 - 그리고 위에서 정의한 $giscl$, $R^T$ 를 곱해준다. 
@@ -158,7 +153,6 @@ $$
 ---
 $$
 \begin{aligned}
-
 \mathbf{rd} &= R^T \cdot \mathbf{d}_\text{ray} & &\text{(canonical ray 방향, 미정규화)} \\
 \mathbf{grdu} &= \mathbf{giscl} \odot \mathbf{rd} & &\text{(scale 적용)} \\
 \text{grduLen} &= \|\mathbf{grdu}\| & &\text{(grdu 벡터 크기)} \\
