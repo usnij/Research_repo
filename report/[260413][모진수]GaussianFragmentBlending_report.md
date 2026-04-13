@@ -15,7 +15,6 @@
     - [Canonical Space 변환](#canonical-space-변환)
   - [3.2  \[t1,t2\] 알파 프로파일](#32--t1t2-알파-프로파일)
     - [3.2.1 단일 Gaussian — \[t1,t2\] 구간 적분](#321-단일-gaussian--t1t2-구간-적분)
-- [$$](#)
     - [3.2.2 겹쳐있을 때 처리](#322-겹쳐있을-때-처리)
 - [4. 바닐라 3DGUT vs GFB — 추가 구현 변수 정리](#4-바닐라-3dgut-vs-gfb--추가-구현-변수-정리)
 - [5. Backward](#5-backward)
@@ -299,6 +298,7 @@ $$
 \mathrm{erf\_seg} = \mathrm{erf}\!\left(\frac{(s_\mathrm{hi} - t^*) \cdot \mathrm{grduLen}}{\sqrt{2}}\right) - \mathrm{erf}\!\left(\frac{(s_\mathrm{lo} - t^*) \cdot \mathrm{grduLen}}{\sqrt{2}}\right)
 \end{aligned}
 $$
+
 ---
  
 $$
