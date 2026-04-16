@@ -230,13 +230,13 @@ $$
 - 즉 ray가 구간 $[s_i, s_j]$를 통과할 때 alpha는 아래와 같다.
 
 $$
-\alpha(s_i,\, s_j) = 1 - \exp\!\left(-\int_{s_i}^{s_j} \rho(t)\, dt\right)
+\alpha(s_i,\, s_j) = 1 - \exp\left(-\int_{s_i}^{s_j} \rho(t)\, dt\right)
 $$
 
 - 바닐라 3DGUT는 Gaussian 하나를 t* 한 지점의 point mass로 처리한다. GFB는 이를 확장해서 $[t_1, t_2]$ 전 구간에 걸쳐 $\rho(t)$를 bell-curve로 분포시킨다.
 
 $$
-\rho(t) \propto \exp\!\left(-\frac{1}{2} \cdot \mathrm{grduLen}^2 \cdot (t - t^{\ast})^2\right)
+\rho(t) \propto \exp\left(-\frac{1}{2} \cdot \mathrm{grduLen}^2 \cdot (t - t^{\ast})^2\right)
 $$
 
 - 이때 $[t_1, t_2]$ 전체를 적분한 총 광학 깊이 $\sigma_0$는 galpha로부터 결정된다. 이는 3.2.1에서 설명한다.
@@ -250,7 +250,7 @@ $$
 - 바닐라 3DGUT에서 ray가 Gaussian을 hit하면 `galpha`를 계산한다. t* 지점의 밀도를 단일 지점에서 평가한 alpha값이며 canonical space에서 수직거리 `perp`를 이용한다.
 
 $$
-\mathrm{galpha} = 1 - \exp\!\left(-\mathrm{density} \cdot \exp\!\left(-\frac{1}{2}\,\mathrm{perp}^2\right)\right)
+\mathrm{galpha} = 1 - \exp\left(-\mathrm{density} \cdot \exp\left(-\frac{1}{2}\,\mathrm{perp}^2\right)\right)
 $$
 
 ---
@@ -330,7 +330,7 @@ $$
 $$
 
 $$
-\alpha_\mathrm{seg} = 1 - \exp\!\left(-\mathrm{contrib\_total}\right)
+\alpha_\mathrm{seg} = 1 - \exp\left(-\mathrm{contrib\_total}\right)
 $$
 
 - 겹치는 구간에서 contrib가 합산되기 때문에 두 Gaussian이 겹치는 구간에서 더 높은 불투명도가 나온다.
