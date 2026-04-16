@@ -218,7 +218,7 @@ $$
 - 현재 위치 t의 밀도 $\rho(t)$만큼 빛이 흡수된다는 의미다. 이를 풀면:
 
 $$
-T(t) = \frac{I(t)}{I(t_1)} = \exp\!\left(-\int_{t_1}^{t} \rho(s)\, ds\right) = e^{-\tau(t)}, \qquad \tau(t) = \int_{t_1}^{t} \rho(s)\, ds
+T(t) = \frac{I(t)}{I(t_1)} = \exp\left(-\int_{t_1}^{t} \rho(s)\, ds\right) = e^{-\tau(t)}, \qquad \tau(t) = \int_{t_1}^{t} \rho(s)\, ds
 $$
 
 - $T(t)$는 투과율(Transmittance)이고 $\tau(t)$는 광학 깊이(optical depth)다. alpha는 흡수된 비율이므로:
