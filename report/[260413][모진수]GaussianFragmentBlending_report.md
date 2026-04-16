@@ -470,3 +470,18 @@ $$
 
 - Vanilla 3DGUT (32.352 dB)는 GFB v3 (28.358 dB)보다 전반적으로 선명하다. GFB는 bell-curve 가정으로 인한 smearing 효과로 detail이 흐려지는 경향이 있다.
 - 특히 잎사귀 같이 얇고 겹치는 구조에서 차이가 두드러진다.
+
+---
+
+### High-Frequency Detail 확대 비교
+
+꽃/잎사귀처럼 고주파 디테일이 밀집된 영역을 crop하여 렌더링 품질 차이를 비교한다.
+
+| Frame | Vanilla 3DGUT (crop) | GFB v3 (crop) | GT (crop) |
+|-------|---------------------|---------------|-----------|
+| 15 | ![](report_image_모진수/260413/frame15_crop_vanilla_render.png) | ![](report_image_모진수/260413/frame15_crop_gfb_render.png) | ![](report_image_모진수/260413/frame15_crop_GT.png) |
+| 20 | ![](report_image_모진수/260413/frame20_crop_vanilla_render.png) | ![](report_image_모진수/260413/frame20_crop_gfb_render.png) | ![](report_image_모진수/260413/frame20_crop_GT.png) |
+
+- **Frame 15**: 배경 창문을 향한 앵글에서 꽃가지가 밀집된 영역. GFB v3는 개별 꽃봉오리의 경계가 vanilla에 비해 뭉개지는 현상이 관찰된다.
+- **Frame 20**: 정면에서 찍힌 보라 천 위 bonsai. 꽃 클러스터 사이의 가지/틈새 디테일에서 GFB가 blurring을 만들어낸다.
+- 두 경우 모두 GT 대비 GFB의 bell-curve density 가정이 얇은 구조 경계에서 smearing을 유발함을 확인할 수 있다.
