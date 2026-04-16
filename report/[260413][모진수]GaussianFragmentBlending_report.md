@@ -286,7 +286,7 @@ $$
 
 $$
 \begin{aligned}
-\mathrm{erf\_seg} = \mathrm{erf}\left(\frac{(s_\mathrm{hi} - t^{\ast}) \cdot \mathrm{grduLen}}{\sqrt{2}}\right) - \mathrm{erf}\!\left(\frac{(s_\mathrm{lo} - t^{\ast}) \cdot \mathrm{grduLen}}{\sqrt{2}}\right)
+\mathrm{erf\_seg} = \mathrm{erf}\left(\frac{(s_\mathrm{hi} - t^{\ast}) \cdot \mathrm{grduLen}}{\sqrt{2}}\right) - \mathrm{erf}\left(\frac{(s_\mathrm{lo} - t^{\ast}) \cdot \mathrm{grduLen}}{\sqrt{2}}\right)
 \end{aligned}
 $$
 
