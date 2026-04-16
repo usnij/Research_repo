@@ -275,7 +275,7 @@ $$
 
 $$
 \begin{aligned}
-\mathrm{erf\_tot} = \mathrm{erf}\!\left(\sqrt{\frac{\mathrm{disc}}{2}}\right), \qquad \mathrm{disc} = 1 - \mathrm{perp}^2
+\mathrm{erf\_tot} = \mathrm{erf}\left(\sqrt{\frac{\mathrm{disc}}{2}}\right), \qquad \mathrm{disc} = 1 - \mathrm{perp}^2
 \end{aligned}
 $$
 
@@ -286,7 +286,7 @@ $$
 
 $$
 \begin{aligned}
-\mathrm{erf\_seg} = \mathrm{erf}\!\left(\frac{(s_\mathrm{hi} - t^{\ast}) \cdot \mathrm{grduLen}}{\sqrt{2}}\right) - \mathrm{erf}\!\left(\frac{(s_\mathrm{lo} - t^{\ast}) \cdot \mathrm{grduLen}}{\sqrt{2}}\right)
+\mathrm{erf\_seg} = \mathrm{erf}\left(\frac{(s_\mathrm{hi} - t^{\ast}) \cdot \mathrm{grduLen}}{\sqrt{2}}\right) - \mathrm{erf}\!\left(\frac{(s_\mathrm{lo} - t^{\ast}) \cdot \mathrm{grduLen}}{\sqrt{2}}\right)
 \end{aligned}
 $$
 
