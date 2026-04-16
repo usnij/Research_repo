@@ -335,6 +335,26 @@ $$
 
 - 겹치는 구간에서 contrib가 합산되기 때문에 두 Gaussian이 겹치는 구간에서 더 높은 불투명도가 나온다.
 
+두 Gaussian A, B가 겹치는 세그먼트에 대한 compositing을 정리하면:
+
+$$
+\tau_\text{seg} = \text{contrib}_A + \text{contrib}_B
+$$
+
+$$
+\alpha_\text{seg} = 1 - \exp(-\tau_\text{seg})
+$$
+
+$$
+\mathbf{c}_\text{seg} = \frac{\text{contrib}_A \cdot \mathbf{c}_A + \text{contrib}_B \cdot \mathbf{c}_B}{\tau_\text{seg}}
+$$
+
+$$
+\text{color} \mathrel{+}= T \cdot \alpha_\text{seg} \cdot \mathbf{c}_\text{seg}, \qquad T \mathrel{\times}= (1 - \alpha_\text{seg})
+$$
+
+color_seg는 각 Gaussian의 광학 깊이 기여량(contrib)을 가중치로 한 color 평균이다. contrib가 클수록 해당 Gaussian의 색이 더 강하게 반영된다.
+
 ![alt text](report_image_모진수/260413/image-4.png)
 
 위 그림은 두 Gaussian A(넓음)와 B(좁음)가 겹치는 경우다. 상단은 각각의 bell-curve이고 하단은 front-to-back 방향으로 누적되는 alpha다. entry/exit point 4개가 3개의 세그먼트을 만들고 각 구간에서 활성화된 Gaussian만 contrib에 기여한다. seg2(A+B 겹치는 구간)에서는 두 contrib가 합산되어 alpha가 더 빠르게 올라간다. 세 구간을 front-to-back으로 합성한 최종 누적 alpha는 $1 - (1-0.618)(1-0.209)(1-0.232) = 0.952$다.
