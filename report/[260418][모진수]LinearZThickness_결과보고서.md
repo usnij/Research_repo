@@ -192,31 +192,37 @@ ds=2, LZT K=16 기준. Baseline은 K=4 no-overlap run.
 
 ## 4. 이미지 비교
 
-패널 구성 (상단): **GT / Baseline / LZT K=16 / Error map K=16 (×4)**
-패널 구성 (하단): 에러맵의 가장 큰 빨간 영역 확대 (GT / Baseline / LZT K=16 / Error zoom)
-에러맵: 빨강=큰 오차, 초록=작은 오차. 노란 점선 박스 = 확대 영역 표시.
+렌더 이미지: **GT / Baseline / LZT K=16**
+에러 이미지: **Error Baseline (×4) / Error LZT K=16 (×4)** + 빨간 영역 확대
+에러맵: 빨강=큰 오차, 초록=작은 오차. 노란 점선 박스 = 확대 영역.
 
 ---
 
 **View 27** — LZT WIN (Baseline: 31.03 dB → LZT K=16: 33.80 dB, **+2.77 dB**)
 
-![View 27 K=16](report_image_모진수/260418/view_27_k16.jpg)
+![View 27 renders](report_image_모진수/260418/view_27_renders.jpg)
 
-배경에 자전거 바퀴가 있는 측면 뷰. 에러맵에서 자전거 바퀴살 영역에 선형 빨간 패치. Baseline은 K=4 버퍼가 bonsai Gaussian으로 채워져 자전거 배경 정보 소실. LZT K=16은 overlap group을 SFM merge로 처리해 자전거 색을 보존, 크게 개선.
+![View 27 errors](report_image_모진수/260418/view_27_errors.jpg)
+
+배경에 자전거 바퀴가 있는 측면 뷰. Baseline 에러맵에서 자전거 바퀴살 영역에 큰 빨간 패치. K=4 버퍼가 bonsai Gaussian으로 채워져 자전거 배경 정보가 소실된 것이 원인. LZT K=16은 overlap group을 SFM merge로 처리해 자전거 색을 보존, 크게 개선.
 
 ---
 
 **View 35** — LZT WIN (Baseline: 28.45 dB → LZT K=16: 29.27 dB, **+0.82 dB**)
 
-![View 35 K=16](report_image_모진수/260418/view_35_k16.jpg)
+![View 35 renders](report_image_모진수/260418/view_35_renders.jpg)
 
-자전거가 배경에 크게 보이는 반측면 뷰. 테이블 보 표면의 패턴 영역에서 에러 집중. LZT K=16이 Baseline보다 개선되나, 테이블 보 패턴의 고주파 detail은 여전히 남아 있음.
+![View 35 errors](report_image_모진수/260418/view_35_errors.jpg)
+
+자전거가 배경에 크게 보이는 반측면 뷰. 테이블 보 표면의 패턴 영역에서 에러 집중. LZT K=16이 Baseline보다 개선되나 고주파 detail은 여전히 남아 있음.
 
 ---
 
 **View 17** — LZT WIN (Baseline: 32.59 dB → LZT K=16: 33.33 dB, **+0.74 dB**)
 
-![View 17 K=16](report_image_모진수/260418/view_17_k16.jpg)
+![View 17 renders](report_image_모진수/260418/view_17_renders.jpg)
+
+![View 17 errors](report_image_모진수/260418/view_17_errors.jpg)
 
 가전제품 배경의 상단 내려보기 뷰. Baseline에서 배경 구조물 주변에 에러 집중. LZT K=16이 배경 overlap을 보다 정교하게 처리해 개선.
 
@@ -224,7 +230,9 @@ ds=2, LZT K=16 기준. Baseline은 K=4 no-overlap run.
 
 **View 28** — LZT LOSE (Baseline: 33.45 dB → LZT K=16: 33.36 dB, **−0.09 dB**)
 
-![View 28 K=16](report_image_모진수/260418/view_28_k16.jpg)
+![View 28 renders](report_image_모진수/260418/view_28_renders.jpg)
+
+![View 28 errors](report_image_모진수/260418/view_28_errors.jpg)
 
 흰 벽 배경, bonsai 정면 뷰. 차이가 미미(−0.09 dB). 정면 뷰에서는 꽃 depth 겹침으로 chain이 커져 linear 근사 오차가 누적되나, K=16 버퍼가 충분히 커서 큰 손실 없이 처리됨.
 
@@ -232,9 +240,11 @@ ds=2, LZT K=16 기준. Baseline은 K=4 no-overlap run.
 
 **View 00** — LZT LOSE (Baseline: 24.64 dB → LZT K=16: 24.29 dB, **−0.35 dB**)
 
-![View 00 K=16](report_image_모진수/260418/view_00_k16.jpg)
+![View 00 renders](report_image_모진수/260418/view_00_renders.jpg)
 
-자전거·bonsai·가구가 복잡하게 얽힌 뷰. 전체 최저 PSNR. Baseline도 낮고 LZT K=16도 소폭 낮음. 다양한 depth에서 과도한 overlap chain이 형성되어 linear 근사 오차가 누적된 것으로 추정.
+![View 00 errors](report_image_모진수/260418/view_00_errors.jpg)
+
+자전거·bonsai·가구가 복잡하게 얽힌 뷰. 전체 최저 PSNR. 다양한 depth에서 과도한 overlap chain이 형성되어 linear 근사 오차가 누적된 것으로 추정.
 
 ---
 
