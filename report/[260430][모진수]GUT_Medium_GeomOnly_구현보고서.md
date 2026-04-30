@@ -10,13 +10,13 @@
 
 $$\sigma_{0,\text{peak}} = -\log(1 - \text{opacity})$$
 
-$$\sigma_{0,\text{med}} = \sigma_{0,\text{peak}} \times \text{erf\_tot}$$
+$$\sigma_{0,\text{med}} = \sigma_{0,\text{peak}} \times \mathrm{erf}_{tot}$$
 
 $$\alpha = 1 - \exp(-\sigma_{0,\text{med}})$$
 
 - $\text{opacity}$ : Gaussian의 학습 파라미터 (2D 표면 모델에서 유래)
-- $\text{erf\_tot}$ : ray-ellipsoid 교차 구간 $[t_1, t_2]$의 적분 비율 $= \mathrm{erf}(\sqrt{\text{disc}/2})$
-- $\sigma_{0,\text{med}}$ : $\text{erf\_tot}$로 변조된 광학 깊이(optical depth)
+- $\mathrm{erf}_{tot}$ : ray-ellipsoid 교차 구간 $[t_1, t_2]$의 적분 비율 $= \mathrm{erf}(\sqrt{\text{disc}/2})$
+- $\sigma_{0,\text{med}}$ : $\mathrm{erf}_{tot}$로 변조된 광학 깊이(optical depth)
 
 ### 1.2 교수님 미팅 결과 — 근본적 재설계 필요
 
@@ -43,10 +43,10 @@ $$\sigma(t) = \sigma_\text{peak} \cdot \exp\!\left(-\frac{(t - t^*)^2}{2\,\sigma
 
 canonical 공간으로 변환하면 적분이 erf 형태로 닫힌해를 가진다:
 
-$$\tau = \int_{t_1}^{t_2} \sigma(t)\, dt = \sigma_\text{peak} \cdot \sigma_\text{world} \cdot \sqrt{2\pi} \cdot \text{erf\_tot} = \frac{\sqrt{2\pi}\;\text{erf\_tot}}{\text{grduLen}}$$
+$$\tau = \int_{t_1}^{t_2} \sigma(t)\, dt = \sigma_\text{peak} \cdot \sigma_\text{world} \cdot \sqrt{2\pi} \cdot \mathrm{erf}_{tot} = \frac{\sqrt{2\pi}\;\mathrm{erf}_{tot}}{\text{grduLen}}$$
 
 - $\text{grduLen} = \|\Sigma^{-1/2} d\|$ : canonical 공간에서의 ray 속도 (scale + rotation에만 의존); $\sigma_\text{world} = 1/\text{grduLen}$
-- $\text{erf\_tot} = \mathrm{erf}(\sqrt{\text{disc}/2})$ : $[t_1, t_2]$ 구간이 전체 가우시안 적분 중 차지하는 비율
+- $\mathrm{erf}_{tot} = \mathrm{erf}(\sqrt{\text{disc}/2})$ : $[t_1, t_2]$ 구간이 전체 가우시안 적분 중 차지하는 비율
 - geometry-only 모델에서 $\sigma_\text{peak} = 1$로 고정 → opacity 파라미터 불필요
 
 Beer-Lambert에 의한 **alpha**:
@@ -58,7 +58,7 @@ $$\alpha = 1 - \exp(-\tau)$$
 | 항목 | 기존 모델 | 새 모델 |
 |------|-----------|---------|
 | 학습 파라미터 | opacity, scale, rotation, pos | scale, rotation, pos (opacity 불사용) |
-| alpha 결정 요인 | $\text{opacity} \times \text{erf\_tot}$ | geometry만 ($\sqrt{2\pi} \cdot \text{erf\_tot} / \text{grduLen}$) |
+| alpha 결정 요인 | $\text{opacity} \times \mathrm{erf}_{tot}$ | geometry만 ($\sqrt{2\pi} \cdot \mathrm{erf}_{tot} / \text{grduLen}$) |
 | 물리적 근거 | opacity = 2D surface 개념 | Beer-Lambert + 3D Gaussian density |
 | 발산 위험 | opacity→1 시 $\sigma_{0,\text{peak}} \to \infty$ | $\tau \leq 20$으로 clamp (안정적) |
 
@@ -86,7 +86,7 @@ if constexpr (Params::Medium) {
 변경점:
 - `opacity` 파라미터 참조 제거
 - $\sigma_\text{peak} = \exp(-(1-\text{disc})/2)$ 직접 계산 (geometry에서 유도)
-- $\tau = \sigma_\text{peak} \cdot \sqrt{2\pi} \cdot \text{erf\_tot} / \text{grduLen}$
+- $\tau = \sigma_\text{peak} \cdot \sqrt{2\pi} \cdot \mathrm{erf}_{tot} / \text{grduLen}$
 - $\tau \leq 20$ clamp 추가 (수치 안정성)
 
 ---
@@ -97,25 +97,27 @@ if constexpr (Params::Medium) {
 
 $$\alpha = 1 - e^{-\tau} \quad\Rightarrow\quad \frac{\partial \mathcal{L}}{\partial \tau} = \frac{\partial \mathcal{L}}{\partial \alpha} \cdot (1 - \alpha)$$
 
-$$\tau = \sigma_\text{peak} \cdot \frac{\sqrt{2\pi} \cdot \text{erf\_tot}}{\text{grduLen}}$$
+$$\tau = \sigma_\text{peak} \cdot \frac{\sqrt{2\pi} \cdot \mathrm{erf}_{tot}}{\text{grduLen}}$$
 
-$$\frac{\partial \mathcal{L}}{\partial \,\text{erf\_tot}} = \frac{\partial \mathcal{L}}{\partial \tau} \cdot \frac{\sigma_\text{peak}\,\sqrt{2\pi}}{\text{grduLen}}$$
+$$\frac{\partial \mathcal{L}}{\partial \,\mathrm{erf}_{tot}} = \frac{\partial \mathcal{L}}{\partial \tau} \cdot \frac{\sigma_\text{peak}\,\sqrt{2\pi}}{\text{grduLen}}$$
 
-$$\frac{\partial \mathcal{L}}{\partial \,\text{grduLen}} = \frac{\partial \mathcal{L}}{\partial \tau} \cdot \left(-\frac{\sigma_\text{peak}\,\sqrt{2\pi}\cdot\text{erf\_tot}}{\text{grduLen}^2}\right)$$
+$$\frac{\partial \mathcal{L}}{\partial \,\text{grduLen}} = \frac{\partial \mathcal{L}}{\partial \tau} \cdot \left(-\frac{\sigma_\text{peak}\,\sqrt{2\pi}\cdot\mathrm{erf}_{tot}}{\text{grduLen}^2}\right)$$
 
-$$\frac{\partial \mathcal{L}}{\partial \,\sigma_\text{peak}} = \frac{\partial \mathcal{L}}{\partial \tau} \cdot \frac{\sqrt{2\pi}\cdot\text{erf\_tot}}{\text{grduLen}}$$
+$$\frac{\partial \mathcal{L}}{\partial \,\sigma_\text{peak}} = \frac{\partial \mathcal{L}}{\partial \tau} \cdot \frac{\sqrt{2\pi}\cdot\mathrm{erf}_{tot}}{\text{grduLen}}$$
 
 $$\sigma_\text{peak} = \exp\!\left(-\frac{1-\text{disc}}{2}\right) \quad\Rightarrow\quad \frac{\partial \mathcal{L}}{\partial \,\text{disc}}\bigg|_{\sigma} = \frac{\partial \mathcal{L}}{\partial \,\sigma_\text{peak}} \cdot \frac{\sigma_\text{peak}}{2}$$
 
 ### 4.2 Gradient 전파 경로
 
-**$\partial\mathcal{L}/\partial\,\text{erf\_tot}$ → disc chain:**
+**$\partial\mathcal{L}/\partial\,\mathrm{erf}_{tot}$ → disc chain:**
 
-$$\text{erf\_tot} = \mathrm{erf}(v),\quad v = \sqrt{\text{disc}/2} \quad\Rightarrow\quad \frac{\partial\mathcal{L}}{\partial\,\text{disc}}\bigg|_{\text{erf}} = \frac{\partial\mathcal{L}}{\partial\,\text{erf\_tot}} \cdot \frac{2}{\sqrt{\pi}} \cdot \frac{e^{-v^2}}{4v}$$
+$$\mathrm{erf}_{tot} = \mathrm{erf}(v),\quad v = \sqrt{\text{disc}/2} \quad\Rightarrow\quad \frac{\partial\mathcal{L}}{\partial\,\text{disc}}\bigg|_{\text{erf}} = \frac{\partial\mathcal{L}}{\partial\,\mathrm{erf}_{tot}} \cdot \frac{2}{\sqrt{\pi}} \cdot \frac{e^{-v^2}}{4v}$$
 
 $$\text{disc} = h^2 - (\|o_c\|^2 - 1) \quad\Rightarrow\quad \partial o_c,\; \partial d_c$$
 
-$$d_c = \frac{\text{grdu}}{\|\text{grdu}\|} \quad\Rightarrow\quad \partial\,\text{grdu} \text{ (via safe\_normalize\_bw)}$$
+$$d_c = \frac{\text{grdu}}{\|\text{grdu}\|} \quad\Rightarrow\quad \partial\,\text{grdu}$$
+
+(`safe_normalize_bw` chain rule)
 
 **$\partial\mathcal{L}/\partial\,\text{grduLen}$ → grdu norm chain:**
 
@@ -127,11 +129,13 @@ $$\text{grdu} = \text{giscl} \odot (R^\top d) \quad\Rightarrow\quad \partial\,\t
 
 $$o_c = \text{giscl} \odot (R^\top (\mathbf{o} - \mathbf{p})) \quad\Rightarrow\quad \partial\,\text{giscl},\; \partial(R^\top(\mathbf{o}-\mathbf{p}))$$
 
-$$\partial\,\text{scale}_i = -\text{giscl}_i^2 \cdot \partial\,\text{giscl}_i, \qquad \partial\mathbf{p} = -R\,\partial(R^\top(\mathbf{o}-\mathbf{p})), \qquad \partial q \text{ via matmul\_bw\_quat}$$
+$$\partial\,\text{scale}_i = -\text{giscl}_i^2 \cdot \partial\,\text{giscl}_i, \qquad \partial\mathbf{p} = -R\,\partial(R^\top(\mathbf{o}-\mathbf{p})), \qquad \partial q$$
+
+(`matmul_bw_quat` via quaternion chain)
 
 **주요 변경점:**
 - density gradient (`addDensityGradAtomic`) 완전 제거
-- $\partial\,\text{erf\_tot}$, $\partial\,\text{grduLen}$, $\partial\,\sigma_\text{peak}$ 세 경로 추가
+- $\partial\,\mathrm{erf}_{tot}$, $\partial\,\text{grduLen}$, $\partial\,\sigma_\text{peak}$ 세 경로 추가
 - $K_{2D}$ gradient 억제(`alphaGrad=0`, `transGrad=0` 전달)는 유지
 
 ### 4.3 구현 코드 (`gutKBufferRenderer.cuh`, ~line 265)
