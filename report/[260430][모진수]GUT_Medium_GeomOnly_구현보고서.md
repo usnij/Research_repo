@@ -198,13 +198,13 @@ if constexpr (Params::Medium) {
 > **좌**: GT (Ground Truth) &nbsp;|&nbsp; **중**: Baseline (k=0, 30k, PSNR=32.352 dB) &nbsp;|&nbsp; **우**: Medium Geom-Only (k=4, 30k, PSNR=29.628 dB)
 
 **View A**
-![View A 비교](report_image_모진수/medium_compare_00000.png)
+![View A 비교](report_image_모진수/260430/medium_compare_00000.png)
 
 **View B**
-![View B 비교](report_image_모진수/medium_compare_00013.png)
+![View B 비교](report_image_모진수/260430/medium_compare_00013.png)
 
 **View C**
-![View C 비교](report_image_모진수/medium_compare_00027.png)
+![View C 비교](report_image_모진수/260430/medium_compare_00027.png)
 
 ---
 
