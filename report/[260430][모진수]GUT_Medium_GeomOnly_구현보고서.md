@@ -133,10 +133,6 @@ $$\partial\,\text{scale}_i = -\text{giscl}_i^2 \cdot \partial\,\text{giscl}_i, \
 
 (`matmul_bw_quat` via quaternion chain)
 
-**주요 변경점:**
-- density gradient (`addDensityGradAtomic`) 완전 제거
-- $\partial\,\mathrm{erf}_{tot}, \partial\,\text{grduLen}, \partial\,\sigma_\text{peak}$ 세 경로 추가
-- $K_{2D}$ gradient 억제(`alphaGrad=0`, `transGrad=0` 전달)는 유지
 
 ### 4.3 구현 코드 (`gutKBufferRenderer.cuh`, ~line 265)
 
