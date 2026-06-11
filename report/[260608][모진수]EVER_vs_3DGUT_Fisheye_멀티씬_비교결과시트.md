@@ -1,11 +1,34 @@
-# EVER vs 3DGUT — Fisheye 멀티씬 비교 실험 결과 시트
+# Fisheye씬 EVER vs 3DGUT 비교 실험을 통해 향후 연구방향 보고서
 
-**작성일**: 2026-06-08  
-**목적**: EVER(ray tracing)와 3DGUT(rasterization)의 fisheye 데이터셋 3씬에서의 품질·속도 공정 비교
+
+## 1. 3DGUT 논문의 EVER 언급
+
+### 1.1 EVER를 비교 대상으로 포함
+3DGUT 논문(CVPR 2025)은 실험 비교표(pinhole)에 EVER를 직접 포함시킴:
+
+**3DGUT 논문 원본 비교표 (CVPR 2025)**
+
+![3DGUT 논문 비교표 — EVER / 3DGRT / StopThePop / 3DGS 수치 비교](report_image_모진수/EVER_vs_3DGUT/3dgut_paper_table.png)
+
+즉 3DGUT 저자들은 EVER를 "distorted camera(fisheye)를 native하게 지원하는 volumetric ray tracing 방법"으로 설명함.
+
+**그러나 fisheye data에 대해 비교하는 부분에서는 ever와 비교하지 않음**
+
+### 1.2 핀홀 데이터에서는 EVER 포함, Fisheye 데이터에서는 제외
+
+3DGUT 논문의 비교 구조를 보면 명확한 비대칭이 존재한다.
+
+| 평가 데이터 | EVER 포함 여부 |
+|------------|--------------|
+| Table 1 — MipNeRF360 + Tanks&Temples (핀홀) | **포함** |
+| Table 3 — ScanNet++ (Fisheye) | **미포함** |
+
+정작 fisheye 데이터셋(ScanNet++) 평가에서는 EVER와 3DGRT 모두 제외되었으며, 논문 내 어디에도 제외 이유가 명시되어 있지 않다.
+
 
 ---
 
-## 1. 실험 설정 (공통)
+## 2. 실험 설정 (공통)
 
 | 항목 | 값 |
 |------|-----|
@@ -18,9 +41,9 @@
 
 ---
 
-## 2. 씬별 상세 결과
+## 3. 씬별 상세 결과
 
-### 2.1 Alameda ✅
+### 3.1 Alameda ✅
 
 | 지표 | EVER | 3DGUT |
 |------|------|-------|
@@ -30,7 +53,7 @@
 | 학습 시간 | 74.20 min | **15.21 min** |
 | 추론 속도 | ~323 ms/frame | **4.68 ms/frame** |
 
-### 2.2 London ✅
+### 3.2 London ✅
 
 | 지표 | EVER | 3DGUT |
 |------|------|-------|
@@ -38,9 +61,9 @@
 | **SSIM** | **0.801** | 0.777 |
 | **LPIPS** ↓ | **0.331** | 0.417 |
 | 학습 시간 | 65.40 min | **13.66 min** |
-| 추론 속도 | — | **3.99 ms/frame** |
+| 추론 속도 | ~309 ms/frame  | **3.99 ms/frame** |
 
-### 2.3 NYC ✅
+### 3.3 NYC ✅
 
 | 지표 | EVER | 3DGUT |
 |------|------|-------|
@@ -48,11 +71,11 @@
 | **SSIM** | **0.895** | 0.860 |
 | **LPIPS** ↓ | **0.194** | 0.295 |
 | 학습 시간 | 75.83 min | **14.48 min** |
-| 추론 속도 | — | **4.55 ms/frame** |
+| 추론 속도 | ~317 ms/frame  | **4.55 ms/frame** |
 
 ---
 
-## 3. 전체 비교 요약
+## 4. 전체 비교 요약
 
 | 씬 | EVER PSNR | 3DGUT PSNR | **EVER 우위** |
 |---|---|---|---|
@@ -71,7 +94,7 @@
 
 ---
 
-## 4. 해석 및 결론
+## 5. 해석 및 결론
 
 ### 품질
 - **EVER가 전 씬, 전 지표에서 일관되게 우세**
@@ -90,14 +113,14 @@
 
 ---
 
-## 5. 시각적 비교
+## 6. 시각적 비교
 
 이미지 경로: `report_image_모진수/EVER_vs_3DGUT/`  
 각 씬별 3개 대표 프레임 (GT / 3DGUT / EVER 순)
 
 ---
 
-### 5.1 Alameda
+### 6.1 Alameda
 
 **Frame 030**
 
@@ -119,7 +142,7 @@
 
 ---
 
-### 5.2 London
+### 6.2 London
 
 **Frame 030**
 
@@ -141,7 +164,7 @@
 
 ---
 
-### 5.3 NYC (PSNR 차이 가장 큰 씬, EVER +1.74 dB)
+### 6.3 NYC (PSNR 차이 가장 큰 씬, EVER +1.74 dB)
 
 **Frame 020**
 
@@ -163,37 +186,57 @@
 
 ---
 
-## 6. 3DGUT 논문의 EVER 언급
 
-### 6.1 EVER를 비교 대상으로 포함
-3DGUT 논문(CVPR 2025)은 실험 비교표에 EVER를 직접 포함시킴:
 
-> *"we limit our comparison to the original 3DGS and StopThePop as the representative splatting methods, along with **3DGRT and EVER** as volumetric particle tracing methods that natively support distorted cameras and secondary lighting effects."*
+## 7. EVER 논문의 Zip-NeRF 핀홀 결과 (비교 맥락)
 
-즉 3DGUT 저자들은 EVER를 "distorted camera(fisheye)를 native하게 지원하는 volumetric ray tracing 방법"으로 분류하고 직접 비교했음.
+아래는 EVER 논문 Supplementary에 수록된 Zip-NeRF 4씬(alameda, berlin, london, nyc) 씬별 결과다. 이 실험은 **undistorted 핀홀 이미지** 기준이며, 3DGS·StopThePop과 동일 조건 비교다.
 
-### 6.2 3DGUT의 한계로 EVER를 언급
+#### PSNR ↑
+
+| 방법 | berlin | nyc | alameda | london | 평균 |
+|------|--------|-----|---------|--------|------|
+| 3DGS | 26.83 | 26.90 | 24.14 | 25.48 | 25.84 |
+| StopThePop | 26.81 | 27.14 | 24.12 | 25.61 | 25.92 |
+| SMERF | 28.52 | 28.21 | 25.35 | 27.05 | 27.28 |
+| **EVER** | **27.24** | **27.93** | **24.72** | **26.49** | **26.60** |
+| ZipNeRF (offline) | 28.59 | 28.42 | 25.41 | 27.06 | 27.37 |
+
+#### SSIM ↑
+
+| 방법 | berlin | nyc | alameda | london | 평균 |
+|------|--------|-----|---------|--------|------|
+| 3DGS | .899 | .861 | .776 | .830 | .842 |
+| StopThePop | .885 | .844 | .748 | .801 | .819 |
+| SMERF | .887 | .844 | .758 | .829 | .830 |
+| **EVER** | **.900** | **.863** | **.779** | **.837** | **.845** |
+| ZipNeRF (offline) | .891 | .850 | .767 | .835 | .836 |
+
+#### LPIPS ↓
+
+| 방법 | berlin | nyc | alameda | london | 평균 |
+|------|--------|-----|---------|--------|------|
+| 3DGS | .406 | .380 | .441 | .446 | .418 |
+| StopThePop | .402 | .373 | .433 | .438 | .411 |
+| SMERF | .391 | .361 | .416 | .390 | .389 |
+| **EVER** | **.371** | **.337** | **.389** | **.374** | **.368** |
+| ZipNeRF (offline) | .378 | .331 | .387 | .360 | .364 |
+
+핀홀 기준에서도 EVER는 SSIM 전 씬 1위, LPIPS에서 offline ZipNeRF와 동등 수준이다.
+
+
+### 8. 결론: 3DGUT의 한계로 EVER를 언급
 3DGUT 논문 Conclusion에서 overlapping Gaussian 처리 한계를 인정하며 EVER를 미래 방향으로 명시:
 
 > *"as our method still uses a **single point to evaluate each primitive**, it is currently unable to render overlapping Gaussians accurately. Approaches such as **EVER [30] may offer promising directions for addressing this limitation**."*
 
-### 6.3 우리 연구와의 연결
+### 8.1 3DGUT에 EVER렌더링 수식 이식
 
-| 포인트 | 의미 |
-|--------|------|
-| 3DGUT 저자가 overlap 처리 한계를 직접 인정 | 우리가 연구하는 overlap 인식 렌더링이 논문에서도 공인된 문제 |
-| EVER를 해결 방향으로 지목 | EVER의 exact volumetric rendering이 overlap 처리의 정답에 가까운 접근 |
-| 우리 실험(+0.90 dB)과 일치 | EVER 우위가 특히 복잡한 씬(nyc +1.74 dB)에서 크게 나타남 → overlap이 많은 씬일수록 EVER 이점 |
+3DGUT의 파이프라인에 EVER의 exact overlap 렌더링 수식을 이식하면, fisheye 데이터에 대해 두 가지 시나리오가 가능하다:
 
----
+1. **속도 무관, 품질 극대화**: EVER의 exact volumetric rendering을 유지하되 3DGUT의 fisheye camera model(Unscented Transform)을 결합 → EVER 단독보다 fisheye 왜곡 처리가 개선되어 현재 EVER 품질(PSNR +0.90 dB)을 추가로 뛰어넘을 가능성
 
-## 7. 코드 수정 이력 (EVER `ever_training/`)
+2. **EVER보다 빠르고, 3DGUT보다 높은 품질**: GUT의 속도 이점은 어느정도 유지해 EVER(~323 ms)보다 빠른 추론/학습 속도 확보하며 3DGUT 보다 품질 gap(+0.90 dB)을 줄임
 
-| 파일 | 수정 내용 |
-|------|----------|
-| `gaussian_renderer/ever.py` | `from utils import camera_utils_zipnerf` import 추가 |
-| `arguments/__init__.py` | `spawn_cap = -1` 파라미터 추가 |
-| `scene/gaussian_model.py` | `densify_and_clone/explore/prune`에 gradient top-K spawn_cap 구현 |
-| `train.py` | `densify_and_prune()` 호출 시 `spawn_cap=opt.spawn_cap` 전달 |
-| `scene/__init__.py` | `skip_train=True` 시 train 카메라 로딩 skip (render eval OOM 방지) |
-| `metrics.py` | `readImages()`에서 이미지 CPU 유지 (GPU OOM 방지) |
+
+3DGUT 저자 스스로 "single point evaluation로 overlapping Gaussian을 정확히 렌더링할 수 없다"고 인정했고, EVER를 해결 방향으로 명시한 만큼 이 이식은 자연스러운 다음 단계다.
