@@ -68,13 +68,7 @@ SplineState update(
 
 ---
 
-### 역할 — 논문 Eq.4 대응
 
-`update()` 한 번 호출 = **이벤트 하나를 처리** = 논문 Eq.4의 i번째 segment 기여 한 스텝.
-
-$$C = \sum_i c_i \left(1 - e^{-\sigma_i \Delta t_i}\right) \prod_{j<i} e^{-\sigma_j \Delta t_j}$$
-
----
 
 ### PDF 표기 vs 코드 변수 대응
 
@@ -118,7 +112,7 @@ state.drgb += ctrl_pt.dirac           ← σ_total 및 color running sum 갱신
 
 #### 씬 설정
 
-![EVER Overlap 설정](../report_image_모진수/overlap-1.png)
+![EVER Overlap 설정](../report_image_모진수/260618/overlap-1.png)
 
 ---
 
