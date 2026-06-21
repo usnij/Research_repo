@@ -1,0 +1,65 @@
+2026-06-14 13:21:29.009473: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 13:21:29.018020: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-06-14 13:21:29.030432: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-06-14 13:21:29.030468: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2026-06-14 13:21:29.038263: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI AVX_VNNI_INT8 AVX_NE_CONVERT FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 13:21:29.459506: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2026-06-14 13:21:29.832492: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-06-14 13:21:29.882046: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-06-14 13:21:29.883817: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-06-14 13:21:29.909053: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-06-14 13:21:29.910204: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-06-14 13:21:29.911463: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-06-14 13:21:30.037870: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-06-14 13:21:30.039025: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-06-14 13:21:30.039971: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-06-14 13:21:30.040927: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1928] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 7265 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 4070 SUPER, pci bus id: 0000:02:00.0, compute capability: 8.9
+Traceback (most recent call last):
+  File "/home/jinsu/Documents/Github/nerf-keras/make_depth_gif.py", line 286, in <module>
+    make_orbit_gif()
+  File "/home/jinsu/Documents/Github/nerf-keras/make_depth_gif.py", line 273, in make_orbit_gif
+    buf = np.frombuffer(fig2.canvas.tostring_rgb(), dtype=np.uint8).reshape(h2, w2, 3)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FigureCanvasAgg' object has no attribute 'tostring_rgb'. Did you mean: 'tostring_argb'?
+ERROR conda.cli.main_run:execute(142): `conda run python make_depth_gif.py` failed. (See above for error)
+
+[1] Depth map 비교 그림 생성 중...
+  rendering Baseline @ front_top...
+  loaded: baseline
+  rendering +ViewDir @ front_top...
+  loaded: baseline_viewdir
+  rendering +SH2 @ front_top...
+  loaded: baseline_viewdir_sh2
+  rendering +C2F @ front_top...
+  loaded: baseline_viewdir_sh2_c2f
+  rendering +Stratified @ front_top...
+  loaded: baseline_viewdir_sh2_c2f_strat
+  saved → /home/jinsu/Documents/Github/nerf-keras/report_visuals/depth_comparison_front_top.png
+  rendering Baseline @ side_low...
+  loaded: baseline
+  rendering +ViewDir @ side_low...
+  loaded: baseline_viewdir
+  rendering +SH2 @ side_low...
+  loaded: baseline_viewdir_sh2
+  rendering +C2F @ side_low...
+  loaded: baseline_viewdir_sh2_c2f
+  rendering +Stratified @ side_low...
+  loaded: baseline_viewdir_sh2_c2f_strat
+  saved → /home/jinsu/Documents/Github/nerf-keras/report_visuals/depth_comparison_side_low.png
+
+[2] Orbit GIF 생성 중...
+  Baseline: 궤도 렌더링 48프레임...
+  loaded: baseline
+    12/48
+    24/48
+    36/48
+    48/48
+  saved → /home/jinsu/Documents/Github/nerf-keras/report_visuals/orbit_Baseline.gif
+  +Stratified: 궤도 렌더링 48프레임...
+  loaded: baseline_viewdir_sh2_c2f_strat
+    12/48
+    24/48
+    36/48
+    48/48
+  saved → /home/jinsu/Documents/Github/nerf-keras/report_visuals/orbit_Stratified.gif
