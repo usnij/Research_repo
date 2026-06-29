@@ -52,7 +52,7 @@
 | 유효 Gaussian 수 | 315,051 | 212,254 |
 | 학습 시간 (30k iter) | ~42분 | ~9분 |
 
-> **이전 보고서 대비 Gaussian 수 변화:** EVER는 마스크 제거로 배경 Gaussian이 loss penalty를 받아 자연스럽게 pruning되어 670,609 → 315,051로 감소. GUT는 SH3(기본값, 55,169)에서 SH2로 변경 시 Gaussian당 색상 표현력이 낮아져 동일 장면을 표현하기 위해 densification이 더 많이 일어나 212,254로 증가.
+> **이전 보고서 대비 Gaussian 수 변화:** EVER는 배경을 학습에서 제거하기 위해 배경 Gaussian이 loss penalty를 받아 자연스럽게 pruning되어 670,609 → 315,051로 감소. GUT는 SH3(기본값, 55,169)에서 SH2로 변경 시 Gaussian당 색상 표현력이 낮아져 동일 장면을 표현하기 위해 densification이 더 많이 일어나 212,254로 증가.
 
 ### 2.3 렌더링 비교
 
@@ -70,7 +70,7 @@
 
 $$\text{Sphericity} = \frac{s_{\min}}{s_{\max}} \in (0, 1] \quad \text{(1 = 완전한 구, 0 = 완전히 납작한 디스크)}$$
 
-| 지표 | EVER (mask 제거) | GUT |
+| 지표 | EVER  | GUT |
 |---|---|---|
 | 유효 Gaussian 수 | 315,051 | 212,254 |
 | **구형도 평균** | **0.648** | **0.097** |
