@@ -49,9 +49,10 @@
 | 지표 | EVER | GUT (SH2) |
 |---|---|---|
 | **Test PSNR** | **34.7 dB** | **33.8 dB** |
-| std PSNR | — | 2.92 |
 | 유효 Gaussian 수 | 315,051 | 212,254 |
 | 학습 시간 (30k iter) | ~42분 | ~9분 |
+
+> **이전 보고서 대비 Gaussian 수 변화:** EVER는 마스크 제거로 배경 Gaussian이 loss penalty를 받아 자연스럽게 pruning되어 670,609 → 315,051로 감소. GUT는 SH3(기본값, 55,169)에서 SH2로 변경 시 Gaussian당 색상 표현력이 낮아져 동일 장면을 표현하기 위해 densification이 더 많이 일어나 212,254로 증가.
 
 ### 2.3 렌더링 비교
 
