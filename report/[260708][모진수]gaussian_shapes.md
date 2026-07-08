@@ -19,14 +19,14 @@
 
 **실제 EVER 프리미티브 (ficus, 같은 시점).** 아래는 위 개념도가 아니라 학습된 EVER 모델의 타원체를 그대로 렌더한 것. 규제에 따라 프리미티브 형태가 실제로 needle→disk→sphere로 바뀐다.
 
+가우시안의 실제 모형을 보기 위해 supersplat에서 확인한 것이여서 렌더링 모델의 차이로 색상의 문제가 있다.
+
 | Needle (λ=0) | Disk (erank) | Sphere (기본 λ=0.1) |
 |---|---|---|
 | ![ever_needle](report_image_모진수/260708/ever_needle.png) | ![ever_disk](report_image_모진수/260708/ever_disk.png) | ![ever_sphere](report_image_모진수/260708/ever_sphere.png) |
 
-*needle은 길쭉한 바늘 타원체, disk는 납작한 원반, sphere는 등방 구가 뚜렷하다.*
+*needle은 길쭉한 타원체, disk는 납작한 원반, sphere는 등방 구가 뚜렷하다.*
 
-**형태 측정 지표 (요약):** 각 가우시안을 **Westin 삼분류**로 needle/disk/sphere 중 하나로 분류
-($c_l=(s_1{-}s_2)/s_1$, $c_p=(s_2{-}s_3)/s_1$, $c_s=s_3/s_1$ 의 argmax). 단일 비율 sphericity($s_{\min}/s_{\max}$)는 needle과 disk를 못 가려 사용하지 않음. (effective rank: 원 Roy & Vetterli 2007 / GS 적용 erank 2406.11672; Westin: 확산텐서 MRI에서 차용.)
 
 ---
 
