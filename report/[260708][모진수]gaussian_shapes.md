@@ -13,7 +13,7 @@
 | **Disk (원반/평면)** | $s_1 \approx s_2 \gg s_3$ | 2D (면) | $\approx 2$ | 두 축은 크고 한 축만 얇음. 납작한 판 |
 | **Sphere (구/등방)** | $s_1 \approx s_2 \approx s_3$ | 3D (부피) | $\approx 3$ | 세 축이 균등. 공 |
 
-![Needle / Disk / Sphere 가우시안 예시](report_image_모진수/260707/gaussian_shapes.png)
+![Needle / Disk / Sphere 가우시안 예시](../report_image_모진수/260707/gaussian_shapes.png)
 
 *세 축 스케일 비율에 따른 실제 타원체 형태 (좌: needle, 중: disk, 우: sphere). 렌더 스크립트: `notes/render_shapes.py`*
 
@@ -90,6 +90,23 @@
 - **sphere를 315k→150k로 반토막 내도 PSNR 거의 불변(34.73→34.69)** → sphere의 진짜 약점은 shape가 아니라 **패널티가 유발한 과densification(개수 낭비)**.
 - 동일 개수에선 **sphere도 정상적 Pareto 지점**(빠름+준수 화질)이고, 오히려 **disk+s₃가 sphere에 열등**(속도 동일, 화질 최저).
 - 따라서 EVER 기본의 실질 개선점은 "shape를 disk로 교체"가 아니라 **개수 통제(spawn_cap)** 일 수 있다.
+
+---
+
+## 4. 시점별 렌더 비교 (같은 포즈, EVER exact / GS raster)
+
+동일 카메라 포즈 8개로 각 모델을 렌더한 비교. 각 그리드: **상단 §2 미통제 / 하단 §3 cap150k**, 열 = shape (EVER needle·disk(erank)·disk(+s₃)·sphere / GS needle·sphere). EVER는 splinerender(exact 볼류메트릭), GS는 rasterizer, 배경 검정 통일.
+
+![pose1](report_image_모진수/260708/pose1.png)
+![pose2](report_image_모진수/260708/pose2.png)
+![pose3](report_image_모진수/260708/pose3.png)
+![pose4](report_image_모진수/260708/pose4.png)
+![pose5](report_image_모진수/260708/pose5.png)
+![pose6](report_image_모진수/260708/pose6.png)
+![pose7](report_image_모진수/260708/pose7.png)
+![pose8](report_image_모진수/260708/pose8.png)
+
+> 모델별 원본 렌더·ply는 `Desktop/0708/<모델태그>/` 에 정리됨 (원본 ply 1개 + 8포즈 png).
 
 ---
 
