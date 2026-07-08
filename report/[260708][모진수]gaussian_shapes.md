@@ -17,6 +17,14 @@
 
 *세 축 스케일 비율에 따른 실제 타원체 형태 (좌: needle, 중: disk, 우: sphere). 렌더 스크립트: `notes/render_shapes.py`*
 
+**실제 EVER 프리미티브 (ficus, 같은 시점).** 아래는 위 개념도가 아니라 학습된 EVER 모델의 타원체를 그대로 렌더한 것. 규제에 따라 프리미티브 형태가 실제로 needle→disk→sphere로 바뀐다.
+
+| Needle (λ=0) | Disk (erank) | Sphere (기본 λ=0.1) |
+|---|---|---|
+| ![ever_needle](report_image_모진수/260708/ever_needle.png) | ![ever_disk](report_image_모진수/260708/ever_disk.png) | ![ever_sphere](report_image_모진수/260708/ever_sphere.png) |
+
+*needle은 길쭉한 바늘 타원체, disk는 납작한 원반, sphere는 등방 구가 뚜렷하다.*
+
 **형태 측정 지표 (요약):** 각 가우시안을 **Westin 삼분류**로 needle/disk/sphere 중 하나로 분류
 ($c_l=(s_1{-}s_2)/s_1$, $c_p=(s_2{-}s_3)/s_1$, $c_s=s_3/s_1$ 의 argmax). 단일 비율 sphericity($s_{\min}/s_{\max}$)는 needle과 disk를 못 가려 사용하지 않음. (effective rank: 원 Roy & Vetterli 2007 / GS 적용 erank 2406.11672; Westin: 확산텐서 MRI에서 차용.)
 
@@ -93,9 +101,12 @@
 
 ---
 
-## 4. 시점별 렌더 비교 (같은 포즈, EVER exact / GS raster)
+## 4. 시점별 렌더 비교 (§3 cap150k, 같은 포즈)
 
-동일 카메라 포즈 8개로 각 모델을 렌더한 비교. 각 그리드: **상단 §2 미통제 / 하단 §3 cap150k**, 열 = shape (EVER needle·disk(erank)·disk(+s₃)·sphere / GS needle·sphere). EVER는 splinerender(exact 볼류메트릭), GS는 rasterizer, 배경 검정 통일.
+**§3(개수통제 150k)** 모델들을 동일 카메라 포즈 8개로 렌더한 비교. 각 그리드 = 6개 모델(EVER needle·disk(erank)·disk(+s₃)·sphere / GS needle·sphere), 같은 시점. EVER는 splinerender(exact 볼류메트릭), GS는 rasterizer, 배경 검정 통일.
+(§2 미통제 및 모델별 원본은 `Desktop/0708/<모델태그>/` 폴더 참고.)
+
+**관찰**: shape별(needle/disk/sphere) 렌더는 **거의 구분 안 됨** — appearance가 shape에 둔감하다는 정량결과와 일치. 눈에 띄는 차이는 오히려 **EVER(부드러움) vs GS(선명함)** 렌더러 차이.
 
 ![pose1](report_image_모진수/260708/pose1.png)
 ![pose2](report_image_모진수/260708/pose2.png)
