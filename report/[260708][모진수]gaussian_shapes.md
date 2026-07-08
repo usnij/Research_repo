@@ -13,7 +13,7 @@
 | **Disk (원반/평면)** | $s_1 \approx s_2 \gg s_3$ | 2D (면) | $\approx 2$ | 두 축은 크고 한 축만 얇음. 납작한 판 |
 | **Sphere (구/등방)** | $s_1 \approx s_2 \approx s_3$ | 3D (부피) | $\approx 3$ | 세 축이 균등. 공 |
 
-![Needle / Disk / Sphere 가우시안 예시](../report_image_모진수/260707/gaussian_shapes.png)
+![Needle / Disk / Sphere 가우시안 예시](report_image_모진수/260707/gaussian_shapes.png)
 
 *세 축 스케일 비율에 따른 실제 타원체 형태 (좌: needle, 중: disk, 우: sphere). 렌더 스크립트: `notes/render_shapes.py`*
 
