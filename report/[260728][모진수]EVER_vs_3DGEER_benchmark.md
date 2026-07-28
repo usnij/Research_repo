@@ -1,0 +1,159 @@
+# EVER vs 3DGEER — Gaussian 개수에 따른 성능 비교 
+
+## 1. 실험 동기
+
+3DGEER 논문(ICLR 2026)은 MipNeRF360에서 EVER 27.51 dB / 3DGEER 27.76 dB, 렌더링 속도 36 FPS vs 327 FPS를 보고한다. 그러나 **두 방법을 Gaussian 개수 축에서 비교한 자료는 어느 논문에도 없다.**
+
+이 빈칸이 중요한 이유는 Celarek et al. (CGF 2025)의 결과 때문이다. 그 논문은 NeRF-synthetic에서 primitive 수를 4k~1M으로 훑으며, **정확한 볼륨 적분이 저개수에서는 유리하지만 10만 개 부근에서 근사 기반 방식에 역전당한다**는 것을 보였다. EVER는 정확한 볼륨 적분(상수밀도 타원체 + 이벤트 기반), 3DGEER는 근사(maximum-response + 타일)에 해당하므로, **그 법칙이 두 SOTA 사이에서도 성립하는지**가 자연스러운 질문이 된다.
+
+본 실험은 그 질문에 답하기 위해 개수를 통제한 비교를 수행한다.
+
+---
+
+## 2. 실험 설정
+
+| 항목 | 값 |
+|---|---|
+| 씬 | bicycle, bonsai (MipNeRF360) / train, truck (Tanks&Temples) |
+| 해상도 | `-r 8` 통일 |
+| 학습 | 30,000 iteration, `--eval` |
+| 개수 | 25k / 50k / 120k / SfM / 2×SfM / 기본설정 |
+| 하드웨어 | RTX 4070 SUPER (12 GB), CUDA 11.8 |
+| 지표 | PSNR, SSIM, LPIPS (모두 `metrics.py` 기준), FPS (테스트 뷰 평균 렌더 시간) |
+
+필요한 가우시안 갯수는 씬마다 다르기 때문에 sfm포인트를 기준으로 잡았고 적은 갯수부터 많은 갯수 그리고 기본 설정까지 비교했다.
+
+씬별 SfM 포인트 수는 bicycle 54,275 / bonsai 206,613 / train 182,686 / truck 136,029이다.
+
+### 2.1 개수 통제 방법
+
+두 저장소 모두 `spawn_cap`(총 primitive 상한, gradient 상위 K개만 증식)을 사용한다. EVER 쪽은 기존에 구현되어 있었고, **3DGEER에는 동일 로직을 이식**했다(`_limit_by_slots`, clone → 슬롯 재계산 → split 순서, split은 순증 N−1 반영).
+
+초기 SfM 포인트가 목표 개수를 초과하는 경우 `slots = max(0, cap − 현재) = 0`이 되어 상한이 무의미해지므로, **초기 포인트를 목표 개수로 무작위 서브샘플링**한다(3DGEER `--init_points` 신규 추가, EVER `--init_num_pts` 기존 기능).
+
+---
+
+
+
+## 3. 개수 통제 결과
+
+### bicycle
+
+| 개수 | EVER PSNR | 3DGEER PSNR | EVER FPS | 3DGEER FPS |
+|---|---|---|---|---|
+| 25k | 23.44 | **23.81** | 252 | **341** |
+| 50k | 24.10 | **24.62** | 250 | **345** |
+| 54k | 24.19 | **24.64** | 245 | **357** |
+| 108k | 24.99 | **25.33** | 192 | **316** |
+| 120k | 25.13 | **25.48** | 192 | **319** |
+| max(3M) | **27.10** | 26.64 | 48 | **73** |
+
+### bonsai
+
+| 개수 | EVER PSNR | 3DGEER PSNR | EVER FPS | 3DGEER FPS |
+|---|---|---|---|---|
+| 25k | 26.94 | **27.30** | **541** | 333 |
+| 50k | 28.52 | **29.31** | **464** | 320 |
+| 120k | 29.97 | **31.20** | **328** | 269 |
+| 206k | 30.64 | **32.20** | **325** | 206 |
+| 413k | 31.28 | **32.92** | **232** | 176 |
+| max(3M) | 32.24 | **33.44** | **67** | 63 |
+
+### train
+
+| 개수 | EVER PSNR | 3DGEER PSNR | EVER FPS | 3DGEER FPS |
+|---|---|---|---|---|
+| 25k | 20.90 | **22.54** | **802** | 324 |
+| 50k | 21.38 | **22.78** | **1043** | 258 |
+| 120k | 21.68 | **22.92** | **837** | 168 |
+| 182k | 21.71 | **22.70** | **785** | 126 |
+| 365k | 22.22 | **22.42** | **499** | 85 |
+| max(3M) | **22.32** | 21.70 | **154** | 27 |
+
+### truck
+
+| 개수 | EVER PSNR | 3DGEER PSNR | EVER FPS | 3DGEER FPS |
+|---|---|---|---|---|
+| 25k | 25.23 | **27.15** | **855** | 321 |
+| 50k | 25.69 | **27.30** | **879** | 258 |
+| 120k | 26.08 | **27.05** | **803** | 176 |
+| 136k | 26.09 | **26.95** | **777** | 165 |
+| 272k | **26.42** | 26.11 | **410** | 133 |
+| max(3M) | **26.19** | 25.13 | **133** | 35 |
+
+
+---
+
+## 5. 기본 설정 비교
+
+개수 통제와 별개로, 각 방법을 저자 설정대로 실행한 결과다.
+
+- **3DGEER**: `scripts/train_ph.sh`와 동일 (`--densify_grad_threshold 0.002`, `--camera_model PINHOLE`, reset 3000, 상한 없음)
+- **EVER**: 저장소 기본값 + `--spawn_cap 3000000` (VRAM 제약)
+
+| 씬 | 방법 | PSNR | SSIM | LPIPS | Gaussian | FPS | 학습(분) |
+|---|---|---|---|---|---|---|---|
+| **bonsai** | 3DGEER | **33.17** | **0.969** | **0.035** | **1,664,326** | **120.7** | 19 |
+| | EVER | 32.24 | 0.962 | 0.048 | 2,463,292 | 67.4 | 34 |
+| **train** | 3DGEER | **22.89** | **0.897** | **0.089** | **1,477,971** | 55.7 | 20 |
+| | EVER | 22.32 | 0.895 | 0.098 | 1,997,496 | **153.5** | 24 |
+| **truck** | 3DGEER | 25.96 | 0.945 | **0.045** | **1,537,614** | 60.3 | 19 |
+| | EVER | **26.19** | **0.948** | 0.047 | 1,902,300 | **133.4** | 24 |
+| bicycle | 3DGEER | 26.64 | 0.831| 0.139| 2,771,331|67 |37 |
+| | EVER | 27.10 | 0.847 | 0.137 | 2,626,379 | 48.4 | 42 |
+
+
+6. 결론
+
+bicycle 씬 제외하고 3DGEER가 앞서는 것을 확인할 수 있다. 특히 이 실험의 경우 ever에 맞춰서 돌렸다고 볼 수도 있는데 이는 ever의 특성에 맞춰 저해상도 씬으로 돌렸기 때문이다. 그렇기 때문에 속도 차이도 별로 안나는 것을 확인할 수 있다.
+그럼에도 GEER가 좀 더 정량지표에서 앞서는 것을 확인 할 수 있다. 
+
+---
+
+## 7. 정성 비교 (테스트 뷰 렌더)
+
+3장 개수 통제 실험과 동일한 개수 축(25k / 50k / 120k / SfM / 2×SfM / 기본설정 max)으로, 각 씬의 동일 테스트 뷰를 EVER와 3DGEER로 렌더한 결과다. 이미지 순서는 3장 정량표의 행 순서와 동일하다. 모든 이미지는 `-r 8`이다.
+
+### 7.1 bicycle
+
+| 개수 | EVER | 3DGEER |
+|---|---|---|
+| 25k | ![bicycle EVER 25k](report_image_모진수/260728/bicycle_ever_25000_r8.jpg) | ![bicycle 3DGEER 25k](report_image_모진수/260728/bicycle_geer_25000_r8.jpg) |
+| 50k | ![bicycle EVER 50k](report_image_모진수/260728/bicycle_ever_50000_r8.jpg) | ![bicycle 3DGEER 50k](report_image_모진수/260728/bicycle_geer_50000_r8.jpg) |
+| SfM (54k) | ![bicycle EVER SfM](report_image_모진수/260728/bicycle_ever_sfm_r8.jpg) | ![bicycle 3DGEER SfM](report_image_모진수/260728/bicycle_geer_sfm_r8.jpg) |
+| 2×SfM (108k) | ![bicycle EVER 2xSfM](report_image_모진수/260728/bicycle_ever_sfm2_r8.jpg) | ![bicycle 3DGEER 2xSfM](report_image_모진수/260728/bicycle_geer_sfm2_r8.jpg) |
+| 120k | ![bicycle EVER 120k](report_image_모진수/260728/bicycle_ever_120000_r8.jpg) | ![bicycle 3DGEER 120k](report_image_모진수/260728/bicycle_geer_120000_r8.jpg) |
+| max (3M) | ![bicycle EVER max](report_image_모진수/260728/bicycle_ever_max_r8.jpg) | ![bicycle 3DGEER max](report_image_모진수/260728/bicycle_geer_max_r8.jpg) |
+
+### 7.2 bonsai
+
+| 개수 | EVER | 3DGEER |
+|---|---|---|
+| 25k | ![bonsai EVER 25k](report_image_모진수/260728/bonsai_ever_25000_r8.jpg) | ![bonsai 3DGEER 25k](report_image_모진수/260728/bonsai_geer_25000_r8.jpg) |
+| 50k | ![bonsai EVER 50k](report_image_모진수/260728/bonsai_ever_50000_r8.jpg) | ![bonsai 3DGEER 50k](report_image_모진수/260728/bonsai_geer_50000_r8.jpg) |
+| 120k | ![bonsai EVER 120k](report_image_모진수/260728/bonsai_ever_120000_r8.jpg) | ![bonsai 3DGEER 120k](report_image_모진수/260728/bonsai_geer_120000_r8.jpg) |
+| SfM (206k) | ![bonsai EVER SfM](report_image_모진수/260728/bonsai_ever_sfm_r8.jpg) | ![bonsai 3DGEER SfM](report_image_모진수/260728/bonsai_geer_sfm_r8.jpg) |
+| 2×SfM (413k) | ![bonsai EVER 2xSfM](report_image_모진수/260728/bonsai_ever_sfm2_r8.jpg) | *(3DGEER 2×SfM 렌더 없음)* |
+| max (3M) | ![bonsai EVER max](report_image_모진수/260728/bonsai_ever_max_r8.jpg) | ![bonsai 3DGEER max](report_image_모진수/260728/bonsai_geer_max_r8.jpg) |
+
+### 7.3 train
+
+| 개수 | EVER | 3DGEER |
+|---|---|---|
+| 25k | ![train EVER 25k](report_image_모진수/260728/train_ever_25000_r8.jpg) | ![train 3DGEER 25k](report_image_모진수/260728/train_geer_25000_r8.jpg) |
+| 50k | ![train EVER 50k](report_image_모진수/260728/train_ever_50000_r8.jpg) | ![train 3DGEER 50k](report_image_모진수/260728/train_geer_50000_r8.jpg) |
+| 120k | ![train EVER 120k](report_image_모진수/260728/train_ever_120000_r8.jpg) | ![train 3DGEER 120k](report_image_모진수/260728/train_geer_120000_r8.jpg) |
+| SfM (182k) | ![train EVER SfM](report_image_모진수/260728/train_ever_sfm_r8.jpg) | ![train 3DGEER SfM](report_image_모진수/260728/train_geer_sfm_r8.jpg) |
+| 2×SfM (365k) | ![train EVER 2xSfM](report_image_모진수/260728/train_ever_sfm2_r8.jpg) | ![train 3DGEER 2xSfM](report_image_모진수/260728/train_geer_sfm2_r8.jpg) |
+| max (3M) | ![train EVER max](report_image_모진수/260728/train_ever_max_r8.jpg) | ![train 3DGEER max](report_image_모진수/260728/train_geer_max_r8.jpg) |
+
+### 7.4 truck
+
+| 개수 | EVER | 3DGEER |
+|---|---|---|
+| 25k | ![truck EVER 25k](report_image_모진수/260728/truck_ever_25000_r8.jpg) | ![truck 3DGEER 25k](report_image_모진수/260728/truck_geer_25000_r8.jpg) |
+| 50k | ![truck EVER 50k](report_image_모진수/260728/truck_ever_50000_r8.jpg) | ![truck 3DGEER 50k](report_image_모진수/260728/truck_geer_50000_r8.jpg) |
+| 120k | ![truck EVER 120k](report_image_모진수/260728/truck_ever_120000_r8.jpg) | ![truck 3DGEER 120k](report_image_모진수/260728/truck_geer_120000_r8.jpg) |
+| SfM (136k) | ![truck EVER SfM](report_image_모진수/260728/truck_ever_sfm_r8.jpg) | ![truck 3DGEER SfM](report_image_모진수/260728/truck_geer_sfm_r8.jpg) |
+| 2×SfM (272k) | ![truck EVER 2xSfM](report_image_모진수/260728/truck_ever_sfm2_r8.jpg) | ![truck 3DGEER 2xSfM](report_image_모진수/260728/truck_geer_sfm2_r8.jpg) |
+| max (3M) | ![truck EVER max](report_image_모진수/260728/truck_ever_max_r8.jpg) | ![truck 3DGEER max](report_image_모진수/260728/truck_geer_max_r8.jpg) |
