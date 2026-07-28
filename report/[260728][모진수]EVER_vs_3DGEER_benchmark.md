@@ -133,7 +133,7 @@ bicycle 씬 제외하고 3DGEER가 앞서는 것을 확인할 수 있다. 특히
 | 50k | ![bonsai EVER 50k](report_image_모진수/260728/bonsai_ever_50000_r8.jpg) | ![bonsai 3DGEER 50k](report_image_모진수/260728/bonsai_geer_50000_r8.jpg) |
 | 120k | ![bonsai EVER 120k](report_image_모진수/260728/bonsai_ever_120000_r8.jpg) | ![bonsai 3DGEER 120k](report_image_모진수/260728/bonsai_geer_120000_r8.jpg) |
 | SfM (206k) | ![bonsai EVER SfM](report_image_모진수/260728/bonsai_ever_sfm_r8.jpg) | ![bonsai 3DGEER SfM](report_image_모진수/260728/bonsai_geer_sfm_r8.jpg) |
-| 2×SfM (413k) | ![bonsai EVER 2xSfM](report_image_모진수/260728/bonsai_ever_sfm2_r8.jpg) | *(3DGEER 2×SfM 렌더 없음)* |
+| 2×SfM (413k) | ![bonsai EVER 2xSfM](report_image_모진수/260728/bonsai_ever_sfm2_r8.jpg) | ![bonsai 3DGEER SfMx2](report_image_모진수/260728/bonsai_geer_sfm_r8.jpg) |
 | max (3M) | ![bonsai EVER max](report_image_모진수/260728/bonsai_ever_max_r8.jpg) | ![bonsai 3DGEER max](report_image_모진수/260728/bonsai_geer_max_r8.jpg) |
 
 ### 7.3 train
