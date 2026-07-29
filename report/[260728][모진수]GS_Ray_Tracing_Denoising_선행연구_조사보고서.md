@@ -139,17 +139,6 @@ secondary-ray 기반 shadow, reflection, GI denoising 연구는 핵심 연구가
 4. 해당 연구는 fixed-light GS인가, relightable GS인가?
 5. primary ray만 사용하는가, secondary ray를 추가하는가?
 6. rasterization, hybrid association, BVH ray tracing 중 어느 backend를 사용하는가?
-7. 사용자 아이디어인 “블록 중 일부 픽셀만 primary ray를 추적하고 나머지를 복원”하는 구조와 얼마나 직접적으로 일치하는가?
-
-### 2.2 관련성 등급
-
-| 등급 | 정의 |
-|---|---|
-| A — 직접 일치 | sparse/low-resolution primary image sample을 사용하고 3D 정보로 full-resolution 결과를 복원 |
-| B — GS 직접 인접 | GS에서 저해상도 또는 stochastic sample을 사용하지만 샘플링 축이나 보조 정보가 일부 다름 |
-| C — renderer backend | GUT/GEER/EVER/GRT처럼 3D Gaussian 평가 구조를 제공하지만 reconstruction은 없음 |
-| D — 개념 기반 | 전통 ray tracing의 G-buffer-guided denoising, super sampling, temporal reconstruction |
-| E — 범위 밖 비교 | secondary-ray GI, relighting, material decomposition을 위한 확장 파이프라인 |
 
 ---
 
