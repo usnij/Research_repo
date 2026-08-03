@@ -42,20 +42,13 @@
 
 R1 영상의 pixel $p$에 대한 camera ray를
 
-$$
-\mathbf r_p(t)=\mathbf o+t\mathbf d_p
-$$
+$$\mathbf{r}_p(t)=\mathbf{o}+t\mathbf{d}_p$$
 
 라고 하자. 3DGUT는 투영 및 tile culling으로 후보 Gaussian을 얻은 뒤, pixel ray를 기준으로 각 Gaussian의 response를 평가한다. 정렬된 Gaussian의 ray-dependent opacity contribution을 $\alpha_i(p)$, view-dependent color를 $\mathbf c_i(p)$라고 쓰면 front-to-back compositing은
 
-$$
-T_i(p)=\prod_{j<i}\left(1-\alpha_j(p)\right),
-$$
+$$T_i(p)=\prod_{j<i}\bigl(1-\alpha_j(p)\bigr)$$
 
-$$
-\mathbf C_{\mathrm{full}}(p)
-=\sum_i T_i(p)\alpha_i(p)\mathbf c_i(p)
-$$
+$$\mathbf{C}_{\mathrm{full}}(p)=\sum_i T_i(p)\alpha_i(p)\mathbf{c}_i(p)$$
 
 로 표현할 수 있다. 실제 실험에서는 3DGUT의 기존 CUDA renderer를 변경하지 않고 이 결과를 full-ray reference로 사용했다.
 
@@ -63,17 +56,11 @@ $$
 
 출력 크기가 $H\times W$일 때 anchor grid를
 
-$$
-H_a=\left\lceil\frac H2\right\rceil,\qquad
-W_a=\left\lceil\frac W2\right\rceil
-$$
+$$H_a=\left\lceil\frac{H}{2}\right\rceil,\qquad W_a=\left\lceil\frac{W}{2}\right\rceil$$
 
 로 두고, R2 camera에서
 
-$$
-\widetilde{\mathbf C}(u,v)
-=\operatorname{GUT}\!\left(\mathbf r^{(2)}_{u,v};\,\mathcal G\right)
-$$
+$$\widetilde{\mathbf{C}}(u,v)=\mathrm{GUT}\bigl(\mathbf{r}^{(2)}_{u,v};\mathcal{G}\bigr)$$
 
 를 계산한다. $\mathcal G$는 R1에서 학습된 고정 Gaussian 집합이다. Full path와 sparse path 사이에서 모델 parameter, Gaussian 수, camera pose, shading 설정은 바뀌지 않는다.
 
@@ -82,22 +69,13 @@ $$
 
 Missing pixel은 PyTorch의 bilinear interpolation(`align_corners=False`)으로 복원한다. 출력 pixel $(x,y)$에 대응하는 anchor-grid 연속 좌표를 $(u,v)$라 하고
 
-$$
-u_0=\lfloor u\rfloor,\quad u_1=u_0+1,\qquad
-v_0=\lfloor v\rfloor,\quad v_1=v_0+1
-$$
+$$u_0=\lfloor u\rfloor,\quad u_1=u_0+1,\qquad v_0=\lfloor v\rfloor,\quad v_1=v_0+1$$
 
 로 두면, 복원 색은 인접 네 anchor의 convex combination이다.
 
-$$
-\widehat{\mathbf C}(x,y)
-=\sum_{m\in\{u_0,u_1\}}\sum_{n\in\{v_0,v_1\}}
-w_{mn}(u,v)\widetilde{\mathbf C}(m,n),
-$$
+$$\widehat{\mathbf{C}}(x,y)=\sum_{m=u_0}^{u_1}\sum_{n=v_0}^{v_1}w_{mn}(u,v)\widetilde{\mathbf{C}}(m,n)$$
 
-$$
-\sum_{m,n}w_{mn}=1,\qquad w_{mn}\ge 0.
-$$
+$$\sum_{m,n}w_{mn}=1,\qquad w_{mn}\geq 0$$
 
 현재 복원은 RGB 결과에만 적용된다. Missing ray에서 Gaussian 후보를 다시 탐색하거나, Gaussian response·depth·normal·opacity를 이용해 색을 직접 계산하지 않는다. 즉 “Gaussian 정보를 이용한 denoising”의 최종 구현이 아니라 가장 단순하고 빠른 비교 기준이다.
 
@@ -105,16 +83,11 @@ $$
 
 Full rendering 비용을 resolution-independent 비용과 ray-dependent 비용으로 나누면
 
-$$
-t_{\mathrm{full}}=t_{\mathrm{fixed}}+t_{\mathrm{ray}}(HW)
-$$
+$$t_{\mathrm{full}}=t_{\mathrm{fixed}}+t_{\mathrm{ray}}(HW)$$
 
 로 볼 수 있다. 1/4-ray path는 이상적으로
 
-$$
-t_{\mathrm{sparse}}
-=t'_{\mathrm{fixed}}+t_{\mathrm{ray}}(HW/4)+t_{\mathrm{recon}}
-$$
+$$t_{\mathrm{sparse}}=t'_{\mathrm{fixed}}+t_{\mathrm{ray}}(HW/4)+t_{\mathrm{recon}}$$
 
 가 된다. Ray 수가 4배 감소해도 Gaussian projection, tile duplication/culling, scan/sort, tensor 준비 등의 고정·준고정 비용이 남기 때문에 전체 가속은 4배보다 작다. 실제 측정에서는 2.18–2.45배의 complete-forward 가속을 얻었다.
 
@@ -122,17 +95,11 @@ $$
 
 복원 오차가 visibility boundary에 집중되는지를 보기 위해 full-ray 결과의 depth $z_p$와 opacity $A_p$를 사용해 진단용 mask를 만들었다. 인접 pixel $p,q$에 대해
 
-$$
-e_z(p,q)=\frac{|z_p-z_q|}{\min(z_p,z_q)+\epsilon}
-$$
+$$e_z(p,q)=\frac{\lvert z_p-z_q\rvert}{\min(z_p,z_q)+\epsilon}$$
 
 를 계산하고, 다음 중 하나를 만족하면 boundary로 표시했다.
 
-$$
-e_z(p,q)>0.02
-\quad\text{or}\quad
-|A_p-A_q|>0.10.
-$$
+$$e_z(p,q)>0.02\quad\text{or}\quad\lvert A_p-A_q\rvert>0.10$$
 
 
 ---
@@ -216,7 +183,7 @@ Bilinear 비용은 0.23–0.57 ms로 작았다. 4배 적은 ray가 2.18–2.45�
 
 ### 4.1 Bonsai
 
-| GT | Full rays | 1/4-rays + bilinear | $\lvert\widehat{\mathbf C}-\mathbf C_{\mathrm{full}}\rvert\times5$ |
+| GT | Full rays | 1/4-rays + bilinear | Full-ray 대비 RGB 오차 (5× 확대) |
 |---|---|---|---|
 | ![](report_image_모진수/260803/bonsai_gt.png) | ![](report_image_모진수/260803/bonsai_full_rays.png) | ![](report_image_모진수/260803/bonsai_1quarter_rays_bilinear.png) | ![](report_image_모진수/260803/bonsai_error_x5.png) |
 
@@ -224,7 +191,7 @@ Bilinear 비용은 0.23–0.57 ms로 작았다. 4배 적은 ray가 2.18–2.45�
 
 ### 4.2 Counter
 
-| GT | Full rays | 1/4-rays + bilinear | $\lvert\widehat{\mathbf C}-\mathbf C_{\mathrm{full}}\rvert\times5$ |
+| GT | Full rays | 1/4-rays + bilinear | Full-ray 대비 RGB 오차 (5× 확대) |
 |---|---|---|---|
 | ![](report_image_모진수/260803/counter_gt.png) | ![](report_image_모진수/260803/counter_full_rays.png) | ![](report_image_모진수/260803/counter_1quarter_rays_bilinear.png) | ![](report_image_모진수/260803/counter_error_x5.png) |
 
@@ -232,7 +199,7 @@ Bilinear 비용은 0.23–0.57 ms로 작았다. 4배 적은 ray가 2.18–2.45�
 
 ### 4.3 Room
 
-| GT | Full rays | 1/4-rays + bilinear | $\lvert\widehat{\mathbf C}-\mathbf C_{\mathrm{full}}\rvert\times5$ |
+| GT | Full rays | 1/4-rays + bilinear | Full-ray 대비 RGB 오차 (5× 확대) |
 |---|---|---|---|
 | ![](report_image_모진수/260803/room_gt.png) | ![](report_image_모진수/260803/room_full_rays.png) | ![](report_image_모진수/260803/room_1quarter_rays_bilinear.png) | ![](report_image_모진수/260803/room_error_x5.png) |
 
@@ -240,7 +207,7 @@ Bilinear 비용은 0.23–0.57 ms로 작았다. 4배 적은 ray가 2.18–2.45�
 
 ### 4.4 Stump
 
-| GT | Full rays | 1/4-rays + bilinear | $\lvert\widehat{\mathbf C}-\mathbf C_{\mathrm{full}}\rvert\times5$ |
+| GT | Full rays | 1/4-rays + bilinear | Full-ray 대비 RGB 오차 (5× 확대) |
 |---|---|---|---|
 | ![](report_image_모진수/260803/stump_gt.png) | ![](report_image_모진수/260803/stump_full_rays.png) | ![](report_image_모진수/260803/stump_1quarter_rays_bilinear.png) | ![](report_image_모진수/260803/stump_error_x5.png) |
 
