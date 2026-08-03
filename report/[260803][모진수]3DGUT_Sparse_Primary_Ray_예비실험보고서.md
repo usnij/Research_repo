@@ -46,7 +46,7 @@ $$\mathbf{r}_p(t)=\mathbf{o}+t\mathbf{d}_p$$
 
 라고 하자. 3DGUT는 투영 및 tile culling으로 후보 Gaussian을 얻은 뒤, pixel ray를 기준으로 각 Gaussian의 response를 평가한다. 정렬된 Gaussian의 ray-dependent opacity contribution을 $\alpha_i(p)$, view-dependent color를 $\mathbf c_i(p)$라고 쓰면 front-to-back compositing은
 
-$$T_i(p)=\prod_{j<i}\bigl(1-\alpha_j(p)\bigr)$$
+$$T_i(p)=\prod_{j=1}^{i-1}\left(1-\alpha_j(p)\right)$$
 
 $$\mathbf{C}_{\mathrm{full}}(p)=\sum_i T_i(p)\alpha_i(p)\mathbf{c}_i(p)$$
 
@@ -99,7 +99,7 @@ $$e_z(p,q)=\frac{\lvert z_p-z_q\rvert}{\min(z_p,z_q)+\epsilon}$$
 
 를 계산하고, 다음 중 하나를 만족하면 boundary로 표시했다.
 
-$$e_z(p,q)>0.02\quad\text{or}\quad\lvert A_p-A_q\rvert>0.10$$
+$$e_z(p,q)\gt 0.02\quad\text{or}\quad\lvert A_p-A_q\rvert\gt 0.10$$
 
 
 ---
