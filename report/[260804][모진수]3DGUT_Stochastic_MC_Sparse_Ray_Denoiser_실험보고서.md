@@ -28,7 +28,7 @@
 ### 1.3 연구 범위
 
 - Gaussian 모델은 **고정(frozen)** 이며 Denoiser만 학습한다. 따라서 본 보고서는 학습 가속을 주장하지 않는다.
-- 장면은 Bonsai 단일 장면, R1(2078×3118), vanilla 3DGUT 30,000 iteration 학습 모델(Gaussian 1,137,814개)이다.
+- 장면은 Bonsai 단일 장면, R1(2078×3118), 3DGUT 30,000 iteration 학습 모델(Gaussian 1,137,814개)이다.
 - GPU는 NVIDIA GeForce RTX 4070 SUPER 12 GB이다.
 
 ---
