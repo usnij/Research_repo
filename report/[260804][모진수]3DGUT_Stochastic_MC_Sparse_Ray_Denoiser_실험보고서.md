@@ -39,7 +39,7 @@
 
 원해상도 픽셀 영역을 겹치지 않는 8×8 블록 $B$로 분할하고, 매 iteration마다 각 블록에서 이산 균등하게 픽셀 1개를 독립 추출한다.
 
-$$p_B^{(t)}\sim\operatorname{Uniform}(B)$$
+$$p_B^{(t)}\sim\mathrm{Uniform}(B)$$
 
 경계 블록은 8×8보다 작을 수 있으므로, 픽셀별 손실 $l(p)$의 전체 평균에 대한 Horvitz–Thompson 추정량은 면적 가중을 갖는다.
 
