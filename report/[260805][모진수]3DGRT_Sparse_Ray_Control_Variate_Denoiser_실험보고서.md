@@ -89,17 +89,24 @@
 
 몬테카를로의 고전적 분산 감소 기법인 **제어 변량(control variate)** 구조를 쓴다.
 
-표준 형태는 다음과 같다. $\mu=\mathbb E[f]$를 추정할 때, $f$와 상관이 높고 기댓값을 아는 $g$가 있으면
+표준 형태는 다음과 같다. $\mu=\mathbb{E}[f]$를 추정할 때, $f$와 상관이 높고 기댓값을 아는 $g$가 있으면
 
-$$\hat\mu = \mathbb E[g] + \frac{1}{N}\sum_i\bigl(f_i-g_i\bigr)$$
+$$\hat{\mu} = \mathbb{E}[g] + \frac{1}{N}\sum_i (f_i - g_i)$$
 
 로 쓴다. 두 번째 항의 분산이 $\mathrm{Var}[f]$보다 작으므로 같은 샘플 수로 더 정확해진다. $g$를 잘 고를수록 이득이 크다.
 
 본 구조는 이를 **이미지 공간**에 옮긴 것이다. 추정 대상은 full-ray 영상 $I$이고, 제어 변량(control variate) $B$는 **모든 픽셀에서 값을 아는 저비용 렌더**다(기댓값을 아는 대신 조밀하게 알고 있다). 1/64 위치 $p_i$에서만 정확한 $I(p_i)$를 관측하고, 잔차(residual)를 재구성한다.
 
-$$\boxed{\;\hat I(p) \;=\; \underbrace{B(p)}_{\text{dense, low cost}} \;+\; \underbrace{\mathcal R\bigl[\{\,I(p_i)-B(p_i)\,\}_i\bigr](p)}_{\text{reconstructed from sparse observations}}\;}$$
+$$\hat{I}(p) = B(p) + \mathcal{R}[R](p), \qquad R(p_i) = I(p_i) - B(p_i)$$
 
-$\mathcal R$이 커널 예측 Denoiser다.
+| 기호 | 의미 | 비용 |
+|---|---|---|
+| $I$ | full-ray 영상, 추정 대상 | — |
+| $B$ | 제어 변량(control variate). 모든 픽셀에서 값을 아는 저비용 렌더 | 405,600 ray |
+| $R$ | 잔차. 추적한 1/64 위치 $p_i$ 에서만 정의된다 | 25,350 ray |
+| $\mathcal{R}$ | 성긴 잔차를 조밀한 잔차 장으로 되돌리는 커널 예측 Denoiser | 3.05 ms |
+
+$\mathcal{R}$이 커널 예측 Denoiser다.
 
 #### 이 관점이 예측하는 것
 
