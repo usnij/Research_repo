@@ -97,7 +97,8 @@ $$\hat{\mu} = \mathbb{E}[g] + \frac{1}{N}\sum_i (f_i - g_i)$$
 
 본 구조는 이를 **이미지 공간**에 옮긴 것이다. 추정 대상은 full-ray 영상 $I$이고, 제어 변량(control variate) $B$는 **모든 픽셀에서 값을 아는 저비용 렌더**다(기댓값을 아는 대신 조밀하게 알고 있다). 1/64 위치 $p_i$에서만 정확한 $I(p_i)$를 관측하고, 잔차(residual)를 재구성한다.
 
-$$\hat{I}(p) = B(p) + \mathcal{R}[R](p), \qquad R(p_i) = I(p_i) - B(p_i)$$
+$$\hat{I} = B + \mathcal{R}(R), \qquad R(p_i) = I(p_i) - B(p_i)$$
+
 
 | 기호 | 의미 | 비용 |
 |---|---|---|
