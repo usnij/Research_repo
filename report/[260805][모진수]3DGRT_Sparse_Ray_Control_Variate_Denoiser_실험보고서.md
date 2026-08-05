@@ -309,7 +309,7 @@ $$t \approx \max\bigl(L,\; N_{\text{ray}} \cdot h \cdot c_{\infty}\bigr)$$
 - $L$: 동시에 날아가는 ray가 부족해 노출되는 순회 지연. ray 수와 무관.
 - $c_{\infty}$: 기계가 포화됐을 때의 hit당 처리량. 실측 **0.83 ns/hit**.
 
-곡선의 세 구간이 이 모형과 맞는다.
+
 
 | 구간 | rays | 거동 | 해석 |
 |---|---|---|---|
