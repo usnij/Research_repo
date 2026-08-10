@@ -1,5 +1,25 @@
 # 3DGUT 기반 Sparse Primary-Ray Rendering 예비 실험 보고서
 
+## 요약
+
+**지난 미팅 (2026-07-28)** — 키워드 3줄
+- Ray tracing의 denoising 구조(ray 수를 줄이고 나머지 pixel을 복원) 선행연구 조사
+- 고정 조명 GS에 같은 구조를 적용할 수 있는지 미확인
+- 먼저 추론(inference) 단계에서 상한을 확인하기로
+
+**합의 사항 → 상태**
+- [완료] 1/4-ray 평가 + bilinear 복원의 속도·품질 측정 (4개 씬)
+- [완료] 오차가 어디에 몰리는지 영역별 분리
+- [미착수] GEER·EVER 확장 (사유: GUT 결과 확정 후 진행)
+
+**이번 결과 / 막힌 것 / 다음**
+- R1 출력에서 forward 2.36배, GT PSNR 평균 −0.026 dB (Bonsai/Counter/Room/Stump)
+- 복원 오차는 경계(boundary)에 집중 — smooth 대비 5.0~7.6 dB 낮음, 경계 비율 4.48~18.69%
+- 막힌 것: R2 출력에서는 1.22배, −0.971 dB — 저해상도에서 고정 비용 비중이 커짐 **판단 필요** 🔴
+- 다음: forward만 있는 현 구조에 backward·densification을 붙여 학습 파이프라인 구성
+
+---
+
 > 작성일: 2026-08-03  
 > 현재 단계: **추론 단계의 성능·품질 상한 검증**  
 > 핵심 결과: R1(원해상도)으로 학습한 동일한 3DGUT 모델에서 primary ray를 약 1/4만 평가하고 bilinear로 R1 영상을 복원했을 때, 4개 장면 평균 **2.36배**의 forward 가속과 **-0.026 dB**의 장면 평균 GT-PSNR 변화를 얻었다.
@@ -221,7 +241,7 @@ Bilinear 비용은 0.23–0.57 ms로 작았다. 4배 적은 ray가 2.18–2.45�
 
 
 ### 5.1 학습구조 설계
-현재 구조는 forward만을 설계해 inference 가속인데 이 forward를 통해 backward, densification 를 설계해서 완전한 학습파이프라인 구축이다. 
+현재 구조는 forward만을 설계해 inference 가속인데 이 forward에 backward, densification 를 설계해서 완전한 학습파이프라인 구축이다. 
 
 ### 5.2 복원 방식의 수학적 보완과 적용 해상도
 

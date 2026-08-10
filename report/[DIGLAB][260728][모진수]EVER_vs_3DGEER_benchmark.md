@@ -1,5 +1,22 @@
 # EVER vs 3DGEER — Gaussian 개수에 따른 성능 비교 
 
+## 요약
+
+**지난 미팅 (2026-07-26)** — 키워드 3줄
+- Celarek et al.(CGF 2025)이 primitive 10만 개 부근에서 정확한 볼륨 적분과 근사 방식이 역전됨을 보고
+- EVER는 정확한 적분, 3DGEER는 근사에 해당
+- 두 방법을 Gaussian 개수 축에서 비교한 자료가 어느 논문에도 없음
+
+**합의 사항 → 상태**
+- [완료] Gaussian 개수를 통제한 EVER vs 3DGEER 비교
+
+**이번 결과 / 막힌 것 / 다음**
+- 3DGEER 논문 보고값은 MipNeRF360에서 EVER 27.51 dB / 3DGEER 27.76 dB, 36 FPS vs 327 FPS
+- 개수 축 비교 결과는 본문 6절 참조
+- 다음: 역전 지점이 두 SOTA 사이에서도 나타나는지 판정
+
+---
+
 ## 1. 실험 동기
 
 3DGEER 논문(ICLR 2026)은 MipNeRF360에서 EVER 27.51 dB / 3DGEER 27.76 dB, 렌더링 속도 36 FPS vs 327 FPS를 보고한다. 그러나 **두 방법을 Gaussian 개수 축에서 비교한 자료는 어느 논문에도 없다.**
@@ -107,53 +124,3 @@
 
 bicycle 씬 제외하고 3DGEER가 앞서는 것을 확인할 수 있다. 특히 이 실험의 경우 ever에 맞춰서 돌렸다고 볼 수도 있는데 이는 ever의 특성에 맞춰 저해상도 씬으로 돌렸기 때문이다. 그렇기 때문에 속도 차이도 별로 안나는 것을 확인할 수 있다.
 그럼에도 GEER가 좀 더 정량지표에서 앞서는 것을 확인 할 수 있다. 
-
----
-
-## 7. 정성 비교 (테스트 뷰 렌더)
-
-3장 개수 통제 실험과 동일한 개수 축(25k / 50k / 120k / SfM / 2×SfM / 기본설정 max)으로, 각 씬의 동일 테스트 뷰를 EVER와 3DGEER로 렌더한 결과다. 이미지 순서는 3장 정량표의 행 순서와 동일하다. 모든 이미지는 `-r 8`이다.
-
-### 7.1 bicycle
-
-| 개수 | EVER | 3DGEER |
-|---|---|---|
-| 25k | ![bicycle EVER 25k](report_image_모진수/260728/bicycle_ever_25000_r8.jpg) | ![bicycle 3DGEER 25k](report_image_모진수/260728/bicycle_geer_25000_r8.jpg) |
-| 50k | ![bicycle EVER 50k](report_image_모진수/260728/bicycle_ever_50000_r8.jpg) | ![bicycle 3DGEER 50k](report_image_모진수/260728/bicycle_geer_50000_r8.jpg) |
-| SfM (54k) | ![bicycle EVER SfM](report_image_모진수/260728/bicycle_ever_sfm_r8.jpg) | ![bicycle 3DGEER SfM](report_image_모진수/260728/bicycle_geer_sfm_r8.jpg) |
-| 2×SfM (108k) | ![bicycle EVER 2xSfM](report_image_모진수/260728/bicycle_ever_sfm2_r8.jpg) | ![bicycle 3DGEER 2xSfM](report_image_모진수/260728/bicycle_geer_sfm2_r8.jpg) |
-| 120k | ![bicycle EVER 120k](report_image_모진수/260728/bicycle_ever_120000_r8.jpg) | ![bicycle 3DGEER 120k](report_image_모진수/260728/bicycle_geer_120000_r8.jpg) |
-| max (3M) | ![bicycle EVER max](report_image_모진수/260728/bicycle_ever_max_r8.jpg) | ![bicycle 3DGEER max](report_image_모진수/260728/bicycle_geer_max_r8.jpg) |
-
-### 7.2 bonsai
-
-| 개수 | EVER | 3DGEER |
-|---|---|---|
-| 25k | ![bonsai EVER 25k](report_image_모진수/260728/bonsai_ever_25000_r8.jpg) | ![bonsai 3DGEER 25k](report_image_모진수/260728/bonsai_geer_25000_r8.jpg) |
-| 50k | ![bonsai EVER 50k](report_image_모진수/260728/bonsai_ever_50000_r8.jpg) | ![bonsai 3DGEER 50k](report_image_모진수/260728/bonsai_geer_50000_r8.jpg) |
-| 120k | ![bonsai EVER 120k](report_image_모진수/260728/bonsai_ever_120000_r8.jpg) | ![bonsai 3DGEER 120k](report_image_모진수/260728/bonsai_geer_120000_r8.jpg) |
-| SfM (206k) | ![bonsai EVER SfM](report_image_모진수/260728/bonsai_ever_sfm_r8.jpg) | ![bonsai 3DGEER SfM](report_image_모진수/260728/bonsai_geer_sfm_r8.jpg) |
-| 2×SfM (413k) | ![bonsai EVER 2xSfM](report_image_모진수/260728/bonsai_ever_sfm2_r8.jpg) | ![bonsai 3DGEER SfMx2](report_image_모진수/260728/bonsai_geer_sfm_r8.jpg) |
-| max (3M) | ![bonsai EVER max](report_image_모진수/260728/bonsai_ever_max_r8.jpg) | ![bonsai 3DGEER max](report_image_모진수/260728/bonsai_geer_max_r8.jpg) |
-
-### 7.3 train
-
-| 개수 | EVER | 3DGEER |
-|---|---|---|
-| 25k | ![train EVER 25k](report_image_모진수/260728/train_ever_25000_r8.jpg) | ![train 3DGEER 25k](report_image_모진수/260728/train_geer_25000_r8.jpg) |
-| 50k | ![train EVER 50k](report_image_모진수/260728/train_ever_50000_r8.jpg) | ![train 3DGEER 50k](report_image_모진수/260728/train_geer_50000_r8.jpg) |
-| 120k | ![train EVER 120k](report_image_모진수/260728/train_ever_120000_r8.jpg) | ![train 3DGEER 120k](report_image_모진수/260728/train_geer_120000_r8.jpg) |
-| SfM (182k) | ![train EVER SfM](report_image_모진수/260728/train_ever_sfm_r8.jpg) | ![train 3DGEER SfM](report_image_모진수/260728/train_geer_sfm_r8.jpg) |
-| 2×SfM (365k) | ![train EVER 2xSfM](report_image_모진수/260728/train_ever_sfm2_r8.jpg) | ![train 3DGEER 2xSfM](report_image_모진수/260728/train_geer_sfm2_r8.jpg) |
-| max (3M) | ![train EVER max](report_image_모진수/260728/train_ever_max_r8.jpg) | ![train 3DGEER max](report_image_모진수/260728/train_geer_max_r8.jpg) |
-
-### 7.4 truck
-
-| 개수 | EVER | 3DGEER |
-|---|---|---|
-| 25k | ![truck EVER 25k](report_image_모진수/260728/truck_ever_25000_r8.jpg) | ![truck 3DGEER 25k](report_image_모진수/260728/truck_geer_25000_r8.jpg) |
-| 50k | ![truck EVER 50k](report_image_모진수/260728/truck_ever_50000_r8.jpg) | ![truck 3DGEER 50k](report_image_모진수/260728/truck_geer_50000_r8.jpg) |
-| 120k | ![truck EVER 120k](report_image_모진수/260728/truck_ever_120000_r8.jpg) | ![truck 3DGEER 120k](report_image_모진수/260728/truck_geer_120000_r8.jpg) |
-| SfM (136k) | ![truck EVER SfM](report_image_모진수/260728/truck_ever_sfm_r8.jpg) | ![truck 3DGEER SfM](report_image_모진수/260728/truck_geer_sfm_r8.jpg) |
-| 2×SfM (272k) | ![truck EVER 2xSfM](report_image_모진수/260728/truck_ever_sfm2_r8.jpg) | ![truck 3DGEER 2xSfM](report_image_모진수/260728/truck_geer_sfm2_r8.jpg) |
-| max (3M) | ![truck EVER max](report_image_모진수/260728/truck_ever_max_r8.jpg) | ![truck 3DGEER max](report_image_모진수/260728/truck_geer_max_r8.jpg) |

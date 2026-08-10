@@ -1,5 +1,24 @@
 # 3DGEER: 3D Gaussian Rendering Made Exact and Efficient for Generic Cameras
 
+## 요약
+
+**지난 미팅 (2026-07-22)** — 키워드 3줄
+- overlap·medium 모델 중심으로 진행 중
+- 3DGEER(ICLR 2026)가 generic camera에서 정확·고속을 함께 주장
+- 우리 기여점과 겹치는지 판정 필요
+
+**합의 사항 → 상태**
+- [완료] 3DGEER 합성식·가속 구조 분석
+- [완료] 우리 연구와의 중복 지점 판정
+
+**이번 결과 / 막힌 것 / 다음**
+- 합성식은 3DGS·3DGUT와 동일 — depth 정렬 후 front-to-back alpha blending (논문 Eq. B.3)
+- 3DGS 수준 속도에 더 나은 품질, EVER 수준 품질에 더 나은 속도라는 위치를 차지
+- overlap을 다루지 않은 것은 누락이 아니라 속도를 위한 선택이며, 저자들이 그 자리를 비워 둠
+- 다음: medium 모델과 overlap을 정확히 다루면서 3DGEER 수준 속도를 유지할 수 있는지 검토
+
+---
+
 ## 1. 논문 개요 및 성과 수준
 
 ### 1.1 서지 정보

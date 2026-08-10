@@ -1,5 +1,25 @@
 # Does 3D Gaussian Splatting Need Accurate Volumetric Rendering?
 
+## 요약
+
+**지난 미팅 (2026-07-25)** — 키워드 3줄
+- 3DGEER 리뷰에서 overlap 처리가 속도를 위한 선택임을 확인
+- 3DGS의 세 가지 근사(surface 대체, overlap 무시, self-attenuation 무시)를 정면으로 다룬 논문 확인
+- 우리가 하던 medium·overlap 연구와 직접 연결
+
+**합의 사항 → 상태**
+- [완료] Celarek et al.(CGF 2025)의 실험 설계와 결론 정리
+- [완료] 우리 연구 방향과의 접점 확인
+- [부분] 저밀도 볼류메트릭 장면에서의 적용 범위 — 논문에 수치 없음
+
+**이번 결과 / 막힌 것 / 다음**
+- 논문의 EWA는 우리가 쓰던 medium과 같은 대상
+- 자기감쇠 오차는 primitive 내부 광학 두께에 비례하므로 두껍고 밀도 높은 참여 매질에서 다시 커질 수 있음
+- 막힌 것: 논문 실험이 대부분 solid object 장면이라 OTS와 OTS+SAtn을 저밀도 장면에서 따로 비교한 수치가 없음 🔴
+- 다음: WDAS Cloud 같은 저밀도 데이터로 그 구간을 직접 확인
+
+---
+
 ## 1. 논문 개요 및 성과 수준
 
 ### 1.1 서지 정보
@@ -38,7 +58,7 @@ NeRF는 물리에서 출발한 volumetric ray marching을 사용한다. 3DGS는 
 이 논문은 **정확한 볼륨 적분이 Gaussian 수가 적을 때만 유리하며, primitive가 충분히 많아지면 근사를 쓰는 원래 3DGS가 오히려 더 나은 결과를 낸다는 것**을 핵심 주장으로 제시한다.
 
 
-## 2. 우리의 연구에서 이 논문을 통해 얻을 수 있는 인사이트
+## 2. 이 논문이 우리 연구에 주는 함의
 
 이 논문에서는 3DGS에서 하는 근사 - gaussian을 medium(extinction)이 아닌 surface(opacity), overlap 무시, self-attenuated 무시 에 대해 고찰하는데 이는 우리가 원래 하던 연구와 매우 밀접하게 관계되어 있다. 
 
@@ -65,7 +85,7 @@ Gaussian primitive는 학습되는 스칼라 $\theta$를 하나 갖는다. 이 $
 
 **extinction 기반 (EWA, NeRF)** — $\theta$는 정규화 Gaussian의 가중치 $w$, 즉 **총적분(질량)** 이다. 밀도장을 적분해 투과율을 얻는 volume rendering 이론과 같은 물리량이며, NeRF가 학습하는 density와 동일한 개념이다.
 
-논문에서는 **EWA**라고 주로 부르지만 우리 연구에서 부르던 표현인 medium과 동일한 표현이라고 할 수 있다. 
+논문에서는 **EWA**라고 주로 부르지만 우리 연구에서 부르던 표현인 medium과 같은 대상을 가리킨다. 
 
 $$G^n_D(x) = w \cdot N_D(x; \mu, \Sigma), \qquad \int G^n_D\,dx = w$$
 
@@ -472,7 +492,7 @@ per-pixel 정렬로 순서만 정확히 한 결과다.
 
 **결론적으로 overlap 처리의 순수 기여는 작다.** 3장에서 본 extinction 파라미터화만으로 splatting 속도를 유지한 채 대부분을 얻을 수 있으며, 1~2 자릿수 느린 ray marching을 추가로 감수할 만한 이득이 나오지 않는다.
 
-**정성적으로도 같은 경향이 확인된다.**
+**렌더 이미지에서도 같은 경향이 나타난다.**
 
 ![Figure 12. BURNING FICUS with 4k and 1M Gaussians](./report_image_모진수/260726/Celarek_Figure12_BurningFicus.png)
 

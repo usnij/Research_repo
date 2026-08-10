@@ -1,5 +1,26 @@
 # 3DGUT 기반 확률적 MC Sparse-Ray Denoiser 실험 보고서
 
+## 요약
+
+**지난 미팅 (2026-08-03)** — 키워드 3줄
+- 1/4-ray + bilinear로 추론 2.36배, GT PSNR −0.026 dB 확인
+- 목표를 추론 가속에서 학습 비용 절감으로 이동
+- 1/64에서는 픽셀의 1.6%만 손실 계산 가능 — 구조적 손실(SSIM)을 쓰려면 복원기 필요
+
+**합의 사항 → 상태**
+- [완료] 1/64 확률적 층화 MC + Denoiser의 복원 품질 측정 (Gaussian 고정)
+- [완료] 학습 step·모델 크기·블록당 샘플 수·정합 보정·출력 구조 5개 축 변경
+- [미착수] Gaussian 학습에 실제 결합 (사유: 복원 품질 상한 먼저 확인)
+
+**이번 결과 / 막힌 것 / 다음**
+- 최고 성능은 커널 예측 head 28.956 dB, full-ray GUT 32.066 dB 대비 −3.111 dB
+- 5개 축을 모두 바꿔도 격차가 3.1~4.0 dB를 벗어나지 못함
+- 양의 효과는 블록당 샘플 수 하나뿐(1/64 → 4/64에서 +0.802 dB, ray 4배의 대가)
+- 막힌 것: step 20배 −0.126 dB, 파라미터 4.9배 −0.170 dB로 둘 다 역효과 🔴
+- 다음: Denoiser 없이 1/64 ray만으로 Gaussian을 직접 학습해 기준선 확보
+
+---
+
 > 작성일: 2026-08-04  
 > 현재 단계: **1/64 sparse-ray Denoiser의 품질 상한 및 gradient 유용성 검증 (Gaussian 모델 고정)**  
 > 핵심 결과: 8×8 stratum당 1개(1/64)의 확률적 primary ray만 추적하고 Denoiser로 원해상도 영상을 만들면, 전체 37개 test view 기준 **28.956 dB**로 full-ray GUT(32.066 dB) 대비 **-3.11 dB**다. 학습 step·모델 크기·블록당 샘플 수·출력 구조 등 다섯 축을 모두 변경해도 이 격차가 **3.1~4.0 dB 대역을 벗어나지 못했다.**
@@ -28,7 +49,7 @@
 ### 1.3 연구 범위
 
 - Gaussian 모델은 **고정(frozen)** 이며 Denoiser만 학습한다. 따라서 본 보고서는 학습 가속을 주장하지 않는다.
-- 장면은 Bonsai 단일 장면, R1(2078×3118), 3DGUT 30,000 iteration 학습 모델(Gaussian 1,137,814개)이다.
+- 장면은 Bonsai 단일 장면, R1(2078×3118), vanilla 3DGUT 30,000 iteration 학습 모델(Gaussian 1,137,814개)이다.
 - GPU는 NVIDIA GeForce RTX 4070 SUPER 12 GB이다.
 
 ---
@@ -216,7 +237,7 @@ step을 20배 늘려 **0.126 dB를 잃었고**, 파라미터를 4.9배 늘려 **
 | Base 정합 보정 | 샘플 실제 위치 반영 | **-0.007 dB** | 12 view |
 | 출력 확장 구조 | 서브픽셀 64개 → 16개씩 4그룹 | **+0.050 dB** | 12 view |
 
-유의미한 양의 효과는 블록당 샘플 수 하나뿐이며, 그마저 ray를 4배 쓴 대가다(배가당 약 0.40 dB). 나머지 네 축은 ±0.17 dB 이내이고 둘은 음수다. 어떤 축을 건드려도 full-ray와의 격차가 **3.1~4.0 dB 대역을 벗어나지 못한다.**
+양(+)의 효과는 블록당 샘플 수 하나뿐이며, 그마저 ray를 4배 쓴 대가다(배가당 약 0.40 dB). 나머지 네 축은 ±0.17 dB 이내이고 둘은 음수다. 어떤 축을 건드려도 full-ray와의 격차가 **3.1~4.0 dB 대역을 벗어나지 못한다.**
 
 
 
@@ -229,11 +250,11 @@ step을 20배 늘려 **0.126 dB를 잃었고**, 파라미터를 4.9배 늘려 **
 
 | view | Full rays | 1/64 + Denoiser | Full-ray 대비 오차 (5× 확대) |
 |---|---|---|---|
-| 3 | ![](report_image_모진수/260804/v03_full_ray.png) | ![](report_image_모진수/260804/v03_denoiser.png) | ![](report_image_모진수/260804/v03_error_x5.png) |
-| 12 | ![](report_image_모진수/260804/v12_full_ray.png) | ![](report_image_모진수/260804/v12_denoiser.png) | ![](report_image_모진수/260804/v12_error_x5.png) |
-| 18 | ![](report_image_모진수/260804/v18_full_ray.png) | ![](report_image_모진수/260804/v18_denoiser.png) | ![](report_image_모진수/260804/v18_error_x5.png) |
-| 24 | ![](report_image_모진수/260804/v24_full_ray.png) | ![](report_image_모진수/260804/v24_denoiser.png) | ![](report_image_모진수/260804/v24_error_x5.png) |
-| 31 | ![](report_image_모진수/260804/v31_full_ray.png) | ![](report_image_모진수/260804/v31_denoiser.png) | ![](report_image_모진수/260804/v31_error_x5.png) |
+| 3 | ![](report_image_모진수/260804/v03_full_ray.png) | ![](report_image_모진수/260804/v03_denoiser.png) | ![](../report_image_모진수/260804/v03_error_x5.png) |
+| 12 | ![](report_image_모진수/260804/v12_full_ray.png) | ![](report_image_모진수/260804/v12_denoiser.png) | ![](../report_image_모진수/260804/v12_error_x5.png) |
+| 18 | ![](../report_image_모진수/260804/v18_full_ray.png) | ![](../report_image_모진수/260804/v18_denoiser.png) | ![](../report_image_모진수/260804/v18_error_x5.png) |
+| 24 | ![](../report_image_모진수/260804/v24_full_ray.png) | ![](../report_image_모진수/260804/v24_denoiser.png) | ![](../report_image_모진수/260804/v24_error_x5.png) |
+| 31 | ![](../report_image_모진수/260804/v31_full_ray.png) | ![](../report_image_모진수/260804/v31_denoiser.png) | ![](../report_image_모진수/260804/v31_error_x5.png) |
 
 축소 배율에서는 두 영상의 차이가 거의 드러나지 않는다. 오차 영상에서 밝게 나타나는 곳이 바구니 표면, 잎과 꽃의 경계, 책장 모서리에 집중되어 있고 벽·바닥·천장 같은 넓은 평탄 영역은 어둡다.
 
@@ -253,7 +274,7 @@ Full-ray에서는 구슬이 대각선 열로 규칙적으로 배열된 것이 �
 
 | GT | Full rays | 1/64 + Denoiser |
 |---|---|---|
-| ![](report_image_모진수/260804/v12_crop_gt.png) | ![](report_image_모진수/260804/v12_crop_full_ray.png) | ![](report_image_모진수/260804/v12_crop_denoiser.png) |
+| ![](../report_image_모진수/260804/v12_crop_gt.png) | ![](../report_image_모진수/260804/v12_crop_full_ray.png) | ![](../report_image_모진수/260804/v12_crop_denoiser.png) |
 
 같은 바구니를 다른 각도에서 본 영역이다. 왼쪽 어두운 배경과 바구니가 만나는 실루엣은 비교적 잘 유지되는 반면, 바구니 내부의 구슬 짜임은 view 18과 동일하게 덩어리로 뭉친다. **경계(edge)보다 주기적 미세 texture에서 훨씬 크게 무너진다**는 점이 확인된다.
 
@@ -261,7 +282,7 @@ Full-ray에서는 구슬이 대각선 열로 규칙적으로 배열된 것이 �
 
 | GT | Full rays | 1/64 + Denoiser |
 |---|---|---|
-| ![](report_image_모진수/260804/v24_crop_gt.png) | ![](report_image_모진수/260804/v24_crop_full_ray.png) | ![](report_image_모진수/260804/v24_crop_denoiser.png) |
+| ![](../report_image_모진수/260804/v24_crop_gt.png) | ![](../report_image_모진수/260804/v24_crop_full_ray.png) | ![](../report_image_모진수/260804/v24_crop_denoiser.png) |
 
 바구니 표면이 화면을 가득 채우는 구도다. Full-ray의 촘촘한 구슬 배열이 Denoiser에서는 성긴 반점 패턴으로 바뀌며, 전체 밝기와 색조는 유지되지만 재질감이 사라진다.
 
@@ -269,13 +290,13 @@ Full-ray에서는 구슬이 대각선 열로 규칙적으로 배열된 것이 �
 
 | GT | Full rays | 1/64 + Denoiser |
 |---|---|---|
-| ![](report_image_모진수/260804/v31_crop_gt.png) | ![](report_image_모진수/260804/v31_crop_full_ray.png) | ![](report_image_모진수/260804/v31_crop_denoiser.png) |
+| ![](../report_image_모진수/260804/v31_crop_gt.png) | ![](../report_image_모진수/260804/v31_crop_full_ray.png) | ![](../report_image_모진수/260804/v31_crop_denoiser.png) |
 
 #### view 3 — 격차 2.025 dB, 가장 작은 실패
 
 | GT | Full rays | 1/64 + Denoiser |
 |---|---|---|
-| ![](report_image_모진수/260804/v03_crop_gt.png) | ![](report_image_모진수/260804/v03_crop_full_ray.png) | ![](report_image_모진수/260804/v03_crop_denoiser.png) |
+| ![](../report_image_모진수/260804/v03_crop_gt.png) | ![](../report_image_모진수/260804/v03_crop_full_ray.png) | ![](../report_image_모진수/260804/v03_crop_denoiser.png) |
 
 이 크롭에서는 full-ray 자체가 GT 대비 23.114 dB로 낮다. 즉 Gaussian 모델이 이미 이 영역을 잘 표현하지 못하고 있어 full-ray 결과도 흐리다. 그 결과 Denoiser와의 격차가 2.025 dB로 다섯 view 중 가장 작다.
 

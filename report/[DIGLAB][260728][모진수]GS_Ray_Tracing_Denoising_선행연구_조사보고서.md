@@ -1,5 +1,22 @@
 # 고정 조명 Gaussian Splatting의 Ray-Tracing Denoising 및 Sparse Reconstruction 선행연구 조사
 
+## 요약
+
+**지난 미팅 (2026-07-27)** — 키워드 3줄
+- WDAS Cloud 데이터셋 구성 완료
+- 렌더링 비용을 줄이는 새 축으로 primary-ray 수 감소 검토
+- 같은 구조의 선행연구가 있는지 먼저 확인
+
+**합의 사항 → 상태**
+- [완료] 3DGS·3DGRT·3DGUT·3DGEER·EVER 대상 선행연구 조사 (기준일 2026-07-28)
+- [완료] primary-ray 또는 화면 샘플 수를 줄이고 G-buffer로 복원하는 연구 유무 판정
+
+**이번 결과 / 막힌 것 / 다음**
+- 조사 결과는 본문 참조
+- 다음: 추론 단계에서 1/4-ray 평가 + 복원의 속도·품질 상한 측정
+
+---
+
 > 작성일: 2026-07-28  
 > 그림 보강 및 최종 검수: 2026-07-29  
 > 조사 목적: **고정 조명 Gaussian Splatting(GS) 렌더링에서 primary-ray 또는 화면 샘플 수를 줄이고, GS로부터 얻을 수 있는 3D 정보(G-buffer)를 이용해 최종 영상을 복원하는 연구**가 존재하는지 파악한다.  
@@ -371,7 +388,7 @@ I(x,y)=\sum_{i=1}^{N} T_i(x,y)\alpha_i(x,y)c_i
 1. 기존 3DGS를 저해상도로 렌더링하고 추론 시 spline upscaling만 적용
 2. differentiable spline upscaler를 3DGS optimization 안에 넣어, 처음부터 저해상도 render → 고해상도 loss로 학습
 
-두 번째 방식에서는 rasterizer가 훨씬 적은 fragment를 생성하고, upscaling loss가 analytical gradient를 통해 Gaussian parameter로 역전파된다.
+두 번째 방식에서는 rasterizer가 훨씬 적은 fragment를 생성하고, upscaling loss가 analytical gradient로 Gaussian parameter에 역전파된다.
 
 이 방법은 neural network가 아니며 scene-specific denoiser 학습이 없다. 따라서 hallucination 위험과 network inference cost가 작고 해석 가능성이 높다.
 
