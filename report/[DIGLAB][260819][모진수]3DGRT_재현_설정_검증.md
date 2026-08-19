@@ -8,7 +8,9 @@
 
 ### 발견 1 — densification 주기 300 이 3DGRT 의 원본 설정이며, 재학습이 필요 없다
 
-3DGRT 논문은 densification 주기 (densification interval) 를 본문과 부록 어디에서도 숫자로 명시하지 않는다. 부록 A 에는 densification 과 pruning 을 500 번째 iteration 에서 시작해 15,000 번째 iteration 까지 수행한다는 구간만 적혀 있다. 반면 NVIDIA 공식 저장소 `nv-tlabs/3dgrut` 의 `origin/main` 은 `configs/strategy/gs.yaml` 에서 `densify.frequency: 300` 을 쓰며, 우리 저장소도 같은 값이다. 3DGS 의 기본값은 100 이고 저장소 주석도 이를 병기하고 있으나, 3DGRT 는 300 을 채택했다.
+3DGS는 densification 주기가 100이고 GRT의 dessifcation 주기는 300이다. 여기서 단위는 step이다. 
+
+그런데 이에 대해 3DGRT 논문은 densification 주기를 본문과 부록 어디에서도 숫자로 명시하지 않고 설명이 없다. 부록 A 에는 densification 과 pruning 을 500 번째 iteration 에서 시작해 15,000 번째 iteration 까지 수행한다는 구간만 적혀 있다. 반면 NVIDIA 공식 저장소 `nv-tlabs/3dgrut` 의 `origin/main` 은 `configs/strategy/gs.yaml` 에서 `densify.frequency: 300` 을 쓰며, 우리 저장소도 같은 값이다. 3DGS 의 기본값은 100 이고 저장소 주석도 이를 병기하고 있으나, 3DGRT 는 300 을 채택했다.
 
 이 값을 독립적으로 확인할 근거를 후속 논문에서 찾았다. UTrice (arXiv 2512.04421) 는 부록 Table 5 에 자신들이 사용한 3DGRT 하이퍼파라미터를 전부 싣고 있으며, densify frequency 300, densify start iteration 500, densify end iteration 15000, prune frequency 100, prune start iteration 500, prune end iteration 15000, density 학습률 0.05 로 기재한다. 본문에는 "원본 `base_gs.yaml` 설정에 명시된 하이퍼파라미터를 그대로 재사용한다" 고 적혀 있다. **densification 주기를 100 으로 바꿔 dense 학습과 sparse 학습을 전부 다시 실행할 이유는 없다.**
 
