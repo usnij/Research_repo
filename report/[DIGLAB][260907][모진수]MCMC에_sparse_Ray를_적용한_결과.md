@@ -153,27 +153,8 @@ MCMC 는 9 개 씬 전부에서 `max_n_gaussians` 로 지정한 값을 정확히
 sparse 가 0.405 dB 낮다. sparse 조건은 3,000 step 까지 dense 로 학습한 뒤
 sparse 로 전환했다.
 
-### 4.2 counter
 
-Gaussian 상한을 1,166,232 개로 맞추고 Ray 수와 멀티뷰를 바꿨다.
-
-| | 멀티뷰 없음 | 멀티뷰 있음 |
-|---|---:|---:|
-| dense Ray | 28.926 | 29.035 |
-| sparse 1/16 | 28.955 | 29.248 |
-
-멀티뷰를 적용한 조건에서 sparse 가 dense 보다 0.213 dB 높다. 두 값 모두 상한이
-1,166,232 개로 같다. 멀티뷰 이득은 sparse 에서 0.293 dB, dense 에서 0.109 dB 다.
-
-표의 좌상단 28.926 dB 는 2026-09-03 리포트의 실행이며 상한이 1,131,968 개로 3.0%
-작다. 이 값이 관여하는 두 비교, 즉 dense 조건의 멀티뷰 이득 0.109 dB 와 멀티뷰
-없는 조건의 sparse 변화 0.029 dB 는 상한 차이를 포함한다. 나머지 두 비교는 상한이
-일치한다.
-
-bonsai 와 counter 의 부호가 다르므로, sparse Ray 의 품질 손실은 씬에 따라 달라진다.
-counter 의 dense Gaussian 수는 1,255,427 개이고 bonsai 는 1,484,957 개다.
-
-### 4.3 dense 휴리스틱, dense Ray MCMC, sparse Ray MCMC 의 비교
+### 4.2 dense 휴리스틱, dense Ray MCMC, sparse Ray MCMC 의 비교
 
 세 조건을 9 개 씬에서 나란히 놓았다. dense 휴리스틱은 기존 3DGRT 의 ADC 를 dense
 Ray 로 학습한 것이며 Gaussian 수 상한을 두지 않고 자연 수렴시킨 값이다. 두 MCMC
