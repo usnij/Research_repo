@@ -43,13 +43,10 @@ SSIM loss 계산 코드 정리
 
 ### 2.3 sparse 경로
 
-[train_scene_sparse.py:169–213](train_scene_sparse.py#L169-L213) 의 `draw()` 가 핵심이다. `sample_stratified_pixels()` 로 stratum 당 1 pixel 을 표집한 뒤 `reshape(1, grid_h, grid_w, 3)` 으로 연속 격자를 만든다. `block = 4` 이면 `1038×1558` 에서 `260×390 = 101,400` ray 를 뽑는다.
+[train_scene_sparse.py:169–213](train_scene_sparse.py#L169-L213) 의 `draw()` 가 핵심이다. 
 
-같은 함수의 docstring 에 설계 의도가 적혀 있다.
 
-> 폭만 두 배로 잡는 이유는 반환 격자가 직사각형이어야 SSIM 이 성립하기 때문이다.
-
-표집된 격자로 L1 과 SSIM 을 계산하는 지점은 [328–334](train_scene_sparse.py#L328-L334) 이고, densification calibration 쪽의 같은 패턴은 [902–918](train_scene_sparse.py#L902-L918) 이다.
+sampling된 ray로 L1 과 SSIM 을 계산하는 지점은 [328–334](train_scene_sparse.py#L328-L334) 이고, densification calibration 쪽의 같은 패턴은 [902–918](train_scene_sparse.py#L902-L918) 이다.
 
 ---
 
