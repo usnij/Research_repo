@@ -47,7 +47,7 @@ TangoGS는 이미지 수·해상도와 SfM 점의 평균 관측 횟수를 이용
 이미지 $v$의 픽셀 수를 $P_v$, 마지막 단계의 저주파 계수 수를 $m_v=P_v/1024$라 한다. 저주파 계수는 모두 보존하고, 나머지 detail 계수 $d_{v,(j)}$는 절댓값이 큰 순서로 정렬한다. 허용 RMS 오차 $\epsilon=0.02$를 만족하는 최소 보존 개수로 복잡도를 정의한다.
 
 $$
-k_v=\min\left\{k:\sum_{j>k}|d_{v,(j)}|^2\le P_v\epsilon^2\right\},
+k_v=\min\left\lbrace k:\sum_{j>k}|d_{v,(j)}|^2\le P_v\epsilon^2\right\rbrace,
 \qquad
 C=\frac1{16}\sum_{v=1}^{16}\frac{m_v+k_v}{P_v}.
 $$
@@ -200,8 +200,8 @@ Mic은 최종 4,263개로 감소했지만 공개 기준선보다 PSNR이 3.934 d
 $$
 \begin{aligned}
 X&=\frac{nWH}{\bar t},\\
-T_{\mathrm{lin}}&=\operatorname{round}\!\left(0.90\operatorname{round}(0.07040234X)\right),\\
-B_{\mathrm{Tango}}&=\operatorname{round}\!\left(\sqrt{2{,}462{,}476\,T_{\mathrm{lin}}}\right).
+T_{\mathrm{lin}}&=\mathrm{round}\!\left(0.90\mathrm{round}(0.07040234X)\right),\\
+B_{\mathrm{Tango}}&=\mathrm{round}\!\left(\sqrt{2{,}462{,}476\,T_{\mathrm{lin}}}\right).
 \end{aligned}
 $$
 
