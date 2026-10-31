@@ -35,7 +35,7 @@ sparse에서 처음에 사용한 ssim loss는(그림에서 compact ssim) samplin
 이미지 경계에서도 존재하는 이웃의 가중치 합이 1이 되도록 정규화한다. Gradient는 각 중심점뿐 아니라 해당 통계에 참여한 모든 관측 이웃의 RGB를 거쳐 Gaussian 파라미터로 전달된다. 추가 Ray나 보조 렌더링은 없으며, 미관측 Ray의 렌더 경로를 직접 학습하는 것은 아니다.
 
 
-![좌표기반 SSIM의 GT 대응, 통계 계산, gradient 전달 과정](./report_image_모진수/261101/01_ssim_comparison.png)
+![좌표기반 SSIM의 GT 대응, 통계 계산, gradient 전달 과정](./report_image_모진수/261101/02_ssim_gradient_flow.png)
 
 그림 2. 예측과 GT의 같은 위치에 동일한 가중치를 적용해 통계를 비교한다. 각 중심점의 손실은 통계에 참여한 모든 관측 RGB를 거쳐 Gaussian에 전달되며, 겹치는 이웃의 gradient는 합산된다. 
 
