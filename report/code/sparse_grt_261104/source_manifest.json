@@ -1,17 +1,25 @@
 {
+  "source_training_commit": "f472ab69eb6102a0fa7a6a948c4379be335a9c1f",
   "base_training_commit": "7fa0939af55467194d5959f5582ee7b6a9ffca5b",
   "source_only": true,
-  "changes_to_training_implementation": [],
-  "additions": [
-    "eval_full.py"
+  "changes_to_training_implementation": [
+    "CVPR execution protocol: retain 2k/5k/7k/10k/15k/20k/30k optimizer checkpoints with measured training seconds.",
+    "Reload saved checkpoints to verify optimizer/count/step/time; write 100-step timing/count CSV.",
+    "Run evaluation after training through eval_full.py; preserve the established metric definitions.",
+    "Expose historical compact-grid and dense control objectives as explicit CLI choices.",
+    "Select objectives through an optional engine argument; default coordinate objective is unchanged."
   ],
-  "gpu_reevaluation_status": "not_run",
+  "unchanged_scientific_components": [
+    "renderer configuration and renderer source",
+    "MCMC implementation",
+    "coordinate structural loss",
+    "sampling implementation",
+    "input-cap estimator",
+    "log-horizon growth schedule"
+  ],
   "cpu_validation": [
-    "CLI help",
-    "reference rounding",
-    "validation view order",
-    "full-precision JSON output",
-    "refuse output overwrite"
+    "5 protocol/control CPU tests passed from this published snapshot",
+    "6 fleet CPU guard tests passed from this published snapshot"
   ],
   "observed_only": false,
   "multiview_first_update_index": 0,
@@ -26,14 +34,24 @@
     "boundary": "available-neighbor normalization"
   },
   "grid_ssim": {
-    "implementation": "historical_controls/compact_ssim_adapter_261103.py",
+    "implementation": "src/sparse_grt/controls.py:grid_objective",
+    "historical_implementation": "historical_controls/compact_ssim_adapter_261103.py",
     "window": 11,
     "sigma_grid": 1.5,
     "padding": "valid",
     "cross_view_windows": false
   },
+  "renderer": {
+    "confirmation": "Preserve the existing [261103] renderer configuration",
+    "pipeline_type": "reference",
+    "backward_pipeline_type": "referenceBwd",
+    "particle_kernel_density_clamping": true,
+    "primitive_type": "instances",
+    "enable_hitcounts": true
+  },
   "prior_run_provenance": "11 fresh benchmark scenes used the base commit; Bonsai/Bicycle reused the earlier EXP-008 implementation.",
-  "new_campaign_freeze_complete": false,
+  "new_campaign_freeze_complete": true,
+  "deployment_config": "Private hosts, assignments, campaign plans and results are supplied externally and are not included in this code snapshot.",
   "source_files": [
     {
       "path": ".gitignore",
@@ -43,6 +61,11 @@
     {
       "path": "NOTICE",
       "sha256": "2a714f477de43ffa3d5a9e633bfd44d68f1753c0e0924864e8e36997e1545442",
+      "origin": "source_commit"
+    },
+    {
+      "path": "eval_full.py",
+      "sha256": "586180f6cbf636a62b7d9b8ad2b7525bbcb848bd5c5d7bb297d6957fe2b9e6a2",
       "origin": "source_commit"
     },
     {
@@ -91,8 +114,13 @@
       "origin": "source_commit"
     },
     {
+      "path": "src/sparse_grt/controls.py",
+      "sha256": "a14b41b2f99a278dc47a98efbee03c8761b6b63f9f39317f106c660a327389ae",
+      "origin": "source_commit"
+    },
+    {
       "path": "src/sparse_grt/engine.py",
-      "sha256": "10a2a16180d68080584de1174e681215372fefd2c374fc0bffa8e30e52b692c5",
+      "sha256": "13e3417723be3f81ae14e40f17b69bb2fc6f9bfe010387bde3b90c5b69a2767a",
       "origin": "source_commit"
     },
     {
@@ -156,6 +184,11 @@
       "origin": "source_commit"
     },
     {
+      "path": "src/sparse_grt/protocol.py",
+      "sha256": "500ee7db372f45dda7b4028cc767b4aefa16a84daea1b7b3de38256801005f47",
+      "origin": "source_commit"
+    },
+    {
       "path": "src/sparse_grt/provenance.py",
       "sha256": "50987bdf9c8423a3d648aca301b9ae990a30f4b7da971f77fbb9e6820af57366",
       "origin": "source_commit"
@@ -182,7 +215,7 @@
     },
     {
       "path": "src/sparse_grt/training.py",
-      "sha256": "453050a00a64912abde620060cd68a2fe8a492934d7ea08c573b0eb0caa549d4",
+      "sha256": "cc69ab22c1f3b20c0a68d663a6b8e39838ec7f0830dece10e42134417b02ea5c",
       "origin": "source_commit"
     },
     {
@@ -476,14 +509,39 @@
       "origin": "source_commit"
     },
     {
-      "path": "tools/setup_reference_env.sh",
-      "sha256": "0e0a4ed0954fbf67e8bef55321e28784c95908b3f018070fb89dfac2ebb52994",
+      "path": "tests/test_cvpr_protocol.py",
+      "sha256": "3f97403cec770ef27b6b9fd9466dbbc0f4ed652410d20bd754ce046c4ac23476",
       "origin": "source_commit"
     },
     {
-      "path": "eval_full.py",
-      "sha256": "586180f6cbf636a62b7d9b8ad2b7525bbcb848bd5c5d7bb297d6957fe2b9e6a2",
-      "origin": "new_evaluation_entrypoint"
+      "path": "tools/cvpr2027/common.py",
+      "sha256": "8fe0b15ae9327a05f918cb476474e43b2b7bf981948981d6ff6042d1495182f8",
+      "origin": "source_commit"
+    },
+    {
+      "path": "tools/cvpr2027/export_results.py",
+      "sha256": "7fd67758da32272003169a8b8fa6d80d56313f8cef23ece01e3e22418ce24080",
+      "origin": "source_commit"
+    },
+    {
+      "path": "tools/cvpr2027/prepare_plan.py",
+      "sha256": "84692a2f74eed325fa6241b0de4916a2e746d4b2ba912b643b8d203465b524dc",
+      "origin": "source_commit"
+    },
+    {
+      "path": "tools/cvpr2027/test_fleet.py",
+      "sha256": "d2e7d06dda1f1d222089a4152cf5fbce30b1d38f6994d1076806a317439e8e65",
+      "origin": "source_commit"
+    },
+    {
+      "path": "tools/cvpr2027/worker.py",
+      "sha256": "f8210a896d619255483c75e96900d1c2623608df781188a65e39cd2c83d84f2f",
+      "origin": "source_commit"
+    },
+    {
+      "path": "tools/setup_reference_env.sh",
+      "sha256": "0e0a4ed0954fbf67e8bef55321e28784c95908b3f018070fb89dfac2ebb52994",
+      "origin": "source_commit"
     },
     {
       "path": "historical_controls/compact_ssim_adapter_261103.py",

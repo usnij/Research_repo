@@ -11,11 +11,12 @@ PARAMETER_NAMES = ("positions", "rotation", "scale", "density", "features_albedo
 
 
 def update(model, strategy, dataset, batch, plans, step, config, *, loss_backend,
-           feature_step_condition, check_finite=True):
+           feature_step_condition, check_finite=True, objective_backend=None):
     model.optimizer.zero_grad(set_to_none=True)
     pred = model(batch, train=True, frame_id=step)["pred_rgb"]
-    total, parts = objective(pred, batch.rgb_gt, plans, model.get_density(), model.get_scale(),
-                             config, loss_backend)
+    image_objective = objective if objective_backend is None else objective_backend
+    total, parts = image_objective(pred, batch.rgb_gt, plans, model.get_density(), model.get_scale(),
+                                  config, loss_backend)
     strategy.pre_backward(step, model.scene_extent, dataset, batch=batch)
     total.backward()
     # Preserve the old logging synchronization point until a separate timing
