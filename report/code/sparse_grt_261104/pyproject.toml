@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sparse-grt"
+version = "0.2.0.dev0"
+description = "Sparse multi-view Gaussian training components and coordinate SSIM"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "torch==2.1.2", "torchvision==0.16.2", "numpy==1.26.4",
+  "omegaconf==2.3.0", "torchmetrics==1.8.2", "cupy-cuda11x==13.6.0",
+  "scikit-learn==1.8.0", "scipy==1.17.0", "Pillow==12.0.0",
+  "opencv-python-headless==4.11.0.86",
+  "plyfile==1.1.3", "msgpack==1.1.2",
+  "dataclasses-json==0.6.7", "rich==14.2.0", "ninja==1.13.0",
+  "setuptools>=68,<81",
+]
+
+[project.scripts]
+sparse-grt-train = "sparse_grt.training:cli"
+
+[tool.setuptools]
+license-files = ["NOTICE", "licenses/*.txt"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"sparse_grt.losses" = ["*.cu"]
+"sparse_grt" = ["backend_config.json"]
+"sparse_grt_backend.strategy.src" = ["*.h", "*.cu", "*.cpp"]
+"sparse_grt_tracer" = ["bindings.cpp", "include/**/*.h", "include/**/*.cuh", "include/**/*.slang", "src/**/*.cpp", "src/**/*.cu"]

@@ -1,0 +1,15 @@
+{
+  "views": 4,
+  "block": 8,
+  "sigma": 6.0,
+  "l1_weight": 0.8,
+  "structure_weight": 0.2,
+  "opacity_weight": 0.01,
+  "scale_weight": 0.01,
+  "cap": 2282236,
+  "steps": 30000,
+  "initialization_seed": 777,
+  "view_seed": 2610297100,
+  "ray_seed": 910000000,
+  "boundary": "all"
+}
