@@ -88,3 +88,40 @@
 /workspace/cvpr2027_env/venv/bin/python -u /workspace/cvpr2027_261104/code/eval_full.py --checkpoint /workspace/cvpr2027_261104/runs/cvpr2027_E2_garden_k1_dense_dense_seed777/ckpt_15000.pt --data-root /workspace/cvpr2027_261104/data/garden --output /workspace/cvpr2027_261104/runs/cvpr2027_E2_garden_k1_dense_dense_seed777/evaluation_15000.json --run-dir /workspace/cvpr2027_261104/runs/cvpr2027_E2_garden_k1_dense_dense_seed777 --run-id cvpr2027_E2_garden_k1_dense_dense_seed777
 /workspace/cvpr2027_env/venv/bin/python -u /workspace/cvpr2027_261104/code/eval_full.py --checkpoint /workspace/cvpr2027_261104/runs/cvpr2027_E2_garden_k1_dense_dense_seed777/ckpt_20000.pt --data-root /workspace/cvpr2027_261104/data/garden --output /workspace/cvpr2027_261104/runs/cvpr2027_E2_garden_k1_dense_dense_seed777/evaluation_20000.json --run-dir /workspace/cvpr2027_261104/runs/cvpr2027_E2_garden_k1_dense_dense_seed777 --run-id cvpr2027_E2_garden_k1_dense_dense_seed777
 /workspace/cvpr2027_env/venv/bin/python -u /workspace/cvpr2027_261104/code/eval_full.py --checkpoint /workspace/cvpr2027_261104/runs/cvpr2027_E2_garden_k1_dense_dense_seed777/ckpt_30000.pt --data-root /workspace/cvpr2027_261104/data/garden --output /workspace/cvpr2027_261104/runs/cvpr2027_E2_garden_k1_dense_dense_seed777/evaluation_30000.json --run-dir /workspace/cvpr2027_261104/runs/cvpr2027_E2_garden_k1_dense_dense_seed777 --run-id cvpr2027_E2_garden_k1_dense_dense_seed777
+# cvpr2027_E2_flowers_k1_dense_dense_seed777, gpu04, instance 59087886
+/workspace/cvpr2027_env/venv/bin/python -u -m sparse_grt.training --scene /workspace/cvpr2027_261104_followup_gpu04/data/flowers --downsample 4 --config /workspace/cvpr2027_261104_followup_gpu04/fleet/configs/cvpr2027_E2_flowers_k1_dense_dense_seed777.json --output /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777 --budget fixed --growth log_horizon --growth-end 5000 --cache-mib 1200 --mode train --keep-checkpoints 2000,5000,7000,10000,15000,20000,30000 --protocol cvpr2027 --structural-loss dense
+/workspace/cvpr2027_env/venv/bin/python -u /workspace/cvpr2027_261104_followup_gpu04/code/eval_full.py --checkpoint /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777/ckpt_2000.pt --data-root /workspace/cvpr2027_261104_followup_gpu04/data/flowers --output /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777/evaluation_2000.json --run-dir /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777 --run-id cvpr2027_E2_flowers_k1_dense_dense_seed777
+/workspace/cvpr2027_env/venv/bin/python -u /workspace/cvpr2027_261104_followup_gpu04/code/eval_full.py --checkpoint /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777/ckpt_5000.pt --data-root /workspace/cvpr2027_261104_followup_gpu04/data/flowers --output /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777/evaluation_5000.json --run-dir /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777 --run-id cvpr2027_E2_flowers_k1_dense_dense_seed777
+/workspace/cvpr2027_env/venv/bin/python -u /workspace/cvpr2027_261104_followup_gpu04/code/eval_full.py --checkpoint /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777/ckpt_7000.pt --data-root /workspace/cvpr2027_261104_followup_gpu04/data/flowers --output /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777/evaluation_7000.json --run-dir /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777 --run-id cvpr2027_E2_flowers_k1_dense_dense_seed777
+/workspace/cvpr2027_env/venv/bin/python -u /workspace/cvpr2027_261104_followup_gpu04/code/eval_full.py --checkpoint /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777/ckpt_10000.pt --data-root /workspace/cvpr2027_261104_followup_gpu04/data/flowers --output /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777/evaluation_10000.json --run-dir /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777 --run-id cvpr2027_E2_flowers_k1_dense_dense_seed777
+/workspace/cvpr2027_env/venv/bin/python -u /workspace/cvpr2027_261104_followup_gpu04/code/eval_full.py --checkpoint /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777/ckpt_15000.pt --data-root /workspace/cvpr2027_261104_followup_gpu04/data/flowers --output /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777/evaluation_15000.json --run-dir /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777 --run-id cvpr2027_E2_flowers_k1_dense_dense_seed777
+/workspace/cvpr2027_env/venv/bin/python -u /workspace/cvpr2027_261104_followup_gpu04/code/eval_full.py --checkpoint /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777/ckpt_20000.pt --data-root /workspace/cvpr2027_261104_followup_gpu04/data/flowers --output /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777/evaluation_20000.json --run-dir /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777 --run-id cvpr2027_E2_flowers_k1_dense_dense_seed777
+/workspace/cvpr2027_env/venv/bin/python -u /workspace/cvpr2027_261104_followup_gpu04/code/eval_full.py --checkpoint /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777/ckpt_30000.pt --data-root /workspace/cvpr2027_261104_followup_gpu04/data/flowers --output /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777/evaluation_30000.json --run-dir /workspace/cvpr2027_261104_followup_gpu04/runs/cvpr2027_E2_flowers_k1_dense_dense_seed777 --run-id cvpr2027_E2_flowers_k1_dense_dense_seed777
+# counter_structure_seed777 (E1;E4); historical reused run
+# Exact original per-run argv: NA (not yet verified; see measures/historical_provenance.csv).
+# room_structure_seed777 (E4); historical reused run
+# Exact original per-run argv: NA (not yet verified; see measures/historical_provenance.csv).
+# bonsai_structure (E1;E4); historical reused run
+# Exact original per-run argv: NA (not yet verified; see measures/historical_provenance.csv).
+# bicycle_structure (E1); historical reused run
+# Exact original per-run argv: NA (not yet verified; see measures/historical_provenance.csv).
+# flowers_structure_seed777 (E4); historical reused run
+# Exact original per-run argv: NA (not yet verified; see measures/historical_provenance.csv).
+# garden_structure_seed777 (E4); historical reused run
+# Exact original per-run argv: NA (not yet verified; see measures/historical_provenance.csv).
+# stump_structure_seed777 (E4); historical reused run
+# Exact original per-run argv: NA (not yet verified; see measures/historical_provenance.csv).
+# treehill_structure_seed777 (E4); historical reused run
+# Exact original per-run argv: NA (not yet verified; see measures/historical_provenance.csv).
+# truck_structure_seed777 (E4); historical reused run
+# Exact original per-run argv: NA (not yet verified; see measures/historical_provenance.csv).
+# drjohnson_structure_seed777 (E4); historical reused run
+# Exact original per-run argv: NA (not yet verified; see measures/historical_provenance.csv).
+# playroom_structure_seed777 (E4); historical reused run
+# Exact original per-run argv: NA (not yet verified; see measures/historical_provenance.csv).
+# counter_mv4_ray16_compact_ssim_seed777 (E1); historical reused run
+# Exact original per-run argv: NA (not yet verified; see measures/historical_provenance.csv).
+# bonsai_mv4_ray16_compact_ssim_seed777 (E1); historical reused run
+# Exact original per-run argv: NA (not yet verified; see measures/historical_provenance.csv).
+# bicycle_mv4_ray9_compact_ssim_seed777 (E1); historical reused run
+# Exact original per-run argv: NA (not yet verified; see measures/historical_provenance.csv).

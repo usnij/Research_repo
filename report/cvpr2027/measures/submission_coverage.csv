@@ -1,0 +1,11 @@
+item,expected,available,note,checked_utc
+fresh_E1,6,6,eval_full.py;all_7_checkpoints;100_step_logs,2026-11-04T12:46:58.749293+00:00
+fresh_E2_registered,5,1,remaining_runs_in_progress;not_all_13_E2_scenes_started,2026-11-04T12:46:58.749293+00:00
+historical_reused_rows,14,14,E1_MV4_6_plus_R16_10_deduplicated,2026-11-04T12:46:58.749293+00:00
+historical_eval_full_verified,14,1,13_pending;main_metrics_NA;old_metrics_in_historical_reference_metrics.csv,2026-11-04T12:46:58.749293+00:00
+historical_100_step_logs,14,12,bonsai_structure;bicycle_structure_missing,2026-11-04T12:46:58.749293+00:00
+historical_training_commit_verified,14,0,unknown_full_commit_marked_NA;runtime_hash_evidence_retained_locally,2026-11-04T12:46:58.749293+00:00
+historical_exact_command_verified,14,0,unknown_argv_marked_NA,2026-11-04T12:46:58.749293+00:00
+E7_measurements,pending_start_signal,0,e7.csv_header_only;not_measured,2026-11-04T12:46:58.749293+00:00
+E6_Jensen_gradient_cos,scheduled_separately,0,not_measured_in_current_submission,2026-11-04T12:46:58.749293+00:00
+qualitative_images,not_required_by_item_6,0,new_E1_E2_render_images_not_generated;old_Garden_images_not_substituted,2026-11-04T12:46:58.749293+00:00
