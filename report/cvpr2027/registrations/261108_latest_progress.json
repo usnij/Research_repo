@@ -1,112 +1,124 @@
 {
   "schema_version": 1,
-  "registration_created_utc": "2026-11-07T16:44:13.575185+00:00",
-  "snapshot_exported_utc": "2026-11-07T16:41:15.063005+00:00",
+  "registration_created_utc": "2026-11-07T17:24:29.546527+00:00",
+  "snapshot_exported_utc": "2026-11-07T17:23:29.115558+00:00",
   "campaign": "ray_allocation_resolution_261108",
   "frozen_commit": "dec85dfec2a5a66e08b3633e3f14fc1cc597f49c",
   "plan_signature": "70ad5bd782b56631c7d87e1ba7fa85ffb8a24f32e463dbc2cb26262017a86231",
   "historical_runs_preserved": 80,
   "rows": {
     "runs.csv": 105,
-    "curves.csv": 489,
-    "views.csv": 2160
+    "curves.csv": 505,
+    "views.csv": 2185
   },
   "campaign_rows": {
     "runs.csv": 25,
-    "curves.csv": 2,
-    "views.csv": 0
+    "curves.csv": 18,
+    "views.csv": 25
   },
-  "current_timing_logs": 4,
+  "current_timing_logs": 5,
   "measured_metrics_invented": false,
   "full_training_complete": false,
   "evaluation_deferred_until_training_complete": true,
   "source_csv_sha256": {
-    "runs.csv": "e5e1e000e2a556b6eab5827274be7828b832f81e741518643637ef3bf44ed415",
-    "curves.csv": "1185c4ffcbfc442a960ce40877d78e36ff5325a661589f4f5fc9fc37c3d662ba",
-    "views.csv": "cc42d3616f377a1da624448cfa100ace9ae50307beb3c603ae0ece81bc10c4bb"
+    "runs.csv": "cb0aa294f574f3becad0242a1b3f74c917978b1148a57486bf2e583e486b2f11",
+    "curves.csv": "9eeac9ccca05d5065550b530812df41205825c316416160e29fc130357b37028",
+    "views.csv": "c306d9054ec059e03828d9aac229a8a667db1ba6504c144c5a2b52f3bcfb57fc"
   },
   "progress": [
     {
       "node": "node01",
       "instance": 59592874,
       "run_id": "allocres_261108_E2_counter_highres_dense_seed777",
-      "status": "training_400",
+      "status": "training_5050",
       "scene": "counter",
       "arm": "highres_dense",
-      "step": 400,
-      "G": 155767,
-      "training_seconds": 13.69077194808051,
-      "collected_utc": "2026-11-07T16:41:06.031859+00:00"
+      "step": 5050,
+      "G": 1229851,
+      "training_seconds": 2544.2785834640963,
+      "collected_utc": "2026-11-07T17:23:21.811672+00:00"
     },
     {
       "node": "node02",
       "instance": 59592898,
       "run_id": "allocres_261108_E2_garden_highres_dense_seed777",
-      "status": "training_850",
+      "status": "training_11000",
       "scene": "garden",
       "arm": "highres_dense",
-      "step": 850,
-      "G": 160638,
-      "training_seconds": 33.661668931134045,
-      "collected_utc": "2026-11-07T16:41:10.359196+00:00"
+      "step": 11000,
+      "G": 2044672,
+      "training_seconds": 2559.068025438115,
+      "collected_utc": "2026-11-07T17:23:25.321133+00:00"
     },
     {
       "node": "node03",
       "instance": 59592915,
       "run_id": "allocres_261108_E2_bonsai_highres_dense_seed777",
-      "status": "training_550",
+      "status": "training_6150",
       "scene": "bonsai",
       "arm": "highres_dense",
-      "step": 550,
-      "G": 206613,
-      "training_seconds": 22.170445055235177,
-      "collected_utc": "2026-11-07T16:41:09.667813+00:00"
+      "step": 6150,
+      "G": 1209886,
+      "training_seconds": 2532.918953677872,
+      "collected_utc": "2026-11-07T17:23:25.339343+00:00"
     },
     {
       "node": "node04",
       "instance": 59592933,
       "run_id": "allocres_261108_E1_bicycle_uniform_seed777",
-      "status": "training_6050",
+      "status": "complete",
       "scene": "bicycle",
       "arm": "uniform",
-      "step": 6050,
-      "G": 794230,
-      "training_seconds": 120.91844216943718,
-      "collected_utc": "2026-11-07T16:41:15.014918+00:00"
+      "step": 30000,
+      "G": 3021939,
+      "training_seconds": 2095.763880895218,
+      "collected_utc": "2026-11-07T17:23:29.064360+00:00"
+    },
+    {
+      "node": "node04",
+      "instance": 59592933,
+      "run_id": "allocres_261108_E1_bicycle_schedule_seed777",
+      "status": "training_8950",
+      "scene": "bicycle",
+      "arm": "schedule",
+      "step": 8950,
+      "G": 3021939,
+      "training_seconds": 341.58054600749165,
+      "collected_utc": "2026-11-07T17:23:29.064360+00:00"
     }
   ],
   "collection_status": {
-    "exported_utc": "2026-11-07T16:41:15.063005+00:00",
+    "exported_utc": "2026-11-07T17:23:29.115558+00:00",
     "nodes": [
       {
         "node_id": "node01",
         "available": true,
-        "collected_utc": "2026-11-07T16:41:06.031859+00:00",
-        "files": 13,
+        "collected_utc": "2026-11-07T17:23:21.811672+00:00",
+        "files": 15,
         "latest_attempt_succeeded": true,
         "previous_snapshot_used_after_failure": false
       },
       {
         "node_id": "node02",
         "available": true,
-        "collected_utc": "2026-11-07T16:41:10.359196+00:00",
-        "files": 13,
+        "collected_utc": "2026-11-07T17:23:25.321133+00:00",
+        "files": 17,
         "latest_attempt_succeeded": true,
         "previous_snapshot_used_after_failure": false
       },
       {
         "node_id": "node03",
         "available": true,
-        "collected_utc": "2026-11-07T16:41:09.667813+00:00",
-        "files": 13,
+        "collected_utc": "2026-11-07T17:23:25.339343+00:00",
+        "files": 15,
         "latest_attempt_succeeded": true,
         "previous_snapshot_used_after_failure": false
       },
       {
         "node_id": "node04",
         "available": true,
-        "collected_utc": "2026-11-07T16:41:15.014918+00:00",
-        "files": 15,
+        "collected_utc": "2026-11-07T17:23:29.064360+00:00",
+        "files": 46,
         "latest_attempt_succeeded": true,
         "previous_snapshot_used_after_failure": false
       }
