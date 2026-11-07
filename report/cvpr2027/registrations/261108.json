@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "registered_at_utc": "2026-11-07T16:28:04.794191+00:00",
+  "counts": {
+    "runs.csv": 105,
+    "curves.csv": 487,
+    "views.csv": 2160
+  },
+  "logs": 77,
+  "preserved_preexisting_runs": 33,
+  "imported_completed_runs": 47,
+  "new_planned_runs": 25,
+  "new_saved_checkpoints": 0,
+  "new_curve_rows": 0,
+  "new_view_rows": 0,
+  "new_plan_state": "draft_not_frozen",
+  "new_commit": "NA",
+  "new_run_status": "planned",
+  "measured_complete_runs": 62,
+  "measured_metrics_or_times_invented": false,
+  "original_cell_text_preserved": true,
+  "historical_60k_timing_only_curves": 12,
+  "history": [
+    {
+      "name": "existing_report",
+      "rows": {
+        "runs.csv": 33,
+        "curves.csv": 154,
+        "views.csv": 827
+      },
+      "statuses": {
+        "complete": 15,
+        "historical_reused_reevaluated": 4,
+        "historical_pending_eval_full": 10,
+        "planned": 3,
+        "training_complete_evaluation_pending": 1
+      },
+      "source_files": [
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/cvpr2027_reply_261104/publish_checkout/report/cvpr2027/runs.csv",
+          "sha256": "200f26657379edf27a0a0158f2c7fa5932a097403e6b7f1750eb2c2eb582e846"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/cvpr2027_reply_261104/publish_checkout/report/cvpr2027/curves.csv",
+          "sha256": "4976045832cd9dfea7f2647622be95ca98ae039a05b4ef3b544ba8ebcb37a95a"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/cvpr2027_reply_261104/publish_checkout/report/cvpr2027/views.csv",
+          "sha256": "de13ad99896dec975feb4a90bba926314241d7b93d75f5158af18e3a69e11210"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/cvpr2027_reply_261104/publish_checkout/report/cvpr2027/commands.txt",
+          "sha256": "70c8fb69bcfd95b51a02d67c3ca67f47136c879cb6ab0a6df82f7c0ddfbf4c4a"
+        }
+      ]
+    },
+    {
+      "name": "native5_singleview_261105",
+      "rows": {
+        "runs.csv": 24,
+        "curves.csv": 168,
+        "views.csv": 688
+      },
+      "statuses": {
+        "complete": 24
+      },
+      "source_files": [
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/native5_singleview_261105/results/runs.csv",
+          "sha256": "ac17121e2cd6dec6e1d7aa26009c89a5733a5cb71f6791984965cefbb0f931fb"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/native5_singleview_261105/results/curves.csv",
+          "sha256": "d206a8a0c821cdcefa79aa7c15cf7bdadd377e5f21ad365dcf42e6f17d93a317"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/native5_singleview_261105/results/views.csv",
+          "sha256": "beff76be402fab6200eaad8bd0a5ebca770999bee10e309205ae05f856961e28"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/native5_singleview_261105/results/commands.txt",
+          "sha256": "eddb2b33627a53596c87d06619e0ced40d46533f230f61ab434893c41f103d5a"
+        }
+      ]
+    },
+    {
+      "name": "native5_l1only_261105",
+      "rows": {
+        "runs.csv": 3,
+        "curves.csv": 21,
+        "views.csv": 86
+      },
+      "statuses": {
+        "complete": 3
+      },
+      "source_files": [
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/native5_l1only_261105/results/runs.csv",
+          "sha256": "356eabd289581774242d51cfc1ae6309350c0acdb71deee9436d8c551f0f55dc"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/native5_l1only_261105/results/curves.csv",
+          "sha256": "5191ba74d12e052ff46e2a62789188b18a6cb903ef5aa882b8ba6bc8a8cd65da"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/native5_l1only_261105/results/views.csv",
+          "sha256": "afc1cd9244732b5dfe332c6d85d04fa827208e323ea9eabdaf382e5a64a8064c"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/native5_l1only_261105/results/commands.txt",
+          "sha256": "1af124be85c1c42bba0f88e1b787927bc34cba4c411952cf76ffad2e63153775"
+        }
+      ]
+    },
+    {
+      "name": "native5_capacity_duration_261105",
+      "rows": {
+        "runs.csv": 8,
+        "curves.csv": 60,
+        "views.csv": 196
+      },
+      "statuses": {
+        "complete": 8
+      },
+      "source_files": [
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/native5_capacity_duration_261105/results/runs.csv",
+          "sha256": "fdd4cb6bbadcb4edcc1f4ad8811d4730347bc6a49d348d820edc15528da73839"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/native5_capacity_duration_261105/results/curves.csv",
+          "sha256": "51ba4fc878c03586bb345e9f0cd3e0a591d041e322a224157b2349f51dcff8f9"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/native5_capacity_duration_261105/results/views.csv",
+          "sha256": "e802e2424ae9c01a2da7b9e687d6bd6031ee05362bb369c8556fd098fcb48807"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/native5_capacity_duration_261105/results/commands.txt",
+          "sha256": "898cd4085a1949365a5031ab69e1f0e660084265346cf06c249c71b16d3dc10e"
+        }
+      ]
+    },
+    {
+      "name": "micropatch_singleview_261105",
+      "rows": {
+        "runs.csv": 12,
+        "curves.csv": 84,
+        "views.csv": 363
+      },
+      "statuses": {
+        "complete": 12
+      },
+      "source_files": [
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/micropatch_singleview_261105/results/runs.csv",
+          "sha256": "610510079342ca8f0a8994f700632f4405051b2a3f3b60a93e1ec785ce7f9708"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/micropatch_singleview_261105/results/curves.csv",
+          "sha256": "5f9215d40f22f62d24632010df281915e9029d5163b5ff7c627c4e0fcf3f2028"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/micropatch_singleview_261105/results/views.csv",
+          "sha256": "694323719ed035d0af4151e3d3efba13e7123de9111847a7af6c22ceb1f95878"
+        },
+        {
+          "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/micropatch_singleview_261105/results/commands.txt",
+          "sha256": "6f231afec6c360be3768bde18a2050670a3f153cfabe5d2da01e483548bcec93"
+        }
+      ]
+    }
+  ],
+  "historical_validation": {
+    "rows_audited": 47,
+    "source_frozen_commits_verified": true,
+    "final_checkpoints_locally_present": 47,
+    "evaluation_metrics_verified_against_original_json": true,
+    "checkpoint_time_and_G_verified_against_receipts": true,
+    "final_views_verified_against_original_json": true,
+    "logs_identical_to_collected_step_times": true,
+    "evidence_manifest_sha256": "849eae054e891a7934a05b858a8665424382b99ea6f60fdf4105452f3a20ca40"
+  },
+  "unchanged_existing_omissions": [
+    {
+      "run_id": "counter_structure_seed777",
+      "status": "historical_reused_reevaluated",
+      "missing_fields": [
+        "commit"
+      ]
+    },
+    {
+      "run_id": "room_structure_seed777",
+      "status": "historical_pending_eval_full",
+      "missing_fields": [
+        "commit",
+        "PSNR",
+        "SSIM",
+        "LPIPS"
+      ]
+    },
+    {
+      "run_id": "bonsai_structure",
+      "status": "historical_pending_eval_full",
+      "missing_fields": [
+        "commit",
+        "PSNR",
+        "SSIM",
+        "LPIPS"
+      ]
+    },
+    {
+      "run_id": "bicycle_structure",
+      "status": "historical_pending_eval_full",
+      "missing_fields": [
+        "commit",
+        "PSNR",
+        "SSIM",
+        "LPIPS"
+      ]
+    },
+    {
+      "run_id": "flowers_structure_seed777",
+      "status": "historical_reused_reevaluated",
+      "missing_fields": [
+        "commit"
+      ]
+    },
+    {
+      "run_id": "garden_structure_seed777",
+      "status": "historical_reused_reevaluated",
+      "missing_fields": [
+        "commit"
+      ]
+    },
+    {
+      "run_id": "stump_structure_seed777",
+      "status": "historical_pending_eval_full",
+      "missing_fields": [
+        "commit",
+        "PSNR",
+        "SSIM",
+        "LPIPS"
+      ]
+    },
+    {
+      "run_id": "treehill_structure_seed777",
+      "status": "historical_reused_reevaluated",
+      "missing_fields": [
+        "commit"
+      ]
+    },
+    {
+      "run_id": "truck_structure_seed777",
+      "status": "historical_pending_eval_full",
+      "missing_fields": [
+        "commit",
+        "PSNR",
+        "SSIM",
+        "LPIPS"
+      ]
+    },
+    {
+      "run_id": "drjohnson_structure_seed777",
+      "status": "historical_pending_eval_full",
+      "missing_fields": [
+        "commit",
+        "PSNR",
+        "SSIM",
+        "LPIPS"
+      ]
+    },
+    {
+      "run_id": "playroom_structure_seed777",
+      "status": "historical_pending_eval_full",
+      "missing_fields": [
+        "commit",
+        "PSNR",
+        "SSIM",
+        "LPIPS"
+      ]
+    },
+    {
+      "run_id": "counter_mv4_ray16_compact_ssim_seed777",
+      "status": "historical_pending_eval_full",
+      "missing_fields": [
+        "commit",
+        "PSNR",
+        "SSIM",
+        "LPIPS"
+      ]
+    },
+    {
+      "run_id": "bonsai_mv4_ray16_compact_ssim_seed777",
+      "status": "historical_pending_eval_full",
+      "missing_fields": [
+        "commit",
+        "PSNR",
+        "SSIM",
+        "LPIPS"
+      ]
+    },
+    {
+      "run_id": "bicycle_mv4_ray9_compact_ssim_seed777",
+      "status": "historical_pending_eval_full",
+      "missing_fields": [
+        "commit",
+        "PSNR",
+        "SSIM",
+        "LPIPS"
+      ]
+    },
+    {
+      "run_id": "cvpr2027_E2_train_k1_dense_dense_seed777",
+      "status": "planned",
+      "missing_fields": [
+        "training_seconds",
+        "PSNR",
+        "SSIM",
+        "LPIPS"
+      ]
+    },
+    {
+      "run_id": "cvpr2027_E2_playroom_k1_dense_dense_seed777",
+      "status": "planned",
+      "missing_fields": [
+        "training_seconds",
+        "PSNR",
+        "SSIM",
+        "LPIPS"
+      ]
+    },
+    {
+      "run_id": "cvpr2027_E2_drjohnson_k1_dense_dense_seed777",
+      "status": "planned",
+      "missing_fields": [
+        "training_seconds",
+        "PSNR",
+        "SSIM",
+        "LPIPS"
+      ]
+    },
+    {
+      "run_id": "cvpr2027_E2_truck_k1_dense_dense_seed777",
+      "status": "training_complete_evaluation_pending",
+      "missing_fields": [
+        "PSNR",
+        "SSIM",
+        "LPIPS"
+      ]
+    }
+  ],
+  "draft_plan": {
+    "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/ray_allocation_resolution_261108/fleet/plan.draft.json",
+    "bytes": 48328,
+    "sha256": "8c7a18770cf7ab38c8a810dbb8ee1c225488c8c42d8f81b10ecb4a9112bdf955"
+  },
+  "draft_plan_signature": "aec8c3991adbd96da813f4d0f91f65cd8f5f11a1adaae42e1a2a73c0c35e2478",
+  "planned_node_assignments_provisional": true,
+  "planned_checkpoint_steps": [
+    2000,
+    5000,
+    7000,
+    10000,
+    15000,
+    20000,
+    30000
+  ],
+  "source_file": {
+    "path": "/home/jinsu/Documents/Github/논문/research_resume_260918/ray_allocation_resolution_261108/setup/register_results.py",
+    "bytes": 7825,
+    "sha256": "3e5c058943715129b5bde9a3b2c4e5b81aa595de08215ed18c7d0375480644bd"
+  },
+  "registration_outputs": [
+    {
+      "relative_path": "commands.txt",
+      "bytes": 421311,
+      "sha256": "17e1c5f3e92e3d46a711f9acaed7e2be851cfa8545113bc02e7533b333536488"
+    },
+    {
+      "relative_path": "curves.csv",
+      "bytes": 63794,
+      "sha256": "396b596ffb68de6125ab9ddae1820bbbd64029e0e3ea362ce34f771252b9d99b"
+    },
+    {
+      "relative_path": "runs.csv",
+      "bytes": 109386,
+      "sha256": "7f95c4d2b2d3c990f2d44b8c78740ec79060ee683cec261103ac9283360e6970"
+    },
+    {
+      "relative_path": "views.csv",
+      "bytes": 346022,
+      "sha256": "aa012f36e93126d655d62c04bbb44954d5f30b246891aa641b9af977272d251d"
+    }
+  ]
+}
