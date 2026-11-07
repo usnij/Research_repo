@@ -1,42 +1,42 @@
 {
   "schema_version": 1,
-  "registration_created_utc": "2026-11-07T19:54:54.319505+00:00",
-  "snapshot_exported_utc": "2026-11-07T19:42:06.632981+00:00",
+  "registration_created_utc": "2026-11-07T20:30:03.609148+00:00",
+  "snapshot_exported_utc": "2026-11-07T20:29:00.087942+00:00",
   "campaign": "ray_allocation_resolution_261108",
   "frozen_commit": "dec85dfec2a5a66e08b3633e3f14fc1cc597f49c",
   "plan_signature": "70ad5bd782b56631c7d87e1ba7fa85ffb8a24f32e463dbc2cb26262017a86231",
   "historical_runs_preserved": 80,
   "rows": {
     "runs.csv": 105,
-    "curves.csv": 542,
-    "views.csv": 2308
+    "curves.csv": 553,
+    "views.csv": 2332
   },
   "campaign_rows": {
     "runs.csv": 25,
-    "curves.csv": 55,
-    "views.csv": 148
+    "curves.csv": 66,
+    "views.csv": 172
   },
-  "current_timing_logs": 9,
+  "current_timing_logs": 10,
   "measured_metrics_invented": false,
   "full_training_complete": false,
   "evaluation_deferred_until_training_complete": true,
   "source_csv_sha256": {
-    "runs.csv": "6c7a7dab15acb7d7182b7769689a3fed8beab995af484c94e1db7feaa215fd11",
-    "curves.csv": "ec273b8572b912fd5c7b3ad7f8c96d9d76ae940c347b40d68e5275484b035269",
-    "views.csv": "33d8431986535bfd80e8423e5ddc600ed6010c7888b032eb57e57e608c357bcc"
+    "runs.csv": "ac2bcf5ea210def0e1b4b19d09463bd05dc9af49ba80327aa57f41a93ab7e5bc",
+    "curves.csv": "bb521d31e05f43fd54bec041def448244f4e2eae12b7daecd18af074edadac3b",
+    "views.csv": "33c91c42f04894c862531b75683f1128140fed9a30ebbd7ca0e9bc8aa5bf17fd"
   },
   "progress": [
     {
       "node": "node01",
       "instance": 59592874,
       "run_id": "allocres_261108_E2_counter_highres_dense_seed777",
-      "status": "training_13550",
+      "status": "training_16500",
       "scene": "counter",
       "arm": "highres_dense",
-      "step": 13550,
+      "step": 16500,
       "G": 1229851,
-      "training_seconds": 10798.765563922236,
-      "collected_utc": "2026-11-07T19:41:50.186778+00:00"
+      "training_seconds": 13623.391048633028,
+      "collected_utc": "2026-11-07T20:28:51.230490+00:00"
     },
     {
       "node": "node02",
@@ -48,7 +48,7 @@
       "step": 30000,
       "G": 2044672,
       "training_seconds": 8460.389228246175,
-      "collected_utc": "2026-11-07T19:41:58.122147+00:00"
+      "collected_utc": "2026-11-07T20:29:00.018967+00:00"
     },
     {
       "node": "node02",
@@ -60,31 +60,43 @@
       "step": 30000,
       "G": 2044672,
       "training_seconds": 1504.8950382638723,
-      "collected_utc": "2026-11-07T19:41:58.122147+00:00"
+      "collected_utc": "2026-11-07T20:29:00.018967+00:00"
     },
     {
       "node": "node02",
       "instance": 59592898,
       "run_id": "allocres_261108_E1_garden_schedule_seed777",
-      "status": "training_12400",
+      "status": "complete",
       "scene": "garden",
       "arm": "schedule",
-      "step": 12400,
+      "step": 30000,
       "G": 2044672,
-      "training_seconds": 559.8938270839863,
-      "collected_utc": "2026-11-07T19:41:58.122147+00:00"
+      "training_seconds": 1863.9196146912873,
+      "collected_utc": "2026-11-07T20:29:00.018967+00:00"
+    },
+    {
+      "node": "node02",
+      "instance": 59592898,
+      "run_id": "allocres_261108_E2_garden_sparse_r16_seed777",
+      "status": "training_20900",
+      "scene": "garden",
+      "arm": "sparse_r16",
+      "step": 20900,
+      "G": 2044672,
+      "training_seconds": 1350.4941071630456,
+      "collected_utc": "2026-11-07T20:29:00.018967+00:00"
     },
     {
       "node": "node03",
       "instance": 59592915,
       "run_id": "allocres_261108_E2_bonsai_highres_dense_seed777",
-      "status": "training_18600",
+      "status": "training_22650",
       "scene": "bonsai",
       "arm": "highres_dense",
-      "step": 18600,
+      "step": 22650,
       "G": 1209886,
-      "training_seconds": 10836.22124484717,
-      "collected_utc": "2026-11-07T19:41:55.139700+00:00"
+      "training_seconds": 13656.838768051122,
+      "collected_utc": "2026-11-07T20:28:55.217822+00:00"
     },
     {
       "node": "node04",
@@ -96,7 +108,7 @@
       "step": 30000,
       "G": 3021939,
       "training_seconds": 2095.763880895218,
-      "collected_utc": "2026-11-07T19:42:06.564503+00:00"
+      "collected_utc": "2026-11-07T20:28:59.450060+00:00"
     },
     {
       "node": "node04",
@@ -108,7 +120,7 @@
       "step": 30000,
       "G": 3021939,
       "training_seconds": 2307.3712535279337,
-      "collected_utc": "2026-11-07T19:42:06.564503+00:00"
+      "collected_utc": "2026-11-07T20:28:59.450060+00:00"
     },
     {
       "node": "node04",
@@ -120,7 +132,7 @@
       "step": 30000,
       "G": 3021939,
       "training_seconds": 2270.1728970196564,
-      "collected_utc": "2026-11-07T19:42:06.564503+00:00"
+      "collected_utc": "2026-11-07T20:28:59.450060+00:00"
     },
     {
       "node": "node04",
@@ -132,40 +144,40 @@
       "step": 30000,
       "G": 3021939,
       "training_seconds": 2325.8534141902346,
-      "collected_utc": "2026-11-07T19:42:06.564503+00:00"
+      "collected_utc": "2026-11-07T20:28:59.450060+00:00"
     }
   ],
   "collection_status": {
-    "exported_utc": "2026-11-07T19:42:06.632981+00:00",
+    "exported_utc": "2026-11-07T20:29:00.087942+00:00",
     "nodes": [
       {
         "node_id": "node01",
         "available": true,
-        "collected_utc": "2026-11-07T19:41:50.186778+00:00",
-        "files": 17,
+        "collected_utc": "2026-11-07T20:28:51.230490+00:00",
+        "files": 18,
         "latest_attempt_succeeded": true,
         "previous_snapshot_used_after_failure": false
       },
       {
         "node_id": "node02",
         "available": true,
-        "collected_utc": "2026-11-07T19:41:58.122147+00:00",
-        "files": 77,
+        "collected_utc": "2026-11-07T20:29:00.018967+00:00",
+        "files": 109,
         "latest_attempt_succeeded": true,
         "previous_snapshot_used_after_failure": false
       },
       {
         "node_id": "node03",
         "available": true,
-        "collected_utc": "2026-11-07T19:41:55.139700+00:00",
-        "files": 18,
+        "collected_utc": "2026-11-07T20:28:55.217822+00:00",
+        "files": 19,
         "latest_attempt_succeeded": true,
         "previous_snapshot_used_after_failure": false
       },
       {
         "node_id": "node04",
         "available": true,
-        "collected_utc": "2026-11-07T19:42:06.564503+00:00",
+        "collected_utc": "2026-11-07T20:28:59.450060+00:00",
         "files": 127,
         "latest_attempt_succeeded": true,
         "previous_snapshot_used_after_failure": false
