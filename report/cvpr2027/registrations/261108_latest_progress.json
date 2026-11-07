@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "registration_created_utc": "2026-11-07T16:44:13.575185+00:00",
+  "snapshot_exported_utc": "2026-11-07T16:41:15.063005+00:00",
+  "campaign": "ray_allocation_resolution_261108",
+  "frozen_commit": "dec85dfec2a5a66e08b3633e3f14fc1cc597f49c",
+  "plan_signature": "70ad5bd782b56631c7d87e1ba7fa85ffb8a24f32e463dbc2cb26262017a86231",
+  "historical_runs_preserved": 80,
+  "rows": {
+    "runs.csv": 105,
+    "curves.csv": 489,
+    "views.csv": 2160
+  },
+  "campaign_rows": {
+    "runs.csv": 25,
+    "curves.csv": 2,
+    "views.csv": 0
+  },
+  "current_timing_logs": 4,
+  "measured_metrics_invented": false,
+  "full_training_complete": false,
+  "evaluation_deferred_until_training_complete": true,
+  "source_csv_sha256": {
+    "runs.csv": "e5e1e000e2a556b6eab5827274be7828b832f81e741518643637ef3bf44ed415",
+    "curves.csv": "1185c4ffcbfc442a960ce40877d78e36ff5325a661589f4f5fc9fc37c3d662ba",
+    "views.csv": "cc42d3616f377a1da624448cfa100ace9ae50307beb3c603ae0ece81bc10c4bb"
+  },
+  "progress": [
+    {
+      "node": "node01",
+      "instance": 59592874,
+      "run_id": "allocres_261108_E2_counter_highres_dense_seed777",
+      "status": "training_400",
+      "scene": "counter",
+      "arm": "highres_dense",
+      "step": 400,
+      "G": 155767,
+      "training_seconds": 13.69077194808051,
+      "collected_utc": "2026-11-07T16:41:06.031859+00:00"
+    },
+    {
+      "node": "node02",
+      "instance": 59592898,
+      "run_id": "allocres_261108_E2_garden_highres_dense_seed777",
+      "status": "training_850",
+      "scene": "garden",
+      "arm": "highres_dense",
+      "step": 850,
+      "G": 160638,
+      "training_seconds": 33.661668931134045,
+      "collected_utc": "2026-11-07T16:41:10.359196+00:00"
+    },
+    {
+      "node": "node03",
+      "instance": 59592915,
+      "run_id": "allocres_261108_E2_bonsai_highres_dense_seed777",
+      "status": "training_550",
+      "scene": "bonsai",
+      "arm": "highres_dense",
+      "step": 550,
+      "G": 206613,
+      "training_seconds": 22.170445055235177,
+      "collected_utc": "2026-11-07T16:41:09.667813+00:00"
+    },
+    {
+      "node": "node04",
+      "instance": 59592933,
+      "run_id": "allocres_261108_E1_bicycle_uniform_seed777",
+      "status": "training_6050",
+      "scene": "bicycle",
+      "arm": "uniform",
+      "step": 6050,
+      "G": 794230,
+      "training_seconds": 120.91844216943718,
+      "collected_utc": "2026-11-07T16:41:15.014918+00:00"
+    }
+  ],
+  "collection_status": {
+    "exported_utc": "2026-11-07T16:41:15.063005+00:00",
+    "nodes": [
+      {
+        "node_id": "node01",
+        "available": true,
+        "collected_utc": "2026-11-07T16:41:06.031859+00:00",
+        "files": 13,
+        "latest_attempt_succeeded": true,
+        "previous_snapshot_used_after_failure": false
+      },
+      {
+        "node_id": "node02",
+        "available": true,
+        "collected_utc": "2026-11-07T16:41:10.359196+00:00",
+        "files": 13,
+        "latest_attempt_succeeded": true,
+        "previous_snapshot_used_after_failure": false
+      },
+      {
+        "node_id": "node03",
+        "available": true,
+        "collected_utc": "2026-11-07T16:41:09.667813+00:00",
+        "files": 13,
+        "latest_attempt_succeeded": true,
+        "previous_snapshot_used_after_failure": false
+      },
+      {
+        "node_id": "node04",
+        "available": true,
+        "collected_utc": "2026-11-07T16:41:15.014918+00:00",
+        "files": 15,
+        "latest_attempt_succeeded": true,
+        "previous_snapshot_used_after_failure": false
+      }
+    ],
+    "interpretation": "Values reflect each node collection time; unavailable nodes stay unmeasured."
+  }
+}
