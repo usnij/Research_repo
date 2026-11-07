@@ -1,0 +1,236 @@
+[
+  {
+    "scene": "counter",
+    "dataset": "MipNeRF360",
+    "downsample": 2,
+    "block": 8,
+    "train_views": 210,
+    "test_views": 30,
+    "initial_N": 155767,
+    "target_N": 1229851,
+    "shapes": {
+      "1558x1038": 240
+    },
+    "rays_per_update": 101400,
+    "nominal_ray_fraction": 0.0625,
+    "actual_ray_fraction": 0.06270080954536347,
+    "input_bytes": 319622230,
+    "files_signature": "f6958a8727e2f85cc1837814ec1d6547e8b8649ccec01eea86a5c146ae850e7e"
+  },
+  {
+    "scene": "room",
+    "dataset": "MipNeRF360",
+    "downsample": 2,
+    "block": 8,
+    "train_views": 272,
+    "test_views": 39,
+    "initial_N": 112627,
+    "target_N": 1013619,
+    "shapes": {
+      "1557x1038": 311
+    },
+    "rays_per_update": 101400,
+    "nominal_ray_fraction": 0.0625,
+    "actual_ray_fraction": 0.06274107981482101,
+    "input_bytes": 336018507,
+    "files_signature": "cc2837e43078786a0ad8ba5e2f9c8cd119fc161e4bc642e81b4d02f70990330b"
+  },
+  {
+    "scene": "bonsai",
+    "dataset": "MipNeRF360",
+    "downsample": 2,
+    "block": 8,
+    "train_views": 255,
+    "test_views": 37,
+    "initial_N": 206613,
+    "target_N": 1209886,
+    "shapes": {
+      "1559x1039": 292
+    },
+    "rays_per_update": 101400,
+    "nominal_ray_fraction": 0.0625,
+    "actual_ray_fraction": 0.06260028238036648,
+    "input_bytes": 372967249,
+    "files_signature": "761bcf28fb46a61d108106c6070871f22ca24e3eb0c7c80aed6749258fc734c0"
+  },
+  {
+    "scene": "kitchen",
+    "dataset": "MipNeRF360",
+    "downsample": 2,
+    "block": 6,
+    "train_views": 244,
+    "test_views": 35,
+    "initial_N": 241367,
+    "target_N": 1590685,
+    "shapes": {
+      "1558x1039": 279
+    },
+    "rays_per_update": 180960,
+    "nominal_ray_fraction": 0.1111111111111111,
+    "actual_ray_fraction": 0.1117891326828774,
+    "input_bytes": 431017720,
+    "files_signature": "685929bddf58150781cd15bafa46d22c01bdd9ad1301957b2b2467441facec0a"
+  },
+  {
+    "scene": "bicycle",
+    "dataset": "MipNeRF360",
+    "downsample": 4,
+    "block": 6,
+    "train_views": 169,
+    "test_views": 25,
+    "initial_N": 54275,
+    "target_N": 3021939,
+    "shapes": {
+      "1237x822": 194
+    },
+    "rays_per_update": 113436,
+    "nominal_ray_fraction": 0.1111111111111111,
+    "actual_ray_fraction": 0.11156022635408246,
+    "input_bytes": 225313122,
+    "files_signature": "0f0f3e904c6df077d2ff7cd541b056cc5521ff031ac76c121c5c1cf92bc7de3d"
+  },
+  {
+    "scene": "flowers",
+    "dataset": "MipNeRF360",
+    "downsample": 4,
+    "block": 8,
+    "train_views": 151,
+    "test_views": 22,
+    "initial_N": 38347,
+    "target_N": 2577733,
+    "shapes": {
+      "1256x828": 173
+    },
+    "rays_per_update": 65312,
+    "nominal_ray_fraction": 0.0625,
+    "actual_ray_fraction": 0.06280193236714976,
+    "input_bytes": 222605201,
+    "files_signature": "8a95e14a548575b96d24d4ee29b607c523baf3dda8772e0202a2d011fa0de759"
+  },
+  {
+    "scene": "garden",
+    "dataset": "MipNeRF360",
+    "downsample": 4,
+    "block": 8,
+    "train_views": 161,
+    "test_views": 24,
+    "initial_N": 138766,
+    "target_N": 2044672,
+    "shapes": {
+      "1297x840": 185
+    },
+    "rays_per_update": 68460,
+    "nominal_ray_fraction": 0.0625,
+    "actual_ray_fraction": 0.06283731688511951,
+    "input_bytes": 256750309,
+    "files_signature": "8132662e3773b8ad5e11a987284b5d6c2d0743874df0dcf59f632bde5b14c50a"
+  },
+  {
+    "scene": "stump",
+    "dataset": "MipNeRF360",
+    "downsample": 4,
+    "block": 8,
+    "train_views": 109,
+    "test_views": 16,
+    "initial_N": 32049,
+    "target_N": 2824473,
+    "shapes": {
+      "1245x825": 125
+    },
+    "rays_per_update": 64896,
+    "nominal_ray_fraction": 0.0625,
+    "actual_ray_fraction": 0.06318218327856882,
+    "input_bytes": 139279997,
+    "files_signature": "d6a33b421f83a573895d19369e926dbf4413aec93297f5b919017fea2b9d776e"
+  },
+  {
+    "scene": "treehill",
+    "dataset": "MipNeRF360",
+    "downsample": 4,
+    "block": 8,
+    "train_views": 123,
+    "test_views": 18,
+    "initial_N": 52363,
+    "target_N": 3061821,
+    "shapes": {
+      "1267x832": 141
+    },
+    "rays_per_update": 66144,
+    "nominal_ray_fraction": 0.0625,
+    "actual_ray_fraction": 0.0627466456195738,
+    "input_bytes": 167656354,
+    "files_signature": "bb7a8a5ab8b8648132d9fb3d3ff474b1df9d785956bbb3f3c3d127b4da62f70d"
+  },
+  {
+    "scene": "train",
+    "dataset": "TanksAndTemples",
+    "downsample": 1,
+    "block": 6,
+    "train_views": 263,
+    "test_views": 38,
+    "initial_N": 182686,
+    "target_N": 1538857,
+    "shapes": {
+      "980x545": 301
+    },
+    "rays_per_update": 59696,
+    "nominal_ray_fraction": 0.1111111111111111,
+    "actual_ray_fraction": 0.11176933158584534,
+    "input_bytes": 219581037,
+    "files_signature": "5280cdce1c73e58f8c62b87aa478c95183d3026a6b54ab54f31677d20507bdad"
+  },
+  {
+    "scene": "truck",
+    "dataset": "TanksAndTemples",
+    "downsample": 1,
+    "block": 8,
+    "train_views": 219,
+    "test_views": 32,
+    "initial_N": 136029,
+    "target_N": 1475247,
+    "shapes": {
+      "979x546": 251
+    },
+    "rays_per_update": 33948,
+    "nominal_ray_fraction": 0.0625,
+    "actual_ray_fraction": 0.06350952418368148,
+    "input_bytes": 187277217,
+    "files_signature": "3a65b758777850d599e82cf6f9f8321deacab3715537790d825975746b4d753c"
+  },
+  {
+    "scene": "drjohnson",
+    "dataset": "DeepBlending",
+    "downsample": 1,
+    "block": 8,
+    "train_views": 230,
+    "test_views": 33,
+    "initial_N": 80861,
+    "target_N": 2282236,
+    "shapes": {
+      "1332x876": 263
+    },
+    "rays_per_update": 73480,
+    "nominal_ray_fraction": 0.0625,
+    "actual_ray_fraction": 0.06297393283694654,
+    "input_bytes": 208342001,
+    "files_signature": "a6bfc2a91fd61bf3d43293411dbc2e45505870a376e2ff4bea9ab34da4b206c2"
+  },
+  {
+    "scene": "playroom",
+    "dataset": "DeepBlending",
+    "downsample": 1,
+    "block": 8,
+    "train_views": 196,
+    "test_views": 29,
+    "initial_N": 37005,
+    "target_N": 1378867,
+    "shapes": {
+      "1264x832": 225
+    },
+    "rays_per_update": 65728,
+    "nominal_ray_fraction": 0.0625,
+    "actual_ray_fraction": 0.0625,
+    "input_bytes": 155950773,
+    "files_signature": "bd8a770a5fe4dbffcaaef36b4bed26cd5da4527b61d82e0678174176085687e0"
+  }
+]

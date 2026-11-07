@@ -1,0 +1,22 @@
+{
+  "src/sparse_grt/losses/coordinate_ssim.py": {
+    "source": "research_resume_260918/coordinate_ssim_refine_261029/coordinate_ssim.py",
+    "sha256": "55396c4f80ba0b3b6a6b5769b31f5f78f972b0b197a077b4709c27136dccc6e5",
+    "status": "exact copy; unchanged default implementation"
+  },
+  "src/sparse_grt/losses/coordinate_ssim.cu": {
+    "source": "research_resume_260918/coordinate_ssim_refine_261029/coordinate_ssim.cu",
+    "sha256": "6595ab5675c99c65a5852525eed696d0061f6abdec56df358eae1e3b3cda67a3",
+    "status": "exact copy; unchanged default implementation"
+  },
+  "src/sparse_grt/losses/coordinate_ssim_all.py": {
+    "source": "research_resume_260918/coordinate_ssim_boundary_261030/boundary_ssim.py",
+    "sha256": "4d7ce595b0d699d9683d7d8875e78595cd69c9693f571560d1595142da75b2a1",
+    "status": "All-centre objective; CPU and CUDA derivatives checked, two Counter short continuations passed. Full-run validation pending."
+  },
+  "src/sparse_grt/losses/coordinate_ssim_all.cu": {
+    "source": "research_resume_260918/coordinate_ssim_boundary_261030/boundary_ssim.cu",
+    "sha256": "51f70dc0d25887965e64539df3416d00a3c2e70e835259fa3726328d8aee726d",
+    "status": "All-centre objective; CPU and CUDA derivatives checked, two Counter short continuations passed. Full-run validation pending."
+  }
+}

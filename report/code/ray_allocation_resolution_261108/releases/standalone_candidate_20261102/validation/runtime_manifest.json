@@ -1,0 +1,250 @@
+{
+  "modules": {
+    "_sparse_grt_mcmc_v1": {
+      "path": "/tmp/sparse-grt-standalone/torch-cache/_sparse_grt_mcmc_v1/_sparse_grt_mcmc_v1.so",
+      "sha256": "50e08f9496c3c741f1c3d366a1a4e23d1046b72d451bf7638069d21dee3456cb"
+    },
+    "_sparse_grt_ray_fp64_v1": {
+      "path": "/tmp/sparse-grt-standalone/torch-cache/_sparse_grt_ray_fp64_v1/_sparse_grt_ray_fp64_v1.so",
+      "sha256": "4961ec461f7d83b1ac9c510dd5d07232668aa5cdf7db736a454976e02bdf2622"
+    },
+    "sparse_grt": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/__init__.py",
+      "sha256": "4ff478eadbd6c73f647fd444e46c5cd13dd5c780d460321a1ecbe6fd77fbce87"
+    },
+    "sparse_grt.budget": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/budget.py",
+      "sha256": "a996f03d26e83a94b9af8b215351b30f3c66bc683c0b3426c40384200dca3e24"
+    },
+    "sparse_grt.cached_dataset": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/cached_dataset.py",
+      "sha256": "a649c97368251284ee7578e37f6c6c80ce958a01ad471dc42be63b83260a7719"
+    },
+    "sparse_grt.config": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/config.py",
+      "sha256": "0766a8535c6c86db5ace70e0c2045cadaeb975337235fe73080c4492b9245eb5"
+    },
+    "sparse_grt.contracts": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/contracts.py",
+      "sha256": "dfa3eb8a61134bf94c7b7bf656e8f94c082067f7da3cfaa8fa3e93b7bab3e22c"
+    },
+    "sparse_grt.engine": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/engine.py",
+      "sha256": "10a2a16180d68080584de1174e681215372fefd2c374fc0bffa8e30e52b692c5"
+    },
+    "sparse_grt.growth": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/growth.py",
+      "sha256": "7e5425f9051f54700bfc804549152e22e7a95108e60a21c2ef384feaef9968a5"
+    },
+    "sparse_grt.inputs": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/inputs.py",
+      "sha256": "ae72b576b434c4d4ebcfb24e40709568a4fde23487f707ba467da2d0b6a03efe"
+    },
+    "sparse_grt.losses": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/losses/__init__.py",
+      "sha256": "a8cf0f5830b7e768d291e961301304f6c24e6612b9aa4cb783d0569d216732dc"
+    },
+    "sparse_grt.losses.coordinate_ssim": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/losses/coordinate_ssim.py",
+      "sha256": "55396c4f80ba0b3b6a6b5769b31f5f78f972b0b197a077b4709c27136dccc6e5"
+    },
+    "sparse_grt.losses.coordinate_ssim_all": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/losses/coordinate_ssim_all.py",
+      "sha256": "4d7ce595b0d699d9683d7d8875e78595cd69c9693f571560d1595142da75b2a1"
+    },
+    "sparse_grt.native_build": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/native_build.py",
+      "sha256": "b17b6707bb24e13a52c1ff77fd698c7659b9c31933d4264b600f84b8dd8915ea"
+    },
+    "sparse_grt.objective": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/objective.py",
+      "sha256": "c88ec9e9388bd260a81b28072915a8d0caee71e3f8a8250e6b87242f5c5b8d52"
+    },
+    "sparse_grt.provenance": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/provenance.py",
+      "sha256": "50987bdf9c8423a3d648aca301b9ae990a30f4b7da971f77fbb9e6820af57366"
+    },
+    "sparse_grt.sampling": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/sampling.py",
+      "sha256": "a72bf8b26bf03ec2bdaf4a71cd1329f4464ea82ddf8e83c5f22a47fbd43fe8ed"
+    },
+    "sparse_grt.standalone_backend": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/standalone_backend.py",
+      "sha256": "41be9c1bd192117e2287139afa2f2f4285202e0a67910efa4010b8ee2471fd0d"
+    },
+    "sparse_grt.training": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt/training.py",
+      "sha256": "453050a00a64912abde620060cd68a2fe8a492934d7ea08c573b0eb0caa549d4"
+    },
+    "sparse_grt_backend": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/__init__.py",
+      "sha256": "69127fcb2949dbbfb26caed99e9955d8a7909de02042afa403ecc840d8174ffc"
+    },
+    "sparse_grt_backend.datasets": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/datasets/__init__.py",
+      "sha256": "182f7d1d7ce03258203fd72e89b19ac001fadb2af1ec6ea563379ad81a2a7680"
+    },
+    "sparse_grt_backend.datasets.camera_models": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/datasets/camera_models.py",
+      "sha256": "f2c2ca2d60f2c24846d273110070b9cc9d654496ad839078f899b27565110587"
+    },
+    "sparse_grt_backend.datasets.dataset_colmap": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/datasets/dataset_colmap.py",
+      "sha256": "2bed7486f16d3ae68d3e14c4eaf0f3c10639e6cdaae6d3be7d7604200b9a83bf"
+    },
+    "sparse_grt_backend.datasets.protocols": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/datasets/protocols.py",
+      "sha256": "c3ee60a72c5d793b8581e2fbffba7c5a22a75b480400f8db1fa36d1bf0df23ee"
+    },
+    "sparse_grt_backend.datasets.utils": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/datasets/utils.py",
+      "sha256": "7218f0386d5233e81614f07f18b7dd192028399c523113516facc82666f9142b"
+    },
+    "sparse_grt_backend.export": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/export/__init__.py",
+      "sha256": "7f58a8ce07facdaaf4db80c1bf7cc10d5baef12424f338b739155f6226fa0465"
+    },
+    "sparse_grt_backend.export.base": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/export/base.py",
+      "sha256": "c3f4f87d2e481cbf206be7acbb7e2b03bdd9e8688ee5ddb33331989b91edb56a"
+    },
+    "sparse_grt_backend.export.ingp_exporter": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/export/ingp_exporter.py",
+      "sha256": "7a2b652b788e8a938079b4b1256d3b12fe3e1dbc4865905b298911289c6b86bc"
+    },
+    "sparse_grt_backend.export.ply_exporter": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/export/ply_exporter.py",
+      "sha256": "061ec0c9315c3c42ac34cefa91f27b613cb516253dd4638296031ff2dc606995"
+    },
+    "sparse_grt_backend.model": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/model/__init__.py",
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "sparse_grt_backend.model.background": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/model/background.py",
+      "sha256": "c0498505cae95278bf6d6ac35597bf3450d4001054b8828ba704c9b0bc5bd355"
+    },
+    "sparse_grt_backend.model.geometry": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/model/geometry.py",
+      "sha256": "4ab38f96e208c5dcc961af394bd9c8913cf38018fb7ed359aefe5802918727fb"
+    },
+    "sparse_grt_backend.model.model": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/model/model.py",
+      "sha256": "3896ad828f6b9e93a4998c2eea26329af4d6f5a18cb4f56e06d63002481ba22d"
+    },
+    "sparse_grt_backend.strategy": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/strategy/__init__.py",
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "sparse_grt_backend.strategy.base": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/strategy/base.py",
+      "sha256": "669eaf96b9cf30953a263ff20a0e937a60c4274254792607e022b64097ffc309"
+    },
+    "sparse_grt_backend.strategy.mcmc": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/strategy/mcmc.py",
+      "sha256": "d544a8d351d807a8460573ace51a753c734f0447e59f022760500fc5e98c4895"
+    },
+    "sparse_grt_backend.utils": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "sparse_grt_backend.utils.jit": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/utils/jit.py",
+      "sha256": "669e73e82b1ef490d90ca0dbd3880cad709ffe8af4ba8ab611161e27b3335ad5"
+    },
+    "sparse_grt_backend.utils.logger": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/utils/logger.py",
+      "sha256": "736652af021c408a6d3ab02e07b6fcaadc561c5e3f2120de3a0df369f249824d"
+    },
+    "sparse_grt_backend.utils.misc": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/utils/misc.py",
+      "sha256": "2df85b741b26826713780cbf1d0fd2104513706fb964d61566df37c94aa84d9f"
+    },
+    "sparse_grt_backend.utils.render": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/utils/render.py",
+      "sha256": "9f4ee3031ffd9e2c67d082d6df8232f9614c01e9e71382417db07a25e0237b92"
+    },
+    "sparse_grt_backend.utils.timer": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_backend/utils/timer.py",
+      "sha256": "91f7d572f46f2f758114c327af77f232c06e05c4984bc474e244c9f2ca9001d3"
+    },
+    "sparse_grt_tracer": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_tracer/__init__.py",
+      "sha256": "3e2982e4983f3e9f088900a95289fd4aa1d50f51dafdbc54082ec4d8e353ef06"
+    },
+    "sparse_grt_tracer.tracer": {
+      "path": "/tmp/sparse-grt-standalone/site/sparse_grt_tracer/tracer.py",
+      "sha256": "75d65025548a8870b0b90c0a3f44922686225e4e6feed99faf7535eea02c0d3a"
+    }
+  },
+  "versions": {
+    "torch": "2.1.2",
+    "numpy": "1.26.4",
+    "cupy-cuda11x": "13.6.0",
+    "torchmetrics": "1.8.2",
+    "hydra-core": "1.3.2"
+  },
+  "source_sha256": {},
+  "native_builds": {
+    "_sparse_grt_ray_fp64_v1": {
+      "binary": "/tmp/sparse-grt-standalone/torch-cache/_sparse_grt_ray_fp64_v1/_sparse_grt_ray_fp64_v1.so",
+      "binary_sha256": "4961ec461f7d83b1ac9c510dd5d07232668aa5cdf7db736a454976e02bdf2622",
+      "sources": {
+        "bindings.cpp": "b51565b63267dc65217c1818d62ab51bcd99f0c7e531f459dc1dcc5fab7ad210",
+        "dependencies/optix-dev/include/internal/optix_7_device_impl.h": "75ef3b16a1a63e5f89679ae071773403589c127764ba68ece9aa2f7fe61f310f",
+        "dependencies/optix-dev/include/internal/optix_7_device_impl_exception.h": "cb1f5b2cfa2f596c3f5ef2d78a18166d7fdd7499fcc683324e36fa0bb7c761a2",
+        "dependencies/optix-dev/include/internal/optix_7_device_impl_transformations.h": "3fb01f6eff38cc68c28df045ff86d56de2d1142cab2f8855c8106ef4707fc4d2",
+        "dependencies/optix-dev/include/optix.h": "0eb8822cf7287339ddba8918ab241f7103a9eb2bcab63de0b1c81d9738dbe0ee",
+        "dependencies/optix-dev/include/optix_7_device.h": "8bf6048c3095296d7b9bcf94ad71bce66b9fa67ec178d3a5bdf481faa6e331ea",
+        "dependencies/optix-dev/include/optix_7_host.h": "030a8e81ebe6929125e4d0b61b219279e4ee1a540ac189554d4322ae5f583d32",
+        "dependencies/optix-dev/include/optix_7_types.h": "da85341042ecf5225999e065b530b02f47bf92216abbccd6009b8d2e54502392",
+        "dependencies/optix-dev/include/optix_denoiser_tiling.h": "48b8ba643c03e29318ad3a3b8229565f2888ef1bf790cf09868c5a2bc8027b6d",
+        "dependencies/optix-dev/include/optix_device.h": "cd7d414e62a3e34b3750ceeda60ef55931c3680ea44c6eba0472c73a2a622b13",
+        "dependencies/optix-dev/include/optix_function_table.h": "479289911c206d791992fddcb603a1a9219b109e39985023a2acfa539a72a057",
+        "dependencies/optix-dev/include/optix_function_table_definition.h": "10012bb5eafa22d0798b8b0bead415c1898fc081976cc675e7e906a94ec82c2a",
+        "dependencies/optix-dev/include/optix_host.h": "ab3f1431081aa0225f1e112e706b742c63ba54ed067d262f85dd47b424ac6de4",
+        "dependencies/optix-dev/include/optix_stack_size.h": "5565f1d593f8c7da224911891b641a64be201f85d414ed76b07f5e93466869d1",
+        "dependencies/optix-dev/include/optix_stubs.h": "f107a4a5f0c0c3f6184dfc3565f89e07901a69f6c5951e7f11eb734f261dbc24",
+        "dependencies/optix-dev/include/optix_types.h": "754b14dadf73885b57802ec0d8545a7415dfdaec8ba379a3c41bd9f969553fb8",
+        "include/3dgrt/cuoptixMacros.h": "36bfd80c3fa7620db06b8e0ae102cbec76d5965a0a6c9cc0741df76438c3b3ae",
+        "include/3dgrt/kernels/cuda/3dgrtTracer.cuh": "b21f1354c493997a757e982e0ae11ef053b892e65197ddd7efdc84667da50f62",
+        "include/3dgrt/kernels/cuda/gaussianParticles.cuh": "0e3ae596e5089b85f4ce0acd4e4ea5b0dacf80e7d1ebc3d5fb6714107aa3d603",
+        "include/3dgrt/kernels/slang/gaussianParticles.cuh": "4a7c64a4c117d1bc5e4b2cef15982b63cd6aa4d4f5268b570ff4671fe1aadfb5",
+        "include/3dgrt/mathUtils.h": "09908913d29a3ada6abdd59a1195d532b7c95baeefb874be9ecdaa20b6708acc",
+        "include/3dgrt/optixTracer.h": "9a4796f5ad8d463bb3a5b527b25a574fe53eb2740cb5b110818d565cf136e053",
+        "include/3dgrt/particleDensity.h": "1ddf9890bbc151d3d0e75e1abc8d15dc95494cc6fae150379a401bf2453f0f51",
+        "include/3dgrt/particlePrimitives.h": "cab4853a1c4e3e06947038c1191c18748a89c2a7e1911bc1db49b0454e628466",
+        "include/3dgrt/pipelineDefinitions.h": "1e981df9a657ea72abbd7c92568c8c088fb12d46d04057018bf8510eb31a1272",
+        "include/3dgrt/pipelineParameters.h": "515fd520ea5ec85b1950b51c8fa9f5b8052503700e43e59f28d23d7e1ae3ab2c",
+        "include/3dgrt/tensorAccessor.h": "9435ffad822e1e1ca1783ec75055349ad76088e698e493527c3c0254a9eddc6a",
+        "include/3dgrt/tensorBuffering.h": "6a1f6bad97c9d753e8eea4f5b16398e6c64bf0c19ce2d6d536607ac24f96348f",
+        "include/playground/cutexture.h": "0af378efcdda88a4752805aed6b58c4d635f070101ea05cc0d04fe32ed30f782",
+        "include/playground/pipelineDefinitions.h": "efb970cf299082e0f89685cb5ec905f3a255215f9cd54fc6e53f8b48e4fc15f9",
+        "include/playground/pipelineParameters.h": "586b7bc2bd2c6bc1dac41d74e33aa61d49b7437de1c9289c3a7983a972aa16a2",
+        "src/kernels/cuda/barycentricSurfelsOptix.cu": "8262b2777593095ea29c96c1ae1c2cbbd1e817388db1774971ea4d5bd4ec6b99",
+        "src/kernels/cuda/referenceB2FSlangBwdOptix.cu": "e8343507955930709c465b225f3560a698fac58b6f88f1534a9df561f4ce8ae2",
+        "src/kernels/cuda/referenceBwdOptix.cu": "f97016ab13d030170fe0fd058f3495d158fe5658a2864e894d6f49a4bba2b311",
+        "src/kernels/cuda/referenceOptix.cu": "3426bded7dcbccd9bd522a37c3fef519e697722b7341e2dbbc18a4cf6fc9b07b",
+        "src/kernels/cuda/referenceSlangBwdOptix.cu": "ed40425491592f634f1b7b6e80aba8ca784c297512da8531575f80edc12a38c6",
+        "src/kernels/cuda/referenceSlangOptix.cu": "5c056502791e26f78634df9072d4c2cb83f43140c227d3ffdece076f520703df",
+        "src/optixTracer.cpp": "735a5cbb6e2ead6e30b5f9c817783c651315b5c242eb9412a957c04b3b47b28e",
+        "src/particlePrimitives.cu": "2a65a53848b4e579cbc860b9c5da2ebc014850c60963399ea2d7c5a9bd8719a3"
+      }
+    },
+    "_sparse_grt_mcmc_v1": {
+      "binary": "/tmp/sparse-grt-standalone/torch-cache/_sparse_grt_mcmc_v1/_sparse_grt_mcmc_v1.so",
+      "binary_sha256": "50e08f9496c3c741f1c3d366a1a4e23d1046b72d451bf7638069d21dee3456cb",
+      "sources": {
+        "bindings.cpp": "c18a6b006decbc3c81eb37d75140eb3ae74855046d688f28e2119e5435925cbf",
+        "gaussian_mcmc.cu": "dcfe7bf3a81a5abb3e33fdb239e5b02a4ec3867453d86dba6a65cfbd58dc503b",
+        "gaussian_mcmc.h": "76bb9e171ba648f5b6c79d316ad4402d99fe73b4b931d151458c26cf9ebe26dd"
+      }
+    }
+  },
+  "torch_cuda": "11.8",
+  "flags": {
+    "GRT_GRAD_ACCUM_DOUBLE": "1",
+    "GRT_ALPHA_MIN": null,
+    "SPARSE_GRT_DISABLE_DIAGNOSTICS": null
+  }
+}

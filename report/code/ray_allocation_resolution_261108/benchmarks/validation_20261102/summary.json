@@ -1,0 +1,14 @@
+{
+  "cpu_tests_passed": 23,
+  "scenes_prepared": 13,
+  "total_input_bytes": 3242381717,
+  "training_core_changes": false,
+  "pipeline_smoke": {
+    "passed": true,
+    "scene": "counter",
+    "updates": 610,
+    "first_ADD_and_relocation": true
+  },
+  "backup_transport_integration": true,
+  "scope": "Deployment/queue validation and input audit, not completed 13-scene benchmark results."
+}

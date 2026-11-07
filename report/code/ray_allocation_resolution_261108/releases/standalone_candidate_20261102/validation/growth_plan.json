@@ -1,0 +1,371 @@
+{
+  "initial": 155767,
+  "target": 1229851,
+  "first_event": 600,
+  "last_event": 5000,
+  "frequency": 100,
+  "events": [
+    {
+      "step": 600,
+      "completed_steps": 601,
+      "before": 155767,
+      "after": 163087,
+      "added": 7320,
+      "relative_add": 0.04699326558256884
+    },
+    {
+      "step": 700,
+      "completed_steps": 701,
+      "before": 163087,
+      "after": 170750,
+      "added": 7663,
+      "relative_add": 0.04698719088584621
+    },
+    {
+      "step": 800,
+      "completed_steps": 801,
+      "before": 170750,
+      "after": 178773,
+      "added": 8023,
+      "relative_add": 0.046986822840409954
+    },
+    {
+      "step": 900,
+      "completed_steps": 901,
+      "before": 178773,
+      "after": 187173,
+      "added": 8400,
+      "relative_add": 0.04698696111828968
+    },
+    {
+      "step": 1000,
+      "completed_steps": 1001,
+      "before": 187173,
+      "after": 195968,
+      "added": 8795,
+      "relative_add": 0.04698861481089687
+    },
+    {
+      "step": 1100,
+      "completed_steps": 1101,
+      "before": 195968,
+      "after": 205176,
+      "added": 9208,
+      "relative_add": 0.04698726322664925
+    },
+    {
+      "step": 1200,
+      "completed_steps": 1201,
+      "before": 205176,
+      "after": 214817,
+      "added": 9641,
+      "relative_add": 0.04698892658010684
+    },
+    {
+      "step": 1300,
+      "completed_steps": 1301,
+      "before": 214817,
+      "after": 224911,
+      "added": 10094,
+      "relative_add": 0.04698883235498122
+    },
+    {
+      "step": 1400,
+      "completed_steps": 1401,
+      "before": 224911,
+      "after": 235479,
+      "added": 10568,
+      "relative_add": 0.046987475045684735
+    },
+    {
+      "step": 1500,
+      "completed_steps": 1501,
+      "before": 235479,
+      "after": 246543,
+      "added": 11064,
+      "relative_add": 0.046985081472233195
+    },
+    {
+      "step": 1600,
+      "completed_steps": 1601,
+      "before": 246543,
+      "after": 258128,
+      "added": 11585,
+      "relative_add": 0.046989774603213234
+    },
+    {
+      "step": 1700,
+      "completed_steps": 1701,
+      "before": 258128,
+      "after": 270257,
+      "added": 12129,
+      "relative_add": 0.046988315874294924
+    },
+    {
+      "step": 1800,
+      "completed_steps": 1801,
+      "before": 270257,
+      "after": 282956,
+      "added": 12699,
+      "relative_add": 0.0469886071406106
+    },
+    {
+      "step": 1900,
+      "completed_steps": 1901,
+      "before": 282956,
+      "after": 296251,
+      "added": 13295,
+      "relative_add": 0.04698610384653444
+    },
+    {
+      "step": 2000,
+      "completed_steps": 2001,
+      "before": 296251,
+      "after": 310171,
+      "added": 13920,
+      "relative_add": 0.046987183165626445
+    },
+    {
+      "step": 2100,
+      "completed_steps": 2101,
+      "before": 310171,
+      "after": 324746,
+      "added": 14575,
+      "relative_add": 0.04699020862685422
+    },
+    {
+      "step": 2200,
+      "completed_steps": 2201,
+      "before": 324746,
+      "after": 340005,
+      "added": 15259,
+      "relative_add": 0.04698749176279308
+    },
+    {
+      "step": 2300,
+      "completed_steps": 2301,
+      "before": 340005,
+      "after": 355981,
+      "added": 15976,
+      "relative_add": 0.046987544300819105
+    },
+    {
+      "step": 2400,
+      "completed_steps": 2401,
+      "before": 355981,
+      "after": 372708,
+      "added": 16727,
+      "relative_add": 0.04698846286740023
+    },
+    {
+      "step": 2500,
+      "completed_steps": 2501,
+      "before": 372708,
+      "after": 390221,
+      "added": 17513,
+      "relative_add": 0.04698852721165094
+    },
+    {
+      "step": 2600,
+      "completed_steps": 2601,
+      "before": 390221,
+      "after": 408556,
+      "added": 18335,
+      "relative_add": 0.0469861950023192
+    },
+    {
+      "step": 2700,
+      "completed_steps": 2701,
+      "before": 408556,
+      "after": 427754,
+      "added": 19198,
+      "relative_add": 0.04698988633137195
+    },
+    {
+      "step": 2800,
+      "completed_steps": 2801,
+      "before": 427754,
+      "after": 447853,
+      "added": 20099,
+      "relative_add": 0.046987287085567875
+    },
+    {
+      "step": 2900,
+      "completed_steps": 2901,
+      "before": 447853,
+      "after": 468897,
+      "added": 21044,
+      "relative_add": 0.04698863243073062
+    },
+    {
+      "step": 3000,
+      "completed_steps": 3001,
+      "before": 468897,
+      "after": 490929,
+      "added": 22032,
+      "relative_add": 0.046986864919161354
+    },
+    {
+      "step": 3100,
+      "completed_steps": 3101,
+      "before": 490929,
+      "after": 513997,
+      "added": 23068,
+      "relative_add": 0.04698846472707866
+    },
+    {
+      "step": 3200,
+      "completed_steps": 3201,
+      "before": 513997,
+      "after": 538148,
+      "added": 24151,
+      "relative_add": 0.04698665556413753
+    },
+    {
+      "step": 3300,
+      "completed_steps": 3301,
+      "before": 538148,
+      "after": 563435,
+      "added": 25287,
+      "relative_add": 0.046988932412644846
+    },
+    {
+      "step": 3400,
+      "completed_steps": 3401,
+      "before": 563435,
+      "after": 589910,
+      "added": 26475,
+      "relative_add": 0.046988561235989955
+    },
+    {
+      "step": 3500,
+      "completed_steps": 3501,
+      "before": 589910,
+      "after": 617628,
+      "added": 27718,
+      "relative_add": 0.0469868284992626
+    },
+    {
+      "step": 3600,
+      "completed_steps": 3601,
+      "before": 617628,
+      "after": 646649,
+      "added": 29021,
+      "relative_add": 0.046987830862590424
+    },
+    {
+      "step": 3700,
+      "completed_steps": 3701,
+      "before": 646649,
+      "after": 677034,
+      "added": 30385,
+      "relative_add": 0.04698839710569412
+    },
+    {
+      "step": 3800,
+      "completed_steps": 3801,
+      "before": 677034,
+      "after": 708847,
+      "added": 31813,
+      "relative_add": 0.04698877752077444
+    },
+    {
+      "step": 3900,
+      "completed_steps": 3901,
+      "before": 708847,
+      "after": 742154,
+      "added": 33307,
+      "relative_add": 0.04698757277663586
+    },
+    {
+      "step": 4000,
+      "completed_steps": 4001,
+      "before": 742154,
+      "after": 777026,
+      "added": 34872,
+      "relative_add": 0.046987552448683155
+    },
+    {
+      "step": 4100,
+      "completed_steps": 4101,
+      "before": 777026,
+      "after": 813537,
+      "added": 36511,
+      "relative_add": 0.04698813167126969
+    },
+    {
+      "step": 4200,
+      "completed_steps": 4201,
+      "before": 813537,
+      "after": 851764,
+      "added": 38227,
+      "relative_add": 0.04698864341757043
+    },
+    {
+      "step": 4300,
+      "completed_steps": 4301,
+      "before": 851764,
+      "after": 891786,
+      "added": 40022,
+      "relative_add": 0.04698719363579583
+    },
+    {
+      "step": 4400,
+      "completed_steps": 4401,
+      "before": 891786,
+      "after": 933689,
+      "added": 41903,
+      "relative_add": 0.04698773024021458
+    },
+    {
+      "step": 4500,
+      "completed_steps": 4501,
+      "before": 933689,
+      "after": 977562,
+      "added": 43873,
+      "relative_add": 0.04698887959481155
+    },
+    {
+      "step": 4600,
+      "completed_steps": 4601,
+      "before": 977562,
+      "after": 1023495,
+      "added": 45933,
+      "relative_add": 0.04698730106121146
+    },
+    {
+      "step": 4700,
+      "completed_steps": 4701,
+      "before": 1023495,
+      "after": 1071587,
+      "added": 48092,
+      "relative_add": 0.046988016551131176
+    },
+    {
+      "step": 4800,
+      "completed_steps": 4801,
+      "before": 1071587,
+      "after": 1121939,
+      "added": 50352,
+      "relative_add": 0.0469882520038037
+    },
+    {
+      "step": 4900,
+      "completed_steps": 4901,
+      "before": 1121939,
+      "after": 1174657,
+      "added": 52718,
+      "relative_add": 0.046988294372510446
+    },
+    {
+      "step": 5000,
+      "completed_steps": 5001,
+      "before": 1174657,
+      "after": 1229851,
+      "added": 55194,
+      "relative_add": 0.046987333323685126
+    }
+  ],
+  "step_indexing": "zero-based backend step; completed_steps=step+1",
+  "unrounded_relative_add": 0.046988019290599266
+}

@@ -1,0 +1,40 @@
+{
+  "release_id": "paper_v1_20261102",
+  "status": "local_benchmark_runtime_frozen",
+  "algorithm_changed": false,
+  "cpu_tests": {
+    "passed": true,
+    "count": 14,
+    "log": "cpu_tests.txt"
+  },
+  "final_all_centre_cuda": {
+    "passed": true,
+    "cases": 20,
+    "report": "final_cuda.json"
+  },
+  "training_parity": {
+    "passed": true,
+    "updates": 610,
+    "parameters_Adam_RNG_bit_equal": true,
+    "report": "reproducible_parity.json"
+  },
+  "full_training_repeated": false,
+  "new_speed_claim": false,
+  "public_standalone_ready": false,
+  "existing_results_source_compatible": [
+    "counter_l1",
+    "counter_structure",
+    "bonsai_l1",
+    "bonsai_structure",
+    "bicycle_l1",
+    "bicycle_structure"
+  ],
+  "limitations": [
+    "Existing cloud and local compiled binaries have different bytes; parity is between launchers on the same local binary.",
+    "New machine build/validation remains required.",
+    "Only three scene presets are registered; new scenes/seeds need an explicit protocol revision."
+  ],
+  "validated_lock_sha256": "b992b4325b475be2e0aedea47a99f00bbf542301a69cff3612fb6a5f4a32cd38",
+  "final_lock_sha256": "c1d6a31cd4dc355a7854149637c01f09920fff5f6ad2b34134fed131180c4b4a",
+  "lock_change_after_smoke": "Added compare_smoke.py to the integrity list and pinned CUDA_HOME/CUDA_PATH/TORCH_EXTENSIONS_DIR to their actual values during both smoke runs. Training code is unchanged."
+}

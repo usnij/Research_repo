@@ -1,0 +1,49 @@
+--- a/src/optixTracer.cpp
++++ b/src/optixTracer.cpp
+@@ -36,6 +36,7 @@
+ #include <ATen/cuda/CUDAContext.h>
+ #include <ATen/cuda/CUDAUtils.h>
+ #include <algorithm>
++#include <cstdlib>
+ #include <cuda_runtime.h>
+ #include <fstream>
+ #include <nvrtc.h>
+@@ -165,6 +166,15 @@
+ }
+ 
+ namespace {
++// Process-wide opt-in. Keep the validated default and output tensor shapes.
++// The reference pipeline null-checks these three diagnostic pointers.
++inline bool sparseGrtCollectDiagnostics() {
++    static const bool enabled = [] {
++        const char* value = std::getenv("SPARSE_GRT_DISABLE_DIAGNOSTICS");
++        return !(value && std::string(value) == "1");
++    }();
++    return enabled;
++}
+ // 계측용. 기본값은 원래대로 1/255 이고, 환경변수를 준 경우에만 바뀐다.
+ // 수락 조건 galpha > alphaMinThreshold 는 forward 와 backward 를 함께 막는다.
+ // 이 문턱을 0 으로 낮추면 backward 가 기각되던 입자에도 gradient 를 흘려주므로,
+@@ -251,6 +261,9 @@
+     int particleRadianceSphDegree,
+     bool enableNormals,
+     bool enableHitCounts) {
++
++    TORCH_CHECK(sparseGrtCollectDiagnostics() || pipeline == "reference",
++                "Diagnostic suppression is validated by inspection only for the reference pipeline");
+ 
+ #if GRT_GRAD_ACCUM_DOUBLE
+     if (backwardPipeline != "referenceBwd")
+@@ -936,9 +949,9 @@
+     paramsHost.particleDensity      = getPtr<const ParticleDensity>(particleDensity);
+     paramsHost.particleRadiance     = getPtr<const float>(particleRadiance);
+     paramsHost.particleExtendedData = reinterpret_cast<const void*>(_state->gPipelineParticleData);
+-    paramsHost.particleVisibility   = getPtr<int32_t>(particleVisibility);
+-    paramsHost.particleContribution = getPtr<float>(particleContribution);
+-    paramsHost.particleContributionSq = getPtr<float>(particleContributionSq);
++    paramsHost.particleVisibility   = sparseGrtCollectDiagnostics() ? getPtr<int32_t>(particleVisibility) : nullptr;
++    paramsHost.particleContribution = sparseGrtCollectDiagnostics() ? getPtr<float>(particleContribution) : nullptr;
++    paramsHost.particleContributionSq = sparseGrtCollectDiagnostics() ? getPtr<float>(particleContributionSq) : nullptr;
+ 
+     paramsHost.rayRadiance    = packed_accessor32<float, 4>(rayRad);
+     paramsHost.rayDensity     = packed_accessor32<float, 4>(rayDns);

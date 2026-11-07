@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "package_files_checked": 83,
+  "mismatches": [],
+  "opencv_dependency_declared": true,
+  "compiled_binaries_bundled": false,
+  "filename": "sparse_grt-0.2.0.dev0-py3-none-any.whl",
+  "bytes": 225269,
+  "sha256": "f045e221d3c4013fe37b513e5c0b486b5cf0bf784606e779fce77815175a354f"
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "node": "node05",
+    "scene": "garden",
+    "arm": "residual",
+    "passed": true,
+    "steps": 610,
+    "initial_G": 138766,
+    "final_G": 145704,
+    "training_seconds": 10.759138082154095,
+    "peak_device_mib": 1960.0,
+    "archive_sha256": "2bea570d7e58b18ef847ceb5bc0def519824406b7433deaf882428cd00ce03b8",
+    "evidence": "/home/jinsu/Documents/Github/논문/research_resume_260918/ray_allocation_resolution_261108/setup/gpu_smoke/node05/smoke/garden_residual_610_v1",
+    "checkpoint_bodies_retained_remotely": true,
+    "full_training_2k_gate_satisfied": false
+  },
+  {
+    "node": "node06",
+    "scene": "bicycle",
+    "arm": "combined",
+    "passed": true,
+    "steps": 610,
+    "initial_G": 54275,
+    "final_G": 56988,
+    "training_seconds": 9.211844690144062,
+    "peak_device_mib": 1801.0,
+    "archive_sha256": "22fde78dc873c6471bc5aab619c13c1c084a04ddb90a42b60257585f7b0bf33d",
+    "evidence": "/home/jinsu/Documents/Github/논문/research_resume_260918/ray_allocation_resolution_261108/setup/gpu_smoke/node06/smoke/bicycle_combined_610_v1",
+    "checkpoint_bodies_retained_remotely": true,
+    "full_training_2k_gate_satisfied": false
+  }
+]

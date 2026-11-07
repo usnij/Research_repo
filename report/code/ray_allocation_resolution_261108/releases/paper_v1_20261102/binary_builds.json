@@ -1,0 +1,14 @@
+{
+  "lib3dgrt_area_subset512_261029_1": {
+    "local_sha256": "b9ed97170d35b470ad0fecdb3e2247f771bb1632ac37d6f590be33317de26073",
+    "archived_remote_sha256": "f29ea3887304cb0728022787d47cbebf2207577da868b97e8519bb29467c0728",
+    "binary_equal": false,
+    "note": "Existing local build; no claim of byte identity across compiler/host builds."
+  },
+  "lib_mcmc_cc": {
+    "local_sha256": "9a288c541e558d22b9c2c4aa796f016ca079c35fcaffb0c5346b86877e8014ef",
+    "archived_remote_sha256": "37fe23c9ccbd915f751ed6f9703c5c5c6e3db8031fb13a733ebfd96019b57c30",
+    "binary_equal": false,
+    "note": "Existing local build; no claim of byte identity across compiler/host builds."
+  }
+}

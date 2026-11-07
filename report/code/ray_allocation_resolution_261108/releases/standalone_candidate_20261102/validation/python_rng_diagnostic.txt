@@ -1,0 +1,361 @@
+/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/torch/utils/cpp_extension.py:28: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging  # type: ignore[attr-defined]
+Load Dataset (train) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% :: 🕒 Elapsed 0:00:00
+Using /tmp/sparse-grt-standalone/torch-cache as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /tmp/sparse-grt-standalone/torch-cache/_sparse_grt_ray_fp64_v1/build.ninja...
+Building extension module _sparse_grt_ray_fp64_v1...
+Using envvar MAX_JOBS (2) as the number of workers...
+ninja: no work to do.
+Loading extension module _sparse_grt_ray_fp64_v1...
+Using /tmp/sparse-grt-standalone/torch-cache as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /tmp/sparse-grt-standalone/torch-cache/_sparse_grt_mcmc_v1/build.ninja...
+Building extension module _sparse_grt_mcmc_v1...
+Using envvar MAX_JOBS (2) as the number of workers...
+ninja: no work to do.
+Loading extension module _sparse_grt_mcmc_v1...
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in render
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in <dictcomp>
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/console.py", line 1497, in get_style
+    style = Style.parse(name)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 556, in parse
+    style = Style(color=color, bgcolor=bgcolor, link=link, **attributes)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 198, in __init__
+    f"{randint(0, 999999)}{hash(self._meta)}" if (link or meta) else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 706, in __rich_console__
+    yield from all_lines.render(console, end=self.end)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in render
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in <dictcomp>
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/console.py", line 1498, in get_style
+    return style.copy() if style.link else style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in render
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in <dictcomp>
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/console.py", line 1497, in get_style
+    style = Style.parse(name)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 556, in parse
+    style = Style(color=color, bgcolor=bgcolor, link=link, **attributes)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 198, in __init__
+    f"{randint(0, 999999)}{hash(self._meta)}" if (link or meta) else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 706, in __rich_console__
+    yield from all_lines.render(console, end=self.end)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in render
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in <dictcomp>
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/console.py", line 1498, in get_style
+    return style.copy() if style.link else style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 775, in render
+    yield _Segment(text[offset:next_offset], get_current_style())
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 765, in get_current_style
+    current_style = combine(styles)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 607, in combine
+    return sum(iter_styles, next(iter_styles))
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 755, in __add__
+    return combined_style.copy() if combined_style.link else combined_style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 775, in render
+    yield _Segment(text[offset:next_offset], get_current_style())
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 765, in get_current_style
+    current_style = combine(styles)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 607, in combine
+    return sum(iter_styles, next(iter_styles))
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 755, in __add__
+    return combined_style.copy() if combined_style.link else combined_style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/console.py", line 1385, in render_lines
+    lines = list(
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/segment.py", line 305, in split_and_crop_lines
+    for segment in segments:
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/segment.py", line 212, in <genexpr>
+    cls(text, None if control else apply(_style), control)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 755, in __add__
+    return combined_style.copy() if combined_style.link else combined_style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/console.py", line 1385, in render_lines
+    lines = list(
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/segment.py", line 305, in split_and_crop_lines
+    for segment in segments:
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/segment.py", line 212, in <genexpr>
+    cls(text, None if control else apply(_style), control)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 755, in __add__
+    return combined_style.copy() if combined_style.link else combined_style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+[13:52:55] [INFO] Found 155767 colmap points                        logger.py:67
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 706, in __rich_console__
+    yield from all_lines.render(console, end=self.end)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in render
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in <dictcomp>
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/console.py", line 1498, in get_style
+    return style.copy() if style.link else style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 706, in __rich_console__
+    yield from all_lines.render(console, end=self.end)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in render
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in <dictcomp>
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/console.py", line 1498, in get_style
+    return style.copy() if style.link else style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 775, in render
+    yield _Segment(text[offset:next_offset], get_current_style())
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 765, in get_current_style
+    current_style = combine(styles)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 607, in combine
+    return sum(iter_styles, next(iter_styles))
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 755, in __add__
+    return combined_style.copy() if combined_style.link else combined_style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 775, in render
+    yield _Segment(text[offset:next_offset], get_current_style())
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 765, in get_current_style
+    current_style = combine(styles)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 607, in combine
+    return sum(iter_styles, next(iter_styles))
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 755, in __add__
+    return combined_style.copy() if combined_style.link else combined_style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/console.py", line 1385, in render_lines
+    lines = list(
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/segment.py", line 305, in split_and_crop_lines
+    for segment in segments:
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/segment.py", line 212, in <genexpr>
+    cls(text, None if control else apply(_style), control)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 755, in __add__
+    return combined_style.copy() if combined_style.link else combined_style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/console.py", line 1385, in render_lines
+    lines = list(
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/segment.py", line 305, in split_and_crop_lines
+    for segment in segments:
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/segment.py", line 212, in <genexpr>
+    cls(text, None if control else apply(_style), control)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 755, in __add__
+    return combined_style.copy() if combined_style.link else combined_style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+[13:52:56] [INFO] 🔆 Using Adam optimizer                           logger.py:67
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 706, in __rich_console__
+    yield from all_lines.render(console, end=self.end)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in render
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in <dictcomp>
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/console.py", line 1498, in get_style
+    return style.copy() if style.link else style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 706, in __rich_console__
+    yield from all_lines.render(console, end=self.end)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in render
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 740, in <dictcomp>
+    style_map = {index: get_style(span.style) for index, span in enumerated_spans}
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/console.py", line 1498, in get_style
+    return style.copy() if style.link else style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 775, in render
+    yield _Segment(text[offset:next_offset], get_current_style())
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 765, in get_current_style
+    current_style = combine(styles)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 607, in combine
+    return sum(iter_styles, next(iter_styles))
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 755, in __add__
+    return combined_style.copy() if combined_style.link else combined_style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 775, in render
+    yield _Segment(text[offset:next_offset], get_current_style())
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/text.py", line 765, in get_current_style
+    current_style = combine(styles)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 607, in combine
+    return sum(iter_styles, next(iter_styles))
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 755, in __add__
+    return combined_style.copy() if combined_style.link else combined_style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/console.py", line 1385, in render_lines
+    lines = list(
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/segment.py", line 305, in split_and_crop_lines
+    for segment in segments:
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/segment.py", line 212, in <genexpr>
+    cls(text, None if control else apply(_style), control)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 755, in __add__
+    return combined_style.copy() if combined_style.link else combined_style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+GLOBAL_PYTHON_RANDOM_CALL (1000000,)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/console.py", line 1385, in render_lines
+    lines = list(
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/segment.py", line 305, in split_and_crop_lines
+    for segment in segments:
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/segment.py", line 212, in <genexpr>
+    cls(text, None if control else apply(_style), control)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 755, in __add__
+    return combined_style.copy() if combined_style.link else combined_style
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/site-packages/rich/style.py", line 638, in copy
+    style._link_id = f"{randint(0, 999999)}" if self._link else ""
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 362, in randint
+    return self.randrange(a, b+1)
+  File "/home/jinsu/miniconda3/envs/3dgrut/lib/python3.11/random.py", line 344, in randrange
+    return istart + self._randbelow(width)
+  File "/tmp/sparse-grt-standalone/trace_rng.py", line 9, in trace
+    traceback.print_stack(limit=8)
+           [INFO] 🔆 Using Adam optimizer                           logger.py:67
+initial_global_state_equal False

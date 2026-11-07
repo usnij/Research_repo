@@ -1,0 +1,30 @@
+{
+  "method": {
+    "views": 4,
+    "block": 8,
+    "sigma": 6.0,
+    "l1_weight": 0.8,
+    "structure_weight": 0.2,
+    "opacity_weight": 0.01,
+    "scale_weight": 0.01,
+    "cap": 1229851,
+    "steps": 30000,
+    "initialization_seed": 777,
+    "view_seed": 2610297100,
+    "ray_seed": 910000000,
+    "boundary": "all"
+  },
+  "scene": "/home/jinsu/Documents/Github/3dgrut/data/counter",
+  "downsample": 2,
+  "boundary": "all",
+  "growth": "log_horizon",
+  "growth_end": 5000,
+  "budget_method": "fixed",
+  "manifest_hash": "86e99ef5abd49503643df59795aef985af57e3ebae7346e804cc7c732c3da5b5",
+  "train_views": 210,
+  "input_mode": "resident_uint8",
+  "image_cache_bytes": 1018838520,
+  "test_RGB_used_for_budget": false,
+  "extra_training_rays": 0,
+  "timing": "Synchronized full steps; budget/setup/evaluation/checkpoint time separately recorded"
+}

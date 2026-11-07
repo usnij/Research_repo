@@ -1,0 +1,230 @@
+{
+  "passed": true,
+  "step": 610,
+  "N": 163087,
+  "parameter_hash_preserved": true,
+  "optimizer_hash_preserved": true,
+  "repeated_full_ray_render_bit_equal": true,
+  "train_view_render_hash": "bcd719ffce1c4fa69ca2da992535efb2920bfebe2f8874a326fdc7a73003cb28",
+  "evaluation": {
+    "views": 30,
+    "N": 163087,
+    "PSNR": 19.051308409372965,
+    "SSIM": 0.6483767747879028,
+    "LPIPS": 0.5811046997706095,
+    "per_view": [
+      {
+        "view": 0,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5857.JPG",
+        "PSNR": 19.90593147277832,
+        "SSIM": 0.6402472257614136,
+        "LPIPS": 0.5829347372055054
+      },
+      {
+        "view": 1,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5865.JPG",
+        "PSNR": 18.915008544921875,
+        "SSIM": 0.5997960567474365,
+        "LPIPS": 0.6032280325889587
+      },
+      {
+        "view": 2,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5873.JPG",
+        "PSNR": 17.614500045776367,
+        "SSIM": 0.5892626643180847,
+        "LPIPS": 0.5910428762435913
+      },
+      {
+        "view": 3,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5881.JPG",
+        "PSNR": 21.054323196411133,
+        "SSIM": 0.6831780076026917,
+        "LPIPS": 0.5540769100189209
+      },
+      {
+        "view": 4,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5889.JPG",
+        "PSNR": 16.3779239654541,
+        "SSIM": 0.5826473236083984,
+        "LPIPS": 0.6158971190452576
+      },
+      {
+        "view": 5,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5897.JPG",
+        "PSNR": 21.655441284179688,
+        "SSIM": 0.6813313961029053,
+        "LPIPS": 0.5900119543075562
+      },
+      {
+        "view": 6,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5905.JPG",
+        "PSNR": 20.20553970336914,
+        "SSIM": 0.6731850504875183,
+        "LPIPS": 0.5454393625259399
+      },
+      {
+        "view": 7,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5913.JPG",
+        "PSNR": 19.296829223632812,
+        "SSIM": 0.6360092163085938,
+        "LPIPS": 0.5711768865585327
+      },
+      {
+        "view": 8,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5921.JPG",
+        "PSNR": 21.260955810546875,
+        "SSIM": 0.6738716959953308,
+        "LPIPS": 0.62664794921875
+      },
+      {
+        "view": 9,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5929.JPG",
+        "PSNR": 15.640849113464355,
+        "SSIM": 0.5848305821418762,
+        "LPIPS": 0.593533456325531
+      },
+      {
+        "view": 10,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5937.JPG",
+        "PSNR": 16.198104858398438,
+        "SSIM": 0.5434092879295349,
+        "LPIPS": 0.5866646766662598
+      },
+      {
+        "view": 11,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5945.JPG",
+        "PSNR": 21.373260498046875,
+        "SSIM": 0.7363795042037964,
+        "LPIPS": 0.5693064332008362
+      },
+      {
+        "view": 12,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5953.JPG",
+        "PSNR": 18.003461837768555,
+        "SSIM": 0.5854845643043518,
+        "LPIPS": 0.565762996673584
+      },
+      {
+        "view": 13,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5961.JPG",
+        "PSNR": 15.84813117980957,
+        "SSIM": 0.5953492522239685,
+        "LPIPS": 0.577573299407959
+      },
+      {
+        "view": 14,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5969.JPG",
+        "PSNR": 17.32993507385254,
+        "SSIM": 0.6274029016494751,
+        "LPIPS": 0.5840166807174683
+      },
+      {
+        "view": 15,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5977.JPG",
+        "PSNR": 18.310911178588867,
+        "SSIM": 0.665779709815979,
+        "LPIPS": 0.5581967234611511
+      },
+      {
+        "view": 16,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5985.JPG",
+        "PSNR": 16.205503463745117,
+        "SSIM": 0.6537806391716003,
+        "LPIPS": 0.5741482973098755
+      },
+      {
+        "view": 17,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5993.JPG",
+        "PSNR": 17.423749923706055,
+        "SSIM": 0.7116073369979858,
+        "LPIPS": 0.5789260268211365
+      },
+      {
+        "view": 18,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6001.JPG",
+        "PSNR": 21.27793312072754,
+        "SSIM": 0.6485307812690735,
+        "LPIPS": 0.5741288065910339
+      },
+      {
+        "view": 19,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6009.JPG",
+        "PSNR": 17.021181106567383,
+        "SSIM": 0.6304686069488525,
+        "LPIPS": 0.5869432687759399
+      },
+      {
+        "view": 20,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6017.JPG",
+        "PSNR": 21.138532638549805,
+        "SSIM": 0.668289840221405,
+        "LPIPS": 0.582101583480835
+      },
+      {
+        "view": 21,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6025.JPG",
+        "PSNR": 22.270511627197266,
+        "SSIM": 0.6879557967185974,
+        "LPIPS": 0.5915190577507019
+      },
+      {
+        "view": 22,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6033.JPG",
+        "PSNR": 18.006175994873047,
+        "SSIM": 0.648551344871521,
+        "LPIPS": 0.5812691450119019
+      },
+      {
+        "view": 23,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6041.JPG",
+        "PSNR": 19.478910446166992,
+        "SSIM": 0.6953145265579224,
+        "LPIPS": 0.573981761932373
+      },
+      {
+        "view": 24,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6049.JPG",
+        "PSNR": 21.206523895263672,
+        "SSIM": 0.6841286420822144,
+        "LPIPS": 0.5856866240501404
+      },
+      {
+        "view": 25,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6057.JPG",
+        "PSNR": 20.525875091552734,
+        "SSIM": 0.6906909942626953,
+        "LPIPS": 0.5600640773773193
+      },
+      {
+        "view": 26,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6065.JPG",
+        "PSNR": 20.23321533203125,
+        "SSIM": 0.6690923571586609,
+        "LPIPS": 0.5907524228096008
+      },
+      {
+        "view": 27,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6073.JPG",
+        "PSNR": 19.51184844970703,
+        "SSIM": 0.6368119120597839,
+        "LPIPS": 0.5780725479125977
+      },
+      {
+        "view": 28,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6081.JPG",
+        "PSNR": 19.16733169555664,
+        "SSIM": 0.6593577861785889,
+        "LPIPS": 0.5716795921325684
+      },
+      {
+        "view": 29,
+        "image": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6089.JPG",
+        "PSNR": 19.080852508544922,
+        "SSIM": 0.6685582399368286,
+        "LPIPS": 0.58835768699646
+      }
+    ]
+  },
+  "peak_cuda_bytes": 4313447424,
+  "scope": "Checkpoint reload and evaluation plumbing; not final training quality"
+}

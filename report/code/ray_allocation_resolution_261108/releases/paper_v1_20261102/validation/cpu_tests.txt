@@ -1,0 +1,19 @@
+test_matches_all_pairs_with_incomplete_edge_blocks (test_all_centres.AllCentres.test_matches_all_pairs_with_incomplete_edge_blocks) ... ok
+test_frozen_formula_and_missing_tracks (test_budget_growth.BudgetGrowth.test_frozen_formula_and_missing_tracks) ... ok
+test_horizon_and_resume_are_initial_count_independent (test_budget_growth.BudgetGrowth.test_horizon_and_resume_are_initial_count_independent) ... ok
+test_training_only_incidence_and_duplicate_observations (test_budget_growth.BudgetGrowth.test_training_only_incidence_and_duplicate_observations) ... ok
+test_coefficients_and_regularization (test_components.Components.test_coefficients_and_regularization) ... ok
+test_configuration_does_not_renormalize_weights (test_components.Components.test_configuration_does_not_renormalize_weights) ... ok
+test_default_sources_exactly_preserved (test_components.Components.test_default_sources_exactly_preserved) ... ok
+test_loss_identity_derivative_and_overlapping_support (test_components.Components.test_loss_identity_derivative_and_overlapping_support) ... ok
+test_mv4_sequence_preserved (test_components.Components.test_mv4_sequence_preserved) ... ok
+test_sampling_and_rng_state_exact (test_components.Components.test_sampling_and_rng_state_exact) ... ok
+test_selected_uint8_pipeline_and_exact_geometry (test_components.Components.test_selected_uint8_pipeline_and_exact_geometry) ... ok
+test_update_order_and_adam_match_direct_loop (test_components.Components.test_update_order_and_adam_match_direct_loop) ... ok
+test_changed_deleted_sources_fail_closed (test_release.Release.test_changed_deleted_sources_fail_closed) ... ok
+test_changed_or_added_config_is_not_ignored (test_release.Release.test_changed_or_added_config_is_not_ignored) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.803s
+
+OK

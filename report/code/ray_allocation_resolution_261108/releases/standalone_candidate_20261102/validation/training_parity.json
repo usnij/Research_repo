@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checkpoint_bit_equal": {
+    "positions": true,
+    "rotation": true,
+    "scale": true,
+    "density": true,
+    "a_raw": true,
+    "features_albedo": true,
+    "features_specular": true,
+    "optimizer": true,
+    "torch_rng": true,
+    "cuda_rng": true,
+    "numpy_rng": true,
+    "python_rng": true,
+    "global_step": true,
+    "manifest_hash": true,
+    "paired_step": true,
+    "scene_extent": true
+  },
+  "input_and_schedule_equal": {
+    "initial.json": true,
+    "first_input.json": true,
+    "training_manifest.json": true,
+    "growth_plan.json": true,
+    "ray_geometry.json": true
+  },
+  "all_610_non_timing_step_fields_identical": true,
+  "initial_N": 155767,
+  "final_N": 163087,
+  "growth_events": 1,
+  "runs": [
+    "/tmp/sparse-grt-freeze/legacy_smoke",
+    "/tmp/sparse-grt-standalone/smoke_candidate"
+  ],
+  "scope": "610 updates, freshly source-built standalone CUDA versus the original local binary; includes first ADD and relocation. Not full-training quality or speed."
+}

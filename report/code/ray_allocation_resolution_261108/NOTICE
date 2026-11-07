@@ -1,0 +1,39 @@
+Third-party source attribution
+
+The source files in sparse_grt_backend and sparse_grt_tracer are derived from
+NVIDIA 3DGRUT and this project's research fork. Original Apache-2.0 copyright
+headers have been retained. See licenses/3DGRUT-Apache-2.0.txt.
+
+The MCMC implementation also credits gsplat and 3D Gaussian Splatting as Markov
+Chain Monte Carlo in its source header. These acknowledgements are preserved.
+
+The standalone migration changes Python namespaces, removes eager GUI/GUT
+imports, builds the reference CUDA backend from packaged sources, and replaces
+the experiment-specific bootstrap with a headless initializer. Existing CUDA
+and C++ source calculations are preserved. provenance/standalone_vendor.json
+records the originating research-fork sources and their hashes.
+
+NVIDIA OptiX headers are an external dependency, fetched from the pinned official
+repository with their original LICENSE.txt. They are not part of this package's
+source distribution or wheel. CUDA and the NVIDIA GPU driver are external
+dependencies as well.
+
+This notice records third-party attribution. It does not assign a public license
+to this project's original research code or publish the repository.
+
+Historical patch notice:
+
+The optional patch in patches/disable_unused_diagnostics.patch modifies the
+3DGRUT OptiX tracer. Its upstream source carries:
+
+Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+The upstream license text is preserved in licenses/Apache-2.0.txt.
+The local patch targets the experimental tracer identified by source hash in
+provenance/renderer_patch.json. It is not asserted to apply to upstream HEAD.
+
+This repository does not bundle OptiX SDK headers, datasets, model weights,
+CUDA toolchains, compiled extensions, or third-party evaluation weights.
+The release license for the original research components has not yet been
+selected. Local repository preparation is not publication or relicensing.

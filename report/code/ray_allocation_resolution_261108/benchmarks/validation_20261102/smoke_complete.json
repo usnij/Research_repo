@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "steps": 610,
+  "N": 163087,
+  "training_seconds": 12.751552156172693,
+  "evaluation_seconds": 0.0,
+  "checkpoint_seconds": 0.2279834821820259,
+  "growth_events": 1,
+  "from_scratch": true
+}

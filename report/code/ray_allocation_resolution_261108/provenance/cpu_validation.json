@@ -1,0 +1,46 @@
+{
+  "checked_at_utc": "2026-10-29T17:58:00.564947+00:00",
+  "cpu_passed": true,
+  "cuda_initialized": false,
+  "checks": {
+    "cpu_tests": {
+      "returncode": 0,
+      "output": "test_coefficients_and_regularization (test_components.Components.test_coefficients_and_regularization) ... ok\ntest_configuration_does_not_renormalize_weights (test_components.Components.test_configuration_does_not_renormalize_weights) ... ok\ntest_default_sources_exactly_preserved (test_components.Components.test_default_sources_exactly_preserved) ... ok\ntest_loss_identity_derivative_and_overlapping_support (test_components.Components.test_loss_identity_derivative_and_overlapping_support) ... ok\ntest_mv4_sequence_preserved (test_components.Components.test_mv4_sequence_preserved) ... ok\ntest_sampling_and_rng_state_exact (test_components.Components.test_sampling_and_rng_state_exact) ... ok\ntest_selected_uint8_pipeline_and_exact_geometry (test_components.Components.test_selected_uint8_pipeline_and_exact_geometry) ... ok\ntest_update_order_and_adam_match_direct_loop (test_components.Components.test_update_order_and_adam_match_direct_loop) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.684s\n\nOK\n"
+    },
+    "syntax": {
+      "returncode": 0,
+      "output": ""
+    },
+    "renderer_patch_applies": {
+      "returncode": 0,
+      "output": ""
+    }
+  },
+  "source_hashes": {
+    "src/sparse_grt/__init__.py": "4ff478eadbd6c73f647fd444e46c5cd13dd5c780d460321a1ecbe6fd77fbce87",
+    "src/sparse_grt/objective.py": "c88ec9e9388bd260a81b28072915a8d0caee71e3f8a8250e6b87242f5c5b8d52",
+    "src/sparse_grt/inputs.py": "f0ca9442b2efaecaeeeb648daee37037b51ae4ad921243cccb093cd0ce59bb3f",
+    "src/sparse_grt/config.py": "f637835b6c9590127541004402d49530b5540eaf60577e11935dab648bb06b83",
+    "src/sparse_grt/provenance.py": "5c2d921ce38e0d13a526556487d67600dcf6082da87a830a0e3c53d82a684aa6",
+    "src/sparse_grt/engine.py": "10a2a16180d68080584de1174e681215372fefd2c374fc0bffa8e30e52b692c5",
+    "src/sparse_grt/sampling.py": "a72bf8b26bf03ec2bdaf4a71cd1329f4464ea82ddf8e83c5f22a47fbd43fe8ed",
+    "src/sparse_grt/losses/coordinate_ssim_skip_zero.cu": "3f6a7153f9aeaba5f72ad18576d8be1b972d6ba2b066d152dcd3f04e4f60dc91",
+    "src/sparse_grt/losses/coordinate_ssim.cu": "6595ab5675c99c65a5852525eed696d0061f6abdec56df358eae1e3b3cda67a3",
+    "src/sparse_grt/losses/experimental.py": "4e84a868d581011b698775806605394a706c5c2164251fc559673e94bf92d8ed",
+    "src/sparse_grt/losses/__init__.py": "a8cf0f5830b7e768d291e961301304f6c24e6612b9aa4cb783d0569d216732dc",
+    "src/sparse_grt/losses/coordinate_ssim.py": "55396c4f80ba0b3b6a6b5769b31f5f78f972b0b197a077b4709c27136dccc6e5",
+    "tools/train_repro.py": "53f7ff8115b4e2844b44f228df1978ba7c84b263a6d49a033c32baa5cbf0b249",
+    "tools/validate_cuda.py": "6677cbddf1c13fdd4eea96105a995f8f7a55e872fdef4220e4203cc7c6a4c43f",
+    "tools/audit_structure.py": "432755ea2f351f10be1afa26e8210e080826dfa10647df24105d589ebe329974",
+    "tests/test_components.py": "b57caa7b82257464cb2252b6fd8943ef748f7800e0f98f0335003ca04b44cf98",
+    "configs/counter_ds2_mv4.json": "1cd055024c6621b8a01f080a214ace122382bedc8a566ba79a0dfb6a9119b6ec",
+    "patches/disable_unused_diagnostics.patch": "8b4c32e1b56080fa7d3e643fd8e55900951f5e7de3add1e66eae90f0573f3c78"
+  },
+  "GPU_validation": "not run; remote GPU reserved for ongoing controlled training",
+  "public_release_ready": false,
+  "remaining": [
+    "native Gaussian gradient and Adam/MCMC parity",
+    "CUDA performance measurements",
+    "independent renderer build and capacity-estimator integration"
+  ]
+}

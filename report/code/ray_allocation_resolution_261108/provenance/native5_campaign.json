@@ -1,0 +1,36 @@
+{
+  "parent_source_commit": "f472ab69eb6102a0fa7a6a948c4379be335a9c1f",
+  "experiment": "native5_singleview_261105",
+  "scenes": [
+    "bicycle",
+    "bonsai",
+    "garden"
+  ],
+  "changed_or_added_files": [
+    "src/sparse_grt/config.py",
+    "src/sparse_grt/controls.py",
+    "src/sparse_grt/growth.py",
+    "src/sparse_grt/losses/grid_ssim.py",
+    "src/sparse_grt/native5_protocol.py",
+    "src/sparse_grt/protocol.py",
+    "src/sparse_grt/training.py",
+    "tests/test_native5_singleview.py",
+    "tools/native5_261105/common.py",
+    "tools/native5_261105/export_results.py",
+    "tools/native5_261105/prepare_plan.py",
+    "tools/native5_261105/test_fleet.py",
+    "tools/native5_261105/worker.py"
+  ],
+  "grid_sigma": 1.5,
+  "coordinate_sigma": [
+    2,
+    3,
+    4,
+    1.5,
+    1
+  ],
+  "native_add_restored": true,
+  "renderer_261103_preserved": true,
+  "runs_per_scene": 8,
+  "total_runs": 24
+}

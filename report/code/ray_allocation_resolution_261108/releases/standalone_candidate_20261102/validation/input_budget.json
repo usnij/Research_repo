@@ -1,0 +1,1071 @@
+{
+  "schema": 1,
+  "method": "fine_tracks_v1",
+  "cap": 1229851,
+  "unrounded_cap": 1229850.8651177606,
+  "descriptor": 0.22370188455380408,
+  "short_track_fraction": 0.1858328089079537,
+  "image_views": 210,
+  "train_views": 210,
+  "inputs": [
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5858.JPG",
+      "sha256": "242d9d3df08a137bdd0c3d99e0484afdeca7da60f00e8d46d127347cbe732614",
+      "value": 0.19177183074356274
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5859.JPG",
+      "sha256": "6add1172d8a66e5aa879088ce586859b86ab4849971c6c7c528ea288ec04a18b",
+      "value": 0.210358238302035
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5860.JPG",
+      "sha256": "4e6e761c6ee257290bfe69f4bc514d8bd5eabecbfcd9520f7e7775de9e3be433",
+      "value": 0.20400533404533938
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5861.JPG",
+      "sha256": "b2abaee00df6314cae3cff1cb1bc3b50b6f00162226d5849a3f628f0deebfaf7",
+      "value": 0.20345620525434574
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5862.JPG",
+      "sha256": "4f9cd9e62a1b64ad63605e51b5e43ab55dacc85e1a388a589b63b29d61d8e0d1",
+      "value": 0.2310004371662202
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5863.JPG",
+      "sha256": "4008b3cedcb66993c484925ee6d475a2fcbe5f83c4b1e4a36bbfa2f02f29b4fa",
+      "value": 0.22037073486678418
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5864.JPG",
+      "sha256": "aad0bb5e9ebe69b620954f62dbf13e8c7c650abbfac55759fff5f7aed07ebb8d",
+      "value": 0.23094108739938393
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5866.JPG",
+      "sha256": "69291ff9c10ddad6948f350190d5ff375a3f1c7a9daa5c395d88209e32287c0b",
+      "value": 0.24599224901685907
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5867.JPG",
+      "sha256": "121312e7122229932893f98ce91820db93fd5c5e4e7b0e03f3d53039d0a476c8",
+      "value": 0.24104253784846744
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5868.JPG",
+      "sha256": "c4973b80dd7ef4cb0cdc9c7b1d90216ee959856f708c1c1479a238e4f4f3acd4",
+      "value": 0.23582792872476127
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5869.JPG",
+      "sha256": "4841f1952fa40b19704b38bc3d379a9c03db979083991951fe5da99960889fe0",
+      "value": 0.23607946754552242
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5870.JPG",
+      "sha256": "30b29842f9026787cfc19a26c1fd5a528dcf8e4c64bad4592923ed735a6f3a61",
+      "value": 0.22996992279683615
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5871.JPG",
+      "sha256": "592aa2d17005615f59cddb594bdb5138bffc27e8b7072ec26b2351d0a458edc7",
+      "value": 0.22536309871296084
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5872.JPG",
+      "sha256": "0c85da29f8b655aeedecdb4ad6896d2ce23932abdc399bbafbc917b7390f540e",
+      "value": 0.21667650410357767
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5874.JPG",
+      "sha256": "0cd5f688caac788fffd37064f91ec1080b7aad27f5f54f2ca7640a71f2e5ee7c",
+      "value": 0.20148281253436828
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5875.JPG",
+      "sha256": "2fdff85dff2506788344a511a4c800f7fcae3173585cdbad3ebce8c0c996b82e",
+      "value": 0.20258611361828543
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5876.JPG",
+      "sha256": "e53a68707d752062fa96a9f861e72af4f78a1a34d1f3af54b7c1730a8e3d0a99",
+      "value": 0.2062020194267276
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5877.JPG",
+      "sha256": "31369b1e06867c900d691def3324855ccbb451f9cccab1c860ed5044b6c28ca0",
+      "value": 0.19458045679375013
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5878.JPG",
+      "sha256": "6445958f6fcd309f6a021bd6ff92b2dcbeccf5ec73a357acb40182721d86ef18",
+      "value": 0.2293456826542283
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5879.JPG",
+      "sha256": "78b242da0e83e167d76635a56c4b70a362265398c304ca298e94f230f3c2e50c",
+      "value": 0.23719619786268803
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5880.JPG",
+      "sha256": "2dd06750a445c820dcaa02d31091b206b1258a9d3be2431c5be531c35aaf9d32",
+      "value": 0.24160951944516212
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5882.JPG",
+      "sha256": "6bc758c6d8397cebb5ae0e3e1cb7f6974baea32ac3caad128ae32e9c69b74d2a",
+      "value": 0.22925764012470337
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5883.JPG",
+      "sha256": "274d1441c2c7e6515e3bbf23a4c7d424a673df58243997fe200e6c0cdc228f18",
+      "value": 0.22822384592014566
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5884.JPG",
+      "sha256": "38ab55d265373dd4986debb4766b19c1c6c2fe7c2116bf190ffad8383c9a69a9",
+      "value": 0.2312219436004978
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5885.JPG",
+      "sha256": "fe1ccf1511f1e9cdde06b4854695d78653f96d587538b0b8304ffd7fe7869c7b",
+      "value": 0.2326282547414085
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5886.JPG",
+      "sha256": "1976acfbad96e545e05b261eacf45dad25c344cdd3cd6d27fb8440350feb8e66",
+      "value": 0.23314804112480936
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5887.JPG",
+      "sha256": "aa27a7c5ea0073a23748d23fe832d3f1d676162816b6be2584995527fb34a6fa",
+      "value": 0.22542619729918334
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5888.JPG",
+      "sha256": "9f9583b050445b43240830bea2cc7283fc17b31ac9937b2889fcd20db1283445",
+      "value": 0.22771336968036152
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5890.JPG",
+      "sha256": "7bec715c5bc0936b8c51cb4c26b6b326f3d4da1a34567c92f1992f0df96b6ed0",
+      "value": 0.2138339010816228
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5891.JPG",
+      "sha256": "eca1e38bdae7f6d8d3d624b971e8c2b20c8d66b92b1dfbe77cc58d8ded1dd8f9",
+      "value": 0.21155965169450877
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5892.JPG",
+      "sha256": "a68dd8a6185221c7cfc99e6cdf5577ade1a694bb9334e58f611017260e5d2e85",
+      "value": 0.23298619587756175
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5893.JPG",
+      "sha256": "06a58b5ea39d820ad15e6579bd8c36404c9f711908a54f18a7dbb43e6fad6bdb",
+      "value": 0.2041321435417137
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5894.JPG",
+      "sha256": "b82e03026f265231ccda4ec6b6c82ebb8d8d9a0b6216a3a83ba4f5a2f7ff74a2",
+      "value": 0.23324052957411126
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5895.JPG",
+      "sha256": "d1a8175d5131082140f6c0868690e601aa0c5a5395402b7e2ef55f47a093a35a",
+      "value": 0.22760756732487464
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5896.JPG",
+      "sha256": "6ec8be11c134b6e56b37fe58c1b1506a6512ebd4639e1ac4ac9e0a76c5501b1a",
+      "value": 0.2025044916604073
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5898.JPG",
+      "sha256": "8550a32971013ce470e85d892ab3d3cfbb097d03502f8d88c391b8e285e0e54e",
+      "value": 0.2618826732442978
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5899.JPG",
+      "sha256": "14e45e24a6dcd6e40a750ace11c436db46920c29618febcd11c151af15eaca60",
+      "value": 0.26718891596527633
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5900.JPG",
+      "sha256": "ea30aad6c79e5e83689461e199e7e0401d378272b1b9b324ac02dd3815c277f3",
+      "value": 0.24509668317805436
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5901.JPG",
+      "sha256": "4ecdc28ac9d2572f07fd3481db5c4f26faec09e5059327bc21ba2e42093d2771",
+      "value": 0.2764940360159524
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5902.JPG",
+      "sha256": "fb9d6ca194797d3603fa66f929df19fe45032bda81ee480103d49b7c0733ad5c",
+      "value": 0.2574648655323478
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5903.JPG",
+      "sha256": "2c76712fe12f60b80d5798c16ac79affbc232fe769b176b8b6bbc788b72ecd21",
+      "value": 0.24097728289218107
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5904.JPG",
+      "sha256": "c2919c54e5f52899d9bd3d9176b74581e060ff3facf8169bb1ae663455b9763c",
+      "value": 0.23440732946613718
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5906.JPG",
+      "sha256": "12c615b50bbef2c498c6252dfecde6350c2ea77b0623ee9d40492f8bc95b1965",
+      "value": 0.2148668500717893
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5907.JPG",
+      "sha256": "403a990e55d3b13cb73be9c1db74a66aa4974656630ced5533f749af50ee840c",
+      "value": 0.21345816179571578
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5908.JPG",
+      "sha256": "a8ecd6bce16bb821f9b89e1702fc30e5203b9e752bd8c55b7b95d84f297eae21",
+      "value": 0.21452299393492408
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5909.JPG",
+      "sha256": "9bebbdf8ae0953510483370b95070ec2f487f5de63104aa8f4d0b48ba4901f60",
+      "value": 0.2093151078426949
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5910.JPG",
+      "sha256": "f94352532db8ae7d66c6ea3bd371c0be7999c67f08a740e3b1c7fb7b4b007b84",
+      "value": 0.2129321367265856
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5911.JPG",
+      "sha256": "847c10b1777e1dc38180d52fcb1619a15f3e5a54acb929579511b38078b66e50",
+      "value": 0.20290636796934183
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5912.JPG",
+      "sha256": "303d72a644153bd73e8a887ee99b485e2f411ad861e7103af390fd67da09cf51",
+      "value": 0.2235417141219607
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5914.JPG",
+      "sha256": "9d5978f405b11441e27a8efed4bd934192e320ec8b6afd38de84ec297e2a4f0e",
+      "value": 0.23823484368508666
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5915.JPG",
+      "sha256": "eb90d7b55fc12f09e2a821d118875f928cb3f62d705c03a6cc3f271d6571d2ad",
+      "value": 0.23612891408495773
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5916.JPG",
+      "sha256": "1c0865e910caaca5dbd452e5740131c49df498fb35488e9c515c18550aa9958e",
+      "value": 0.2244310885670136
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5917.JPG",
+      "sha256": "3c8975f41355884906127dffdb420b07d5e6f6f9d6f195631558a5cd0a546a6c",
+      "value": 0.257580207378055
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5918.JPG",
+      "sha256": "16ec0c1b35c140f3e0f9526d04e9310cf2cee05ed8dc7cc67097c0167b24e48e",
+      "value": 0.18332153654512454
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5919.JPG",
+      "sha256": "f0f408a96f52196da7ce1bc03fec028493140fe42624b21daffd54dd4421eafa",
+      "value": 0.22481416462686912
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5920.JPG",
+      "sha256": "9ecbde2988323d161e7fbe3beaefb69524a4c1c4ba5604c4080a673b34d751a5",
+      "value": 0.2482322392813078
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5922.JPG",
+      "sha256": "9bcf4f78d21814e0abc4ba31fb527f319d3f9d574c586332aae6863b14889212",
+      "value": 0.2813162954722277
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5923.JPG",
+      "sha256": "c50ed9ec95a6e320fdd55306f7bdb7ac265e854c698fb5fa0f440462e0a7b0cb",
+      "value": 0.2528572006565225
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5924.JPG",
+      "sha256": "e78cd6f2b3730651a5352b16673bee98ea3baa3277ffa3f4bb03d60c6128de6f",
+      "value": 0.24267787452302392
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5925.JPG",
+      "sha256": "34bf00c86672547905ab2cee42852f04f82e39db2a09b8810642e1556e7af920",
+      "value": 0.23609652632242645
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5926.JPG",
+      "sha256": "1ef203139380da55beb1899ab60cf1226f4e87f9549c25b8cbf157906d627f59",
+      "value": 0.21652269107282038
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5927.JPG",
+      "sha256": "129b80481ec8a63b9b4942b995f20346616ee7c60305b1eaa1175dc812fd59b0",
+      "value": 0.2339540177746209
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5928.JPG",
+      "sha256": "53f23b8f9494b8c5d99530e4df20ed67fe076cd4debfaa478b94a47984c949d4",
+      "value": 0.23058733768882156
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5930.JPG",
+      "sha256": "16c38e6d51bee99536a03eff5ec27945ea5245a93246677171edd750aa521f97",
+      "value": 0.2199238836041394
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5931.JPG",
+      "sha256": "cfca3d7ba6841147a25c79ed1da8a514ddcb96d7cb78a74590875c5dac488073",
+      "value": 0.22066985439980916
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5932.JPG",
+      "sha256": "23865ffd02455ab9bcafc954fea6f1e6898e6e4a1b8c82ee4ed9c6d4ae22628b",
+      "value": 0.22063729814091346
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5933.JPG",
+      "sha256": "562e201accfe30eb22dbb0d1ca5f24a5cf54cd500d5bfedb16ba91e8988817e5",
+      "value": 0.22401475507636645
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5934.JPG",
+      "sha256": "75ea4a6556223dbd23c94e12fcfd4cc24c3aff4364778fb96c0bdd603e36030f",
+      "value": 0.21909110989861116
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5935.JPG",
+      "sha256": "e4e57e02cc828b54b555dfe318db1c630b600eb6a806576a9b8bda8b7bbfda08",
+      "value": 0.2369195253452653
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5936.JPG",
+      "sha256": "b88904c4bbaac605384b3756225883a835d28aa893b297888ee72117e37b7928",
+      "value": 0.22599544745106678
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5938.JPG",
+      "sha256": "cb262f258305dc19302959438b9c3d2ace07a37dbee609303aa802db597d39c3",
+      "value": 0.2474264465020102
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5939.JPG",
+      "sha256": "19657ba546641f2d47831a5bc40b11542b9bdd150deeaab0e9a982e3f1d5675b",
+      "value": 0.23536342700748675
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5940.JPG",
+      "sha256": "8a7f0fd9ec6a8a135dbe17f6e38a4f9fdffa1dca890cdf517ff402516636f81b",
+      "value": 0.23522312808276769
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5941.JPG",
+      "sha256": "61cde48a3370a3c541cf08c5ae3355ef73a3efa7a1c3a4c4ebad410435ff4f86",
+      "value": 0.24191668524302226
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5942.JPG",
+      "sha256": "83c434e4da78cbb73eccbee66cf26e49fdd475eb1a7fd40fdf899c4c4d0fb859",
+      "value": 0.23899715823324705
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5943.JPG",
+      "sha256": "cfcdefbd37868abe371f1c1d76dbd57bc7dbbcf867151da19fe567532bd90f9d",
+      "value": 0.21927315277518938
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5944.JPG",
+      "sha256": "37fd731e52e583c73913b0b163aa001a31a25113698e9f3d92e0482c1e80ddae",
+      "value": 0.1909409298412853
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5946.JPG",
+      "sha256": "9cf6b87591b9f188adb2c8846f83381f17856fd3390986cdd9e2f8fcaf0f65be",
+      "value": 0.2400383223978419
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5947.JPG",
+      "sha256": "a727642b70f8e6e5ac78b4f5d5d277925761b10bbbc4277f764689dca2e40b54",
+      "value": 0.23558237864946804
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5948.JPG",
+      "sha256": "0c5f8e9181685a0908e1dddc095b18904516d8203e20b901c3be6ada39de3a34",
+      "value": 0.2555343685592976
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5949.JPG",
+      "sha256": "89e4da76609f2aa4c3edb2a86cd15d35f178cbb0edc8065fefd46e064b4789f9",
+      "value": 0.2545690948210033
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5950.JPG",
+      "sha256": "2966e9d95f076e90a7a0a24fea5b2e7105da831c18df9fe58de625085558a171",
+      "value": 0.20725516598079013
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5951.JPG",
+      "sha256": "f5fa5550c46c3608bef3a60591813f608212dd0fdc1ea16b3be32f464905d807",
+      "value": 0.22854582882545962
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5952.JPG",
+      "sha256": "0c20e3bb4dd8578e34667bd4f27c47a5c85b5fda7a56ca299b25e8f42e4bc2a7",
+      "value": 0.22953620447472842
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5954.JPG",
+      "sha256": "fbc488b5af32bb813143ff4638b6ad5df8a58f2f0f8ffe8eaaeda679d514f208",
+      "value": 0.25153596719603655
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5955.JPG",
+      "sha256": "c88e52f2df8d6c439c162bdc55b36a2d1bb5614f5531e3976107df5168c44cad",
+      "value": 0.2461789400539833
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5956.JPG",
+      "sha256": "6fef4d0af27c6210794afcd1f65e5e442b8afa1819a2ea953635f5f3d4def99b",
+      "value": 0.24575348014229234
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5957.JPG",
+      "sha256": "f567d8553284d860685185e46b4d9a418728a9dd559a5816380c1dd198b83504",
+      "value": 0.23678474575190558
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5958.JPG",
+      "sha256": "a5b763adea095114f72a558367d26fc5290aa858996a8366bd5834e4f9eb2f02",
+      "value": 0.23940382358911216
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5959.JPG",
+      "sha256": "70fb00b51fd45e20c115dfa65cfb9d4d53836b4967de35f5f824f1ca207be470",
+      "value": 0.23278320118737866
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5960.JPG",
+      "sha256": "b13b5e5087929bd973e8d87c4c0e271a003ef6de63788089236fd9a8338abd3f",
+      "value": 0.24161948675900619
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5962.JPG",
+      "sha256": "be951734d0260d06ca4ff7aa8c80475019d035f4c5b3ca6492a1a94dd2139b65",
+      "value": 0.23224088669937495
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5963.JPG",
+      "sha256": "6a3e3e4f94baef1ce0a8647ee7bea92daa0de112c7b97207d1992700daa9e06b",
+      "value": 0.2370338111641811
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5964.JPG",
+      "sha256": "13f444b339ea5578a98765147d98cc5faf5e0c9cd888bde29b573af8a207c2cd",
+      "value": 0.23476060560697382
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5965.JPG",
+      "sha256": "b050ef468e648038b68a98bf3520db0ea61e07b12f851f441f624e7ae5c99b18",
+      "value": 0.2429790854777772
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5966.JPG",
+      "sha256": "a654c28245c115f1069c890bc3101868c940586830ab2500db0f871f2df014d6",
+      "value": 0.24551526807953172
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5967.JPG",
+      "sha256": "a523167dafd374bb6b43546081c34842a0e36a7eb35d2fb2a0881ce9b6e83d14",
+      "value": 0.24540388330246904
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5968.JPG",
+      "sha256": "7b0cbda1f6e9ec8eefa4f5b2327bb92697a0c0bc588320d95277dc1078ff8e47",
+      "value": 0.2486431117627822
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5970.JPG",
+      "sha256": "3b434321fda94a90adc4c0fe3c44321805c6086b49716c0983fb5074d98360c4",
+      "value": 0.22952124767519086
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5971.JPG",
+      "sha256": "a27d23ed54664cf87607a9ab73a385c5bc96ac395d9383e7b67b2f2f046248f2",
+      "value": 0.21372447808454575
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5972.JPG",
+      "sha256": "75fff598e4e83a879f3c97d5526654c5d36b403a56c67125fa31dcbdfe021fff",
+      "value": 0.22307006792105355
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5973.JPG",
+      "sha256": "b29635082796b8dcf0f6a11cc7ed08edbfbf3c606ebc19117d22c58fb4d3cbd9",
+      "value": 0.22270251779446182
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5974.JPG",
+      "sha256": "441291d9d923f2d27c1d57ef06daa07d4c6a2870f6e092540b657af952bcde44",
+      "value": 0.21365708267224365
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5975.JPG",
+      "sha256": "3fada9ee2c77feef7e87148adb2141f120d3bc86f8b3297f33d6a54b52e45d65",
+      "value": 0.23794782039184034
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5976.JPG",
+      "sha256": "4fbf2b0fe0843756fd2ad0e71c2ad729d358595f1fc66e170d02d3fb993f07f0",
+      "value": 0.22347882980223166
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5978.JPG",
+      "sha256": "60d67924d163ed45d65975625488e3e3bc8779cd006895ea748c20a3aa64c51f",
+      "value": 0.21417483967424286
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5979.JPG",
+      "sha256": "1159b89cf44fd70f50d23e6b38b9c02a121a2f55736584b3706196f7f4bb4e45",
+      "value": 0.21596690137465174
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5980.JPG",
+      "sha256": "a4248c931ae49b6229a580de102171e77878b5aa8bf9ada53ffce342a84cceb4",
+      "value": 0.2210645345013301
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5981.JPG",
+      "sha256": "193923a5ac7723fc181abcf37892c5e219077fce013fcc5316af62849fff2f0d",
+      "value": 0.21940594077944062
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5982.JPG",
+      "sha256": "0d28bca93a49825df41b47f33c24ae883172a291b5882a2f2cf502e23645774d",
+      "value": 0.2076531117275001
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5983.JPG",
+      "sha256": "5fa9252125eccf43d50dc6d9000388f88e52120a89166fe1313ca0e704d537d7",
+      "value": 0.21568204945984182
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5984.JPG",
+      "sha256": "cbd523076849dc0491fd79bcf2c5a920fb5153258e69de1e86031a7467f85a0a",
+      "value": 0.2133804736240118
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5986.JPG",
+      "sha256": "ee40b1e7f1537f6e7d193b04b7b1a68b6f6e23f68f083fe9ad5ea7c1360e6b31",
+      "value": 0.21862806484725184
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5987.JPG",
+      "sha256": "38ec6c08a4234b73ed27699b8ac0eea16bf88f5f593b71ff409cbd92673d8d26",
+      "value": 0.21361447889030047
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5988.JPG",
+      "sha256": "edcb416b7f3337688db43fe1a8603fa2fe9e579276c502fd5b83eae19924de09",
+      "value": 0.2212391893057701
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5989.JPG",
+      "sha256": "567e002cc4f671da8ebe6cf2e3a77d7e711104c46fb536c4eebce10ae63479c1",
+      "value": 0.22603050570454566
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5990.JPG",
+      "sha256": "77836b6a2b90a7486a71018b3ae3154b8c0149bf907fa34fe0514ef2d3bf6860",
+      "value": 0.22509834989679775
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5991.JPG",
+      "sha256": "eb3f858db3482ca32d95a5b5a1f60b951e10d988280e3983d0af508dbb9ad14c",
+      "value": 0.22425481860746208
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5992.JPG",
+      "sha256": "117a610dc87ad7dfc0743e0ed1f0e76cfd8493146edd85e2dfc11d1dac0ecbef",
+      "value": 0.2080327784734067
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5994.JPG",
+      "sha256": "2561ad9839b43a6a01640718bc5c82c7bffe33b21d609f4a04005e1c2960f0d0",
+      "value": 0.21226777683557363
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5995.JPG",
+      "sha256": "aa3fb74614bf70f933e7eb5e2b8c6886c2f06a36c386af7a001e3cccd4f19143",
+      "value": 0.21660635452994614
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5996.JPG",
+      "sha256": "be49c48a2ce6993ab048deec7950cbcf2e045a045f8bcf8e0f3f97b6fa6438c9",
+      "value": 0.22139576320785953
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5997.JPG",
+      "sha256": "f806843c1e4521915da7b8293cc4bad60fd3bd366b4eddd1b0a5c9186ed97fec",
+      "value": 0.21268253130515066
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5998.JPG",
+      "sha256": "f46629eafe6d19ec5c391b05aaf0270d2159682ce8a3882622e58796acbcff97",
+      "value": 0.193333726280203
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF5999.JPG",
+      "sha256": "39b78aebc8520b6cf61a2dfe096bf5f3e29c28c0a7543c19155d6881230f2b09",
+      "value": 0.24039594508539347
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6000.JPG",
+      "sha256": "23b0427ee0da6e3d03ffa912ee106bebdeded028a437cf70b137a8c6fae244b9",
+      "value": 0.23999940802549127
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6002.JPG",
+      "sha256": "bb5e74f8e859180aaeaa3147163276956dce7f649fcac7970ed8440d4303ee50",
+      "value": 0.19367057821394384
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6003.JPG",
+      "sha256": "d19115ea708b642dbe0bb5d79a5a9893523772a46d4076c1ae290584113b3c83",
+      "value": 0.22489662062517723
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6004.JPG",
+      "sha256": "bd78b4d1d5862011cc11db322087473bbfab280fa97aaa41fadc0ecdd1bd9f91",
+      "value": 0.2314576382348036
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6005.JPG",
+      "sha256": "50aac9d78fb92c67e3542306aed22f14fcec07b450382bd95154776b1e04cc53",
+      "value": 0.23231991817558942
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6006.JPG",
+      "sha256": "374f00cd15ea5215e71a05465fd4acfe0afbc1f87d8c0c93eb3ba09d7c5b8388",
+      "value": 0.22381389614787994
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6007.JPG",
+      "sha256": "f0e2e9bf2f64b7dd1c1fd641e0af0749e79d7e779412ead5f68aa0cb862a5df7",
+      "value": 0.22277274896593713
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6008.JPG",
+      "sha256": "17ed129308f70ee975de074d1692599273245c2698bbcd9e35ee1b5d4df08a2f",
+      "value": 0.21718765292416228
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6010.JPG",
+      "sha256": "72b2c42ea73a53772abd486832b0daee0c578a8d200b9a8586b7ab5d3cbaffe7",
+      "value": 0.22337540420952465
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6011.JPG",
+      "sha256": "63a53c7b68626b14e1517f65a1dbd864dcdf930def3cd659e08690512b26f6e7",
+      "value": 0.2268188903378174
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6012.JPG",
+      "sha256": "a560d4b3a52618f202042279911a6db10e1a46b31b908dbc6f0fd5e2369ac739",
+      "value": 0.23361927344726496
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6013.JPG",
+      "sha256": "081d2f6172dc234dfc07150d53cc49ba7c535e2ddad9e90bd375a2b3f02a9dbe",
+      "value": 0.2113301985302455
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6014.JPG",
+      "sha256": "9205a380d2d159f1edf918faddc16c9cdefb8b6e9ce9390659e9e59e3cdee857",
+      "value": 0.2284115034288531
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6015.JPG",
+      "sha256": "db315ad829083a4e2693e82632d75bd5bf4dc79565dd62cc0a48ecff5345c299",
+      "value": 0.2308973445745808
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6016.JPG",
+      "sha256": "7f6fb69a332c5b38a871a260620eb6f5a5c6d9b00f2ed0487e2bc46c6b68e1c4",
+      "value": 0.23621436654829484
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6018.JPG",
+      "sha256": "d5ed8821aefa190c7c92f7dff42b4a4a68bd9b8d6d1343dbff67d0399478faaa",
+      "value": 0.24261541919856439
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6019.JPG",
+      "sha256": "1858e22ad7703bba5444bfe3bdd63b785f9163239ea8433fd17c7c40d8375688",
+      "value": 0.2424274494987222
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6020.JPG",
+      "sha256": "af84a57c106544607d8a1116bd1f5bb50fd4035480c70bafce408b1981dac2ff",
+      "value": 0.2311317312654421
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6021.JPG",
+      "sha256": "9bcb35f29900e7cb6a61cc90d037618de3162dcf5bad3c7826151e65244917a4",
+      "value": 0.22800397557515015
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6022.JPG",
+      "sha256": "41baff7655710374070ab8476fc953754c712081444ba109ee40f8ce7a7f33df",
+      "value": 0.22812133781896554
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6023.JPG",
+      "sha256": "99506e331e64bab0d6c2c3c91740bfd296700e1e9be5cf299a60e2762cf7061c",
+      "value": 0.22562039832884245
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6024.JPG",
+      "sha256": "f686acfae2716d333e4aea3a3d08dcab72a2e513918a348a21b94b3a426e0df2",
+      "value": 0.23753020817284523
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6026.JPG",
+      "sha256": "dc17c97dcffd8956dac689293eeb6e4887b9eb87eaaf21f7a666944190688202",
+      "value": 0.23454962904464138
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6027.JPG",
+      "sha256": "c6388ca7132e7f4f9f767adca0f2afe658f4dd1ef55fc18f522ec1e80f3cfc0b",
+      "value": 0.22773208493685612
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6028.JPG",
+      "sha256": "dff95a04c94129d31810432db9eaeeedca32909ab192e61882c4e7f20c9c4711",
+      "value": 0.24297000944643682
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6029.JPG",
+      "sha256": "fd4b40cb422a077d7bc562cfa610595162667c60c34592f9ea8166b6f482ac6f",
+      "value": 0.2228080239680564
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6030.JPG",
+      "sha256": "33d4b870c63fcbd4f74d437600fda5ce5528c1b5a7f2b7914c19ba015bc51d6b",
+      "value": 0.22154607630269277
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6031.JPG",
+      "sha256": "22c25ddbad48fbfd8c1bc3df9174f9984c37231a9b02f0804529bce51865933a",
+      "value": 0.21374889117744827
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6032.JPG",
+      "sha256": "d3bee71ade1234574f24f786c19f99334dac8ee263c526430be66a8def272c1c",
+      "value": 0.2129515638778013
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6034.JPG",
+      "sha256": "b68a019f6750f23e4cfe5d23f7e1bc2e25e9837baad7dc4fbfac7601935dfc43",
+      "value": 0.21478866911669378
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6035.JPG",
+      "sha256": "38a6e2c63da041ec112ee1a5545aa2e9888f9e32c67b26a88857eb50570074ed",
+      "value": 0.21241253704167778
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6036.JPG",
+      "sha256": "bfc10fda722c081ec8423916c932bb2697343879a2e0d446c4145778104cdfee",
+      "value": 0.21498721867783052
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6037.JPG",
+      "sha256": "7b151897b669dfa23ee0857a15ee162f6f4ea61ccaa48111bf4116208db6067b",
+      "value": 0.21815104212541786
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6038.JPG",
+      "sha256": "d0df65a60b5787661efbbd1381edaae9ac7fc26f68a90fe3681d46dfb8a03d99",
+      "value": 0.20964133674720156
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6039.JPG",
+      "sha256": "d984c8a86062a750937afb67d67438b19953a34f0cea725241dbb1da9b18f7b3",
+      "value": 0.22131639629370997
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6040.JPG",
+      "sha256": "60e4a1537af2d81fab5ecbe11990f80a7d75e7a3fc9a929418ccb610bef94e69",
+      "value": 0.21329208505357955
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6042.JPG",
+      "sha256": "74ace81d3648a65c540783db6e18903692afcab71b3af162af0b5f5ba40c2f78",
+      "value": 0.2153227681420062
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6043.JPG",
+      "sha256": "d909fe35739505ba1192f461c0a03aac9810eaa6459bacc1982d062b03f20705",
+      "value": 0.21622333290563764
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6044.JPG",
+      "sha256": "69706bcec844a427db9441e40505607ef44817f6e8c6a4c936cf080e3ab85027",
+      "value": 0.21955029694984474
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6045.JPG",
+      "sha256": "0fcd9116db59c0bd0c3d6e2dcafd531c7e26b074ec754f75b0f2e68866db93d3",
+      "value": 0.2286405675946936
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6046.JPG",
+      "sha256": "289a2a6a2b2786b897af7a18e7b7bdaa70f1b9f517f3dc1d27734f827e19b142",
+      "value": 0.2179220207053603
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6047.JPG",
+      "sha256": "46efe4867a0c28f2ada205d8faa022463b93718f09013fe54e182363e279ed12",
+      "value": 0.22109351352630946
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6048.JPG",
+      "sha256": "d53c3bc20996ddaf8d9ed59be1eda2b0b722983170e54a773721a9d66c8b5be9",
+      "value": 0.2332138085307981
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6050.JPG",
+      "sha256": "c4ba71ad899bfec82656101a92b9550167ddbb16911117036a73ab770ac333aa",
+      "value": 0.23863319662853885
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6051.JPG",
+      "sha256": "ba5762d3fb6cd053c341b16d8e5e964d7e2284c311ff8b585bd53ada0299ebac",
+      "value": 0.23123134191754044
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6052.JPG",
+      "sha256": "ba66700db291419cf89cd6d1add3e33cc052d7035a5f8d87b3991fbc98fec8a3",
+      "value": 0.2337711912958739
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6053.JPG",
+      "sha256": "aea8ef2c74011676b934532b52e861bc75c9eb6c48e2f7c929ec0e9f9448a18c",
+      "value": 0.2242165954355368
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6054.JPG",
+      "sha256": "43d7a2cfff86a68f3bb4ad4a8ce35a9f597f28bffd0ca0ec04825d7d26ad77c5",
+      "value": 0.22283962514811592
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6055.JPG",
+      "sha256": "5933b9098c62c6e063f435ed77d6ec76df7bdc662d94e0d6c982a4a560acb7d1",
+      "value": 0.21616455889428515
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6056.JPG",
+      "sha256": "adc9ecc0361cbdd33be9a2d594f890eaa31f7473a7d6a00747c5e430043ed786",
+      "value": 0.21330321705675856
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6058.JPG",
+      "sha256": "3c1a56380250395f2af7f97c65e15456484c1d1ee91f22a98c3e152c55960298",
+      "value": 0.20678960573135885
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6059.JPG",
+      "sha256": "bf918dc27f0e49e7f51960b5cdc34e3afa9620397e7177540cb619e8a704a6b4",
+      "value": 0.20682919050790358
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6060.JPG",
+      "sha256": "44bc9acc156cd934b2b87c88bbf897d6509ef8485b2fa2c06e87e7fadad57354",
+      "value": 0.1777158782298956
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6061.JPG",
+      "sha256": "033a20c617810d9240e7a1c177aa02dd936fd7146251efd3c810521f3199afdf",
+      "value": 0.20977861331219896
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6062.JPG",
+      "sha256": "e055c785c1e680057cc10d33f2962a569fa486f8a999979b1756245d80867562",
+      "value": 0.2083886481883201
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6063.JPG",
+      "sha256": "61a9cdfcb04ec563a416d3da9f14db9642c527f0c64a60cfbf5be1fffa07c70c",
+      "value": 0.20923445823382167
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6064.JPG",
+      "sha256": "a498e3deb5f86fb515642b3d51f5086aefe71ed89080df47a6c061e1995c0ea4",
+      "value": 0.2144699270770973
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6066.JPG",
+      "sha256": "dd4a308e83ac99e73c6c7aa08e5249fb0c8719723bdc8bb9367e27f699afb2e2",
+      "value": 0.21301454451178736
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6067.JPG",
+      "sha256": "7163c2f587e91b53ccc65514d631bd797dd2798deab47c22c2d263baaa9c6428",
+      "value": 0.21701372210835376
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6068.JPG",
+      "sha256": "f1627db52e862ce0d055b84fb0cf5648c789b40ab24cbf299b360a7ca55f2764",
+      "value": 0.217049193883896
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6069.JPG",
+      "sha256": "ec8c4430332998e0fe0767f2eb651214582ad97b6922dbd22c280d3bbbd82527",
+      "value": 0.2132963892399398
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6070.JPG",
+      "sha256": "445bfb58a9121d21b6dce771ac246b283ff65c2dc1e98d9c761d41508eb80ef7",
+      "value": 0.21364669532235436
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6071.JPG",
+      "sha256": "1e536799988141e4654f5b34f07cad821d7156b4d68946d9e7623d829c350d28",
+      "value": 0.21229759482991825
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6072.JPG",
+      "sha256": "c9f0782df2c1153193f303db47877e9e5f808dff916b7791d7f7115d76c21030",
+      "value": 0.21257572497861205
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6074.JPG",
+      "sha256": "9070b76ffa1409782a15093638269e9385e288493cd7e8133790cc3ac8676f0d",
+      "value": 0.2070929120324221
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6075.JPG",
+      "sha256": "19b8eb6e28dd16a178940f6a9db77e5186e8453cddb7cab41e285248fb2cf243",
+      "value": 0.20780802610321264
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6076.JPG",
+      "sha256": "cc951a7c1f314a1bcbf33b5a2f431860b2207fe3853ccf0b44873d49555b3da3",
+      "value": 0.21248323094172772
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6077.JPG",
+      "sha256": "80c6948d5c3057c674dbf4419e4fc15dc5b19b9e1b67d4feb86234bcdabbb18f",
+      "value": 0.215170456959789
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6078.JPG",
+      "sha256": "a0135ee56dd0e0e93f99e6d6908b462fe9a0ec7b6c7c79e45b9ba981f55e3873",
+      "value": 0.21487755681267387
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6079.JPG",
+      "sha256": "b30660a0043d001204a904621a7944275f269615b493a574430ae3aa70fe85e7",
+      "value": 0.20598544547473013
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6080.JPG",
+      "sha256": "0ad287b9efd098707e041dbed29527b7f19562faebe0537be8bcd5d4a13c11c7",
+      "value": 0.1712544871714943
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6082.JPG",
+      "sha256": "28d5a0655f75af1a6d1daa64572a1e64f10adf9ba0372b454cf6af3f3ee0d706",
+      "value": 0.20465614364267284
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6083.JPG",
+      "sha256": "b5ab504900ea0e358dfddbcb8b322076caa0f192234d9227b0126f17407acbe9",
+      "value": 0.20308795574123123
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6084.JPG",
+      "sha256": "fd2ef316af35ba7fabe8d7889178b227edd223cb76e2090937629fc3bbe18d8b",
+      "value": 0.20081356388730354
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6085.JPG",
+      "sha256": "18b563b2a9bd20b44095ff00163ab08cdded09b7bc03a61c5afd6c3f0c8afdd9",
+      "value": 0.1895655105756901
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6086.JPG",
+      "sha256": "15212fb32bb0c6eec870ec377749c4f58c1d552edf93ff4e08665ff2d1ab8d29",
+      "value": 0.21313581927541092
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6087.JPG",
+      "sha256": "60d4af4b5c5790cbce5518565370614d6e8eaf6a34f6310752bfcaf76062642b",
+      "value": 0.20416685521561775
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6088.JPG",
+      "sha256": "a6490498a78b201156024550ad44adbc3daa81861257d32e4124f84da321bf9c",
+      "value": 0.1980344736691289
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6090.JPG",
+      "sha256": "14ed5e89f29bdb63b47ff3d1dc32099774cdfd8e6a34f5a88e6803f1bf7ede79",
+      "value": 0.19630734086131116
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6091.JPG",
+      "sha256": "8656ad91799df22cc7df52c0212e19a4b1d3d6ae018f14ae4e9d93bcc9e91897",
+      "value": 0.19968033002623348
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6092.JPG",
+      "sha256": "7e1cdaccddd8e260b9d6fa4c14c847787cbf61e916b88c3bbc6e6276977e25f3",
+      "value": 0.21712426362034498
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6093.JPG",
+      "sha256": "ed18ea04c401999c77487aa1cf2e06133d017a2b43579fc3aff38cf7f0c69735",
+      "value": 0.21832141545552083
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6094.JPG",
+      "sha256": "9a11674e1afcc1c75eb93263891bdf0c3b09df155161aa757b8aa396403ff367",
+      "value": 0.2232934301148992
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6095.JPG",
+      "sha256": "6d7e05eed834a0154113639e0457b91a77877d1e653f9c0bbc5c0b8f108e2481",
+      "value": 0.22932496345853332
+    },
+    {
+      "path": "/home/jinsu/Documents/Github/3dgrut/data/counter/images_2/DSCF6096.JPG",
+      "sha256": "9acdc1ec502594ee374782b3c961772d355544667a013a16279bb7e9e0f7c129",
+      "value": 0.22360097923526653
+    }
+  ],
+  "seconds": 14.54271485900972,
+  "sfm_sha256": "b32fc828de395bb7f4445d82ead15c1f27067b479dfdd8338788ea2e541957fd",
+  "coefficients": {
+    "log_intercept": 15.009178414327616,
+    "log_fine": 1.1232071568673763,
+    "short_track_fraction": 3.7407898766829666
+  },
+  "calibration": "Nine previously inspected MipNeRF360 historical budgets; not independent validation",
+  "test_RGB_used": false
+}

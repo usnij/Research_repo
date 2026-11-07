@@ -1,0 +1,63 @@
+{
+  "scope": "First three-scene full-training structural-loss comparison; not the complete paper benchmark.",
+  "scenes": {
+    "counter": {
+      "DS": 2,
+      "block": 8,
+      "nominal_total_ray_fraction": "1/16"
+    },
+    "bonsai": {
+      "DS": 2,
+      "block": 8,
+      "nominal_total_ray_fraction": "1/16"
+    },
+    "bicycle": {
+      "DS": 4,
+      "block": 6,
+      "nominal_total_ray_fraction": "1/9"
+    }
+  },
+  "arms": [
+    "0.8 L1 + regularization",
+    "0.8 L1 + 0.2 all-centre coordinate SSIM + regularization"
+  ],
+  "budget": "fine_tracks_v1 with ALL training RGB and training-only SfM incidence; frozen previous coefficients, no fit",
+  "growth": "45 common events from step600 to5000; log-linear target counts, MCMC parent/correction unchanged",
+  "steps": 30000,
+  "seed": 777,
+  "views": 4,
+  "extra_training_rays": 0,
+  "controls": [
+    "same initialization",
+    "same manifest and rays",
+    "same target and growth",
+    "same renderer and optimizer",
+    "same evaluation"
+  ],
+  "evaluation": "all held-out views, native GRT, per-image PSNR, TorchMetrics SSIM(data_range=1), VGG LPIPS(normalize=True)",
+  "limitations": [
+    "Counter is the development scene; the cap formula was calibrated on historical caps of all9 MipNeRF360 scenes. Do not claim held-out count-estimator validation.",
+    "Common5000 growth horizon is an explicit first pipeline setting, not a proven optimal schedule.",
+    "Benchmark ray counts follow full strata; rounding differences versus older exact-quota implementations are reported explicitly."
+  ],
+  "checkpoint_retention": [
+    7000,
+    30000
+  ],
+  "queue": "sequential single GPU; fail on nonfinite values, source mismatches or insufficient disk; no hyperparameter selection from evaluation",
+  "limits_confirmed_before_launch": "Small short-run Counter boundary benefit is not evidence of full-training or held-out-scene improvement.",
+  "step_indexing": "Native backend is zero-based: the last ADD is step5000, after5001 completed updates; evaluation and checkpoint filenames use completed updates.",
+  "release_id": "paper_v1_20261102",
+  "legacy_entry": "research_resume_260918/area_full_261029/train.py",
+  "status": "configuration_fixed; validation tracked in validation/summary.json",
+  "public_standalone": false,
+  "changes": "Only launch guards and release metadata; training kernels and algorithm unchanged.",
+  "registered_presets": [
+    "bicycle_l1",
+    "bicycle_structure",
+    "bonsai_l1",
+    "bonsai_structure",
+    "counter_l1",
+    "counter_structure"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "hash": "3dcdc55e847544bff043d421faa1f03f69b0c40c94d5daadecd36621c935a674",
+  "losses": {
+    "L1": 0.25546690821647644,
+    "coordinate_SSIM": 0.884037971496582,
+    "regularization": 0.005023243837058544,
+    "N": 155767,
+    "delta_N": 0,
+    "SH_degree": 0
+  }
+}

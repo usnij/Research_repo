@@ -1,0 +1,9 @@
+{
+  "source": "research_resume_260918/area_full_261029/area_tracer512/src/optixTracer.cpp",
+  "source_sha256": "735a5cbb6e2ead6e30b5f9c817783c651315b5c242eb9412a957c04b3b47b28e",
+  "patched_sha256": "6c27948bdceb6bcf7390be104e4e4510f26a1ed3999b986bd90b91c151852308",
+  "status": "Built on isolated RTX4090 instance; same-checkpoint RGB, loss, Gaussian gradients, Adam and MCMC state bit-equal. Default training renderer remains unchanged.",
+  "default": "unchanged; opt-in environment flag",
+  "effect": "skip three unused per-Gaussian diagnostic atomic additions; preserve output shapes and zero initialization",
+  "validation": "../../research_resume_260918/speed_equivalence_261030/final_comparison.json"
+}

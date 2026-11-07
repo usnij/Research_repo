@@ -1,0 +1,15 @@
+{
+  "python": "3.11.14 (main, Feb 12 2026, 00:42:50) [Clang 21.1.4 ]",
+  "executable": "/workspace/standalone-check/venv/bin/python",
+  "prefix": "/workspace/standalone-check/venv",
+  "base_prefix": "/.uv/python_install/cpython-3.11.14-linux-x86_64-gnu",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.39",
+  "torch": "2.1.2+cu118",
+  "torch_cuda": "11.8",
+  "cupy": "13.6.0",
+  "package_path": "/workspace/standalone-check/venv/lib/python3.11/site-packages/sparse_grt/__init__.py",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "cuda_home": "/workspace/standalone-check/cuda118",
+  "fresh_venv": true,
+  "inherited_system_site_packages": false
+}

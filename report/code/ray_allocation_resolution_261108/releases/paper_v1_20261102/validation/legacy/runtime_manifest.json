@@ -1,0 +1,257 @@
+{
+  "modules": {
+    "area_tracer512": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/area_full_261029/area_tracer512/__init__.py",
+      "sha256": "3e2982e4983f3e9f088900a95289fd4aa1d50f51dafdbc54082ec4d8e353ef06"
+    },
+    "area_tracer512.tracer": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/area_full_261029/area_tracer512/tracer.py",
+      "sha256": "ba2000ebaa9ebb1705864305d41a4a41c29851647fe8805f8504a259b72e9593"
+    },
+    "lib3dgrt_area_subset512_261029_1": {
+      "path": "/home/jinsu/.cache/torch_extensions/py311_cu118/lib3dgrt_area_subset512_261029_1/lib3dgrt_area_subset512_261029_1.so",
+      "sha256": "b9ed97170d35b470ad0fecdb3e2247f771bb1632ac37d6f590be33317de26073"
+    },
+    "lib_mcmc_cc": {
+      "path": "/home/jinsu/.cache/torch_extensions/py311_cu118/lib_mcmc_cc/lib_mcmc_cc.so",
+      "sha256": "9a288c541e558d22b9c2c4aa796f016ca079c35fcaffb0c5346b86877e8014ef"
+    },
+    "sparse_grt": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/sparse_grt_multiscene_v1_261030/package/src/sparse_grt/__init__.py",
+      "sha256": "4ff478eadbd6c73f647fd444e46c5cd13dd5c780d460321a1ecbe6fd77fbce87"
+    },
+    "sparse_grt.budget": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/sparse_grt_multiscene_v1_261030/package/src/sparse_grt/budget.py",
+      "sha256": "a996f03d26e83a94b9af8b215351b30f3c66bc683c0b3426c40384200dca3e24"
+    },
+    "sparse_grt.config": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/sparse_grt_multiscene_v1_261030/package/src/sparse_grt/config.py",
+      "sha256": "0766a8535c6c86db5ace70e0c2045cadaeb975337235fe73080c4492b9245eb5"
+    },
+    "sparse_grt.contracts": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/sparse_grt_multiscene_v1_261030/package/src/sparse_grt/contracts.py",
+      "sha256": "dfa3eb8a61134bf94c7b7bf656e8f94c082067f7da3cfaa8fa3e93b7bab3e22c"
+    },
+    "sparse_grt.engine": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/sparse_grt_multiscene_v1_261030/package/src/sparse_grt/engine.py",
+      "sha256": "10a2a16180d68080584de1174e681215372fefd2c374fc0bffa8e30e52b692c5"
+    },
+    "sparse_grt.growth": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/sparse_grt_multiscene_v1_261030/package/src/sparse_grt/growth.py",
+      "sha256": "7e5425f9051f54700bfc804549152e22e7a95108e60a21c2ef384feaef9968a5"
+    },
+    "sparse_grt.inputs": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/sparse_grt_multiscene_v1_261030/package/src/sparse_grt/inputs.py",
+      "sha256": "ae72b576b434c4d4ebcfb24e40709568a4fde23487f707ba467da2d0b6a03efe"
+    },
+    "sparse_grt.losses": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/sparse_grt_multiscene_v1_261030/package/src/sparse_grt/losses/__init__.py",
+      "sha256": "a8cf0f5830b7e768d291e961301304f6c24e6612b9aa4cb783d0569d216732dc"
+    },
+    "sparse_grt.losses.coordinate_ssim": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/sparse_grt_multiscene_v1_261030/package/src/sparse_grt/losses/coordinate_ssim.py",
+      "sha256": "55396c4f80ba0b3b6a6b5769b31f5f78f972b0b197a077b4709c27136dccc6e5"
+    },
+    "sparse_grt.losses.coordinate_ssim_all": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/sparse_grt_multiscene_v1_261030/package/src/sparse_grt/losses/coordinate_ssim_all.py",
+      "sha256": "4d7ce595b0d699d9683d7d8875e78595cd69c9693f571560d1595142da75b2a1"
+    },
+    "sparse_grt.objective": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/sparse_grt_multiscene_v1_261030/package/src/sparse_grt/objective.py",
+      "sha256": "c88ec9e9388bd260a81b28072915a8d0caee71e3f8a8250e6b87242f5c5b8d52"
+    },
+    "sparse_grt.provenance": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/sparse_grt_multiscene_v1_261030/package/src/sparse_grt/provenance.py",
+      "sha256": "92cb751e4d3b07cddd9b32831479508c1ad20663e20939a028f80484a371c5e2"
+    },
+    "sparse_grt.research_backend": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/sparse_grt_multiscene_v1_261030/package/src/sparse_grt/research_backend.py",
+      "sha256": "403103f505aee39d4a93c874ae790ca48449be91033eb08eb90c7b7242b12916"
+    },
+    "sparse_grt.sampling": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/sparse_grt_multiscene_v1_261030/package/src/sparse_grt/sampling.py",
+      "sha256": "a72bf8b26bf03ec2bdaf4a71cd1329f4464ea82ddf8e83c5f22a47fbd43fe8ed"
+    },
+    "threedgrt_tracer": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/single_reset_omit_260928/runtime/threedgrt_tracer/__init__.py",
+      "sha256": "3e2982e4983f3e9f088900a95289fd4aa1d50f51dafdbc54082ec4d8e353ef06"
+    },
+    "threedgrt_tracer.tracer": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/single_reset_omit_260928/runtime/threedgrt_tracer/tracer.py",
+      "sha256": "225b5bc720d39ad84073bddee1be72e1f81821899508670c3a290b7671d120fc"
+    },
+    "threedgrut": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/__init__.py",
+      "sha256": "1ccb827fcaf5aaca7f1ec4ef25efe30f3a6a47fbbfde7e1c79f5e1e487edc169"
+    },
+    "threedgrut.datasets": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/datasets/__init__.py",
+      "sha256": "0b052e8f9cb440af7d771e617cc148eb66a93ad11b3a1f6edea65f433a82d513"
+    },
+    "threedgrut.datasets.camera_models": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/datasets/camera_models.py",
+      "sha256": "f2c2ca2d60f2c24846d273110070b9cc9d654496ad839078f899b27565110587"
+    },
+    "threedgrut.datasets.dataset_colmap": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/datasets/dataset_colmap.py",
+      "sha256": "58db17cced19b5cc573132544fcc0cc74d5088aa3a8f09398f6b0f25455f51de"
+    },
+    "threedgrut.datasets.dataset_nerf": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/datasets/dataset_nerf.py",
+      "sha256": "163def89f438dd5cb2b34c5124606d55883d8f7c2929c53d3dd851d0f48bb6ac"
+    },
+    "threedgrut.datasets.dataset_scannetpp": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/datasets/dataset_scannetpp.py",
+      "sha256": "296e1d4787e73b987900e82caff384823205f997a07b376f7063d59368c8a99a"
+    },
+    "threedgrut.datasets.protocols": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/datasets/protocols.py",
+      "sha256": "c3ee60a72c5d793b8581e2fbffba7c5a22a75b480400f8db1fa36d1bf0df23ee"
+    },
+    "threedgrut.datasets.utils": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/datasets/utils.py",
+      "sha256": "7218f0386d5233e81614f07f18b7dd192028399c523113516facc82666f9142b"
+    },
+    "threedgrut.export": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/export/__init__.py",
+      "sha256": "cd4136b00a5cd734a7b3a3a6ee0f8d1a491f686ce4a5e2e0af0d02e1585d1beb"
+    },
+    "threedgrut.export.base": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/export/base.py",
+      "sha256": "c3f4f87d2e481cbf206be7acbb7e2b03bdd9e8688ee5ddb33331989b91edb56a"
+    },
+    "threedgrut.export.ingp_exporter": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/export/ingp_exporter.py",
+      "sha256": "0b70524a1f6a88b9952c9db61b87d2a73bad969f5c657ae91616dd7fa31cf6f5"
+    },
+    "threedgrut.export.normalizing_transform": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/export/normalizing_transform.py",
+      "sha256": "2cbf87fafb837acfbeefc415595e5d29f2851d0058bc56dde2130c07cc249b56"
+    },
+    "threedgrut.export.nurec_templates": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/export/nurec_templates.py",
+      "sha256": "2091ada06ccf4cf04e20675cd96e1d03ad2b216d7554d1fb9d2ec661072eb3af"
+    },
+    "threedgrut.export.ply_exporter": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/export/ply_exporter.py",
+      "sha256": "0f9a0fdeeb1c7f309246abcd1e020249c4713c462e2b032c1f33ea0edcf81c0f"
+    },
+    "threedgrut.export.usd_util": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/export/usd_util.py",
+      "sha256": "a7ca8b1bb75f21a0c27da267ff117ac877eb3f1af764deef9315140cfb045913"
+    },
+    "threedgrut.export.usdz_exporter": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/export/usdz_exporter.py",
+      "sha256": "35213e02055648ae6487f7330f31e79e65d8d64dfa56b9955eec14bc22ca92e6"
+    },
+    "threedgrut.gui": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/gui/__init__.py",
+      "sha256": "2220070d3b3b744a6e8928c267d1da3eaae736957ae383f55e71cbe11d8f8679"
+    },
+    "threedgrut.gui.ps_extension": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/gui/ps_extension.py",
+      "sha256": "a4398f2e27636ccad55af466e5271fda49db8066b5926d93a066d0438d126fb6"
+    },
+    "threedgrut.model": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/model/__init__.py",
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "threedgrut.model.background": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/model/background.py",
+      "sha256": "d59292a90cdf536de187a26e88b9e3ef701e081f55dd0eb7a35976ee00aac0fa"
+    },
+    "threedgrut.model.geometry": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/model/geometry.py",
+      "sha256": "e803bfae0a6c1b5a1040e5a9627851c67c405261d1fe01e6da3212b98d054c37"
+    },
+    "threedgrut.model.losses": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/model/losses.py",
+      "sha256": "d91f49f6312d8a56c0e575dc0298abae0929c8e82f774f7f9618996ce6c28521"
+    },
+    "threedgrut.model.model": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/model/model.py",
+      "sha256": "9189a3076d3c9a49e2fba62361be5704a8a998913eb8156b926b96cd27374664"
+    },
+    "threedgrut.optimizers": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/optimizers/__init__.py",
+      "sha256": "9e6b838d10d9ebcd9223fea685d38d6679f61fed5be6ef2b8b875ecbacf9374d"
+    },
+    "threedgrut.render": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/render.py",
+      "sha256": "19c943484f295a9346b0394da271f86cb9b1f9208f8fcdf17eac6041c05efc36"
+    },
+    "threedgrut.strategy": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/strategy/__init__.py",
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "threedgrut.strategy.base": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/strategy/base.py",
+      "sha256": "15c0f0113d18c48f367c40294dee956af8f6f582620e8939bd7bccdeaf244aa1"
+    },
+    "threedgrut.strategy.mcmc": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/strategy/mcmc.py",
+      "sha256": "f3b310f992516b387ebee97602c15810e0440921bd7b9cfeabc9c3bf7927ff45"
+    },
+    "threedgrut.trainer": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/trainer.py",
+      "sha256": "8b863b858e77fa85ff34ff9d2ae35e3043f7ee609c680eb038cef0dc564ba449"
+    },
+    "threedgrut.utils.gui": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/utils/gui.py",
+      "sha256": "b786b9707af12fcf2b3bd1ffe6f71411282d5663491299dd1061c58d17404113"
+    },
+    "threedgrut.utils.logger": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/utils/logger.py",
+      "sha256": "736652af021c408a6d3ab02e07b6fcaadc561c5e3f2120de3a0df369f249824d"
+    },
+    "threedgrut.utils.misc": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/utils/misc.py",
+      "sha256": "9abd6024ec8dc66c3cd37e618926abf5d5d4cad12595f699e2fa0b2e72206896"
+    },
+    "threedgrut.utils.render": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/utils/render.py",
+      "sha256": "9f4ee3031ffd9e2c67d082d6df8232f9614c01e9e71382417db07a25e0237b92"
+    },
+    "threedgrut.utils.timer": {
+      "path": "/home/jinsu/Documents/Github/\ub17c\ubb38/hybrid_AB_compare_260915/common/threedgrut/utils/timer.py",
+      "sha256": "91f7d572f46f2f758114c327af77f232c06e05c4984bc474e244c9f2ca9001d3"
+    }
+  },
+  "versions": {
+    "torch": "2.1.2",
+    "numpy": "1.26.4",
+    "cupy-cuda11x": "13.6.0",
+    "torchmetrics": "1.8.2",
+    "hydra-core": "1.3.2"
+  },
+  "source_sha256": {
+    "src/sparse_grt/__init__.py": "4ff478eadbd6c73f647fd444e46c5cd13dd5c780d460321a1ecbe6fd77fbce87",
+    "src/sparse_grt/budget.py": "a996f03d26e83a94b9af8b215351b30f3c66bc683c0b3426c40384200dca3e24",
+    "src/sparse_grt/config.py": "0766a8535c6c86db5ace70e0c2045cadaeb975337235fe73080c4492b9245eb5",
+    "src/sparse_grt/contracts.py": "dfa3eb8a61134bf94c7b7bf656e8f94c082067f7da3cfaa8fa3e93b7bab3e22c",
+    "src/sparse_grt/engine.py": "10a2a16180d68080584de1174e681215372fefd2c374fc0bffa8e30e52b692c5",
+    "src/sparse_grt/growth.py": "7e5425f9051f54700bfc804549152e22e7a95108e60a21c2ef384feaef9968a5",
+    "src/sparse_grt/inputs.py": "ae72b576b434c4d4ebcfb24e40709568a4fde23487f707ba467da2d0b6a03efe",
+    "src/sparse_grt/losses/__init__.py": "a8cf0f5830b7e768d291e961301304f6c24e6612b9aa4cb783d0569d216732dc",
+    "src/sparse_grt/losses/coordinate_ssim.cu": "6595ab5675c99c65a5852525eed696d0061f6abdec56df358eae1e3b3cda67a3",
+    "src/sparse_grt/losses/coordinate_ssim.py": "55396c4f80ba0b3b6a6b5769b31f5f78f972b0b197a077b4709c27136dccc6e5",
+    "src/sparse_grt/losses/coordinate_ssim_all.cu": "51f70dc0d25887965e64539df3416d00a3c2e70e835259fa3726328d8aee726d",
+    "src/sparse_grt/losses/coordinate_ssim_all.py": "4d7ce595b0d699d9683d7d8875e78595cd69c9693f571560d1595142da75b2a1",
+    "src/sparse_grt/losses/coordinate_ssim_skip_zero.cu": "3f6a7153f9aeaba5f72ad18576d8be1b972d6ba2b066d152dcd3f04e4f60dc91",
+    "src/sparse_grt/losses/experimental.py": "4e84a868d581011b698775806605394a706c5c2164251fc559673e94bf92d8ed",
+    "src/sparse_grt/objective.py": "c88ec9e9388bd260a81b28072915a8d0caee71e3f8a8250e6b87242f5c5b8d52",
+    "src/sparse_grt/provenance.py": "92cb751e4d3b07cddd9b32831479508c1ad20663e20939a028f80484a371c5e2",
+    "src/sparse_grt/research_backend.py": "403103f505aee39d4a93c874ae790ca48449be91033eb08eb90c7b7242b12916",
+    "src/sparse_grt/sampling.py": "a72bf8b26bf03ec2bdaf4a71cd1329f4464ea82ddf8e83c5f22a47fbd43fe8ed",
+    "tools/audit_structure.py": "432755ea2f351f10be1afa26e8210e080826dfa10647df24105d589ebe329974",
+    "tools/train_repro.py": "739bcb89947231032c6fb8f6d1d951e5ade7421ea1a94c3e0597d7c3136eff9e",
+    "tools/train_scene.py": "e8db76a33595342c8c79a96bd7af0645847c95b2e598687acabd805894c39493",
+    "tools/validate_cuda.py": "6677cbddf1c13fdd4eea96105a995f8f7a55e872fdef4220e4203cc7c6a4c43f"
+  },
+  "torch_cuda": "11.8",
+  "flags": {
+    "GRT_GRAD_ACCUM_DOUBLE": "1",
+    "GRT_ALPHA_MIN": null,
+    "SPARSE_GRT_DISABLE_DIAGNOSTICS": null
+  }
+}

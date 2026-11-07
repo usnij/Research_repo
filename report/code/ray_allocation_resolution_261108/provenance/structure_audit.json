@@ -1,0 +1,120 @@
+{
+  "scope": "16 synthetic independent masks per condition, CPU; weights only, not quality/independent observations",
+  "rows": [
+    {
+      "block": 4,
+      "sigma": 6.0,
+      "sigma_over_block": 1.5,
+      "candidates": 121,
+      "ess": 27.847757068460233,
+      "self_mass": 0.07083007797815306,
+      "positive_neighbors": 85.47916666666666,
+      "neighbor_pair_mass": 0.9640562680406881,
+      "interior_incoming_weight_cv": 0.15971042913777295,
+      "minimum_interior_incoming_weight": 0.33171227412493653,
+      "maximum_interior_incoming_weight": 1.050554385329052
+    },
+    {
+      "block": 8,
+      "sigma": 1.5,
+      "sigma_over_block": 0.1875,
+      "candidates": 9,
+      "ess": 1.1035992626129627,
+      "self_mass": 0.9555088657278717,
+      "positive_neighbors": 1.6043859649122807,
+      "neighbor_pair_mass": 0.06927804993112426,
+      "interior_incoming_weight_cv": 0.01790491953837819,
+      "minimum_interior_incoming_weight": 0.6505554812898152,
+      "maximum_interior_incoming_weight": 1.0876476821501122
+    },
+    {
+      "block": 8,
+      "sigma": 4.0,
+      "sigma_over_block": 0.5,
+      "candidates": 25,
+      "ess": 2.858680636712519,
+      "self_mass": 0.5251144391190182,
+      "positive_neighbors": 9.764074900793654,
+      "neighbor_pair_mass": 0.6331613186563624,
+      "interior_incoming_weight_cv": 0.09081656972156854,
+      "minimum_interior_incoming_weight": 0.4700037056116009,
+      "maximum_interior_incoming_weight": 1.189152288540706
+    },
+    {
+      "block": 8,
+      "sigma": 6.0,
+      "sigma_over_block": 0.75,
+      "candidates": 49,
+      "ess": 6.59381944663505,
+      "self_mass": 0.27076184173323004,
+      "positive_neighbors": 21.357678167420815,
+      "neighbor_pair_mass": 0.8466070266087529,
+      "interior_incoming_weight_cv": 0.11695895467152671,
+      "minimum_interior_incoming_weight": 0.4230556236029037,
+      "maximum_interior_incoming_weight": 1.1517632121758687
+    },
+    {
+      "block": 8,
+      "sigma": 8.0,
+      "sigma_over_block": 1.0,
+      "candidates": 49,
+      "ess": 12.110557383876966,
+      "self_mass": 0.15729715204067893,
+      "positive_neighbors": 37.51767533936651,
+      "neighbor_pair_mass": 0.9170711690216282,
+      "interior_incoming_weight_cv": 0.12697770258268057,
+      "minimum_interior_incoming_weight": 0.3727179585576588,
+      "maximum_interior_incoming_weight": 1.1053475686448218
+    },
+    {
+      "block": 8,
+      "sigma": 12.0,
+      "sigma_over_block": 1.5,
+      "candidates": 121,
+      "ess": 27.80018528633368,
+      "self_mass": 0.0708731482674102,
+      "positive_neighbors": 83.15407196969697,
+      "neighbor_pair_mass": 0.9639931306134426,
+      "interior_incoming_weight_cv": 0.1599088942254691,
+      "minimum_interior_incoming_weight": 0.33224416272663637,
+      "maximum_interior_incoming_weight": 1.0501901284448256
+    },
+    {
+      "block": 16,
+      "sigma": 6.0,
+      "sigma_over_block": 0.375,
+      "candidates": 25,
+      "ess": 1.798316248212275,
+      "self_mass": 0.722602500874381,
+      "positive_neighbors": 5.339719742063492,
+      "neighbor_pair_mass": 0.40289948736048536,
+      "interior_incoming_weight_cv": 0.061163395328169,
+      "minimum_interior_incoming_weight": 0.49814312013181866,
+      "maximum_interior_incoming_weight": 1.1814157943494377
+    },
+    {
+      "block": 16,
+      "sigma": 12.0,
+      "sigma_over_block": 0.75,
+      "candidates": 49,
+      "ess": 6.58497343507223,
+      "self_mass": 0.2708403570842155,
+      "positive_neighbors": 20.779977375565608,
+      "neighbor_pair_mass": 0.8463714360095826,
+      "interior_incoming_weight_cv": 0.11710834119428319,
+      "minimum_interior_incoming_weight": 0.4238066757541045,
+      "maximum_interior_incoming_weight": 1.152353147805529
+    }
+  ],
+  "counter": {
+    "full_pixels": 1617204,
+    "rays_per_view": 25350,
+    "image_transfer_bytes_per_step": 19406448,
+    "resident_uint8_cache_bytes": 1018838520,
+    "old_float_conversion_pixels": 6468816,
+    "new_float_conversion_pixels": 101400,
+    "valid_centres": 23436,
+    "centres": 25350,
+    "omitted_centre_fraction": 0.07550295857988165
+  }
+}

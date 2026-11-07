@@ -1,0 +1,35 @@
+{
+  "status": "local_standalone_passed_remote_install_pending",
+  "version": "0.2.0.dev0",
+  "original_reference": "paper-v1-20261102",
+  "validation": {
+    "cpu_tests_passed": 16,
+    "source_isolation": true,
+    "fresh_GRT_MCMC_build": true,
+    "from_scratch_updates": 610,
+    "all_step_losses_N_identical": true,
+    "parameters_Adam_Torch_NumPy_Python_RNG_bit_identical": true,
+    "checkpoint_reload": true,
+    "full_ray_train_view_repeat": true,
+    "test_views_evaluated": 30
+  },
+  "initialization_N": 155767,
+  "final_N": 163087,
+  "python_rng_diagnostic": "The omitted Trainer initialization log consumed 6 Python random draws in Rich hyperlink formatting. Preserving the original log restores exact state without changing training.",
+  "input_budget": "fine_tracks_v1/all-train recomputed at 1229851; final metadata-only rerun reuses that fixed value.",
+  "limitations": [
+    "Existing local Python dependencies reused; not a clean-environment install.",
+    "GPU is RTX 4070 SUPER; no cross-GPU numerical or timing claim.",
+    "610 steps do not cover the entire growth horizon or full 30k quality.",
+    "Fresh instance must install the declared dependencies before the next benchmark release."
+  ],
+  "wheel": {
+    "file": "sparse_grt-0.2.0.dev0-py3-none-any.whl",
+    "sha256": "bd74d2217773008e5ea7297c1b91a3647a2e49d4e59131ee54c3cf0248d051c7",
+    "bytes": 225139,
+    "source_files_match_installed": true,
+    "Optix_SDK_bundled": false
+  },
+  "checkpoint": "/tmp/sparse-grt-standalone/smoke_candidate/checkpoint_latest.pt",
+  "post_smoke_change": "Removed an unused USDZExporter name from __all__; star-import checked on CPU. Training and CUDA code unchanged."
+}

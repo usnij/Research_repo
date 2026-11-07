@@ -1,0 +1,14 @@
+{
+  "release_id": "paper_v1_20261102",
+  "lock_sha256": "b992b4325b475be2e0aedea47a99f00bbf542301a69cff3612fb6a5f4a32cd38",
+  "files_checked": 243,
+  "environment_checked": true,
+  "passed": true,
+  "runtime": {
+    "passed": true,
+    "modules_checked": 48,
+    "resolved_config_matches": true
+  },
+  "mode": "smoke",
+  "preset": "counter_structure"
+}

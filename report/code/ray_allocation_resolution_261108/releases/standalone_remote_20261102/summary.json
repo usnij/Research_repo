@@ -1,0 +1,65 @@
+{
+  "status": "fresh_instance_standalone_validation_passed",
+  "date": "2026-11-02",
+  "version": "0.2.0.dev0",
+  "base_commit": "055e38f8fea586553ace51747e50110193a94f26",
+  "hardware": {
+    "gpu": "RTX 4090 24GB",
+    "driver": "560.35.03",
+    "os": "Ubuntu 24.04",
+    "instance_id": 58780502
+  },
+  "setup": {
+    "fresh_environments": 2,
+    "final_script": "tools/setup_reference_env.sh",
+    "final_script_single_invocation_passed": true,
+    "python": "3.11.14",
+    "torch": "2.1.2+cu118",
+    "cuda_toolkit": "11.8",
+    "compiler": "GCC 11",
+    "jpeg": "IJG 9f; Pillow 12.0.0 built from source",
+    "old_environment_or_compiled_extensions_copied": false,
+    "prerequisites": "uv, mamba, GCC/G++ 11, make, curl, git, zlib development headers; existing NVIDIA driver"
+  },
+  "fixes": [
+    "Declared opencv-python-headless dependency required by the COLMAP camera loader.",
+    "Fetch OptiX headers without importing the renderer runtime.",
+    "Include CUDA math-library development headers in the reference environment recipe.",
+    "Fix JPEG decoder implementation as well as Pillow version to reproduce original input RGB.",
+    "CUDA validation imports the installed package instead of injecting the checkout into sys.path."
+  ],
+  "algorithm_changes": false,
+  "validation": {
+    "cpu_tests": 16,
+    "coordinate_ssim_cuda_cases": 20,
+    "input_files_SHA256_checked": 244,
+    "decoded_RGB_images_identical": 240,
+    "from_scratch_updates_per_run": 610,
+    "independently_installed_runs_identical": true,
+    "checkpoint_comparison_fields": 16,
+    "all_610_non_timing_step_values_identical": true,
+    "checkpoint_continuation_updates": 100,
+    "continuation_parameters_Adam_RNG_bit_identical": true,
+    "first_and_second_growth_relocation_events_checked": true,
+    "installed_packages_only": true,
+    "forbidden_legacy_imports": [],
+    "checkpoint_full_ray_repeat_identical": true,
+    "test_views_evaluated": 30
+  },
+  "gaussians": {
+    "initial": 155767,
+    "input_target": 1229851,
+    "after_610": 163087,
+    "after_710": 170750
+  },
+  "limitations": [
+    "This validates installation and a short end-to-end path, not 30000-step convergence or full-training speed.",
+    "RTX 4070 SUPER versus RTX 4090 training was not bit-identical; exact equality claims here concern same-GPU runs.",
+    "The continuation diagnostic reconstructs checkpoint state; the general training CLI does not yet provide a --resume flag.",
+    "Decoder choice is part of the input protocol; ordinary PyPI Pillow wheels need not decode identically.",
+    "Source build requires the documented system prerequisites and access to public dependencies."
+  ],
+  "raw_logs": "research_resume_260918/standalone_remote_261102/onepass-{install,training}.log.gz",
+  "remote_checkpoint": "/workspace/standalone-check/runs/smoke_reference/checkpoint_latest.pt",
+  "evaluation_notice": "610-step metrics in validation/checkpoint_evaluation.json test execution only; they are not final benchmark quality."
+}

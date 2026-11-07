@@ -1,0 +1,405 @@
+{
+  "src/sparse_grt_backend/__init__.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/__init__.py",
+    "original_sha256": "1ccb827fcaf5aaca7f1ec4ef25efe30f3a6a47fbbfde7e1c79f5e1e487edc169",
+    "copied_sha256": "1ccb827fcaf5aaca7f1ec4ef25efe30f3a6a47fbbfde7e1c79f5e1e487edc169",
+    "vendored_sha256": "69127fcb2949dbbfb26caed99e9955d8a7909de02042afa403ecc840d8174ffc"
+  },
+  "src/sparse_grt_backend/model/__init__.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/model/__init__.py",
+    "original_sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e",
+    "copied_sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e",
+    "vendored_sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+  },
+  "src/sparse_grt_backend/model/model.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/model/model.py",
+    "original_sha256": "9189a3076d3c9a49e2fba62361be5704a8a998913eb8156b926b96cd27374664",
+    "copied_sha256": "f76f08fc2492dca598e09f4c322e72c4dfd0e92b27bf942a5e91a65ef2e409a8",
+    "vendored_sha256": "3896ad828f6b9e93a4998c2eea26329af4d6f5a18cb4f56e06d63002481ba22d"
+  },
+  "src/sparse_grt_backend/model/background.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/model/background.py",
+    "original_sha256": "d59292a90cdf536de187a26e88b9e3ef701e081f55dd0eb7a35976ee00aac0fa",
+    "copied_sha256": "c0498505cae95278bf6d6ac35597bf3450d4001054b8828ba704c9b0bc5bd355",
+    "vendored_sha256": "c0498505cae95278bf6d6ac35597bf3450d4001054b8828ba704c9b0bc5bd355"
+  },
+  "src/sparse_grt_backend/model/geometry.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/model/geometry.py",
+    "original_sha256": "e803bfae0a6c1b5a1040e5a9627851c67c405261d1fe01e6da3212b98d054c37",
+    "copied_sha256": "4ab38f96e208c5dcc961af394bd9c8913cf38018fb7ed359aefe5802918727fb",
+    "vendored_sha256": "4ab38f96e208c5dcc961af394bd9c8913cf38018fb7ed359aefe5802918727fb"
+  },
+  "src/sparse_grt_backend/strategy/__init__.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/strategy/__init__.py",
+    "original_sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e",
+    "copied_sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e",
+    "vendored_sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+  },
+  "src/sparse_grt_backend/strategy/base.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/strategy/base.py",
+    "original_sha256": "15c0f0113d18c48f367c40294dee956af8f6f582620e8939bd7bccdeaf244aa1",
+    "copied_sha256": "669eaf96b9cf30953a263ff20a0e937a60c4274254792607e022b64097ffc309",
+    "vendored_sha256": "669eaf96b9cf30953a263ff20a0e937a60c4274254792607e022b64097ffc309"
+  },
+  "src/sparse_grt_backend/strategy/mcmc.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/strategy/mcmc.py",
+    "original_sha256": "f3b310f992516b387ebee97602c15810e0440921bd7b9cfeabc9c3bf7927ff45",
+    "copied_sha256": "ff65c2934923a4b53d497082958ad2ea5aafc9633981c124abbf7e47bcfad443",
+    "vendored_sha256": "d544a8d351d807a8460573ace51a753c734f0447e59f022760500fc5e98c4895"
+  },
+  "src/sparse_grt_backend/strategy/src/__init__.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/strategy/src/__init__.py",
+    "original_sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e",
+    "copied_sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e",
+    "vendored_sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+  },
+  "src/sparse_grt_backend/strategy/src/gaussian_mcmc.h": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/strategy/src/gaussian_mcmc.h",
+    "original_sha256": "76bb9e171ba648f5b6c79d316ad4402d99fe73b4b931d151458c26cf9ebe26dd",
+    "copied_sha256": "76bb9e171ba648f5b6c79d316ad4402d99fe73b4b931d151458c26cf9ebe26dd",
+    "vendored_sha256": "76bb9e171ba648f5b6c79d316ad4402d99fe73b4b931d151458c26cf9ebe26dd",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_backend/strategy/src/gaussian_mcmc.cu": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/strategy/src/gaussian_mcmc.cu",
+    "original_sha256": "dcfe7bf3a81a5abb3e33fdb239e5b02a4ec3867453d86dba6a65cfbd58dc503b",
+    "copied_sha256": "dcfe7bf3a81a5abb3e33fdb239e5b02a4ec3867453d86dba6a65cfbd58dc503b",
+    "vendored_sha256": "dcfe7bf3a81a5abb3e33fdb239e5b02a4ec3867453d86dba6a65cfbd58dc503b",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_backend/strategy/src/bindings.cpp": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/strategy/src/bindings.cpp",
+    "original_sha256": "c18a6b006decbc3c81eb37d75140eb3ae74855046d688f28e2119e5435925cbf",
+    "copied_sha256": "c18a6b006decbc3c81eb37d75140eb3ae74855046d688f28e2119e5435925cbf",
+    "vendored_sha256": "c18a6b006decbc3c81eb37d75140eb3ae74855046d688f28e2119e5435925cbf",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_backend/datasets/dataset_colmap.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/datasets/dataset_colmap.py",
+    "original_sha256": "58db17cced19b5cc573132544fcc0cc74d5088aa3a8f09398f6b0f25455f51de",
+    "copied_sha256": "2bed7486f16d3ae68d3e14c4eaf0f3c10639e6cdaae6d3be7d7604200b9a83bf",
+    "vendored_sha256": "2bed7486f16d3ae68d3e14c4eaf0f3c10639e6cdaae6d3be7d7604200b9a83bf"
+  },
+  "src/sparse_grt_backend/datasets/camera_models.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/datasets/camera_models.py",
+    "original_sha256": "f2c2ca2d60f2c24846d273110070b9cc9d654496ad839078f899b27565110587",
+    "copied_sha256": "f2c2ca2d60f2c24846d273110070b9cc9d654496ad839078f899b27565110587",
+    "vendored_sha256": "f2c2ca2d60f2c24846d273110070b9cc9d654496ad839078f899b27565110587"
+  },
+  "src/sparse_grt_backend/datasets/protocols.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/datasets/protocols.py",
+    "original_sha256": "c3ee60a72c5d793b8581e2fbffba7c5a22a75b480400f8db1fa36d1bf0df23ee",
+    "copied_sha256": "c3ee60a72c5d793b8581e2fbffba7c5a22a75b480400f8db1fa36d1bf0df23ee",
+    "vendored_sha256": "c3ee60a72c5d793b8581e2fbffba7c5a22a75b480400f8db1fa36d1bf0df23ee"
+  },
+  "src/sparse_grt_backend/datasets/utils.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/datasets/utils.py",
+    "original_sha256": "7218f0386d5233e81614f07f18b7dd192028399c523113516facc82666f9142b",
+    "copied_sha256": "7218f0386d5233e81614f07f18b7dd192028399c523113516facc82666f9142b",
+    "vendored_sha256": "7218f0386d5233e81614f07f18b7dd192028399c523113516facc82666f9142b"
+  },
+  "src/sparse_grt_backend/utils/logger.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/utils/logger.py",
+    "original_sha256": "736652af021c408a6d3ab02e07b6fcaadc561c5e3f2120de3a0df369f249824d",
+    "copied_sha256": "736652af021c408a6d3ab02e07b6fcaadc561c5e3f2120de3a0df369f249824d",
+    "vendored_sha256": "736652af021c408a6d3ab02e07b6fcaadc561c5e3f2120de3a0df369f249824d"
+  },
+  "src/sparse_grt_backend/utils/misc.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/utils/misc.py",
+    "original_sha256": "9abd6024ec8dc66c3cd37e618926abf5d5d4cad12595f699e2fa0b2e72206896",
+    "copied_sha256": "2df85b741b26826713780cbf1d0fd2104513706fb964d61566df37c94aa84d9f",
+    "vendored_sha256": "2df85b741b26826713780cbf1d0fd2104513706fb964d61566df37c94aa84d9f"
+  },
+  "src/sparse_grt_backend/utils/timer.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/utils/timer.py",
+    "original_sha256": "91f7d572f46f2f758114c327af77f232c06e05c4984bc474e244c9f2ca9001d3",
+    "copied_sha256": "91f7d572f46f2f758114c327af77f232c06e05c4984bc474e244c9f2ca9001d3",
+    "vendored_sha256": "91f7d572f46f2f758114c327af77f232c06e05c4984bc474e244c9f2ca9001d3"
+  },
+  "src/sparse_grt_backend/utils/render.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/utils/render.py",
+    "original_sha256": "9f4ee3031ffd9e2c67d082d6df8232f9614c01e9e71382417db07a25e0237b92",
+    "copied_sha256": "9f4ee3031ffd9e2c67d082d6df8232f9614c01e9e71382417db07a25e0237b92",
+    "vendored_sha256": "9f4ee3031ffd9e2c67d082d6df8232f9614c01e9e71382417db07a25e0237b92"
+  },
+  "src/sparse_grt_backend/utils/jit.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/utils/jit.py",
+    "original_sha256": "669e73e82b1ef490d90ca0dbd3880cad709ffe8af4ba8ab611161e27b3335ad5",
+    "copied_sha256": "669e73e82b1ef490d90ca0dbd3880cad709ffe8af4ba8ab611161e27b3335ad5",
+    "vendored_sha256": "669e73e82b1ef490d90ca0dbd3880cad709ffe8af4ba8ab611161e27b3335ad5"
+  },
+  "src/sparse_grt_backend/export/__init__.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/export/__init__.py",
+    "original_sha256": "cd4136b00a5cd734a7b3a3a6ee0f8d1a491f686ce4a5e2e0af0d02e1585d1beb",
+    "copied_sha256": "c84fbf7bb71d05122542c0104ef7ddc44b54b71d7b9e83c940cd9e6cc31afcba",
+    "vendored_sha256": "651b617cfc9921c5aae1860a0380c1f58c7a364943cabda0da56df98c00ccebc"
+  },
+  "src/sparse_grt_backend/export/base.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/export/base.py",
+    "original_sha256": "c3f4f87d2e481cbf206be7acbb7e2b03bdd9e8688ee5ddb33331989b91edb56a",
+    "copied_sha256": "c3f4f87d2e481cbf206be7acbb7e2b03bdd9e8688ee5ddb33331989b91edb56a",
+    "vendored_sha256": "c3f4f87d2e481cbf206be7acbb7e2b03bdd9e8688ee5ddb33331989b91edb56a"
+  },
+  "src/sparse_grt_backend/export/ingp_exporter.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/export/ingp_exporter.py",
+    "original_sha256": "0b70524a1f6a88b9952c9db61b87d2a73bad969f5c657ae91616dd7fa31cf6f5",
+    "copied_sha256": "7a2b652b788e8a938079b4b1256d3b12fe3e1dbc4865905b298911289c6b86bc",
+    "vendored_sha256": "7a2b652b788e8a938079b4b1256d3b12fe3e1dbc4865905b298911289c6b86bc"
+  },
+  "src/sparse_grt_backend/export/ply_exporter.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/export/ply_exporter.py",
+    "original_sha256": "0f9a0fdeeb1c7f309246abcd1e020249c4713c462e2b032c1f33ea0edcf81c0f",
+    "copied_sha256": "061ec0c9315c3c42ac34cefa91f27b613cb516253dd4638296031ff2dc606995",
+    "vendored_sha256": "061ec0c9315c3c42ac34cefa91f27b613cb516253dd4638296031ff2dc606995"
+  },
+  "src/sparse_grt_backend/optimizers/__init__.py": {
+    "source": "hybrid_AB_compare_260915/common/threedgrut/optimizers/__init__.py",
+    "original_sha256": "9e6b838d10d9ebcd9223fea685d38d6679f61fed5be6ef2b8b875ecbacf9374d",
+    "copied_sha256": "9e6b838d10d9ebcd9223fea685d38d6679f61fed5be6ef2b8b875ecbacf9374d",
+    "vendored_sha256": "9e6b838d10d9ebcd9223fea685d38d6679f61fed5be6ef2b8b875ecbacf9374d"
+  },
+  "src/sparse_grt_tracer/tracer.py": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/tracer.py",
+    "original_sha256": "ba2000ebaa9ebb1705864305d41a4a41c29851647fe8805f8504a259b72e9593",
+    "copied_sha256": "a8312de0eedc583592b3975d5299e13baa3b2ee532ffd320f08fb07ff4fe5eec",
+    "cuda_cpp_unchanged": false,
+    "vendored_sha256": "75d65025548a8870b0b90c0a3f44922686225e4e6feed99faf7535eea02c0d3a"
+  },
+  "src/sparse_grt_tracer/__init__.py": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/__init__.py",
+    "original_sha256": "3e2982e4983f3e9f088900a95289fd4aa1d50f51dafdbc54082ec4d8e353ef06",
+    "copied_sha256": "3e2982e4983f3e9f088900a95289fd4aa1d50f51dafdbc54082ec4d8e353ef06",
+    "cuda_cpp_unchanged": false,
+    "vendored_sha256": "3e2982e4983f3e9f088900a95289fd4aa1d50f51dafdbc54082ec4d8e353ef06"
+  },
+  "src/sparse_grt_tracer/bindings.cpp": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/bindings.cpp",
+    "original_sha256": "b51565b63267dc65217c1818d62ab51bcd99f0c7e531f459dc1dcc5fab7ad210",
+    "copied_sha256": "b51565b63267dc65217c1818d62ab51bcd99f0c7e531f459dc1dcc5fab7ad210",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "b51565b63267dc65217c1818d62ab51bcd99f0c7e531f459dc1dcc5fab7ad210",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/src/optixTracer.cpp": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/src/optixTracer.cpp",
+    "original_sha256": "735a5cbb6e2ead6e30b5f9c817783c651315b5c242eb9412a957c04b3b47b28e",
+    "copied_sha256": "735a5cbb6e2ead6e30b5f9c817783c651315b5c242eb9412a957c04b3b47b28e",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "735a5cbb6e2ead6e30b5f9c817783c651315b5c242eb9412a957c04b3b47b28e",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/src/particlePrimitives.cu": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/src/particlePrimitives.cu",
+    "original_sha256": "2a65a53848b4e579cbc860b9c5da2ebc014850c60963399ea2d7c5a9bd8719a3",
+    "copied_sha256": "2a65a53848b4e579cbc860b9c5da2ebc014850c60963399ea2d7c5a9bd8719a3",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "2a65a53848b4e579cbc860b9c5da2ebc014850c60963399ea2d7c5a9bd8719a3",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/particlePrimitives.h": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/particlePrimitives.h",
+    "original_sha256": "cab4853a1c4e3e06947038c1191c18748a89c2a7e1911bc1db49b0454e628466",
+    "copied_sha256": "cab4853a1c4e3e06947038c1191c18748a89c2a7e1911bc1db49b0454e628466",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "cab4853a1c4e3e06947038c1191c18748a89c2a7e1911bc1db49b0454e628466",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/tensorAccessor.h": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/tensorAccessor.h",
+    "original_sha256": "9435ffad822e1e1ca1783ec75055349ad76088e698e493527c3c0254a9eddc6a",
+    "copied_sha256": "9435ffad822e1e1ca1783ec75055349ad76088e698e493527c3c0254a9eddc6a",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "9435ffad822e1e1ca1783ec75055349ad76088e698e493527c3c0254a9eddc6a",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/optixTracer.h": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/optixTracer.h",
+    "original_sha256": "9a4796f5ad8d463bb3a5b527b25a574fe53eb2740cb5b110818d565cf136e053",
+    "copied_sha256": "9a4796f5ad8d463bb3a5b527b25a574fe53eb2740cb5b110818d565cf136e053",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "9a4796f5ad8d463bb3a5b527b25a574fe53eb2740cb5b110818d565cf136e053",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/tensorBuffering.h": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/tensorBuffering.h",
+    "original_sha256": "6a1f6bad97c9d753e8eea4f5b16398e6c64bf0c19ce2d6d536607ac24f96348f",
+    "copied_sha256": "6a1f6bad97c9d753e8eea4f5b16398e6c64bf0c19ce2d6d536607ac24f96348f",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "6a1f6bad97c9d753e8eea4f5b16398e6c64bf0c19ce2d6d536607ac24f96348f",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/pipelineParameters.h": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/pipelineParameters.h",
+    "original_sha256": "515fd520ea5ec85b1950b51c8fa9f5b8052503700e43e59f28d23d7e1ae3ab2c",
+    "copied_sha256": "515fd520ea5ec85b1950b51c8fa9f5b8052503700e43e59f28d23d7e1ae3ab2c",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "515fd520ea5ec85b1950b51c8fa9f5b8052503700e43e59f28d23d7e1ae3ab2c",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/cuoptixMacros.h": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/cuoptixMacros.h",
+    "original_sha256": "36bfd80c3fa7620db06b8e0ae102cbec76d5965a0a6c9cc0741df76438c3b3ae",
+    "copied_sha256": "36bfd80c3fa7620db06b8e0ae102cbec76d5965a0a6c9cc0741df76438c3b3ae",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "36bfd80c3fa7620db06b8e0ae102cbec76d5965a0a6c9cc0741df76438c3b3ae",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/pipelineDefinitions.h": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/pipelineDefinitions.h",
+    "original_sha256": "1e981df9a657ea72abbd7c92568c8c088fb12d46d04057018bf8510eb31a1272",
+    "copied_sha256": "1e981df9a657ea72abbd7c92568c8c088fb12d46d04057018bf8510eb31a1272",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "1e981df9a657ea72abbd7c92568c8c088fb12d46d04057018bf8510eb31a1272",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/mathUtils.h": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/mathUtils.h",
+    "original_sha256": "09908913d29a3ada6abdd59a1195d532b7c95baeefb874be9ecdaa20b6708acc",
+    "copied_sha256": "09908913d29a3ada6abdd59a1195d532b7c95baeefb874be9ecdaa20b6708acc",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "09908913d29a3ada6abdd59a1195d532b7c95baeefb874be9ecdaa20b6708acc",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/particleDensity.h": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/particleDensity.h",
+    "original_sha256": "1ddf9890bbc151d3d0e75e1abc8d15dc95494cc6fae150379a401bf2453f0f51",
+    "copied_sha256": "1ddf9890bbc151d3d0e75e1abc8d15dc95494cc6fae150379a401bf2453f0f51",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "1ddf9890bbc151d3d0e75e1abc8d15dc95494cc6fae150379a401bf2453f0f51",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/playground/cutexture.h": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/playground/cutexture.h",
+    "original_sha256": "0af378efcdda88a4752805aed6b58c4d635f070101ea05cc0d04fe32ed30f782",
+    "copied_sha256": "0af378efcdda88a4752805aed6b58c4d635f070101ea05cc0d04fe32ed30f782",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "0af378efcdda88a4752805aed6b58c4d635f070101ea05cc0d04fe32ed30f782",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/playground/pipelineParameters.h": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/playground/pipelineParameters.h",
+    "original_sha256": "586b7bc2bd2c6bc1dac41d74e33aa61d49b7437de1c9289c3a7983a972aa16a2",
+    "copied_sha256": "586b7bc2bd2c6bc1dac41d74e33aa61d49b7437de1c9289c3a7983a972aa16a2",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "586b7bc2bd2c6bc1dac41d74e33aa61d49b7437de1c9289c3a7983a972aa16a2",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/playground/pipelineDefinitions.h": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/playground/pipelineDefinitions.h",
+    "original_sha256": "efb970cf299082e0f89685cb5ec905f3a255215f9cd54fc6e53f8b48e4fc15f9",
+    "copied_sha256": "efb970cf299082e0f89685cb5ec905f3a255215f9cd54fc6e53f8b48e4fc15f9",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "efb970cf299082e0f89685cb5ec905f3a255215f9cd54fc6e53f8b48e4fc15f9",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/kernels/slang/gaussianParticles.cuh": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/kernels/slang/gaussianParticles.cuh",
+    "original_sha256": "4a7c64a4c117d1bc5e4b2cef15982b63cd6aa4d4f5268b570ff4671fe1aadfb5",
+    "copied_sha256": "4a7c64a4c117d1bc5e4b2cef15982b63cd6aa4d4f5268b570ff4671fe1aadfb5",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "4a7c64a4c117d1bc5e4b2cef15982b63cd6aa4d4f5268b570ff4671fe1aadfb5",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/kernels/cuda/3dgrtTracer.cuh": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/kernels/cuda/3dgrtTracer.cuh",
+    "original_sha256": "b21f1354c493997a757e982e0ae11ef053b892e65197ddd7efdc84667da50f62",
+    "copied_sha256": "b21f1354c493997a757e982e0ae11ef053b892e65197ddd7efdc84667da50f62",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "b21f1354c493997a757e982e0ae11ef053b892e65197ddd7efdc84667da50f62",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/kernels/cuda/gaussianParticles.cuh": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/kernels/cuda/gaussianParticles.cuh",
+    "original_sha256": "0e3ae596e5089b85f4ce0acd4e4ea5b0dacf80e7d1ebc3d5fb6714107aa3d603",
+    "copied_sha256": "0e3ae596e5089b85f4ce0acd4e4ea5b0dacf80e7d1ebc3d5fb6714107aa3d603",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "0e3ae596e5089b85f4ce0acd4e4ea5b0dacf80e7d1ebc3d5fb6714107aa3d603",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/kernels/slang/models/gaussianParticles.slang": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/kernels/slang/models/gaussianParticles.slang",
+    "original_sha256": "ff4e1bdf75b2681bcecf52eb7b055534e6584f852c91a9a3cedea96e276875ba",
+    "copied_sha256": "ff4e1bdf75b2681bcecf52eb7b055534e6584f852c91a9a3cedea96e276875ba",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "ff4e1bdf75b2681bcecf52eb7b055534e6584f852c91a9a3cedea96e276875ba",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/kernels/slang/models/shRadiativeParticles.slang": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/kernels/slang/models/shRadiativeParticles.slang",
+    "original_sha256": "d66fe86101c180c656f4b9dd2c72ff343731475cb06773451a00a4a824604db1",
+    "copied_sha256": "d66fe86101c180c656f4b9dd2c72ff343731475cb06773451a00a4a824604db1",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "d66fe86101c180c656f4b9dd2c72ff343731475cb06773451a00a4a824604db1",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/kernels/slang/common/transforms.slang": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/kernels/slang/common/transforms.slang",
+    "original_sha256": "43f15899642738801e19b2eae5d7d1450c6fc4d5b71b09d04995dc7d7b6021d2",
+    "copied_sha256": "43f15899642738801e19b2eae5d7d1450c6fc4d5b71b09d04995dc7d7b6021d2",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "43f15899642738801e19b2eae5d7d1450c6fc4d5b71b09d04995dc7d7b6021d2",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/include/3dgrt/kernels/slang/common/sphericalHarmonics.slang": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/include/3dgrt/kernels/slang/common/sphericalHarmonics.slang",
+    "original_sha256": "a856fb141c2331d5a68796419bb63d657c6439110a13bd91b27b3fa49382fd48",
+    "copied_sha256": "a856fb141c2331d5a68796419bb63d657c6439110a13bd91b27b3fa49382fd48",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "a856fb141c2331d5a68796419bb63d657c6439110a13bd91b27b3fa49382fd48",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/src/kernels/cuda/referenceSlangOptix.cu": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/src/kernels/cuda/referenceSlangOptix.cu",
+    "original_sha256": "5c056502791e26f78634df9072d4c2cb83f43140c227d3ffdece076f520703df",
+    "copied_sha256": "5c056502791e26f78634df9072d4c2cb83f43140c227d3ffdece076f520703df",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "5c056502791e26f78634df9072d4c2cb83f43140c227d3ffdece076f520703df",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/src/kernels/cuda/referenceOptix.cu": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/src/kernels/cuda/referenceOptix.cu",
+    "original_sha256": "3426bded7dcbccd9bd522a37c3fef519e697722b7341e2dbbc18a4cf6fc9b07b",
+    "copied_sha256": "3426bded7dcbccd9bd522a37c3fef519e697722b7341e2dbbc18a4cf6fc9b07b",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "3426bded7dcbccd9bd522a37c3fef519e697722b7341e2dbbc18a4cf6fc9b07b",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/src/kernels/cuda/referenceBwdOptix.cu": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/src/kernels/cuda/referenceBwdOptix.cu",
+    "original_sha256": "f97016ab13d030170fe0fd058f3495d158fe5658a2864e894d6f49a4bba2b311",
+    "copied_sha256": "f97016ab13d030170fe0fd058f3495d158fe5658a2864e894d6f49a4bba2b311",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "f97016ab13d030170fe0fd058f3495d158fe5658a2864e894d6f49a4bba2b311",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/src/kernels/cuda/barycentricSurfelsOptix.cu": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/src/kernels/cuda/barycentricSurfelsOptix.cu",
+    "original_sha256": "8262b2777593095ea29c96c1ae1c2cbbd1e817388db1774971ea4d5bd4ec6b99",
+    "copied_sha256": "8262b2777593095ea29c96c1ae1c2cbbd1e817388db1774971ea4d5bd4ec6b99",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "8262b2777593095ea29c96c1ae1c2cbbd1e817388db1774971ea4d5bd4ec6b99",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/src/kernels/cuda/referenceSlangBwdOptix.cu": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/src/kernels/cuda/referenceSlangBwdOptix.cu",
+    "original_sha256": "ed40425491592f634f1b7b6e80aba8ca784c297512da8531575f80edc12a38c6",
+    "copied_sha256": "ed40425491592f634f1b7b6e80aba8ca784c297512da8531575f80edc12a38c6",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "ed40425491592f634f1b7b6e80aba8ca784c297512da8531575f80edc12a38c6",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt_tracer/src/kernels/cuda/referenceB2FSlangBwdOptix.cu": {
+    "source": "research_resume_260918/area_full_261029/area_tracer512/src/kernels/cuda/referenceB2FSlangBwdOptix.cu",
+    "original_sha256": "e8343507955930709c465b225f3560a698fac58b6f88f1534a9df561f4ce8ae2",
+    "copied_sha256": "e8343507955930709c465b225f3560a698fac58b6f88f1534a9df561f4ce8ae2",
+    "cuda_cpp_unchanged": true,
+    "vendored_sha256": "e8343507955930709c465b225f3560a698fac58b6f88f1534a9df561f4ce8ae2",
+    "source_bytes_unchanged": true
+  },
+  "src/sparse_grt/cached_dataset.py": {
+    "source": "3dgrut/experiments/mc_sparse_training/cached_dataset.py",
+    "original_sha256": "a649c97368251284ee7578e37f6c6c80ce958a01ad471dc42be63b83260a7719",
+    "copied_sha256": "a649c97368251284ee7578e37f6c6c80ce958a01ad471dc42be63b83260a7719",
+    "vendored_sha256": "a649c97368251284ee7578e37f6c6c80ce958a01ad471dc42be63b83260a7719"
+  }
+}

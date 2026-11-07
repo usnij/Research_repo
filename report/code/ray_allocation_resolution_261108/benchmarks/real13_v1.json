@@ -1,0 +1,36 @@
+{
+  "id": "real13_v1",
+  "training_commit": "b42b8a32d605a28fba7fd266a9940ee23660fc73",
+  "method": {
+    "views": 4, "block": 8, "sigma": 6.0,
+    "l1_weight": 0.8, "structure_weight": 0.2,
+    "opacity_weight": 0.01, "scale_weight": 0.01,
+    "cap": 1, "steps": 30000,
+    "initialization_seed": 777, "view_seed": 2610297100,
+    "ray_seed": 910000000, "boundary": "all"
+  },
+  "budget": "fine_tracks_v1",
+  "budget_views": "all",
+  "growth": "log_horizon",
+  "growth_end": 5000,
+  "cache_mib": 1200,
+  "keep_checkpoints": [7000, 30000],
+  "evaluation_steps": [7000, 15000, 30000],
+  "scenes": {
+    "counter": {"dataset": "MipNeRF360", "downsample": 2, "block": 8},
+    "room": {"dataset": "MipNeRF360", "downsample": 2, "block": 8},
+    "bonsai": {"dataset": "MipNeRF360", "downsample": 2, "block": 8},
+    "kitchen": {"dataset": "MipNeRF360", "downsample": 2, "block": 6},
+    "bicycle": {"dataset": "MipNeRF360", "downsample": 4, "block": 6},
+    "flowers": {"dataset": "MipNeRF360", "downsample": 4, "block": 8},
+    "garden": {"dataset": "MipNeRF360", "downsample": 4, "block": 8},
+    "stump": {"dataset": "MipNeRF360", "downsample": 4, "block": 8},
+    "treehill": {"dataset": "MipNeRF360", "downsample": 4, "block": 8},
+    "train": {"dataset": "TanksAndTemples", "downsample": 1, "block": 6},
+    "truck": {"dataset": "TanksAndTemples", "downsample": 1, "block": 8},
+    "drjohnson": {"dataset": "DeepBlending", "downsample": 1, "block": 8},
+    "playroom": {"dataset": "DeepBlending", "downsample": 1, "block": 8}
+  },
+  "configuration_basis": "Existing real-scene DS and total ray budgets from f2_all_scenes_queue_261022; MV4 uses twice its single-view block width. Counter/Bonsai/Bicycle also match paper_v1_20261102. No new quality-based tuning.",
+  "scope": "Primary run: full method on all 13 real scenes, seed777. Optional paired L1 uses identical settings except structure_weight=0. Synthetic/fisheye adapters and external baselines are not silently substituted."
+}

@@ -1,0 +1,230 @@
+{
+  "passed": true,
+  "step": 610,
+  "N": 163087,
+  "parameter_hash_preserved": true,
+  "optimizer_hash_preserved": true,
+  "repeated_full_ray_render_bit_equal": true,
+  "train_view_render_hash": "83b65c38f6e091982d513e7922b51639f1d14d533476325479815669e70d4338",
+  "evaluation": {
+    "views": 30,
+    "N": 163087,
+    "PSNR": 18.87511746088664,
+    "SSIM": 0.6477064708868663,
+    "LPIPS": 0.58237264752388,
+    "per_view": [
+      {
+        "view": 0,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5857.JPG",
+        "PSNR": 19.98211097717285,
+        "SSIM": 0.6431884765625,
+        "LPIPS": 0.5815509557723999
+      },
+      {
+        "view": 1,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5865.JPG",
+        "PSNR": 19.049116134643555,
+        "SSIM": 0.6038655638694763,
+        "LPIPS": 0.6057531237602234
+      },
+      {
+        "view": 2,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5873.JPG",
+        "PSNR": 17.757442474365234,
+        "SSIM": 0.592521607875824,
+        "LPIPS": 0.5913823843002319
+      },
+      {
+        "view": 3,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5881.JPG",
+        "PSNR": 21.23948097229004,
+        "SSIM": 0.6861537098884583,
+        "LPIPS": 0.5527462959289551
+      },
+      {
+        "view": 4,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5889.JPG",
+        "PSNR": 16.568437576293945,
+        "SSIM": 0.59676593542099,
+        "LPIPS": 0.6143407821655273
+      },
+      {
+        "view": 5,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5897.JPG",
+        "PSNR": 21.496294021606445,
+        "SSIM": 0.6782827377319336,
+        "LPIPS": 0.5923388004302979
+      },
+      {
+        "view": 6,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5905.JPG",
+        "PSNR": 20.24833869934082,
+        "SSIM": 0.6739019155502319,
+        "LPIPS": 0.5464307069778442
+      },
+      {
+        "view": 7,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5913.JPG",
+        "PSNR": 18.706186294555664,
+        "SSIM": 0.6289406418800354,
+        "LPIPS": 0.5711913108825684
+      },
+      {
+        "view": 8,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5921.JPG",
+        "PSNR": 20.638504028320312,
+        "SSIM": 0.6675660610198975,
+        "LPIPS": 0.6262792348861694
+      },
+      {
+        "view": 9,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5929.JPG",
+        "PSNR": 15.251930236816406,
+        "SSIM": 0.5780971646308899,
+        "LPIPS": 0.5962636470794678
+      },
+      {
+        "view": 10,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5937.JPG",
+        "PSNR": 16.075931549072266,
+        "SSIM": 0.5423073768615723,
+        "LPIPS": 0.5874640345573425
+      },
+      {
+        "view": 11,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5945.JPG",
+        "PSNR": 21.389156341552734,
+        "SSIM": 0.7367732524871826,
+        "LPIPS": 0.5712531208992004
+      },
+      {
+        "view": 12,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5953.JPG",
+        "PSNR": 17.620027542114258,
+        "SSIM": 0.5839903950691223,
+        "LPIPS": 0.5706964731216431
+      },
+      {
+        "view": 13,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5961.JPG",
+        "PSNR": 15.856355667114258,
+        "SSIM": 0.5943940281867981,
+        "LPIPS": 0.5792313814163208
+      },
+      {
+        "view": 14,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5969.JPG",
+        "PSNR": 17.52678871154785,
+        "SSIM": 0.6304715871810913,
+        "LPIPS": 0.5894250869750977
+      },
+      {
+        "view": 15,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5977.JPG",
+        "PSNR": 18.589635848999023,
+        "SSIM": 0.6738318204879761,
+        "LPIPS": 0.5582187175750732
+      },
+      {
+        "view": 16,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5985.JPG",
+        "PSNR": 14.594267845153809,
+        "SSIM": 0.6370545625686646,
+        "LPIPS": 0.5813366770744324
+      },
+      {
+        "view": 17,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF5993.JPG",
+        "PSNR": 17.535985946655273,
+        "SSIM": 0.7126133441925049,
+        "LPIPS": 0.5818641781806946
+      },
+      {
+        "view": 18,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF6001.JPG",
+        "PSNR": 21.1973934173584,
+        "SSIM": 0.6478469371795654,
+        "LPIPS": 0.5732019543647766
+      },
+      {
+        "view": 19,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF6009.JPG",
+        "PSNR": 16.693567276000977,
+        "SSIM": 0.6247072219848633,
+        "LPIPS": 0.5883749723434448
+      },
+      {
+        "view": 20,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF6017.JPG",
+        "PSNR": 20.831783294677734,
+        "SSIM": 0.6677080392837524,
+        "LPIPS": 0.5830297470092773
+      },
+      {
+        "view": 21,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF6025.JPG",
+        "PSNR": 21.827533721923828,
+        "SSIM": 0.6820839047431946,
+        "LPIPS": 0.5918092131614685
+      },
+      {
+        "view": 22,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF6033.JPG",
+        "PSNR": 18.211118698120117,
+        "SSIM": 0.651323139667511,
+        "LPIPS": 0.5834352970123291
+      },
+      {
+        "view": 23,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF6041.JPG",
+        "PSNR": 18.913862228393555,
+        "SSIM": 0.6909645795822144,
+        "LPIPS": 0.57671719789505
+      },
+      {
+        "view": 24,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF6049.JPG",
+        "PSNR": 20.66727066040039,
+        "SSIM": 0.680668294429779,
+        "LPIPS": 0.5856857299804688
+      },
+      {
+        "view": 25,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF6057.JPG",
+        "PSNR": 19.673494338989258,
+        "SSIM": 0.6849380731582642,
+        "LPIPS": 0.5639758110046387
+      },
+      {
+        "view": 26,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF6065.JPG",
+        "PSNR": 19.852949142456055,
+        "SSIM": 0.6663299202919006,
+        "LPIPS": 0.593260645866394
+      },
+      {
+        "view": 27,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF6073.JPG",
+        "PSNR": 19.565027236938477,
+        "SSIM": 0.6388891339302063,
+        "LPIPS": 0.5776246786117554
+      },
+      {
+        "view": 28,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF6081.JPG",
+        "PSNR": 19.55808448791504,
+        "SSIM": 0.6652309894561768,
+        "LPIPS": 0.5738332867622375
+      },
+      {
+        "view": 29,
+        "image": "/workspace/standalone-check/data/counter/images_2/DSCF6089.JPG",
+        "PSNR": 19.135448455810547,
+        "SSIM": 0.6697837114334106,
+        "LPIPS": 0.5824639797210693
+      }
+    ]
+  },
+  "peak_cuda_bytes": 4313447424,
+  "scope": "Checkpoint reload and evaluation plumbing; not final training quality"
+}

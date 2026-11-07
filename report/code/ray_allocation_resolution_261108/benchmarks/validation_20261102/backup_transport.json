@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "bytes": 1048576,
+  "sha_verified": true,
+  "drive_verified": true,
+  "remote_ack_verified": true,
+  "scope": "transport-only fixture, no training metrics"
+}

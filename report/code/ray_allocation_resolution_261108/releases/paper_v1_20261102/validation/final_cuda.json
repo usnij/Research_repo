@@ -1,0 +1,230 @@
+{
+  "passed": true,
+  "device": "NVIDIA GeForce RTX 4070 SUPER",
+  "cases": [
+    {
+      "image": [
+        1,
+        1
+      ],
+      "block": 8,
+      "case": "random",
+      "loss_abs_error": 3.074214038889522e-08,
+      "gradient_max_abs_error": 1.3112116370450622e-07,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "image": [
+        1,
+        1
+      ],
+      "block": 8,
+      "case": "identical",
+      "loss_abs_error": 0.0,
+      "gradient_max_abs_error": 0.0,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "image": [
+        1,
+        1
+      ],
+      "block": 8,
+      "case": "flat",
+      "loss_abs_error": 2.2451835599013314e-09,
+      "gradient_max_abs_error": 9.339542195174744e-10,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "image": [
+        1,
+        1
+      ],
+      "block": 8,
+      "case": "near_flat",
+      "loss_abs_error": 2.175872909698778e-22,
+      "gradient_max_abs_error": 3.4606066543715783e-15,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "image": [
+        1,
+        1
+      ],
+      "block": 8,
+      "case": "constant_residual",
+      "loss_abs_error": 7.924562360484e-10,
+      "gradient_max_abs_error": 9.081266738597549e-09,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "image": [
+        11,
+        17
+      ],
+      "block": 8,
+      "case": "random",
+      "loss_abs_error": 7.605311935776626e-09,
+      "gradient_max_abs_error": 5.1477817543388316e-08,
+      "weight_max_abs_error": 3.9448763811122944e-08
+    },
+    {
+      "image": [
+        11,
+        17
+      ],
+      "block": 8,
+      "case": "identical",
+      "loss_abs_error": 0.0,
+      "gradient_max_abs_error": 0.0,
+      "weight_max_abs_error": 3.9448763811122944e-08
+    },
+    {
+      "image": [
+        11,
+        17
+      ],
+      "block": 8,
+      "case": "flat",
+      "loss_abs_error": 5.97039563274282e-09,
+      "gradient_max_abs_error": 1.8754281351542057e-06,
+      "weight_max_abs_error": 3.9448763811122944e-08
+    },
+    {
+      "image": [
+        11,
+        17
+      ],
+      "block": 8,
+      "case": "near_flat",
+      "loss_abs_error": 7.455054862187464e-13,
+      "gradient_max_abs_error": 2.54804982624364e-06,
+      "weight_max_abs_error": 3.9448763811122944e-08
+    },
+    {
+      "image": [
+        11,
+        17
+      ],
+      "block": 8,
+      "case": "constant_residual",
+      "loss_abs_error": 1.738137231366288e-09,
+      "gradient_max_abs_error": 2.566899834702263e-08,
+      "weight_max_abs_error": 3.9448763811122944e-08
+    },
+    {
+      "image": [
+        31,
+        29
+      ],
+      "block": 6,
+      "case": "random",
+      "loss_abs_error": 1.2880132738146699e-08,
+      "gradient_max_abs_error": 1.9924899910539473e-08,
+      "weight_max_abs_error": 3.834476175468282e-08
+    },
+    {
+      "image": [
+        31,
+        29
+      ],
+      "block": 6,
+      "case": "identical",
+      "loss_abs_error": 0.0,
+      "gradient_max_abs_error": 0.0,
+      "weight_max_abs_error": 3.834476175468282e-08
+    },
+    {
+      "image": [
+        31,
+        29
+      ],
+      "block": 6,
+      "case": "flat",
+      "loss_abs_error": 1.4799959591194067e-09,
+      "gradient_max_abs_error": 7.636201626469094e-07,
+      "weight_max_abs_error": 3.834476175468282e-08
+    },
+    {
+      "image": [
+        31,
+        29
+      ],
+      "block": 6,
+      "case": "near_flat",
+      "loss_abs_error": 1.172276883944529e-12,
+      "gradient_max_abs_error": 6.282058067183769e-07,
+      "weight_max_abs_error": 3.834476175468282e-08
+    },
+    {
+      "image": [
+        31,
+        29
+      ],
+      "block": 6,
+      "case": "constant_residual",
+      "loss_abs_error": 4.032890195404537e-09,
+      "gradient_max_abs_error": 1.6540950335559162e-08,
+      "weight_max_abs_error": 3.834476175468282e-08
+    },
+    {
+      "image": [
+        80,
+        96
+      ],
+      "block": 8,
+      "case": "random",
+      "loss_abs_error": 2.8121838302475055e-08,
+      "gradient_max_abs_error": 6.766102619154557e-09,
+      "weight_max_abs_error": 6.894062931639411e-08
+    },
+    {
+      "image": [
+        80,
+        96
+      ],
+      "block": 8,
+      "case": "identical",
+      "loss_abs_error": 0.0,
+      "gradient_max_abs_error": 0.0,
+      "weight_max_abs_error": 6.894062931639411e-08
+    },
+    {
+      "image": [
+        80,
+        96
+      ],
+      "block": 8,
+      "case": "flat",
+      "loss_abs_error": 1.4801211332959863e-09,
+      "gradient_max_abs_error": 3.3679374073316594e-07,
+      "weight_max_abs_error": 6.894062931639411e-08
+    },
+    {
+      "image": [
+        80,
+        96
+      ],
+      "block": 8,
+      "case": "near_flat",
+      "loss_abs_error": 9.747806261687008e-13,
+      "gradient_max_abs_error": 3.0887940287319467e-07,
+      "weight_max_abs_error": 6.894062931639411e-08
+    },
+    {
+      "image": [
+        80,
+        96
+      ],
+      "block": 8,
+      "case": "constant_residual",
+      "loss_abs_error": 5.86144514869158e-10,
+      "gradient_max_abs_error": 3.14292345170164e-08,
+      "weight_max_abs_error": 6.894062931639411e-08
+    }
+  ],
+  "cases_passed": 20,
+  "neighbor_gradient_verified": true,
+  "peak_allocated_bytes": 1284096,
+  "scope": "Final boundary=all CUDA objective and RGB gradients; no training speed claim."
+}

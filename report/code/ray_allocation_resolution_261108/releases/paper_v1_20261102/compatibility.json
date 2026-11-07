@@ -1,0 +1,56 @@
+{
+  "counter_l1": {
+    "changed_source_files": [
+      "tools/train_scene.py"
+    ],
+    "expected_change_only": [
+      "tools/train_scene.py"
+    ],
+    "algorithm_source_unchanged": true
+  },
+  "counter_structure": {
+    "changed_source_files": [
+      "tools/train_scene.py"
+    ],
+    "expected_change_only": [
+      "tools/train_scene.py"
+    ],
+    "algorithm_source_unchanged": true
+  },
+  "bonsai_l1": {
+    "changed_source_files": [
+      "tools/train_scene.py"
+    ],
+    "expected_change_only": [
+      "tools/train_scene.py"
+    ],
+    "algorithm_source_unchanged": true
+  },
+  "bonsai_structure": {
+    "changed_source_files": [
+      "tools/train_scene.py"
+    ],
+    "expected_change_only": [
+      "tools/train_scene.py"
+    ],
+    "algorithm_source_unchanged": true
+  },
+  "bicycle_l1": {
+    "changed_source_files": [
+      "tools/train_scene.py"
+    ],
+    "expected_change_only": [
+      "tools/train_scene.py"
+    ],
+    "algorithm_source_unchanged": true
+  },
+  "bicycle_structure": {
+    "changed_source_files": [
+      "tools/train_scene.py"
+    ],
+    "expected_change_only": [
+      "tools/train_scene.py"
+    ],
+    "algorithm_source_unchanged": true
+  }
+}
