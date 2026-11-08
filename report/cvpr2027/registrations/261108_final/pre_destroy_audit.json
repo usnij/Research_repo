@@ -1,0 +1,35 @@
+{
+  "started_utc": "2026-11-08T07:48:53.540504+00:00",
+  "passed": true,
+  "nodes": [
+    {
+      "node": "node01",
+      "instance_id": 59592874,
+      "files": 637,
+      "bytes": 8658327575,
+      "sha256_rechecked": true
+    },
+    {
+      "node": "node02",
+      "instance_id": 59592898,
+      "files": 501,
+      "bytes": 10630514536,
+      "sha256_rechecked": true
+    },
+    {
+      "node": "node03",
+      "instance_id": 59592915,
+      "files": 235,
+      "bytes": 4381110656,
+      "sha256_rechecked": true
+    },
+    {
+      "node": "node04",
+      "instance_id": 59592933,
+      "files": 367,
+      "bytes": 8996073626,
+      "sha256_rechecked": true
+    }
+  ],
+  "finished_utc": "2026-11-08T07:49:33.364687+00:00"
+}

@@ -168,13 +168,15 @@ Dense는 K=1·전체 ray, sparse는 K=4. Counter·Bonsai의 목표 평가 해상
 | Bicycle | E1 | Arm 3 잔차 재배분 | 3 | `allocres_261108_E1_bicycle_residual_seed777` |
 | Bicycle | E1 | Arm 4 결합 | 4 | `allocres_261108_E1_bicycle_combined_seed777` |
 
-- [최종 원본 runs.csv](</home/jinsu/Documents/Github/논문/research_resume_260918/ray_allocation_resolution_261108/results/current_export/runs.csv>)
-- [체크포인트별 curves.csv](</home/jinsu/Documents/Github/논문/research_resume_260918/ray_allocation_resolution_261108/results/current_export/curves.csv>)
-- [테스트 뷰별 views.csv](</home/jinsu/Documents/Github/논문/research_resume_260918/ray_allocation_resolution_261108/results/current_export/views.csv>)
-- [고정 실행 계획·설정 해시](</home/jinsu/Documents/Github/논문/research_resume_260918/ray_allocation_resolution_261108/fleet/plan.json>)
-- [전체 평가·백업 최종 확인](</home/jinsu/Documents/Github/논문/research_resume_260918/ray_allocation_resolution_261108/results/final_campaign_audit.json>)
-- [파기 전 백업 전체 SHA 재검증](</home/jinsu/Documents/Github/논문/research_resume_260918/ray_allocation_resolution_261108/results/instance_closeout/pre_destroy_audit.json>)
-- [로컬 최종 모델 및 증거 백업 폴더](</home/jinsu/Documents/Github/논문/research_resume_260918/ray_allocation_resolution_261108/backups>)
+- [실행별 runs.csv](cvpr2027/runs.csv)
+- [체크포인트별 curves.csv](cvpr2027/curves.csv)
+- [테스트 뷰별 views.csv](cvpr2027/views.csv)
+- [고정 실행 계획·설정 해시](cvpr2027/registrations/261108_final/plan.json)
+- [전체 평가·백업 최종 확인](cvpr2027/registrations/261108_final/final_campaign_audit.json)
+- [파기 전 백업 전체 SHA 재검증](cvpr2027/registrations/261108_final/pre_destroy_audit.json)
+- 로컬 최종 모델 및 증거 백업 폴더 (GitHub 미업로드): `/home/jinsu/Documents/Github/논문/research_resume_260918/ray_allocation_resolution_261108/backups`
 - [GitHub 결과 게시본 (고정 commit)](https://github.com/usnij/Research_repo/tree/2fc86de/report/cvpr2027)
+
+위 CSV에는 이전 실험도 포함됩니다. 이번 25개 실행은 `run_id`가 `allocres_261108_`로 시작하는 행이며, 위 실행 ID 표와 대응합니다. JSON의 로컬 경로는 보관 위치 기록이고 웹 다운로드 주소가 아닙니다.
 
 중간 7k 모델 본체는 사용자 요청대로 로컬에 다운로드하지 않았습니다. 각 시점의 평가 결과·학습시간·G 기록은 보존했고, 재사용 모델은 최종 30k와 optimizer입니다.

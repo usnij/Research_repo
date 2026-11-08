@@ -1,0 +1,236 @@
+{
+  "checked_utc": "2026-11-08T06:58:44.793069+00:00",
+  "runs": [
+    {
+      "run_id": "allocres_261108_E2_counter_highres_dense_seed777",
+      "evaluations": 7,
+      "test_views": 30,
+      "backup_verified": true,
+      "files": 47,
+      "bytes": 892157277,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node01/allocres_261108_E2_counter_highres_dense_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E1_counter_uniform_seed777",
+      "evaluations": 7,
+      "test_views": 30,
+      "backup_verified": true,
+      "files": 258,
+      "bytes": 1080404112,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node01/allocres_261108_E1_counter_uniform_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E1_counter_schedule_seed777",
+      "evaluations": 7,
+      "test_views": 30,
+      "backup_verified": true,
+      "files": 48,
+      "bytes": 1042092171,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node01/allocres_261108_E1_counter_schedule_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E2_counter_sparse_r16_seed777",
+      "evaluations": 7,
+      "test_views": 30,
+      "backup_verified": true,
+      "files": 47,
+      "bytes": 890946926,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node01/allocres_261108_E2_counter_sparse_r16_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E2_counter_sparse_r64_seed777",
+      "evaluations": 7,
+      "test_views": 30,
+      "backup_verified": true,
+      "files": 47,
+      "bytes": 890726909,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node01/allocres_261108_E2_counter_sparse_r64_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E2_counter_lowres_dense_ds4_seed777",
+      "evaluations": 7,
+      "test_views": 30,
+      "backup_verified": true,
+      "files": 47,
+      "bytes": 889586339,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node01/allocres_261108_E2_counter_lowres_dense_ds4_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E2_counter_lowres_dense_ds8_seed777",
+      "evaluations": 7,
+      "test_views": 30,
+      "backup_verified": true,
+      "files": 47,
+      "bytes": 889426506,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node01/allocres_261108_E2_counter_lowres_dense_ds8_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E1_counter_residual_seed777",
+      "evaluations": 7,
+      "test_views": 30,
+      "backup_verified": true,
+      "files": 48,
+      "bytes": 1041498411,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node01/allocres_261108_E1_counter_residual_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E1_counter_combined_seed777",
+      "evaluations": 7,
+      "test_views": 30,
+      "backup_verified": true,
+      "files": 48,
+      "bytes": 1041488924,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node01/allocres_261108_E1_counter_combined_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E2_garden_highres_dense_seed777",
+      "evaluations": 7,
+      "test_views": 24,
+      "backup_verified": true,
+      "files": 47,
+      "bytes": 1470369270,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node02/allocres_261108_E2_garden_highres_dense_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E1_garden_uniform_seed777",
+      "evaluations": 7,
+      "test_views": 24,
+      "backup_verified": true,
+      "files": 216,
+      "bytes": 1570651590,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node02/allocres_261108_E1_garden_uniform_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E1_garden_schedule_seed777",
+      "evaluations": 7,
+      "test_views": 24,
+      "backup_verified": true,
+      "files": 48,
+      "bytes": 1550060617,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node02/allocres_261108_E1_garden_schedule_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E2_garden_sparse_r16_seed777",
+      "evaluations": 7,
+      "test_views": 24,
+      "backup_verified": true,
+      "files": 47,
+      "bytes": 1470851348,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node02/allocres_261108_E2_garden_sparse_r16_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E2_garden_lowres_dense_ds8_seed777",
+      "evaluations": 7,
+      "test_views": 24,
+      "backup_verified": true,
+      "files": 47,
+      "bytes": 1469598533,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node02/allocres_261108_E2_garden_lowres_dense_ds8_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E1_garden_residual_seed777",
+      "evaluations": 7,
+      "test_views": 24,
+      "backup_verified": true,
+      "files": 48,
+      "bytes": 1549499983,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node02/allocres_261108_E1_garden_residual_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E1_garden_combined_seed777",
+      "evaluations": 7,
+      "test_views": 24,
+      "backup_verified": true,
+      "files": 48,
+      "bytes": 1549483195,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node02/allocres_261108_E1_garden_combined_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E2_bonsai_highres_dense_seed777",
+      "evaluations": 7,
+      "test_views": 37,
+      "backup_verified": true,
+      "files": 47,
+      "bytes": 877230594,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node03/allocres_261108_E2_bonsai_highres_dense_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E2_bonsai_sparse_r16_seed777",
+      "evaluations": 7,
+      "test_views": 37,
+      "backup_verified": true,
+      "files": 47,
+      "bytes": 876740676,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node03/allocres_261108_E2_bonsai_sparse_r16_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E2_bonsai_sparse_r64_seed777",
+      "evaluations": 7,
+      "test_views": 37,
+      "backup_verified": true,
+      "files": 47,
+      "bytes": 876547295,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node03/allocres_261108_E2_bonsai_sparse_r64_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E2_bonsai_lowres_dense_ds4_seed777",
+      "evaluations": 7,
+      "test_views": 37,
+      "backup_verified": true,
+      "files": 47,
+      "bytes": 875350528,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node03/allocres_261108_E2_bonsai_lowres_dense_ds4_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E2_bonsai_lowres_dense_ds8_seed777",
+      "evaluations": 7,
+      "test_views": 37,
+      "backup_verified": true,
+      "files": 47,
+      "bytes": 875241563,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node03/allocres_261108_E2_bonsai_lowres_dense_ds8_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E1_bicycle_uniform_seed777",
+      "evaluations": 7,
+      "test_views": 25,
+      "backup_verified": true,
+      "files": 223,
+      "bytes": 2264241694,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node04/allocres_261108_E1_bicycle_uniform_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E1_bicycle_schedule_seed777",
+      "evaluations": 7,
+      "test_views": 25,
+      "backup_verified": true,
+      "files": 48,
+      "bytes": 2244318520,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node04/allocres_261108_E1_bicycle_schedule_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E1_bicycle_residual_seed777",
+      "evaluations": 7,
+      "test_views": 25,
+      "backup_verified": true,
+      "files": 48,
+      "bytes": 2243766887,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node04/allocres_261108_E1_bicycle_residual_seed777/backup_receipt.json"
+    },
+    {
+      "run_id": "allocres_261108_E1_bicycle_combined_seed777",
+      "evaluations": 7,
+      "test_views": 25,
+      "backup_verified": true,
+      "files": 48,
+      "bytes": 2243746525,
+      "receipt": "/home/jinsu/Documents/Github/\ub17c\ubb38/research_resume_260918/ray_allocation_resolution_261108/backups/node04/allocres_261108_E1_bicycle_combined_seed777/backup_receipt.json"
+    }
+  ],
+  "completed_runs": 25,
+  "curves": 175,
+  "views": 723,
+  "verified_backups": 25,
+  "published_commit": "2fc86de",
+  "all_complete": true
+}

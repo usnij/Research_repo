@@ -1,0 +1,2723 @@
+{
+  "schema_version": 1,
+  "campaign": "ray_allocation_resolution_261108",
+  "remote_root": "/workspace/ray_allocation_resolution_261108",
+  "python": "/workspace/cvpr2027_env/venv/bin/python",
+  "nodes": [
+    {
+      "node_id": "node01",
+      "instance_id": 59592874,
+      "scene": "counter",
+      "direct": {
+        "host": "47.186.21.5",
+        "port": 54848
+      },
+      "proxy": {
+        "host": "ssh8.vast.ai",
+        "port": 24229
+      },
+      "runs": [
+        {
+          "run_id": "allocres_261108_E2_counter_highres_dense_seed777",
+          "experiment_id": "E2",
+          "scene": "counter",
+          "arm": "highres_dense",
+          "train_ds": 1,
+          "eval_ds": 1,
+          "allocation_arm": "none",
+          "method": {
+            "views": 1,
+            "block": 1,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 1229851,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "dense",
+          "train_shape": [
+            3115,
+            2076
+          ],
+          "eval_shape": [
+            3115,
+            2076
+          ],
+          "train_views": 210,
+          "test_views": 30,
+          "initial_N": 155767,
+          "rays_first_second": [
+            6466740,
+            6466740
+          ],
+          "total_rays": 194002200000,
+          "config_path": "configs/allocres_261108_E2_counter_highres_dense_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 308395,
+            "5000": 1229851,
+            "7000": 1229851,
+            "10000": 1229851,
+            "15000": 1229851,
+            "20000": 1229851,
+            "30000": 1229851
+          },
+          "execution_order": 1,
+          "config_sha256": "69652e85caecc4c29ffc4725cb962ac1a1483785fe13f5538f627118f42b21df"
+        },
+        {
+          "run_id": "allocres_261108_E1_counter_uniform_seed777",
+          "experiment_id": "E1",
+          "scene": "counter",
+          "arm": "uniform",
+          "train_ds": 2,
+          "eval_ds": 2,
+          "allocation_arm": "uniform",
+          "method": {
+            "views": 4,
+            "block": 6,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 1229851,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            1558,
+            1038
+          ],
+          "eval_shape": [
+            1558,
+            1038
+          ],
+          "train_views": 210,
+          "test_views": 30,
+          "initial_N": 155767,
+          "rays_first_second": [
+            179920,
+            179920
+          ],
+          "total_rays": 5397600000,
+          "config_path": "configs/allocres_261108_E1_counter_uniform_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 308395,
+            "5000": 1229851,
+            "7000": 1229851,
+            "10000": 1229851,
+            "15000": 1229851,
+            "20000": 1229851,
+            "30000": 1229851
+          },
+          "execution_order": 2,
+          "config_sha256": "c29ae266fb27a7f0122bb19a047f1682fcebb14af7f2bd88c3ac43d777aef4d8"
+        },
+        {
+          "run_id": "allocres_261108_E1_counter_schedule_seed777",
+          "experiment_id": "E1",
+          "scene": "counter",
+          "arm": "schedule",
+          "train_ds": 2,
+          "eval_ds": 2,
+          "allocation_arm": "schedule",
+          "method": {
+            "views": 4,
+            "block": 6,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 1229851,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            1558,
+            1038
+          ],
+          "eval_shape": [
+            1558,
+            1038
+          ],
+          "train_views": 210,
+          "test_views": 30,
+          "initial_N": 155767,
+          "rays_first_second": [
+            101400,
+            258440
+          ],
+          "total_rays": 5397600000,
+          "config_path": "configs/allocres_261108_E1_counter_schedule_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 308395,
+            "5000": 1229851,
+            "7000": 1229851,
+            "10000": 1229851,
+            "15000": 1229851,
+            "20000": 1229851,
+            "30000": 1229851
+          },
+          "execution_order": 3,
+          "config_sha256": "c29ae266fb27a7f0122bb19a047f1682fcebb14af7f2bd88c3ac43d777aef4d8"
+        },
+        {
+          "run_id": "allocres_261108_E2_counter_sparse_r16_seed777",
+          "experiment_id": "E2",
+          "scene": "counter",
+          "arm": "sparse_r16",
+          "train_ds": 1,
+          "eval_ds": 1,
+          "allocation_arm": "none",
+          "method": {
+            "views": 4,
+            "block": 8,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 1229851,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            3115,
+            2076
+          ],
+          "eval_shape": [
+            3115,
+            2076
+          ],
+          "train_views": 210,
+          "test_views": 30,
+          "initial_N": 155767,
+          "rays_first_second": [
+            405600,
+            405600
+          ],
+          "total_rays": 12168000000,
+          "config_path": "configs/allocres_261108_E2_counter_sparse_r16_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 308395,
+            "5000": 1229851,
+            "7000": 1229851,
+            "10000": 1229851,
+            "15000": 1229851,
+            "20000": 1229851,
+            "30000": 1229851
+          },
+          "execution_order": 4,
+          "config_sha256": "87b31d41c7bab20abbe4ca6e591f0d1f97967e8f787ed51a059401fc5102e085"
+        },
+        {
+          "run_id": "allocres_261108_E2_counter_sparse_r64_seed777",
+          "experiment_id": "E2",
+          "scene": "counter",
+          "arm": "sparse_r64",
+          "train_ds": 1,
+          "eval_ds": 1,
+          "allocation_arm": "none",
+          "method": {
+            "views": 4,
+            "block": 16,
+            "sigma": 12.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 1229851,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            3115,
+            2076
+          ],
+          "eval_shape": [
+            3115,
+            2076
+          ],
+          "train_views": 210,
+          "test_views": 30,
+          "initial_N": 155767,
+          "rays_first_second": [
+            101400,
+            101400
+          ],
+          "total_rays": 3042000000,
+          "config_path": "configs/allocres_261108_E2_counter_sparse_r64_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 308395,
+            "5000": 1229851,
+            "7000": 1229851,
+            "10000": 1229851,
+            "15000": 1229851,
+            "20000": 1229851,
+            "30000": 1229851
+          },
+          "execution_order": 5,
+          "config_sha256": "ad926f7d68f91ee62ab50f07904a8a2e9120f931683772563b34780641719e0b"
+        },
+        {
+          "run_id": "allocres_261108_E2_counter_lowres_dense_ds4_seed777",
+          "experiment_id": "E2",
+          "scene": "counter",
+          "arm": "lowres_dense_ds4",
+          "train_ds": 4,
+          "eval_ds": 1,
+          "allocation_arm": "none",
+          "method": {
+            "views": 1,
+            "block": 1,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 1229851,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "dense",
+          "train_shape": [
+            779,
+            519
+          ],
+          "eval_shape": [
+            3115,
+            2076
+          ],
+          "train_views": 210,
+          "test_views": 30,
+          "initial_N": 155767,
+          "rays_first_second": [
+            404301,
+            404301
+          ],
+          "total_rays": 12129030000,
+          "config_path": "configs/allocres_261108_E2_counter_lowres_dense_ds4_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 308395,
+            "5000": 1229851,
+            "7000": 1229851,
+            "10000": 1229851,
+            "15000": 1229851,
+            "20000": 1229851,
+            "30000": 1229851
+          },
+          "execution_order": 6,
+          "config_sha256": "69652e85caecc4c29ffc4725cb962ac1a1483785fe13f5538f627118f42b21df"
+        },
+        {
+          "run_id": "allocres_261108_E2_counter_lowres_dense_ds8_seed777",
+          "experiment_id": "E2",
+          "scene": "counter",
+          "arm": "lowres_dense_ds8",
+          "train_ds": 8,
+          "eval_ds": 1,
+          "allocation_arm": "none",
+          "method": {
+            "views": 1,
+            "block": 1,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 1229851,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "dense",
+          "train_shape": [
+            389,
+            260
+          ],
+          "eval_shape": [
+            3115,
+            2076
+          ],
+          "train_views": 210,
+          "test_views": 30,
+          "initial_N": 155767,
+          "rays_first_second": [
+            101140,
+            101140
+          ],
+          "total_rays": 3034200000,
+          "config_path": "configs/allocres_261108_E2_counter_lowres_dense_ds8_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 308395,
+            "5000": 1229851,
+            "7000": 1229851,
+            "10000": 1229851,
+            "15000": 1229851,
+            "20000": 1229851,
+            "30000": 1229851
+          },
+          "execution_order": 7,
+          "config_sha256": "69652e85caecc4c29ffc4725cb962ac1a1483785fe13f5538f627118f42b21df"
+        },
+        {
+          "run_id": "allocres_261108_E1_counter_residual_seed777",
+          "experiment_id": "E1",
+          "scene": "counter",
+          "arm": "residual",
+          "train_ds": 2,
+          "eval_ds": 2,
+          "allocation_arm": "residual",
+          "method": {
+            "views": 4,
+            "block": 6,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 1229851,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            1558,
+            1038
+          ],
+          "eval_shape": [
+            1558,
+            1038
+          ],
+          "train_views": 210,
+          "test_views": 30,
+          "initial_N": 155767,
+          "rays_first_second": [
+            179920,
+            179920
+          ],
+          "total_rays": 5397600000,
+          "config_path": "configs/allocres_261108_E1_counter_residual_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 308395,
+            "5000": 1229851,
+            "7000": 1229851,
+            "10000": 1229851,
+            "15000": 1229851,
+            "20000": 1229851,
+            "30000": 1229851
+          },
+          "execution_order": 8,
+          "config_sha256": "c29ae266fb27a7f0122bb19a047f1682fcebb14af7f2bd88c3ac43d777aef4d8"
+        },
+        {
+          "run_id": "allocres_261108_E1_counter_combined_seed777",
+          "experiment_id": "E1",
+          "scene": "counter",
+          "arm": "combined",
+          "train_ds": 2,
+          "eval_ds": 2,
+          "allocation_arm": "combined",
+          "method": {
+            "views": 4,
+            "block": 6,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 1229851,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            1558,
+            1038
+          ],
+          "eval_shape": [
+            1558,
+            1038
+          ],
+          "train_views": 210,
+          "test_views": 30,
+          "initial_N": 155767,
+          "rays_first_second": [
+            101400,
+            258440
+          ],
+          "total_rays": 5397600000,
+          "config_path": "configs/allocres_261108_E1_counter_combined_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 308395,
+            "5000": 1229851,
+            "7000": 1229851,
+            "10000": 1229851,
+            "15000": 1229851,
+            "20000": 1229851,
+            "30000": 1229851
+          },
+          "execution_order": 9,
+          "config_sha256": "c29ae266fb27a7f0122bb19a047f1682fcebb14af7f2bd88c3ac43d777aef4d8"
+        }
+      ]
+    },
+    {
+      "node_id": "node02",
+      "instance_id": 59592898,
+      "scene": "garden",
+      "direct": {
+        "host": "194.14.47.19",
+        "port": 23008
+      },
+      "proxy": {
+        "host": "ssh5.vast.ai",
+        "port": 30757
+      },
+      "runs": [
+        {
+          "run_id": "allocres_261108_E2_garden_highres_dense_seed777",
+          "experiment_id": "E2",
+          "scene": "garden",
+          "arm": "highres_dense",
+          "train_ds": 2,
+          "eval_ds": 2,
+          "allocation_arm": "none",
+          "method": {
+            "views": 1,
+            "block": 1,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 2044672,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "dense",
+          "train_shape": [
+            2594,
+            1681
+          ],
+          "eval_shape": [
+            2594,
+            1681
+          ],
+          "train_views": 161,
+          "test_views": 24,
+          "initial_N": 138766,
+          "rays_first_second": [
+            4360514,
+            4360514
+          ],
+          "total_rays": 130815420000,
+          "config_path": "configs/allocres_261108_E2_garden_highres_dense_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 274737,
+            "5000": 1187365,
+            "7000": 2044672,
+            "10000": 2044672,
+            "15000": 2044672,
+            "20000": 2044672,
+            "30000": 2044672
+          },
+          "execution_order": 1,
+          "config_sha256": "fcd72e86880d991fb26eabb9287475a71dd37141caf87477785f281048a2bf3f"
+        },
+        {
+          "run_id": "allocres_261108_E1_garden_uniform_seed777",
+          "experiment_id": "E1",
+          "scene": "garden",
+          "arm": "uniform",
+          "train_ds": 4,
+          "eval_ds": 4,
+          "allocation_arm": "uniform",
+          "method": {
+            "views": 4,
+            "block": 6,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 2044672,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            1297,
+            840
+          ],
+          "eval_shape": [
+            1297,
+            840
+          ],
+          "train_views": 161,
+          "test_views": 24,
+          "initial_N": 138766,
+          "rays_first_second": [
+            121520,
+            121520
+          ],
+          "total_rays": 3645600000,
+          "config_path": "configs/allocres_261108_E1_garden_uniform_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 274737,
+            "5000": 1187365,
+            "7000": 2044672,
+            "10000": 2044672,
+            "15000": 2044672,
+            "20000": 2044672,
+            "30000": 2044672
+          },
+          "execution_order": 2,
+          "config_sha256": "3aefe595ef49195b06406ae97f5c6a2aabbef8326be6ac7a5c30d2990683cf53"
+        },
+        {
+          "run_id": "allocres_261108_E1_garden_schedule_seed777",
+          "experiment_id": "E1",
+          "scene": "garden",
+          "arm": "schedule",
+          "train_ds": 4,
+          "eval_ds": 4,
+          "allocation_arm": "schedule",
+          "method": {
+            "views": 4,
+            "block": 6,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 2044672,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            1297,
+            840
+          ],
+          "eval_shape": [
+            1297,
+            840
+          ],
+          "train_views": 161,
+          "test_views": 24,
+          "initial_N": 138766,
+          "rays_first_second": [
+            68460,
+            174580
+          ],
+          "total_rays": 3645600000,
+          "config_path": "configs/allocres_261108_E1_garden_schedule_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 274737,
+            "5000": 1187365,
+            "7000": 2044672,
+            "10000": 2044672,
+            "15000": 2044672,
+            "20000": 2044672,
+            "30000": 2044672
+          },
+          "execution_order": 3,
+          "config_sha256": "3aefe595ef49195b06406ae97f5c6a2aabbef8326be6ac7a5c30d2990683cf53"
+        },
+        {
+          "run_id": "allocres_261108_E2_garden_sparse_r16_seed777",
+          "experiment_id": "E2",
+          "scene": "garden",
+          "arm": "sparse_r16",
+          "train_ds": 2,
+          "eval_ds": 2,
+          "allocation_arm": "none",
+          "method": {
+            "views": 4,
+            "block": 8,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 2044672,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            2594,
+            1681
+          ],
+          "eval_shape": [
+            2594,
+            1681
+          ],
+          "train_views": 161,
+          "test_views": 24,
+          "initial_N": 138766,
+          "rays_first_second": [
+            274300,
+            274300
+          ],
+          "total_rays": 8229000000,
+          "config_path": "configs/allocres_261108_E2_garden_sparse_r16_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 274737,
+            "5000": 1187365,
+            "7000": 2044672,
+            "10000": 2044672,
+            "15000": 2044672,
+            "20000": 2044672,
+            "30000": 2044672
+          },
+          "execution_order": 4,
+          "config_sha256": "3dbf998abcf0303bf2b09f90c78552208b165c67cd1c07421bc6fe1d13727b94"
+        },
+        {
+          "run_id": "allocres_261108_E2_garden_lowres_dense_ds8_seed777",
+          "experiment_id": "E2",
+          "scene": "garden",
+          "arm": "lowres_dense_ds8",
+          "train_ds": 8,
+          "eval_ds": 2,
+          "allocation_arm": "none",
+          "method": {
+            "views": 1,
+            "block": 1,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 2044672,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "dense",
+          "train_shape": [
+            648,
+            420
+          ],
+          "eval_shape": [
+            2594,
+            1681
+          ],
+          "train_views": 161,
+          "test_views": 24,
+          "initial_N": 138766,
+          "rays_first_second": [
+            272160,
+            272160
+          ],
+          "total_rays": 8164800000,
+          "config_path": "configs/allocres_261108_E2_garden_lowres_dense_ds8_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 274737,
+            "5000": 1187365,
+            "7000": 2044672,
+            "10000": 2044672,
+            "15000": 2044672,
+            "20000": 2044672,
+            "30000": 2044672
+          },
+          "execution_order": 5,
+          "config_sha256": "fcd72e86880d991fb26eabb9287475a71dd37141caf87477785f281048a2bf3f"
+        },
+        {
+          "run_id": "allocres_261108_E1_garden_residual_seed777",
+          "experiment_id": "E1",
+          "scene": "garden",
+          "arm": "residual",
+          "train_ds": 4,
+          "eval_ds": 4,
+          "allocation_arm": "residual",
+          "method": {
+            "views": 4,
+            "block": 6,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 2044672,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            1297,
+            840
+          ],
+          "eval_shape": [
+            1297,
+            840
+          ],
+          "train_views": 161,
+          "test_views": 24,
+          "initial_N": 138766,
+          "rays_first_second": [
+            121520,
+            121520
+          ],
+          "total_rays": 3645600000,
+          "config_path": "configs/allocres_261108_E1_garden_residual_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 274737,
+            "5000": 1187365,
+            "7000": 2044672,
+            "10000": 2044672,
+            "15000": 2044672,
+            "20000": 2044672,
+            "30000": 2044672
+          },
+          "execution_order": 6,
+          "config_sha256": "3aefe595ef49195b06406ae97f5c6a2aabbef8326be6ac7a5c30d2990683cf53"
+        },
+        {
+          "run_id": "allocres_261108_E1_garden_combined_seed777",
+          "experiment_id": "E1",
+          "scene": "garden",
+          "arm": "combined",
+          "train_ds": 4,
+          "eval_ds": 4,
+          "allocation_arm": "combined",
+          "method": {
+            "views": 4,
+            "block": 6,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 2044672,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            1297,
+            840
+          ],
+          "eval_shape": [
+            1297,
+            840
+          ],
+          "train_views": 161,
+          "test_views": 24,
+          "initial_N": 138766,
+          "rays_first_second": [
+            68460,
+            174580
+          ],
+          "total_rays": 3645600000,
+          "config_path": "configs/allocres_261108_E1_garden_combined_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 274737,
+            "5000": 1187365,
+            "7000": 2044672,
+            "10000": 2044672,
+            "15000": 2044672,
+            "20000": 2044672,
+            "30000": 2044672
+          },
+          "execution_order": 7,
+          "config_sha256": "3aefe595ef49195b06406ae97f5c6a2aabbef8326be6ac7a5c30d2990683cf53"
+        }
+      ]
+    },
+    {
+      "node_id": "node03",
+      "instance_id": 59592915,
+      "scene": "bonsai",
+      "direct": {
+        "host": "194.14.47.19",
+        "port": 24802
+      },
+      "proxy": {
+        "host": "ssh1.vast.ai",
+        "port": 16631
+      },
+      "runs": [
+        {
+          "run_id": "allocres_261108_E2_bonsai_highres_dense_seed777",
+          "experiment_id": "E2",
+          "scene": "bonsai",
+          "arm": "highres_dense",
+          "train_ds": 1,
+          "eval_ds": 1,
+          "allocation_arm": "none",
+          "method": {
+            "views": 1,
+            "block": 1,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 1209886,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "dense",
+          "train_shape": [
+            3118,
+            2078
+          ],
+          "eval_shape": [
+            3118,
+            2078
+          ],
+          "train_views": 255,
+          "test_views": 37,
+          "initial_N": 206613,
+          "rays_first_second": [
+            6479204,
+            6479204
+          ],
+          "total_rays": 194376120000,
+          "config_path": "configs/allocres_261108_E2_bonsai_highres_dense_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 409068,
+            "5000": 1209886,
+            "7000": 1209886,
+            "10000": 1209886,
+            "15000": 1209886,
+            "20000": 1209886,
+            "30000": 1209886
+          },
+          "execution_order": 1,
+          "config_sha256": "5b91f8b8bad290fe6e3388c3851a4741bbcf8c78374661625014f20c3ab60c6a"
+        },
+        {
+          "run_id": "allocres_261108_E2_bonsai_sparse_r16_seed777",
+          "experiment_id": "E2",
+          "scene": "bonsai",
+          "arm": "sparse_r16",
+          "train_ds": 1,
+          "eval_ds": 1,
+          "allocation_arm": "none",
+          "method": {
+            "views": 4,
+            "block": 8,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 1209886,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            3118,
+            2078
+          ],
+          "eval_shape": [
+            3118,
+            2078
+          ],
+          "train_views": 255,
+          "test_views": 37,
+          "initial_N": 206613,
+          "rays_first_second": [
+            405600,
+            405600
+          ],
+          "total_rays": 12168000000,
+          "config_path": "configs/allocres_261108_E2_bonsai_sparse_r16_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 409068,
+            "5000": 1209886,
+            "7000": 1209886,
+            "10000": 1209886,
+            "15000": 1209886,
+            "20000": 1209886,
+            "30000": 1209886
+          },
+          "execution_order": 2,
+          "config_sha256": "42c7e65038c63a005cad65f9be81351430abc0874fcc8d9ee9c88588edbe67bf"
+        },
+        {
+          "run_id": "allocres_261108_E2_bonsai_sparse_r64_seed777",
+          "experiment_id": "E2",
+          "scene": "bonsai",
+          "arm": "sparse_r64",
+          "train_ds": 1,
+          "eval_ds": 1,
+          "allocation_arm": "none",
+          "method": {
+            "views": 4,
+            "block": 16,
+            "sigma": 12.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 1209886,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            3118,
+            2078
+          ],
+          "eval_shape": [
+            3118,
+            2078
+          ],
+          "train_views": 255,
+          "test_views": 37,
+          "initial_N": 206613,
+          "rays_first_second": [
+            101400,
+            101400
+          ],
+          "total_rays": 3042000000,
+          "config_path": "configs/allocres_261108_E2_bonsai_sparse_r64_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 409068,
+            "5000": 1209886,
+            "7000": 1209886,
+            "10000": 1209886,
+            "15000": 1209886,
+            "20000": 1209886,
+            "30000": 1209886
+          },
+          "execution_order": 3,
+          "config_sha256": "f9e0dc06199ea42a4addf4365a650f7a0ca067db4c2cbd48a156fbde8c0e7836"
+        },
+        {
+          "run_id": "allocres_261108_E2_bonsai_lowres_dense_ds4_seed777",
+          "experiment_id": "E2",
+          "scene": "bonsai",
+          "arm": "lowres_dense_ds4",
+          "train_ds": 4,
+          "eval_ds": 1,
+          "allocation_arm": "none",
+          "method": {
+            "views": 1,
+            "block": 1,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 1209886,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "dense",
+          "train_shape": [
+            780,
+            520
+          ],
+          "eval_shape": [
+            3118,
+            2078
+          ],
+          "train_views": 255,
+          "test_views": 37,
+          "initial_N": 206613,
+          "rays_first_second": [
+            405600,
+            405600
+          ],
+          "total_rays": 12168000000,
+          "config_path": "configs/allocres_261108_E2_bonsai_lowres_dense_ds4_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 409068,
+            "5000": 1209886,
+            "7000": 1209886,
+            "10000": 1209886,
+            "15000": 1209886,
+            "20000": 1209886,
+            "30000": 1209886
+          },
+          "execution_order": 4,
+          "config_sha256": "5b91f8b8bad290fe6e3388c3851a4741bbcf8c78374661625014f20c3ab60c6a"
+        },
+        {
+          "run_id": "allocres_261108_E2_bonsai_lowres_dense_ds8_seed777",
+          "experiment_id": "E2",
+          "scene": "bonsai",
+          "arm": "lowres_dense_ds8",
+          "train_ds": 8,
+          "eval_ds": 1,
+          "allocation_arm": "none",
+          "method": {
+            "views": 1,
+            "block": 1,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 1209886,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "dense",
+          "train_shape": [
+            390,
+            260
+          ],
+          "eval_shape": [
+            3118,
+            2078
+          ],
+          "train_views": 255,
+          "test_views": 37,
+          "initial_N": 206613,
+          "rays_first_second": [
+            101400,
+            101400
+          ],
+          "total_rays": 3042000000,
+          "config_path": "configs/allocres_261108_E2_bonsai_lowres_dense_ds8_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 409068,
+            "5000": 1209886,
+            "7000": 1209886,
+            "10000": 1209886,
+            "15000": 1209886,
+            "20000": 1209886,
+            "30000": 1209886
+          },
+          "execution_order": 5,
+          "config_sha256": "5b91f8b8bad290fe6e3388c3851a4741bbcf8c78374661625014f20c3ab60c6a"
+        }
+      ]
+    },
+    {
+      "node_id": "node04",
+      "instance_id": 59592933,
+      "scene": "bicycle",
+      "direct": {
+        "host": "38.117.87.51",
+        "port": 44799
+      },
+      "proxy": {
+        "host": "ssh9.vast.ai",
+        "port": 14027
+      },
+      "runs": [
+        {
+          "run_id": "allocres_261108_E1_bicycle_uniform_seed777",
+          "experiment_id": "E1",
+          "scene": "bicycle",
+          "arm": "uniform",
+          "train_ds": 4,
+          "eval_ds": 4,
+          "allocation_arm": "uniform",
+          "method": {
+            "views": 4,
+            "block": 6,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 3021939,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            1237,
+            822
+          ],
+          "eval_shape": [
+            1237,
+            822
+          ],
+          "train_views": 169,
+          "test_views": 25,
+          "initial_N": 54275,
+          "rays_first_second": [
+            113436,
+            113436
+          ],
+          "total_rays": 3403080000,
+          "config_path": "configs/allocres_261108_E1_bicycle_uniform_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 107452,
+            "5000": 464374,
+            "7000": 1232105,
+            "10000": 3021939,
+            "15000": 3021939,
+            "20000": 3021939,
+            "30000": 3021939
+          },
+          "execution_order": 1,
+          "config_sha256": "403a3d6e5c4aa212f48466222f4ff3e56ce48521a09e7cfa38abc1384f0f55ba"
+        },
+        {
+          "run_id": "allocres_261108_E1_bicycle_schedule_seed777",
+          "experiment_id": "E1",
+          "scene": "bicycle",
+          "arm": "schedule",
+          "train_ds": 4,
+          "eval_ds": 4,
+          "allocation_arm": "schedule",
+          "method": {
+            "views": 4,
+            "block": 6,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 3021939,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            1237,
+            822
+          ],
+          "eval_shape": [
+            1237,
+            822
+          ],
+          "train_views": 169,
+          "test_views": 25,
+          "initial_N": 54275,
+          "rays_first_second": [
+            63860,
+            163012
+          ],
+          "total_rays": 3403080000,
+          "config_path": "configs/allocres_261108_E1_bicycle_schedule_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 107452,
+            "5000": 464374,
+            "7000": 1232105,
+            "10000": 3021939,
+            "15000": 3021939,
+            "20000": 3021939,
+            "30000": 3021939
+          },
+          "execution_order": 2,
+          "config_sha256": "403a3d6e5c4aa212f48466222f4ff3e56ce48521a09e7cfa38abc1384f0f55ba"
+        },
+        {
+          "run_id": "allocres_261108_E1_bicycle_residual_seed777",
+          "experiment_id": "E1",
+          "scene": "bicycle",
+          "arm": "residual",
+          "train_ds": 4,
+          "eval_ds": 4,
+          "allocation_arm": "residual",
+          "method": {
+            "views": 4,
+            "block": 6,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 3021939,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            1237,
+            822
+          ],
+          "eval_shape": [
+            1237,
+            822
+          ],
+          "train_views": 169,
+          "test_views": 25,
+          "initial_N": 54275,
+          "rays_first_second": [
+            113436,
+            113436
+          ],
+          "total_rays": 3403080000,
+          "config_path": "configs/allocres_261108_E1_bicycle_residual_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 107452,
+            "5000": 464374,
+            "7000": 1232105,
+            "10000": 3021939,
+            "15000": 3021939,
+            "20000": 3021939,
+            "30000": 3021939
+          },
+          "execution_order": 3,
+          "config_sha256": "403a3d6e5c4aa212f48466222f4ff3e56ce48521a09e7cfa38abc1384f0f55ba"
+        },
+        {
+          "run_id": "allocres_261108_E1_bicycle_combined_seed777",
+          "experiment_id": "E1",
+          "scene": "bicycle",
+          "arm": "combined",
+          "train_ds": 4,
+          "eval_ds": 4,
+          "allocation_arm": "combined",
+          "method": {
+            "views": 4,
+            "block": 6,
+            "sigma": 6.0,
+            "l1_weight": 0.8,
+            "structure_weight": 0.2,
+            "opacity_weight": 0.01,
+            "scale_weight": 0.01,
+            "cap": 3021939,
+            "steps": 30000,
+            "initialization_seed": 777,
+            "view_seed": 2610297100,
+            "ray_seed": 910000000,
+            "boundary": "all",
+            "grid_window": 11,
+            "grid_sigma": 1.5,
+            "sampler": "point"
+          },
+          "loss": "coordinate",
+          "train_shape": [
+            1237,
+            822
+          ],
+          "eval_shape": [
+            1237,
+            822
+          ],
+          "train_views": 169,
+          "test_views": 25,
+          "initial_N": 54275,
+          "rays_first_second": [
+            63860,
+            163012
+          ],
+          "total_rays": 3403080000,
+          "config_path": "configs/allocres_261108_E1_bicycle_combined_seed777.json",
+          "checkpoint_steps": [
+            2000,
+            5000,
+            7000,
+            10000,
+            15000,
+            20000,
+            30000
+          ],
+          "expected_G": {
+            "2000": 107452,
+            "5000": 464374,
+            "7000": 1232105,
+            "10000": 3021939,
+            "15000": 3021939,
+            "20000": 3021939,
+            "30000": 3021939
+          },
+          "execution_order": 4,
+          "config_sha256": "403a3d6e5c4aa212f48466222f4ff3e56ce48521a09e7cfa38abc1384f0f55ba"
+        }
+      ]
+    }
+  ],
+  "frozen_commit": "dec85dfec2a5a66e08b3633e3f14fc1cc597f49c",
+  "code_files": [
+    {
+      "path": ".gitignore",
+      "sha256": "2633e7cef42bd6a5e435d00f1b77a98787f23a892e673108cf5ed682c66ac5fd"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "2a714f477de43ffa3d5a9e633bfd44d68f1753c0e0924864e8e36997e1545442"
+    },
+    {
+      "path": "README.md",
+      "sha256": "a13ad4c47d298fcd5572f76dc26cd87c5ebf59cbef403e67626e18336baf918b"
+    },
+    {
+      "path": "benchmarks/real13_v1.json",
+      "sha256": "6620beed11f01396dda530874f71a72013bdc189f16542a781dc075e44c6c907"
+    },
+    {
+      "path": "benchmarks/validation_20261102/backup_transport.json",
+      "sha256": "16290a2cdcf87869582dbf945f4585521781a384fb0229012ce0acd7ac61cd68"
+    },
+    {
+      "path": "benchmarks/validation_20261102/cpu_tests.txt",
+      "sha256": "00010597e670cc1133a9bee9f00e033bbe7264b525ea313bccf6d06c141e4b08"
+    },
+    {
+      "path": "benchmarks/validation_20261102/input_audit.json",
+      "sha256": "41fad7e3538aae30a80920dfc03053af45d17eabd78e8ec90949c86165d5ea6c"
+    },
+    {
+      "path": "benchmarks/validation_20261102/loss_cuda.json",
+      "sha256": "ad0dc51a7d225278d3775e96656f894069a736f6a5a46c1c85c3700aa07904ec"
+    },
+    {
+      "path": "benchmarks/validation_20261102/smoke_complete.json",
+      "sha256": "d874668fd33d106ccbeee5916b66800d21fce4a98dae96346afe01537b397835"
+    },
+    {
+      "path": "benchmarks/validation_20261102/summary.json",
+      "sha256": "accda5665e6897c41ad0513c00c9978eee2d517a124423e6c5a73500018b7898"
+    },
+    {
+      "path": "benchmarks/validation_20261102/worker_status.json",
+      "sha256": "ff554d936b13f0b3cd88afd9edd5f360d2b57f17cf7a0f1c9ed686dd17ec8911"
+    },
+    {
+      "path": "configs/counter_ds2_mv4.json",
+      "sha256": "1cd055024c6621b8a01f080a214ace122382bedc8a566ba79a0dfb6a9119b6ec"
+    },
+    {
+      "path": "docs/benchmark.md",
+      "sha256": "be92933b9f91f9fa60069fee544f70a56bb2c418003117eb0878fae9c2f59380"
+    },
+    {
+      "path": "docs/migration.md",
+      "sha256": "484a793df05d1cbe688cc95908e48a33ef35c3235ac0c7daa53902881d9c8faf"
+    },
+    {
+      "path": "docs/paper_release.md",
+      "sha256": "71caf59ab50c3602d93ded777a1584107900c958bfbb671b517c57d70996bc2e"
+    },
+    {
+      "path": "docs/performance.md",
+      "sha256": "a76ebf72697bc37ee6ed3bb308129e3ed09b5d0eae031529567293ec40718a1f"
+    },
+    {
+      "path": "docs/standalone.md",
+      "sha256": "9ba018573ad0c69590ed43a9a835252e2c8b90c1871ae11881edc75f0924ff60"
+    },
+    {
+      "path": "docs/structural_loss.md",
+      "sha256": "4c727f12eb3da14ef78aa625029e2cb6f568daf37125a417606ff5489d1a32c6"
+    },
+    {
+      "path": "eval_full.py",
+      "sha256": "d5255104a6a8d19290eedb9572a48edf17206c881a09677984b8da41615e1aae"
+    },
+    {
+      "path": "experiments/ray_allocation_resolution_261108.md",
+      "sha256": "5ba9531ceb1e772492e935144d91ef45c255c225351f3fcf19bf36400b4d94b0"
+    },
+    {
+      "path": "licenses/3DGRUT-Apache-2.0.txt",
+      "sha256": "7339fa418c9ad3e8e12e74ad0fd26a9cc4be8703f9c110728a992b193be85cb2"
+    },
+    {
+      "path": "licenses/Apache-2.0.txt",
+      "sha256": "7339fa418c9ad3e8e12e74ad0fd26a9cc4be8703f9c110728a992b193be85cb2"
+    },
+    {
+      "path": "patches/disable_unused_diagnostics.patch",
+      "sha256": "8b4c32e1b56080fa7d3e643fd8e55900951f5e7de3add1e66eae90f0573f3c78"
+    },
+    {
+      "path": "provenance/cpu_validation.json",
+      "sha256": "68f5dfd923d9a350472aa3bb03d580822942e2d617bb647cf8945435db45912c"
+    },
+    {
+      "path": "provenance/native5_campaign.json",
+      "sha256": "3d805440ddc5b1b59cbb9457ec75d7c74482a032f9cc8a2f284898fe35c5eb66"
+    },
+    {
+      "path": "provenance/renderer_patch.json",
+      "sha256": "fd477eaddae21c964dd682b3580d4a794b5ac0ee4bf82dc52842f71300601ba5"
+    },
+    {
+      "path": "provenance/source_manifest.json",
+      "sha256": "8a81129f630910d5c66837550bd7e42daccc3b36ee591dcfec09ca9d292ed8d3"
+    },
+    {
+      "path": "provenance/standalone_vendor.json",
+      "sha256": "0f4736e2c785aebe65babf12a8bdb36b8a83346626d0ff379ce8b9a259afccf3"
+    },
+    {
+      "path": "provenance/structure_audit.json",
+      "sha256": "c91a0fd0afc2fad86ac3e5f664b1368c56bacd86a2ffe25008814d229afaa602"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "bddce09efee9a4bcdb38f66477e202d83d75bd34bf24fb2f91f9a25bb850cfc1"
+    },
+    {
+      "path": "releases/paper_v1_20261102/binary_builds.json",
+      "sha256": "639091a5187c53cd0c2f4334efa79c47d2f53234f11525587f3e98640f22be6d"
+    },
+    {
+      "path": "releases/paper_v1_20261102/compatibility.json",
+      "sha256": "05d9e5ed630b855cfd5dea04532a5cb993e7866ffe2bfd65e599f075ce02d875"
+    },
+    {
+      "path": "releases/paper_v1_20261102/configs/bicycle_l1.json",
+      "sha256": "10c2b859148aa298992fe51fe8ecb5a6a7715f8d86b8212f6ad8bac73735cf10"
+    },
+    {
+      "path": "releases/paper_v1_20261102/configs/bicycle_structure.json",
+      "sha256": "d5683f5048cad7479553f17cbb26a01c8b0beb8337d95ca3c861d0e0de25198b"
+    },
+    {
+      "path": "releases/paper_v1_20261102/configs/bonsai_l1.json",
+      "sha256": "c748f97dd99c5d71696ce461ad5652cd65e62206433f83292aacc04843580d87"
+    },
+    {
+      "path": "releases/paper_v1_20261102/configs/bonsai_structure.json",
+      "sha256": "4a54d38eb45cd1285b49307219936929bf12aca5c7139181465b032add94a127"
+    },
+    {
+      "path": "releases/paper_v1_20261102/configs/counter_l1.json",
+      "sha256": "56efaf9d02ad80f58dad91cbfa0eaffc4752d58582f0ecb5feed09ec19548431"
+    },
+    {
+      "path": "releases/paper_v1_20261102/configs/counter_structure.json",
+      "sha256": "a80c233099191f062f4839561260b049dc26205dc5947bd367ea0fcdcd5fbedd"
+    },
+    {
+      "path": "releases/paper_v1_20261102/protocol.json",
+      "sha256": "7e8a1ab6f948ae26173993291b2de7d8cd85295206578ccc8d3b0579b956f6e2"
+    },
+    {
+      "path": "releases/paper_v1_20261102/resolved_reference.json",
+      "sha256": "c45b4f75259fa9e580dad2d5453cc5b6973a2346d6ce47ed3f500090bcd104b0"
+    },
+    {
+      "path": "releases/paper_v1_20261102/source_lock.json",
+      "sha256": "c1d6a31cd4dc355a7854149637c01f09920fff5f6ad2b34134fed131180c4b4a"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/cpu_tests.txt",
+      "sha256": "8e30d2bb2c480b98ace6917e8c5d7c5d0c9b778682d87e98dcb366df3da19dd5"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/final_cuda.json",
+      "sha256": "c13694e22d7c8592dc776216c9ad22b02fd48a45367260902c967b3abbe0b85e"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/final_preflight.json",
+      "sha256": "35016b01f9c29b0f14093bf61134076687b40fe9b1ea365e394e47972b338908"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/legacy/complete.json",
+      "sha256": "7e468dbfdd949025c5a3b38281bc898cddebddb80206352766e98851b20da0be"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/legacy/first_input.json",
+      "sha256": "951475cde094b90b6b68ef93dab2e1911324051047d85025727f11beee21f128"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/legacy/growth_plan.json",
+      "sha256": "5db70221d955d5c9a5160e0fb763b8a2abed675aff506004ecc1fd901ebb6db6"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/legacy/initial.json",
+      "sha256": "b414d8ff36860a6dfd3fa864a8dff503819809d79ffcbc29caab8ca86d7144a1"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/legacy/protocol.json",
+      "sha256": "f57f70aaa21eeeb59e46d41cc7f150e42bf6137666c270ae5475e58a6279db1c"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/legacy/ray_geometry.json",
+      "sha256": "0f40f06c52c7051bf531caddc58c5ac891d78221fafec48ce21b07a516155d12"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/legacy/resolved_config.json",
+      "sha256": "c45b4f75259fa9e580dad2d5453cc5b6973a2346d6ce47ed3f500090bcd104b0"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/legacy/runtime_manifest.json",
+      "sha256": "7b07b0d6fcc2e16fdc113d705dc5916b2af9ba004f28dd5993df2052bda850bb"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/legacy/steps.jsonl",
+      "sha256": "c5526ced4147f2bd1e8185f75c0708b8e0d741d55489ab9c84b86ec430d8594d"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/legacy/training_manifest.json",
+      "sha256": "4a9aca3f933c41f1277665355842159bd867d57db4e251c087599865d077bcd7"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/release/complete.json",
+      "sha256": "0157f28dfab41422d3dce6c1ad7feb96c582ea1078c93151d19ffdb798e239ae"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/release/first_input.json",
+      "sha256": "951475cde094b90b6b68ef93dab2e1911324051047d85025727f11beee21f128"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/release/growth_plan.json",
+      "sha256": "5db70221d955d5c9a5160e0fb763b8a2abed675aff506004ecc1fd901ebb6db6"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/release/initial.json",
+      "sha256": "b414d8ff36860a6dfd3fa864a8dff503819809d79ffcbc29caab8ca86d7144a1"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/release/protocol.json",
+      "sha256": "f57f70aaa21eeeb59e46d41cc7f150e42bf6137666c270ae5475e58a6279db1c"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/release/ray_geometry.json",
+      "sha256": "0f40f06c52c7051bf531caddc58c5ac891d78221fafec48ce21b07a516155d12"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/release/resolved_config.json",
+      "sha256": "c45b4f75259fa9e580dad2d5453cc5b6973a2346d6ce47ed3f500090bcd104b0"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/release/runtime_manifest.json",
+      "sha256": "f93cda5801dca190577a000b7bc7369ac5c660d28e419ceb06c0b556ba190932"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/release/steps.jsonl",
+      "sha256": "63d5f79eec28937925e7081773fa915ad21aca22db654a402dff34d501d008a7"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/release/training_manifest.json",
+      "sha256": "4a9aca3f933c41f1277665355842159bd867d57db4e251c087599865d077bcd7"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/reproducible_parity.json",
+      "sha256": "ed2b2717167631eb193ffe2b598ef43fb3ed0828dfe7b1794efbb3c06f665ea9"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/runtime_check.json",
+      "sha256": "dd02b41b1f58a18defb16db59b6250eff4f03c15156071e92c133b49281e8505"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/summary.json",
+      "sha256": "f4233be11359c9342ceb7377363002e0819f58d59b6f82282b6dbde4058049fd"
+    },
+    {
+      "path": "releases/paper_v1_20261102/validation/training_parity.json",
+      "sha256": "a0c697c3f24ee73c5283b1f680fdcf9c71b36acbb4a7242dedd1fddb0a8bbc77"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/source_sha256.json",
+      "sha256": "513020a3c6058964d54698c7d9cdf4d25bf14e75240810155573734053caa032"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/summary.json",
+      "sha256": "06dc71c76648ca1e38ddc9c96ee0662ecfb3f3880c90388fb4f7772df0391120"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/validation/checkpoint_evaluation.json",
+      "sha256": "02a5a74eedfaddf6da057a4ae96da9234dc16f4302da777de2ae563af7f948c5"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/validation/complete.json",
+      "sha256": "8b2430af61a361b55f0ba96efeb258245b5538656be34f74edb477680ab2a581"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/validation/cpu_tests.txt",
+      "sha256": "8f826523cf919d3cd8d7508a24a588b87a8f3b9fc8da0d81fe83336a12bad31f"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/validation/first_fresh_build.txt",
+      "sha256": "5ae69610f587afff32095f847c2d6e6b23a5653128d5d030a97725288eea5d33"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/validation/first_input.json",
+      "sha256": "951475cde094b90b6b68ef93dab2e1911324051047d85025727f11beee21f128"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/validation/growth_plan.json",
+      "sha256": "5db70221d955d5c9a5160e0fb763b8a2abed675aff506004ecc1fd901ebb6db6"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/validation/initial.json",
+      "sha256": "b414d8ff36860a6dfd3fa864a8dff503819809d79ffcbc29caab8ca86d7144a1"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/validation/input_budget.json",
+      "sha256": "e2f350ea7ad7cd076cf53a04f3addc70f88d0f7dce8fe485b7b95f12856e7b6e"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/validation/protocol.json",
+      "sha256": "585fa78fc232c0b5986530f3f41066a32b77cf0e1c5828e5d7f34507d1be662a"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/validation/python_rng_diagnostic.txt",
+      "sha256": "9d0a25be99d7c7fa187ed39f45912327659c5a515fe5e793a9720ba7b2343dd6"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/validation/resolved_config.json",
+      "sha256": "c45b4f75259fa9e580dad2d5453cc5b6973a2346d6ce47ed3f500090bcd104b0"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/validation/runtime_manifest.json",
+      "sha256": "219483ec4a239f7739708caa213409e13363666bd91721a30ae9a770c84c6ad8"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/validation/source_isolation.json",
+      "sha256": "a37eeeb0ee8851830a3b22a148639380bb24bfb05a98e16e4f35c7940d570972"
+    },
+    {
+      "path": "releases/standalone_candidate_20261102/validation/training_parity.json",
+      "sha256": "45e62f3328fad536d91e87ac857148418aabb4b19a7017074c938751ee7e00b3"
+    },
+    {
+      "path": "releases/standalone_remote_20261102/requirements-installed.txt",
+      "sha256": "0a8962c81335a332b1ead18a42a8a13dd0fad7f48821355b503354ac42744400"
+    },
+    {
+      "path": "releases/standalone_remote_20261102/source_sha256.json",
+      "sha256": "3420cf24a9891c312a92c1ae9c1d3834042322f6e4eeb58ebd62be3f9e2452f6"
+    },
+    {
+      "path": "releases/standalone_remote_20261102/summary.json",
+      "sha256": "6da99ee942fc9900bcc7dbcef9760cdeffe893bc660c19c50a5272623c8b1c06"
+    },
+    {
+      "path": "releases/standalone_remote_20261102/validation/checkpoint_evaluation.json",
+      "sha256": "7c76fe8812c078ab3937b83debd486f2b6e0b4684f09344185501ce22fe57945"
+    },
+    {
+      "path": "releases/standalone_remote_20261102/validation/continuation.json",
+      "sha256": "3ab6bedfbf777408fb5592ac41a427541452b70ffc35289a325d0be0854c872f"
+    },
+    {
+      "path": "releases/standalone_remote_20261102/validation/cpu_tests.txt",
+      "sha256": "920507506274783a18887e21522caf34dfcb19c4de24cd708ef140515fc5ce23"
+    },
+    {
+      "path": "releases/standalone_remote_20261102/validation/data_verification.json",
+      "sha256": "dbde521447a730fe514ca24b6396cbee7bfa979dc3f5fb91d3513928b4a3ca48"
+    },
+    {
+      "path": "releases/standalone_remote_20261102/validation/decoded_image_verification.json",
+      "sha256": "4df383ddc72541fa282a881371d4d5bb37c3f2eca4a18cc6f4c43eb100e6a571"
+    },
+    {
+      "path": "releases/standalone_remote_20261102/validation/environment.json",
+      "sha256": "2373718322820ec4e250e31b47d073213bc126762d7f7583bc34870dbe715205"
+    },
+    {
+      "path": "releases/standalone_remote_20261102/validation/jpeg_reference.json",
+      "sha256": "3da744323404ae8b8e14cdd2e727e008d855186700fbb22251d987619226230e"
+    },
+    {
+      "path": "releases/standalone_remote_20261102/validation/loss_cuda.json",
+      "sha256": "ad0dc51a7d225278d3775e96656f894069a736f6a5a46c1c85c3700aa07904ec"
+    },
+    {
+      "path": "releases/standalone_remote_20261102/validation/onepass_training_parity.json",
+      "sha256": "f1c4df3387320f664847cd34d49bcaa055d2694e48d3d98febd136c04ffc4ba2"
+    },
+    {
+      "path": "releases/standalone_remote_20261102/validation/wheel_contents.json",
+      "sha256": "67a8209853df4ac341a50ca064117bc00c603b95b65230e70ffd4df09b554459"
+    },
+    {
+      "path": "src/sparse_grt/__init__.py",
+      "sha256": "4ff478eadbd6c73f647fd444e46c5cd13dd5c780d460321a1ecbe6fd77fbce87"
+    },
+    {
+      "path": "src/sparse_grt/allocation_inputs.py",
+      "sha256": "4618839fc9af33478230cc1d6f7a16cab6ef1f63e22d3c308b6be660b709c651"
+    },
+    {
+      "path": "src/sparse_grt/allocation_protocol.py",
+      "sha256": "5dd8ea74312d6d80c01b5ba13cdb6006efc4d6888c379e84befe630fba94961d"
+    },
+    {
+      "path": "src/sparse_grt/backend_config.json",
+      "sha256": "7126c4a44bd02e30f1fc7f54a01bd16bf9198db2bcf7a09eeac6116acebe62de"
+    },
+    {
+      "path": "src/sparse_grt/budget.py",
+      "sha256": "a996f03d26e83a94b9af8b215351b30f3c66bc683c0b3426c40384200dca3e24"
+    },
+    {
+      "path": "src/sparse_grt/cached_dataset.py",
+      "sha256": "a649c97368251284ee7578e37f6c6c80ce958a01ad471dc42be63b83260a7719"
+    },
+    {
+      "path": "src/sparse_grt/capacity_duration_protocol.py",
+      "sha256": "29d38c33f51aa12124e9eeca2a11e6083e819ef0cdffd66a9fe2c738bca5bdcd"
+    },
+    {
+      "path": "src/sparse_grt/config.py",
+      "sha256": "c4192f1a8b40174094e1316966df9c23f2a080dac0235ba3cdac8509593b848f"
+    },
+    {
+      "path": "src/sparse_grt/contracts.py",
+      "sha256": "48fe5fcf7844232c094e1c9f38e1b388b5806e4a6cec09fe6d57270e1383a6f7"
+    },
+    {
+      "path": "src/sparse_grt/controls.py",
+      "sha256": "2db07323b97c50cc88c37db6cb91db2ba54476d7f95d0ee90016bb4eccfa40f6"
+    },
+    {
+      "path": "src/sparse_grt/engine.py",
+      "sha256": "5aaec0ef4e4782ff95afcaaaf0c4640f3930f210b76c9175a2275cb538104a23"
+    },
+    {
+      "path": "src/sparse_grt/fetch_optix.py",
+      "sha256": "d6418be3f77a792474f5b0210cbc20b1323aac5ff604f21712c7dad6be145d89"
+    },
+    {
+      "path": "src/sparse_grt/growth.py",
+      "sha256": "a1d308b570e139513f2aff4df3fb21527ee9ccfee7743e0919e056898cb920df"
+    },
+    {
+      "path": "src/sparse_grt/inputs.py",
+      "sha256": "7b2403f48ecaccfbafcb30f4fa07d04657607f9713ce523a4e3b63ffe3777132"
+    },
+    {
+      "path": "src/sparse_grt/losses/__init__.py",
+      "sha256": "a8cf0f5830b7e768d291e961301304f6c24e6612b9aa4cb783d0569d216732dc"
+    },
+    {
+      "path": "src/sparse_grt/losses/coordinate_ssim.cu",
+      "sha256": "6595ab5675c99c65a5852525eed696d0061f6abdec56df358eae1e3b3cda67a3"
+    },
+    {
+      "path": "src/sparse_grt/losses/coordinate_ssim.py",
+      "sha256": "55396c4f80ba0b3b6a6b5769b31f5f78f972b0b197a077b4709c27136dccc6e5"
+    },
+    {
+      "path": "src/sparse_grt/losses/coordinate_ssim_all.cu",
+      "sha256": "51f70dc0d25887965e64539df3416d00a3c2e70e835259fa3726328d8aee726d"
+    },
+    {
+      "path": "src/sparse_grt/losses/coordinate_ssim_all.py",
+      "sha256": "4d7ce595b0d699d9683d7d8875e78595cd69c9693f571560d1595142da75b2a1"
+    },
+    {
+      "path": "src/sparse_grt/losses/coordinate_ssim_points.cu",
+      "sha256": "d5cb46041cd81bebbbcef0d1eeb5941385b89e53d2410b22a34f2381e732f8f4"
+    },
+    {
+      "path": "src/sparse_grt/losses/coordinate_ssim_points.py",
+      "sha256": "a0f2386e61e8d2e77b26d9a4aa22eac9de164853f7925aa641cdf201366ba7c2"
+    },
+    {
+      "path": "src/sparse_grt/losses/coordinate_ssim_skip_zero.cu",
+      "sha256": "3f6a7153f9aeaba5f72ad18576d8be1b972d6ba2b066d152dcd3f04e4f60dc91"
+    },
+    {
+      "path": "src/sparse_grt/losses/experimental.py",
+      "sha256": "4e84a868d581011b698775806605394a706c5c2164251fc559673e94bf92d8ed"
+    },
+    {
+      "path": "src/sparse_grt/losses/grid_ssim.py",
+      "sha256": "374acc254b6a19222946afacdb051b9c09b18b0e33d6567d3a9a2cc08cc9410d"
+    },
+    {
+      "path": "src/sparse_grt/losses/micropatch_coordinate.py",
+      "sha256": "39eacb368de701a700180d0c53f41ead79f8c74668be8dcf7f249ca4d59ccdd4"
+    },
+    {
+      "path": "src/sparse_grt/losses/patch_ssim.py",
+      "sha256": "fe8a88a88d966a30f13d015dadcfbffa3a790c7320983ff35787a354c0912921"
+    },
+    {
+      "path": "src/sparse_grt/micropatch.py",
+      "sha256": "800c077a0dcae0f410d62ee26966d0e96b54b86bb47ea1427b7abb41b50db549"
+    },
+    {
+      "path": "src/sparse_grt/micropatch_protocol.py",
+      "sha256": "6ec855639974e4232f23d214cc3c3aaadb721707d2a20070e349f2580da8b932"
+    },
+    {
+      "path": "src/sparse_grt/native5_protocol.py",
+      "sha256": "af97b81c2dc3371e49ab30c04c5988e843e8f949a0c14f62759b83ee7bf33ccc"
+    },
+    {
+      "path": "src/sparse_grt/native_build.py",
+      "sha256": "b17b6707bb24e13a52c1ff77fd698c7659b9c31933d4264b600f84b8dd8915ea"
+    },
+    {
+      "path": "src/sparse_grt/objective.py",
+      "sha256": "c88ec9e9388bd260a81b28072915a8d0caee71e3f8a8250e6b87242f5c5b8d52"
+    },
+    {
+      "path": "src/sparse_grt/protocol.py",
+      "sha256": "6fa597196e4d6045c0ae943ef513295e24c9a51c7a0715793005d63c290a29a0"
+    },
+    {
+      "path": "src/sparse_grt/provenance.py",
+      "sha256": "50987bdf9c8423a3d648aca301b9ae990a30f4b7da971f77fbb9e6820af57366"
+    },
+    {
+      "path": "src/sparse_grt/release.py",
+      "sha256": "0f9e9832c07a08d56fe5a78cf95740e0545a006b5ecb1c68fbcd492077aa3a50"
+    },
+    {
+      "path": "src/sparse_grt/research_backend.py",
+      "sha256": "403103f505aee39d4a93c874ae790ca48449be91033eb08eb90c7b7242b12916"
+    },
+    {
+      "path": "src/sparse_grt/sampling.py",
+      "sha256": "12a96863dacb965011281756c289b01ac8896d1712cf27371639e71d066b17f3"
+    },
+    {
+      "path": "src/sparse_grt/standalone_backend.py",
+      "sha256": "a577c1794c9712998fcfbaf9481b27bb73c276164f0c6ca29b2df402888a2cdb"
+    },
+    {
+      "path": "src/sparse_grt/training.py",
+      "sha256": "4448a5e517e0211278e6bb6782c4441c122497c4e712d0d53b9ad3306695a2d9"
+    },
+    {
+      "path": "src/sparse_grt_backend/__init__.py",
+      "sha256": "69127fcb2949dbbfb26caed99e9955d8a7909de02042afa403ecc840d8174ffc"
+    },
+    {
+      "path": "src/sparse_grt_backend/datasets/__init__.py",
+      "sha256": "182f7d1d7ce03258203fd72e89b19ac001fadb2af1ec6ea563379ad81a2a7680"
+    },
+    {
+      "path": "src/sparse_grt_backend/datasets/camera_models.py",
+      "sha256": "f2c2ca2d60f2c24846d273110070b9cc9d654496ad839078f899b27565110587"
+    },
+    {
+      "path": "src/sparse_grt_backend/datasets/dataset_colmap.py",
+      "sha256": "2bed7486f16d3ae68d3e14c4eaf0f3c10639e6cdaae6d3be7d7604200b9a83bf"
+    },
+    {
+      "path": "src/sparse_grt_backend/datasets/protocols.py",
+      "sha256": "c3ee60a72c5d793b8581e2fbffba7c5a22a75b480400f8db1fa36d1bf0df23ee"
+    },
+    {
+      "path": "src/sparse_grt_backend/datasets/utils.py",
+      "sha256": "7218f0386d5233e81614f07f18b7dd192028399c523113516facc82666f9142b"
+    },
+    {
+      "path": "src/sparse_grt_backend/export/__init__.py",
+      "sha256": "651b617cfc9921c5aae1860a0380c1f58c7a364943cabda0da56df98c00ccebc"
+    },
+    {
+      "path": "src/sparse_grt_backend/export/base.py",
+      "sha256": "c3f4f87d2e481cbf206be7acbb7e2b03bdd9e8688ee5ddb33331989b91edb56a"
+    },
+    {
+      "path": "src/sparse_grt_backend/export/ingp_exporter.py",
+      "sha256": "7a2b652b788e8a938079b4b1256d3b12fe3e1dbc4865905b298911289c6b86bc"
+    },
+    {
+      "path": "src/sparse_grt_backend/export/ply_exporter.py",
+      "sha256": "061ec0c9315c3c42ac34cefa91f27b613cb516253dd4638296031ff2dc606995"
+    },
+    {
+      "path": "src/sparse_grt_backend/model/__init__.py",
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    {
+      "path": "src/sparse_grt_backend/model/background.py",
+      "sha256": "c0498505cae95278bf6d6ac35597bf3450d4001054b8828ba704c9b0bc5bd355"
+    },
+    {
+      "path": "src/sparse_grt_backend/model/geometry.py",
+      "sha256": "4ab38f96e208c5dcc961af394bd9c8913cf38018fb7ed359aefe5802918727fb"
+    },
+    {
+      "path": "src/sparse_grt_backend/model/model.py",
+      "sha256": "3896ad828f6b9e93a4998c2eea26329af4d6f5a18cb4f56e06d63002481ba22d"
+    },
+    {
+      "path": "src/sparse_grt_backend/optimizers/__init__.py",
+      "sha256": "9e6b838d10d9ebcd9223fea685d38d6679f61fed5be6ef2b8b875ecbacf9374d"
+    },
+    {
+      "path": "src/sparse_grt_backend/strategy/__init__.py",
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    {
+      "path": "src/sparse_grt_backend/strategy/base.py",
+      "sha256": "669eaf96b9cf30953a263ff20a0e937a60c4274254792607e022b64097ffc309"
+    },
+    {
+      "path": "src/sparse_grt_backend/strategy/mcmc.py",
+      "sha256": "d544a8d351d807a8460573ace51a753c734f0447e59f022760500fc5e98c4895"
+    },
+    {
+      "path": "src/sparse_grt_backend/strategy/src/__init__.py",
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    {
+      "path": "src/sparse_grt_backend/strategy/src/bindings.cpp",
+      "sha256": "c18a6b006decbc3c81eb37d75140eb3ae74855046d688f28e2119e5435925cbf"
+    },
+    {
+      "path": "src/sparse_grt_backend/strategy/src/gaussian_mcmc.cu",
+      "sha256": "dcfe7bf3a81a5abb3e33fdb239e5b02a4ec3867453d86dba6a65cfbd58dc503b"
+    },
+    {
+      "path": "src/sparse_grt_backend/strategy/src/gaussian_mcmc.h",
+      "sha256": "76bb9e171ba648f5b6c79d316ad4402d99fe73b4b931d151458c26cf9ebe26dd"
+    },
+    {
+      "path": "src/sparse_grt_backend/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/sparse_grt_backend/utils/jit.py",
+      "sha256": "669e73e82b1ef490d90ca0dbd3880cad709ffe8af4ba8ab611161e27b3335ad5"
+    },
+    {
+      "path": "src/sparse_grt_backend/utils/logger.py",
+      "sha256": "736652af021c408a6d3ab02e07b6fcaadc561c5e3f2120de3a0df369f249824d"
+    },
+    {
+      "path": "src/sparse_grt_backend/utils/misc.py",
+      "sha256": "2df85b741b26826713780cbf1d0fd2104513706fb964d61566df37c94aa84d9f"
+    },
+    {
+      "path": "src/sparse_grt_backend/utils/render.py",
+      "sha256": "9f4ee3031ffd9e2c67d082d6df8232f9614c01e9e71382417db07a25e0237b92"
+    },
+    {
+      "path": "src/sparse_grt_backend/utils/timer.py",
+      "sha256": "91f7d572f46f2f758114c327af77f232c06e05c4984bc474e244c9f2ca9001d3"
+    },
+    {
+      "path": "src/sparse_grt_tracer/__init__.py",
+      "sha256": "3e2982e4983f3e9f088900a95289fd4aa1d50f51dafdbc54082ec4d8e353ef06"
+    },
+    {
+      "path": "src/sparse_grt_tracer/bindings.cpp",
+      "sha256": "b51565b63267dc65217c1818d62ab51bcd99f0c7e531f459dc1dcc5fab7ad210"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/cuoptixMacros.h",
+      "sha256": "36bfd80c3fa7620db06b8e0ae102cbec76d5965a0a6c9cc0741df76438c3b3ae"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/kernels/cuda/3dgrtTracer.cuh",
+      "sha256": "b21f1354c493997a757e982e0ae11ef053b892e65197ddd7efdc84667da50f62"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/kernels/cuda/gaussianParticles.cuh",
+      "sha256": "0e3ae596e5089b85f4ce0acd4e4ea5b0dacf80e7d1ebc3d5fb6714107aa3d603"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/kernels/slang/common/sphericalHarmonics.slang",
+      "sha256": "a856fb141c2331d5a68796419bb63d657c6439110a13bd91b27b3fa49382fd48"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/kernels/slang/common/transforms.slang",
+      "sha256": "43f15899642738801e19b2eae5d7d1450c6fc4d5b71b09d04995dc7d7b6021d2"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/kernels/slang/gaussianParticles.cuh",
+      "sha256": "4a7c64a4c117d1bc5e4b2cef15982b63cd6aa4d4f5268b570ff4671fe1aadfb5"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/kernels/slang/models/gaussianParticles.slang",
+      "sha256": "ff4e1bdf75b2681bcecf52eb7b055534e6584f852c91a9a3cedea96e276875ba"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/kernels/slang/models/shRadiativeParticles.slang",
+      "sha256": "d66fe86101c180c656f4b9dd2c72ff343731475cb06773451a00a4a824604db1"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/mathUtils.h",
+      "sha256": "09908913d29a3ada6abdd59a1195d532b7c95baeefb874be9ecdaa20b6708acc"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/optixTracer.h",
+      "sha256": "9a4796f5ad8d463bb3a5b527b25a574fe53eb2740cb5b110818d565cf136e053"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/particleDensity.h",
+      "sha256": "1ddf9890bbc151d3d0e75e1abc8d15dc95494cc6fae150379a401bf2453f0f51"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/particlePrimitives.h",
+      "sha256": "cab4853a1c4e3e06947038c1191c18748a89c2a7e1911bc1db49b0454e628466"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/pipelineDefinitions.h",
+      "sha256": "1e981df9a657ea72abbd7c92568c8c088fb12d46d04057018bf8510eb31a1272"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/pipelineParameters.h",
+      "sha256": "515fd520ea5ec85b1950b51c8fa9f5b8052503700e43e59f28d23d7e1ae3ab2c"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/tensorAccessor.h",
+      "sha256": "9435ffad822e1e1ca1783ec75055349ad76088e698e493527c3c0254a9eddc6a"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/3dgrt/tensorBuffering.h",
+      "sha256": "6a1f6bad97c9d753e8eea4f5b16398e6c64bf0c19ce2d6d536607ac24f96348f"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/playground/cutexture.h",
+      "sha256": "0af378efcdda88a4752805aed6b58c4d635f070101ea05cc0d04fe32ed30f782"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/playground/pipelineDefinitions.h",
+      "sha256": "efb970cf299082e0f89685cb5ec905f3a255215f9cd54fc6e53f8b48e4fc15f9"
+    },
+    {
+      "path": "src/sparse_grt_tracer/include/playground/pipelineParameters.h",
+      "sha256": "586b7bc2bd2c6bc1dac41d74e33aa61d49b7437de1c9289c3a7983a972aa16a2"
+    },
+    {
+      "path": "src/sparse_grt_tracer/src/kernels/cuda/barycentricSurfelsOptix.cu",
+      "sha256": "8262b2777593095ea29c96c1ae1c2cbbd1e817388db1774971ea4d5bd4ec6b99"
+    },
+    {
+      "path": "src/sparse_grt_tracer/src/kernels/cuda/referenceB2FSlangBwdOptix.cu",
+      "sha256": "e8343507955930709c465b225f3560a698fac58b6f88f1534a9df561f4ce8ae2"
+    },
+    {
+      "path": "src/sparse_grt_tracer/src/kernels/cuda/referenceBwdOptix.cu",
+      "sha256": "f97016ab13d030170fe0fd058f3495d158fe5658a2864e894d6f49a4bba2b311"
+    },
+    {
+      "path": "src/sparse_grt_tracer/src/kernels/cuda/referenceOptix.cu",
+      "sha256": "3426bded7dcbccd9bd522a37c3fef519e697722b7341e2dbbc18a4cf6fc9b07b"
+    },
+    {
+      "path": "src/sparse_grt_tracer/src/kernels/cuda/referenceSlangBwdOptix.cu",
+      "sha256": "ed40425491592f634f1b7b6e80aba8ca784c297512da8531575f80edc12a38c6"
+    },
+    {
+      "path": "src/sparse_grt_tracer/src/kernels/cuda/referenceSlangOptix.cu",
+      "sha256": "5c056502791e26f78634df9072d4c2cb83f43140c227d3ffdece076f520703df"
+    },
+    {
+      "path": "src/sparse_grt_tracer/src/optixTracer.cpp",
+      "sha256": "735a5cbb6e2ead6e30b5f9c817783c651315b5c242eb9412a957c04b3b47b28e"
+    },
+    {
+      "path": "src/sparse_grt_tracer/src/particlePrimitives.cu",
+      "sha256": "2a65a53848b4e579cbc860b9c5da2ebc014850c60963399ea2d7c5a9bd8719a3"
+    },
+    {
+      "path": "src/sparse_grt_tracer/tracer.py",
+      "sha256": "75d65025548a8870b0b90c0a3f44922686225e4e6feed99faf7535eea02c0d3a"
+    },
+    {
+      "path": "tests/test_all_centres.py",
+      "sha256": "a274413d9462f48883c7ea0084d07056b1bdf3c3baed79c694edbb611fbd9387"
+    },
+    {
+      "path": "tests/test_allocation_gpu_smoke.py",
+      "sha256": "e5fec1554e548c3fce9d72aad049e80ccaf4ba47dd35d6e7b47a4187888c9912"
+    },
+    {
+      "path": "tests/test_allocation_inputs.py",
+      "sha256": "1e3bee1826e067776b00eae2669a6b9667e870edb88deeabaf89b9e23a6fab58"
+    },
+    {
+      "path": "tests/test_allocation_protocol.py",
+      "sha256": "d20e1b2cd43f253bbe522a2f5fe38565390272b75fbde4a69579247889c636dd"
+    },
+    {
+      "path": "tests/test_allocation_training.py",
+      "sha256": "c4faeebbaa30c99d09b9eb5dcb3ebf16099a226f634d82f53596a06f72a7c1d9"
+    },
+    {
+      "path": "tests/test_benchmark_pipeline.py",
+      "sha256": "c4d86cfa0b2c1c14b87ece6ad901f6fe71710c3ebab8923b8c584016ef2278f7"
+    },
+    {
+      "path": "tests/test_budget_growth.py",
+      "sha256": "245d9a2e5e59fe2484a990a1879a72ae5364b5c7368595ea8bb253936ba426c7"
+    },
+    {
+      "path": "tests/test_capacity_duration_protocol.py",
+      "sha256": "eef4470f1a5f5e417019edf05993cc6074ebad64cd17505e2b2694568bd42b59"
+    },
+    {
+      "path": "tests/test_components.py",
+      "sha256": "b57caa7b82257464cb2252b6fd8943ef748f7800e0f98f0335003ca04b44cf98"
+    },
+    {
+      "path": "tests/test_coordinate_ssim_points.py",
+      "sha256": "d7e749def649d92f9da4b0aa067cdb69ebe421f94e3bee3a3c203da111114313"
+    },
+    {
+      "path": "tests/test_cvpr_protocol.py",
+      "sha256": "3f97403cec770ef27b6b9fd9466dbbc0f4ed652410d20bd754ce046c4ac23476"
+    },
+    {
+      "path": "tests/test_micropatch_singleview.py",
+      "sha256": "341837d815454971a7b809beaf7504d8703824f87f281c40709f6e1cb59272b2"
+    },
+    {
+      "path": "tests/test_native5_singleview.py",
+      "sha256": "191e9dcb4d92df03d7f7c24cb8a81022e3fb2003e2a3132fe42100b2d19a9fe1"
+    },
+    {
+      "path": "tests/test_release.py",
+      "sha256": "ba5529e32576ded60458b2065b2281a494377f128ac1900e089d7909c1a93018"
+    },
+    {
+      "path": "tests/test_standalone.py",
+      "sha256": "52c0d808fb286fd3a9b6ab434394aaebddd15b16f4605571fa23026665f8f8f9"
+    },
+    {
+      "path": "tests/test_worker_allocation.py",
+      "sha256": "1b249fcb3a5009341e0bc1a73d5ee3d1dd34357492bd768086fa55430711c79e"
+    },
+    {
+      "path": "tests/validate_micropatch_cuda.py",
+      "sha256": "86bd7c85c6349b6c10421b4724c16ca9ada18d6e123112038b63047f3ab36b7f"
+    },
+    {
+      "path": "tools/audit_structure.py",
+      "sha256": "432755ea2f351f10be1afa26e8210e080826dfa10647df24105d589ebe329974"
+    },
+    {
+      "path": "tools/benchmark_common.py",
+      "sha256": "5c5c66f1792d7451c8afb32fe326d1894df0542694ba830e5a544ccbaa3a95df"
+    },
+    {
+      "path": "tools/benchmark_fleet.py",
+      "sha256": "0b37499c3df5e76ab0021d85915012943fbd0b2f7af2958543e19fecd057cb44"
+    },
+    {
+      "path": "tools/benchmark_prepare.py",
+      "sha256": "10812063a4695617929ebcd534e27ab2cec0ce22f8e0231af0c3a67ec11f3d9a"
+    },
+    {
+      "path": "tools/benchmark_worker.py",
+      "sha256": "55ff97d330675fda34b97bfac94463f1cb24754562e559aea44302b6f2840e9f"
+    },
+    {
+      "path": "tools/capacity_duration_261105/common.py",
+      "sha256": "af9cc3e62f1e47144b69d089cb7abbf6b1aa1d98cf679eb385249d00bf3a3894"
+    },
+    {
+      "path": "tools/capacity_duration_261105/export_results.py",
+      "sha256": "266ee47963f0373bab4624ba7196ada77917fd4cc58ed79fc28b00156bb7289a"
+    },
+    {
+      "path": "tools/capacity_duration_261105/test_fleet.py",
+      "sha256": "a1e78581d032130a2640ba9968a89a4c79c6a8a868f02fbb382d5fa11ea54145"
+    },
+    {
+      "path": "tools/capacity_duration_261105/worker.py",
+      "sha256": "174fd35ab95d7d965686cc2a3920d10287bdeb482c10c5c3b0ddfb358739b3ad"
+    },
+    {
+      "path": "tools/check_standalone_checkpoint.py",
+      "sha256": "402a4858912507da2a4de250e82f47b14b8c5d93b426a1373d0c366b0df4453e"
+    },
+    {
+      "path": "tools/check_standalone_continuation.py",
+      "sha256": "1c1edfdfd390993f88afc5c45968af13a9adf3b21dcc8f14a4ddd6b9ec1b1fa3"
+    },
+    {
+      "path": "tools/compare_smoke.py",
+      "sha256": "d24532625bd43b2febf5dfce69d092ed4dbb7f2f58195bf910f77658eed4a096"
+    },
+    {
+      "path": "tools/cvpr2027/common.py",
+      "sha256": "8fe0b15ae9327a05f918cb476474e43b2b7bf981948981d6ff6042d1495182f8"
+    },
+    {
+      "path": "tools/cvpr2027/export_results.py",
+      "sha256": "7fd67758da32272003169a8b8fa6d80d56313f8cef23ece01e3e22418ce24080"
+    },
+    {
+      "path": "tools/cvpr2027/prepare_plan.py",
+      "sha256": "84692a2f74eed325fa6241b0de4916a2e746d4b2ba912b643b8d203465b524dc"
+    },
+    {
+      "path": "tools/cvpr2027/test_fleet.py",
+      "sha256": "d2e7d06dda1f1d222089a4152cf5fbce30b1d38f6994d1076806a317439e8e65"
+    },
+    {
+      "path": "tools/cvpr2027/worker.py",
+      "sha256": "f8210a896d619255483c75e96900d1c2623608df781188a65e39cd2c83d84f2f"
+    },
+    {
+      "path": "tools/isolated_training_check.py",
+      "sha256": "df9295f56e33344b9f51677284fbde83ad64f1d0339b206bfc3b4cb68b48b597"
+    },
+    {
+      "path": "tools/micropatch_singleview_261105/common.py",
+      "sha256": "f1870405fe314a96dd1c3b542331d162dcddaa513e78a7ac2b345de76998a452"
+    },
+    {
+      "path": "tools/micropatch_singleview_261105/export_results.py",
+      "sha256": "d8a8d1f7cf90947030f1af6c62abceb5f33c55670cd56f670aa946de72e41cb2"
+    },
+    {
+      "path": "tools/micropatch_singleview_261105/prepare_plan.py",
+      "sha256": "2cb08e9b11b606b6f382b6ab8893b73a0eb6eecce3976105bef38fb600b6cfd9"
+    },
+    {
+      "path": "tools/micropatch_singleview_261105/test_fleet.py",
+      "sha256": "6abff55c6c37a206eb43e5c9fe289aa31e5b34c99cae24bf41a39039bfff19ac"
+    },
+    {
+      "path": "tools/micropatch_singleview_261105/worker.py",
+      "sha256": "0bf102a1f4c2d5e79927b82d6f650e0136d1fa928cbcc3ade9985f40aca43087"
+    },
+    {
+      "path": "tools/native5_261105/common.py",
+      "sha256": "64e69d882ec1739869089c12a2f5b9dcd4552c23444fc6b460fdbdec004799cc"
+    },
+    {
+      "path": "tools/native5_261105/export_results.py",
+      "sha256": "9c4b267b71dbe496318e37c469325110455e44f2e8dbf0d1c95866f7dab91c38"
+    },
+    {
+      "path": "tools/native5_261105/prepare_plan.py",
+      "sha256": "85c554036f59e45ab230452eacc0db423d5409effabcc1a6c39b488d51303068"
+    },
+    {
+      "path": "tools/native5_261105/test_fleet.py",
+      "sha256": "e20137d63039bd6404639ae17a3bd661ad14ac6d712f07134915b81cd70c49f6"
+    },
+    {
+      "path": "tools/native5_261105/worker.py",
+      "sha256": "f59bbc165746534aef55ab092e808f3d9ccb2461dc4e7b722d921e6d4f4e2d01"
+    },
+    {
+      "path": "tools/ray_allocation_261108/common.py",
+      "sha256": "7b694ff1563f5e8c265bb714a9cfdfa91df4c7a3e3d329bcc6a29b2e2ba6d00e"
+    },
+    {
+      "path": "tools/ray_allocation_261108/export_results.py",
+      "sha256": "7380856da9a4839d1f21628d26cc7a25e3c70c27e14216d038bdeccfa5dbd6e0"
+    },
+    {
+      "path": "tools/ray_allocation_261108/prepare.py",
+      "sha256": "eac3c52a0ce33fc5c63e9609be1a35213f81c4facf1c9a1267bc8aefa9e1b776"
+    },
+    {
+      "path": "tools/ray_allocation_261108/smoke_gpu.py",
+      "sha256": "0619967037ca0dc51befa198953db4f93b46e67d23feeeb85f7b4db62d03fd98"
+    },
+    {
+      "path": "tools/ray_allocation_261108/worker.py",
+      "sha256": "12d79890375be3681ea6a1d503d891156727f970a7de6ff7cba3825560bc2a30"
+    },
+    {
+      "path": "tools/setup_reference_env.sh",
+      "sha256": "0e0a4ed0954fbf67e8bef55321e28784c95908b3f018070fb89dfac2ebb52994"
+    },
+    {
+      "path": "tools/train_paper.py",
+      "sha256": "52674f7d6f5729a2c8cf41a1b8e397505d7bb35c6ce0c5e052317c949d1acf04"
+    },
+    {
+      "path": "tools/train_repro.py",
+      "sha256": "739bcb89947231032c6fb8f6d1d951e5ade7421ea1a94c3e0597d7c3136eff9e"
+    },
+    {
+      "path": "tools/train_scene.py",
+      "sha256": "fe37e50fb6626516b454d393049452743c87b9708a3aab1d38a1365672c56ee3"
+    },
+    {
+      "path": "tools/validate_cuda.py",
+      "sha256": "6677cbddf1c13fdd4eea96105a995f8f7a55e872fdef4220e4203cc7c6a4c43f"
+    },
+    {
+      "path": "tools/validate_paper_cuda.py",
+      "sha256": "d6e60a79b6e85805a8e21d498c13069a446a55587b9df90a143aad46892e21b4"
+    }
+  ],
+  "no_automatic_destroy": true,
+  "no_automatic_retry": true,
+  "first_run_id": "allocres_261108_E1_bicycle_uniform_seed777",
+  "first_node_id": "node04",
+  "changes_from_order": [
+    "Exact ray equality: thin block5 phase to 2*N6-N8 per view",
+    "E1/E2 launches follow complete code freeze; environment prep runs in parallel"
+  ],
+  "eval_metric": "torchmetrics SSIM window11 sigma1.5; LPIPS VGG; full target-resolution test images",
+  "growth": "native MCMC 1.05, 500<index<25000, every100, same original cap",
+  "renderer_settings": {
+    "method": "3dgrt",
+    "pipeline_type": "reference",
+    "backward_pipeline_type": "referenceBwd",
+    "particle_kernel_degree": 4,
+    "particle_kernel_density_clamping": true,
+    "particle_kernel_min_response": 0.0113,
+    "particle_kernel_min_alpha": 0.00392156862745098,
+    "particle_kernel_max_alpha": 0.99,
+    "particle_radiance_sph_degree": 3,
+    "primitive_type": "instances",
+    "min_transmittance": 0.001,
+    "max_consecutive_bvh_update": 15,
+    "enable_normals": false,
+    "enable_hitcounts": true,
+    "enable_kernel_timings": false,
+    "splat": {
+      "medium_v2": false
+    }
+  },
+  "plan_signature": "70ad5bd782b56631c7d87e1ba7fa85ffb8a24f32e463dbc2cb26262017a86231"
+}
