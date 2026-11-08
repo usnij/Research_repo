@@ -1,29 +1,29 @@
 {
   "schema_version": 1,
-  "registration_created_utc": "2026-11-08T01:03:04.804094+00:00",
-  "snapshot_exported_utc": "2026-11-08T01:02:34.743341+00:00",
+  "registration_created_utc": "2026-11-08T01:46:22.953901+00:00",
+  "snapshot_exported_utc": "2026-11-08T01:45:59.200672+00:00",
   "campaign": "ray_allocation_resolution_261108",
   "frozen_commit": "dec85dfec2a5a66e08b3633e3f14fc1cc597f49c",
   "plan_signature": "70ad5bd782b56631c7d87e1ba7fa85ffb8a24f32e463dbc2cb26262017a86231",
   "historical_runs_preserved": 80,
   "rows": {
     "runs.csv": 105,
-    "curves.csv": 617,
-    "views.csv": 2673
+    "curves.csv": 622,
+    "views.csv": 2703
   },
   "campaign_rows": {
     "runs.csv": 25,
-    "curves.csv": 130,
-    "views.csv": 513
+    "curves.csv": 135,
+    "views.csv": 543
   },
-  "current_timing_logs": 19,
+  "current_timing_logs": 20,
   "measured_metrics_invented": false,
   "full_training_complete": false,
   "evaluation_deferred_until_training_complete": true,
   "source_csv_sha256": {
-    "runs.csv": "c389fa867703d10c692b5a7ca803a12442778e3dc02612d8c3ed682ad35b5ff0",
-    "curves.csv": "370b4e17a038c976114000637141951c6380ca6b414ae0cc32c2117381d19092",
-    "views.csv": "3e491d2f1b98ed6611bce0059798236dc1e10995055044c3ddf5a904f5f99397"
+    "runs.csv": "4104c9be04a14d76d138ba36e64a73ee140e806ee73a6112b4886038cd9f3e7d",
+    "curves.csv": "a3a02777960a0e961a0c7a5b7bde948604dfe604fb62ede746f43d507db55dda",
+    "views.csv": "ee94a25b7ad06ca66c846afb04ec90d889a62b7129513a9bcdc0c0b6a4901963"
   },
   "progress": [
     {
@@ -36,7 +36,7 @@
       "step": 30000,
       "G": 1229851,
       "training_seconds": 26321.97146601102,
-      "collected_utc": "2026-11-08T01:02:24.475362+00:00"
+      "collected_utc": "2026-11-08T01:45:53.147210+00:00"
     },
     {
       "node": "node01",
@@ -48,19 +48,31 @@
       "step": 30000,
       "G": 1229851,
       "training_seconds": 2296.8720157034695,
-      "collected_utc": "2026-11-08T01:02:24.475362+00:00"
+      "collected_utc": "2026-11-08T01:45:53.147210+00:00"
     },
     {
       "node": "node01",
       "instance": 59592874,
       "run_id": "allocres_261108_E1_counter_schedule_seed777",
-      "status": "training_12650",
+      "status": "complete",
       "scene": "counter",
       "arm": "schedule",
-      "step": 12650,
+      "step": 30000,
       "G": 1229851,
-      "training_seconds": 779.5034697193187,
-      "collected_utc": "2026-11-08T01:02:24.475362+00:00"
+      "training_seconds": 2678.2324247807264,
+      "collected_utc": "2026-11-08T01:45:53.147210+00:00"
+    },
+    {
+      "node": "node01",
+      "instance": 59592874,
+      "run_id": "allocres_261108_E2_counter_sparse_r16_seed777",
+      "status": "training_5900",
+      "scene": "counter",
+      "arm": "sparse_r16",
+      "step": 5900,
+      "G": 1229851,
+      "training_seconds": 468.74858179467265,
+      "collected_utc": "2026-11-08T01:45:53.147210+00:00"
     },
     {
       "node": "node02",
@@ -72,7 +84,7 @@
       "step": 30000,
       "G": 2044672,
       "training_seconds": 8460.389228246175,
-      "collected_utc": "2026-11-08T01:02:34.621534+00:00"
+      "collected_utc": "2026-11-08T01:45:59.079484+00:00"
     },
     {
       "node": "node02",
@@ -84,7 +96,7 @@
       "step": 30000,
       "G": 2044672,
       "training_seconds": 1504.8950382638723,
-      "collected_utc": "2026-11-08T01:02:34.621534+00:00"
+      "collected_utc": "2026-11-08T01:45:59.079484+00:00"
     },
     {
       "node": "node02",
@@ -96,7 +108,7 @@
       "step": 30000,
       "G": 2044672,
       "training_seconds": 1863.9196146912873,
-      "collected_utc": "2026-11-08T01:02:34.621534+00:00"
+      "collected_utc": "2026-11-08T01:45:59.079484+00:00"
     },
     {
       "node": "node02",
@@ -108,7 +120,7 @@
       "step": 30000,
       "G": 2044672,
       "training_seconds": 2026.393540950492,
-      "collected_utc": "2026-11-08T01:02:34.621534+00:00"
+      "collected_utc": "2026-11-08T01:45:59.079484+00:00"
     },
     {
       "node": "node02",
@@ -120,7 +132,7 @@
       "step": 30000,
       "G": 2044672,
       "training_seconds": 1881.596901813522,
-      "collected_utc": "2026-11-08T01:02:34.621534+00:00"
+      "collected_utc": "2026-11-08T01:45:59.079484+00:00"
     },
     {
       "node": "node02",
@@ -132,7 +144,7 @@
       "step": 30000,
       "G": 2044672,
       "training_seconds": 1745.1382856555283,
-      "collected_utc": "2026-11-08T01:02:34.621534+00:00"
+      "collected_utc": "2026-11-08T01:45:59.079484+00:00"
     },
     {
       "node": "node02",
@@ -144,7 +156,7 @@
       "step": 30000,
       "G": 2044672,
       "training_seconds": 1793.4652714142576,
-      "collected_utc": "2026-11-08T01:02:34.621534+00:00"
+      "collected_utc": "2026-11-08T01:45:59.079484+00:00"
     },
     {
       "node": "node03",
@@ -156,7 +168,7 @@
       "step": 30000,
       "G": 1209886,
       "training_seconds": 18546.064895351417,
-      "collected_utc": "2026-11-08T01:02:33.924110+00:00"
+      "collected_utc": "2026-11-08T01:45:56.804342+00:00"
     },
     {
       "node": "node03",
@@ -168,7 +180,7 @@
       "step": 30000,
       "G": 1209886,
       "training_seconds": 3295.202398059424,
-      "collected_utc": "2026-11-08T01:02:33.924110+00:00"
+      "collected_utc": "2026-11-08T01:45:56.804342+00:00"
     },
     {
       "node": "node03",
@@ -180,7 +192,7 @@
       "step": 30000,
       "G": 1209886,
       "training_seconds": 1600.2616061923327,
-      "collected_utc": "2026-11-08T01:02:33.924110+00:00"
+      "collected_utc": "2026-11-08T01:45:56.804342+00:00"
     },
     {
       "node": "node03",
@@ -192,7 +204,7 @@
       "step": 30000,
       "G": 1209886,
       "training_seconds": 2234.293456460815,
-      "collected_utc": "2026-11-08T01:02:33.924110+00:00"
+      "collected_utc": "2026-11-08T01:45:56.804342+00:00"
     },
     {
       "node": "node03",
@@ -204,7 +216,7 @@
       "step": 30000,
       "G": 1209886,
       "training_seconds": 1245.8567166642752,
-      "collected_utc": "2026-11-08T01:02:33.924110+00:00"
+      "collected_utc": "2026-11-08T01:45:56.804342+00:00"
     },
     {
       "node": "node04",
@@ -216,7 +228,7 @@
       "step": 30000,
       "G": 3021939,
       "training_seconds": 2095.763880895218,
-      "collected_utc": "2026-11-08T01:02:29.412025+00:00"
+      "collected_utc": "2026-11-08T01:45:54.150657+00:00"
     },
     {
       "node": "node04",
@@ -228,7 +240,7 @@
       "step": 30000,
       "G": 3021939,
       "training_seconds": 2307.3712535279337,
-      "collected_utc": "2026-11-08T01:02:29.412025+00:00"
+      "collected_utc": "2026-11-08T01:45:54.150657+00:00"
     },
     {
       "node": "node04",
@@ -240,7 +252,7 @@
       "step": 30000,
       "G": 3021939,
       "training_seconds": 2270.1728970196564,
-      "collected_utc": "2026-11-08T01:02:29.412025+00:00"
+      "collected_utc": "2026-11-08T01:45:54.150657+00:00"
     },
     {
       "node": "node04",
@@ -252,24 +264,24 @@
       "step": 30000,
       "G": 3021939,
       "training_seconds": 2325.8534141902346,
-      "collected_utc": "2026-11-08T01:02:29.412025+00:00"
+      "collected_utc": "2026-11-08T01:45:54.150657+00:00"
     }
   ],
   "collection_status": {
-    "exported_utc": "2026-11-08T01:02:34.743341+00:00",
+    "exported_utc": "2026-11-08T01:45:59.200672+00:00",
     "nodes": [
       {
         "node_id": "node01",
         "available": true,
-        "collected_utc": "2026-11-08T01:02:24.475362+00:00",
-        "files": 77,
+        "collected_utc": "2026-11-08T01:45:53.147210+00:00",
+        "files": 105,
         "latest_attempt_succeeded": true,
         "previous_snapshot_used_after_failure": false
       },
       {
         "node_id": "node02",
         "available": true,
-        "collected_utc": "2026-11-08T01:02:34.621534+00:00",
+        "collected_utc": "2026-11-08T01:45:59.079484+00:00",
         "files": 217,
         "latest_attempt_succeeded": true,
         "previous_snapshot_used_after_failure": false
@@ -277,7 +289,7 @@
       {
         "node_id": "node03",
         "available": true,
-        "collected_utc": "2026-11-08T01:02:33.924110+00:00",
+        "collected_utc": "2026-11-08T01:45:56.804342+00:00",
         "files": 157,
         "latest_attempt_succeeded": true,
         "previous_snapshot_used_after_failure": false
@@ -285,7 +297,7 @@
       {
         "node_id": "node04",
         "available": true,
-        "collected_utc": "2026-11-08T01:02:29.412025+00:00",
+        "collected_utc": "2026-11-08T01:45:54.150657+00:00",
         "files": 127,
         "latest_attempt_succeeded": true,
         "previous_snapshot_used_after_failure": false
