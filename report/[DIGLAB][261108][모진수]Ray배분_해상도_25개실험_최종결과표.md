@@ -174,7 +174,6 @@ Dense는 K=1·전체 ray, sparse는 K=4. Counter·Bonsai의 목표 평가 해상
 - [고정 실행 계획·설정 해시](cvpr2027/registrations/261108_final/plan.json)
 - [전체 평가·백업 최종 확인](cvpr2027/registrations/261108_final/final_campaign_audit.json)
 - [파기 전 백업 전체 SHA 재검증](cvpr2027/registrations/261108_final/pre_destroy_audit.json)
-- 로컬 최종 모델 및 증거 백업 폴더 (GitHub 미업로드): `/home/jinsu/Documents/Github/논문/research_resume_260918/ray_allocation_resolution_261108/backups`
 - [GitHub 결과 게시본 (고정 commit)](https://github.com/usnij/Research_repo/tree/2fc86de/report/cvpr2027)
 
 위 CSV에는 이전 실험도 포함됩니다. 이번 25개 실행은 `run_id`가 `allocres_261108_`로 시작하는 행이며, 위 실행 ID 표와 대응합니다. JSON의 로컬 경로는 보관 위치 기록이고 웹 다운로드 주소가 아닙니다.
