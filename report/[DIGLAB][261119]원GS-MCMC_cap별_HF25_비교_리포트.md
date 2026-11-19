@@ -68,17 +68,3 @@ $r_i$는 해당 Gaussian의 고주파 점수를 **유효한 점수를 가진 후
 같은 step 비교이며 학습시간은 같지 않다. 단일 seed의 관측으로, cap 증가에 따른 성장 이력과 최적화 경로의 영향을 분리한 결과는 아니다.
 
 
-## 4. SalientGS: 렌더링 오차를 이용한 Gaussian 배분
-
-SalientGS는 **현재 렌더링과 학습 GT의 RGB L1 오차**를 이용해, 아직 잘 복원하지 못한 영역에 Gaussian을 더 배분한다. 여러 학습뷰의 오차를 분위수로 정규화한 뒤 큰 오차에 가중치를 주고, Gaussian의 투영 영역과 여러 뷰에서 평균하여 **복원 부족 점수 $s_i$**를 만든다. Donor 선택 확률은 다음 형태다.
-
-$$
-p_i\propto\big[(1-\lambda)\alpha_i+\lambda\big]\,
-\operatorname{softplus}\!\left(\frac{s_i-\tau}{\tau}\right)
-$$
-
-즉, **오차가 큰 영역에 걸친 Gaussian을 더 자주 선택**하고, opacity가 낮아도 선택 가능성을 확보한다. $\tau$는 중요도 기준, $\lambda$는 opacity 의존도를 완화하는 계수이며, HF25처럼 두 확률을 75:25로 섞는 방식은 아니다.
-
-이 확률은 **재배치 donor와 ADD의 부모 선택 모두**에 적용한다. 또한 낮은 오차 영역의 별도 ‘중복도’ 점수를 사용해, opacity가 낮은 Gaussian뿐 아니라 중복도가 높은 Gaussian도 재배치 대상으로 삼는다. 따라서 donor 확률만 바꾸는 모듈보다 변경 범위가 넓다. [원문 §3.3, 식 (2)–(9)](https://arxiv.org/html/2607.11285v1#S3.SS3)
-
-**HF25는 ‘GT 자체가 복잡한 곳’, SalientGS는 ‘현재 모델이 잘 못 맞추는 곳’을 우선한다.** 예를 들어 HF25는 잘 복원된 잔디에도 높은 점수를 줄 수 있고, SalientGS는 무늬가 적어도 상대적으로 오차가 큰 벽을 우선할 수 있다.
