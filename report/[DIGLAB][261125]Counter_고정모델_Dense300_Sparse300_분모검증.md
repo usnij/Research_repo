@@ -6,20 +6,20 @@
 
 ## 요약
 
-기존에 실측한 jensen에 의한 부풀림현상은 sparse로 인한 gaussian의 관측 부족이 핵심 원인은 아닌 것을 확인했다. sparse에서 평균적으로 gaussian의 관측step이 더 적어 densify를 진행하는 thresholding 값에 영향을 주는 것은 맞으나 이것이 주원인아니다.
+기존에 실측한 jensen에 의한 부풀림현상은 sparse로 인한 gaussian의 관측된 step이 부족한 것은 핵심 원인이 아닌 것을 확인했다. sparse에서 평균적으로 gaussian의 관측 step이 더 적어 densification 점수에 영향을 주는 것은 맞으나 이것이 주원인은 아니다.
 
-### 발견 1 - 실험을 진행한 핵심 원인이자 가설인 **"sparse에서 통계량 부품 현상은 관측 step수를 분모로 가져가며 이 숫자가 작아서 통계량이 커지는 단순한 착시일 것"** 는 기각이다. 
+### 발견 1 - 실험을 진행한 핵심 원인이자 가설인 **"sparse에서 통계량 부품 현상은 관측 step수를 분모로 가져가며 이 숫자가 작아서 통계량이 커지는 단순한 착시일 것"** 은 절만만 성립한다. 
 좀 더 명확하게 설명하면 Sparse에서 gaussian의 관측 step 수 자체는 어느 정도 감소하기 때문에 통계량 부풀림의 일부에 기여한다. 그러나 분모를 맞춘 뒤에도 Dense 대비 1.254–1.623배가 남아, 관측 step 수 차이만으로는 부풀림을 설명할 수 없다.
 
 ### 발견 2 - dense와 sparse에서 gaussian의 관측되는 step 수의 차이는 크지 않다. 
 
-실험 전 가설은 gaussian의 관측 step수 자체가 차이가 커서 생기는 영향이 클 것으로 판단했으나 학습이 종료된 모델(30K) 300step기준으로 dense 86.70회 sparse 69.15회 로 큰 차이는 아닌 것으로 보인다.
+실험 전 가설은 gaussian의 관측 step수 자체가 차이가 커서 생기는 영향이 클 것으로 판단했으나 학습이 종료된 모델(30K) 300step기준으로 평균 dense 86.70회 sparse 69.15회 로 큰 차이는 아닌 것으로 보인다.
 
-또한 300step 대비 관측 수 자체가 적은 이유는 한 view에서 렌더링되는 gaussian자체가 모든 gaussian을 포함하지 않기 때문이라고 추측된다. 
+또한 300step 대비 평균 관측 수 자체가 적은 이유는 한 view에서 렌더링되는 gaussian이 모든 gaussian을 포함하지 않기 때문이라고 추측된다. 
 
 
 ### 결론 : 
-**정리하면 sparse로 인해 gaussian의 관측 step이 작아지고 이로인해 densify 판단값이 커지는 것은 영향은 있지만 주원인은 아니다. 추측하건데 주원인은 gaussian의 총 hit ray수가 적어 gradient의 norm이 편향되는 것으로 생각된다.** 
+**정리하면 sparse로 인해 gaussian의 관측 step이 작아지고 이로인해 densify 판단값이 커지는 것은 영향은 있지만 주원인은 아니다. 추측하건데 주원인은 gaussian의 총 hit ray수가 적어 gradient의 norm이 dense처럼 상쇄되지 않고 편향되는 것으로 보인다.** 
 
 
 
@@ -74,14 +74,10 @@ Dense와 **동일한 view 순서·동일한 고정 Gaussian**에 대해 Sparse r
 | 30k | 0.8 L1 | 1.0725 × 10⁻³ | 69.15회 |
 | 30k | 0.8 L1 + 0.2 SSIM | 1.7700 × 10⁻³ | 69.15회 |
 
-**실제 hit 기록 비교.** `H`는 렌더러가 해당 Gaussian을 한 ray 이상에서 합성 대상으로 받아들였다고 기록한 step 수다. 한 step에서 여러 ray가 hit해도 1회로 센다. 아래 평균 역시 2절과 같은 `N_dense > 0` 집단이다.
 
-| 고정 모델 | H_dense 평균 step 수 | H_sparse 평균 step 수 | 평균 감소 step 수 |
-|---|---:|---:|---:|
-| 7k | 82.09회 | 73.77회 | 8.32회 |
-| 30k | 86.95회 | 69.73회 | 17.22회 |
 
-**30k 모델의 실제 hit 빈도 분포.** 이 표는 **전체 Gaussian 1,255,427개**를 분모로 한다. Dense는 `H_dense`, Sparse는 `H_sparse`로 각각 구간을 나눴다.
+
+**30k 모델의 실제 hit 빈도 분포.** 
 
 | hit된 step 수 (총 300 step) | Dense Gaussian 비율 | Sparse Gaussian 비율 |
 |---|---:|---:|
@@ -89,6 +85,18 @@ Dense와 **동일한 view 순서·동일한 고정 Gaussian**에 대해 Sparse r
 | 31–100회 | 24.00% | 25.82% |
 | 101–200회 | 22.28% | 20.21% |
 | 201–300회 | 10.58% | 5.16% |
+
+
+## 3.1 dense, sparse gaussian의 평균 관측 step수 비교 
+
+
+| 고정 모델 | N_dense 평균 step 수 | H_sparse 평균 step 수 | 
+|---|---:|---:|
+| 7k | 81.94회 | 73.50회 | 
+| 30k | 86.70회 | 69.15회| 
+
+300stpe 동안 gaussian들의 관측 step수를 평균 낸 것이다.
+sparse학습에서 평균 관측 step수가 더 적은 것을 확인 할 수 있다. 
 
 
 
@@ -130,3 +138,4 @@ Dense와 **동일한 view 순서·동일한 고정 Gaussian**에 대해 Sparse r
 | 30k | 50–75% | **91.9%** | **92.3%** |
 | 30k | 상위 25% — 큼 | **96.1%** | **96.3%** |
 
+작은 Gaussian일수록 Sparse에서 Dense 대비 관측 step 수가 더 크게 감소하며, 이 경향은 30k 모델에서 더 뚜렷하다.
